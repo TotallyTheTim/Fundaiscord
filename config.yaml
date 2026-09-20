@@ -1,0 +1,74 @@
+# Which houses trigger a Discord alert. Edit and commit; no code changes needed.
+
+startup:
+  # First run only (when data/seen-listings.json doesn't exist yet):
+  #   true  = alert for matches from the last `max_age_days`, mark the rest as seen
+  #   false = record everything silently, alert from the second run onwards
+  notify_existing: true
+
+filters:
+  max_price: 351000        # EUR, inclusive
+  min_surface: 70          # m², living area
+  min_bedrooms: 2
+  max_age_days: 2          # only listings published in the last N days
+
+  # A listing with a missing field still alerts, flagged "⚠️ ... unknown".
+  energy_labels:
+    always: [A++++, A+++, A++, A+, A, B, C, D]
+    only_below_price:      # accepted only when the price is strictly below this
+      E: 300000
+    # F and G are never accepted
+
+# `location` is Funda's slug. `wijken` keeps only listings whose buurt belongs to one of
+# these wijken (see data/buurt-wijk.json). Wijken were ranked 2/3 Leefbaarometer 2024 +
+# 1/3 registered crime per 1,000 residents (CBS/Politie, Sep 2025 – Aug 2026).
+searches:
+  - name: Den Haag
+    location: den-haag
+    wijken:
+      - Duinoord
+      - Archipelbuurt
+      - Geuzen- en Statenkwartier
+      - Benoordenhout
+      - Vogelwijk
+      - Willemspark
+      - Westbroekpark en Duttendel
+      - Bomen- en Bloemenbuurt
+      - Belgisch Park
+      - Vruchtenbuurt
+      - Kijkduin en Ockenburgh
+      - Zeeheldenkwartier
+      - Bohemen en Meer en Bos
+      - Scheveningen
+      - Kraayenstein en Vroondaal
+      - Duindorp
+      - Ypenburg
+      - Leidschenveen
+      - Valkenboskwartier
+      - Regentessekwartier
+      - Wateringse Veld
+      - Bezuidenhout
+      - Waldeck
+      - Mariahoeve en Marlot
+      - Loosduinen
+      - Leyenburg
+      - Groente- en Fruitmarkt
+      - Rustenburg en Oostbroek
+
+  - name: Rijswijk
+    location: rijswijk-zh
+    wijken:            # CBS only numbers these wijken
+      - Wijk 01        # Cromvliet, Leeuwendaal
+      - Wijk 10        # Sion, Elsenburg, Pasgeld, Haantje
+      - Wijk 02        # Oud-Rijswijk, Bomenbuurt, Welgelegen, Rembrandtkwartier, Havenkwartier
+      - Wijk 08        # Overvoorde, Strijp, Presidentenbuurt, Ministerbuurt
+
+  - name: Delft
+    location: delft
+    wijken:
+      - Hof van Delft
+      - Voordijkshoorn
+      - Vrijenban
+      - Binnenstad
+      - Tanthof-West
+      - Tanthof-Oost

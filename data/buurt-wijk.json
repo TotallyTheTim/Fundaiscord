@@ -1,0 +1,381 @@
+{
+  "den-haag": {
+    "Archipelbuurt": [
+      "Archipelbuurt"
+    ],
+    "Belgisch Park": [
+      "Belgisch Park"
+    ],
+    "Benoordenhout": [
+      "Arendsdorp",
+      "Duinzigt",
+      "Nassaubuurt",
+      "Uilennest",
+      "Van Hoytemastraat e.o.",
+      "Waalsdorp"
+    ],
+    "Bezuidenhout": [
+      "Bezuidenhout-Midden",
+      "Bezuidenhout-Oost",
+      "Bezuidenhout-West"
+    ],
+    "Binckhorst": [
+      "Binckhorst"
+    ],
+    "Bohemen en Meer en Bos": [
+      "Bohemen en Meer en Bos",
+      "Bosjes van Pex"
+    ],
+    "Bomen- en Bloemenbuurt": [
+      "Bloemenbuurt-Oost",
+      "Bloemenbuurt-West",
+      "Bomenbuurt"
+    ],
+    "Bouwlust": [
+      "De Uithof",
+      "Dreven en Gaarden",
+      "Venen, Oorden en Raden",
+      "Zijden, Steden en Zichten"
+    ],
+    "Centrum": [
+      "Kortenbos",
+      "Uilebomen",
+      "Voorhout",
+      "Zuidwal"
+    ],
+    "Duindorp": [
+      "Duindorp"
+    ],
+    "Duinoord": [
+      "Stadhoudersplantsoen",
+      "Sweelinckplein e.o."
+    ],
+    "Forepark": [
+      "De Rivieren",
+      "Vlietzoom-Oost"
+    ],
+    "Geuzen- en Statenkwartier": [
+      "Geuzenkwartier",
+      "Statenkwartier"
+    ],
+    "Groente- en Fruitmarkt": [
+      "Groente- en Fruitmarkt"
+    ],
+    "Haagse Bos": [
+      "Haagse Bos"
+    ],
+    "Hoornwijk": [
+      "De Reef",
+      "Vliegeniersbuurt",
+      "Vlietzoom-West"
+    ],
+    "Kijkduin en Ockenburgh": [
+      "Kijkduin",
+      "Ockenburgh"
+    ],
+    "Kraayenstein en Vroondaal": [
+      "Kraayenstein en Vroondaal"
+    ],
+    "Laakkwartier en Spoorwijk": [
+      "Laakhaven-Oost",
+      "Laakhaven-West",
+      "Laakkwartier-Oost",
+      "Laakkwartier-West",
+      "Noordpolderbuurt",
+      "Spoorwijk"
+    ],
+    "Leidschenveen": [
+      "De Lanen",
+      "De Velden",
+      "De Vissen",
+      "Rietbuurt"
+    ],
+    "Leyenburg": [
+      "Leyenburg"
+    ],
+    "Loosduinen": [
+      "Houtwijk",
+      "Kerketuinen en Zichtenburg",
+      "Kom Loosduinen"
+    ],
+    "Mariahoeve en Marlot": [
+      "Burgen en Horsten",
+      "Kampen",
+      "Landen",
+      "Marlot"
+    ],
+    "Moerwijk": [
+      "Moerwijk-Noord",
+      "Moerwijk-Oost",
+      "Moerwijk-West",
+      "Moerwijk-Zuid"
+    ],
+    "Morgenstond": [
+      "Morgenstond-Oost",
+      "Morgenstond-West",
+      "Morgenstond-Zuid"
+    ],
+    "Oostduinen": [
+      "Oostduinen"
+    ],
+    "Regentessekwartier": [
+      "Koningsplein e.o.",
+      "Rond de Energiecentrale"
+    ],
+    "Rustenburg en Oostbroek": [
+      "Oostbroek-Noord",
+      "Oostbroek-Zuid",
+      "Rustenburg"
+    ],
+    "Scheveningen": [
+      "Oud Scheveningen",
+      "Rijslag",
+      "Scheveningen Badplaats",
+      "Visserijbuurt",
+      "Vissershaven"
+    ],
+    "Schildersbuurt": [
+      "Schildersbuurt-Noord",
+      "Schildersbuurt-Oost",
+      "Schildersbuurt-West"
+    ],
+    "Stationsbuurt": [
+      "Huygenspark",
+      "Rivierenbuurt-Noord",
+      "Rivierenbuurt-Zuid"
+    ],
+    "Transvaalkwartier": [
+      "Transvaalkwartier-Midden",
+      "Transvaalkwartier-Noord",
+      "Transvaalkwartier-Zuid"
+    ],
+    "Valkenboskwartier": [
+      "Heesterbuurt",
+      "Valkenboskwartier"
+    ],
+    "Van Stolkpark en Scheveningse Bosjes": [
+      "Van Stolkpark en Scheveningse Bosjes"
+    ],
+    "Vogelwijk": [
+      "Vogelwijk"
+    ],
+    "Vruchtenbuurt": [
+      "Eykenduinen",
+      "Vruchtenbuurt"
+    ],
+    "Waldeck": [
+      "Componistenbuurt",
+      "Nieuw Waldeck",
+      "Rosenburg",
+      "Waldeck-Noord",
+      "Waldeck-Zuid"
+    ],
+    "Wateringse Veld": [
+      "Erasmus Veld",
+      "Hoge Veld",
+      "Lage Veld",
+      "Parkbuurt oosteinde",
+      "Zonne Veld"
+    ],
+    "Westbroekpark en Duttendel": [
+      "Duttendel",
+      "Westbroekpark"
+    ],
+    "Willemspark": [
+      "Willemspark"
+    ],
+    "Ypenburg": [
+      "Bosweide",
+      "De Bras",
+      "De Venen",
+      "Morgenweide",
+      "Singels",
+      "Tedingerbroek",
+      "Waterbuurt"
+    ],
+    "Zeeheldenkwartier": [
+      "Zeeheldenkwartier"
+    ],
+    "Zorgvliet": [
+      "Zorgvliet"
+    ],
+    "Zuiderpark": [
+      "Zuiderpark"
+    ]
+  },
+  "rijswijk-zh": {
+    "Wijk 01": [
+      "Cromvliet",
+      "Leeuwendaal"
+    ],
+    "Wijk 02": [
+      "Bomenbuurt",
+      "Havenkwartier",
+      "Oud-Rijswijk",
+      "Rembrandtkwartier",
+      "Welgelegen"
+    ],
+    "Wijk 03": [
+      "Broekpolder",
+      "Hoornwijck"
+    ],
+    "Wijk 04": [
+      "Huis te Lande",
+      "Julianapark",
+      "Te Werve"
+    ],
+    "Wijk 05": [
+      "Plaspoelpolder"
+    ],
+    "Wijk 06": [
+      "Artiestenbuurt",
+      "Kleurenbuurt",
+      "Spoorzicht",
+      "Stationskwartier"
+    ],
+    "Wijk 07": [
+      "Muziekbuurt",
+      "Wilhelminapark"
+    ],
+    "Wijk 08": [
+      "Ministerbuurt",
+      "Overvoorde",
+      "Presidentenbuurt",
+      "Strijp"
+    ],
+    "Wijk 09": [
+      "Eikelenburg",
+      "Hoekpolder",
+      "Stervoorde"
+    ],
+    "Wijk 10": [
+      "Elsenburg",
+      "Haantje",
+      "Pasgeld",
+      "Sion"
+    ],
+    "Wijk 11": [
+      "Kraayenburg",
+      "Vrijenban"
+    ]
+  },
+  "delft": {
+    "Abtswoude": [
+      "Abtswoude"
+    ],
+    "Binnenstad": [
+      "Bedrijventerrein Wateringseweg",
+      "Centrum",
+      "Centrum-Noord",
+      "Centrum-Oost",
+      "Centrum-West",
+      "Centrum-Zuidoost",
+      "Centrum-Zuidwest",
+      "In de Veste",
+      "Stationsbuurt",
+      "Zuidpoort"
+    ],
+    "Buitenhof": [
+      "Buitenhof-Noord",
+      "Buitenhof-Zuid",
+      "Fledderusbuurt",
+      "Gillisbuurt",
+      "Het Rode Dorp",
+      "Juniusbuurt",
+      "Kerkpolder",
+      "Pijperring",
+      "Reinier de Graafbuurt",
+      "Verzetstrijdersbuurt",
+      "Vrijheidsbuurt"
+    ],
+    "Delftse Hout": [
+      "Bedrijventerrein Delftse Poort-Oost",
+      "Bedrijventerrein Ypenburgsepoort",
+      "De Bras",
+      "De Grote Plas",
+      "Hoflaan"
+    ],
+    "Hof van Delft": [
+      "Agnetaparkbuurt",
+      "Bedrijventerrein Altena",
+      "Krakeelpolder",
+      "Ministersbuurt-Oost",
+      "Ministersbuurt-West",
+      "Olofsbuurt",
+      "Westeindebuurt",
+      "Westerkwartier"
+    ],
+    "Ruiven": [
+      "Ackersdijk",
+      "Bedrijventerrein Rotterdamseweg-Zuid",
+      "Bedrijventerrein Technopolis"
+    ],
+    "Schieweg": [
+      "Bedrijventerrein Schieweg-Noord",
+      "Bedrijventerrein Schieweg-Zuid",
+      "Delftzicht",
+      "Schieweg-Polder"
+    ],
+    "Tanthof-Oost": [
+      "Bedrijventerrein Tanthof-Oost",
+      "Boerderijbuurt",
+      "Bosrand",
+      "Dierenbuurt",
+      "Vogelbuurt-Oost",
+      "Vogelbuurt-West"
+    ],
+    "Tanthof-West": [
+      "Afrikabuurt-Oost",
+      "Afrikabuurt-West",
+      "Aziëbuurt",
+      "Bedrijventerrein Tanthof-West",
+      "Latijns Amerikabuurt",
+      "Tanthofkadebuurt"
+    ],
+    "Voordijkshoorn": [
+      "Den Hoorn",
+      "Ecodus",
+      "Hoornse Hof",
+      "Kuyperwijk-Noord",
+      "Kuyperwijk-Zuid",
+      "Marlot",
+      "Molenbuurt",
+      "Westlandhof"
+    ],
+    "Voorhof": [
+      "Aart van der Leeuwbuurt",
+      "Bedrijventerrein Voorhof",
+      "Bedrijventerrein Vulcanusweg",
+      "Multatulibuurt",
+      "Mythologiebuurt",
+      "Poptahof-Noord",
+      "Poptahof-Zuid",
+      "Roland Holstbuurt",
+      "Voorhof-Hoogbouw"
+    ],
+    "Vrijenban": [
+      "Bedrijventerrein Delftse Poort-West",
+      "Bedrijventerrein Haagweg",
+      "Biesland",
+      "Bomenwijk",
+      "Heilige Land",
+      "Indische Buurt-Noord",
+      "Indische Buurt-Zuid",
+      "Koepoort",
+      "Sint Joris"
+    ],
+    "Wippolder": [
+      "Bedrijventerrein Delftech",
+      "Bedrijventerrein Rotterdamseweg-Noord",
+      "Koningsveldbuurt",
+      "Pauwmolen",
+      "Professorenbuurt",
+      "Schoemakerplantage",
+      "TU-Campus",
+      "TU-Noord",
+      "Wippolder-Noord",
+      "Wippolder-Zuid",
+      "Zeeheldenbuurt"
+    ]
+  }
+}

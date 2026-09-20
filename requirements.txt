@@ -1,0 +1,2 @@
+pyfunda==3.1.5
+PyYAML>=6,<7
