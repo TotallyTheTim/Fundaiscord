@@ -11,7 +11,7 @@ from pathlib import Path
 from config import Config, SearchConfig, load_config
 from discord import DiscordError, build_payload, send
 from filters import Verdict, evaluate
-from funda_client import fetch_search, make_client
+from funda_client import SearchResult, fetch_search, make_client
 from models import Candidate
 from state import SeenState
 from wijken import WijkMap
@@ -23,7 +23,7 @@ KEEP_SEEN_DAYS = 30
 MAX_NOTIFICATIONS_PER_RUN = 25
 SEND_DELAY_SECONDS = 1.0
 
-Fetcher = Callable[[SearchConfig, bool], list[Candidate]]
+Fetcher = Callable[[SearchConfig, bool], SearchResult]
 
 
 @dataclass(frozen=True)
@@ -47,6 +47,8 @@ class RunResult:
     silently_marked: int
     deferred: int
     failed_searches: int
+    # Searches that returned some pages but not all; reported as a warning, not a failure.
+    incomplete_searches: int
     failed_sends: int
 
     @property
@@ -69,16 +71,22 @@ def run(
     )
     old_before = now - timedelta(days=config.old_listing_after_days)
     matches: dict[str, Match] = {}
-    failed_searches = 0
+    failed_searches = incomplete_searches = 0
 
     for search in config.searches:
         try:
-            candidates = fetch(search, full_sweep)
+            fetched = fetch(search, full_sweep)
         except Exception as error:  # one blocked or broken search shouldn't stop the others
             print(f"[{search.name}] search failed: {error}", file=sys.stderr)
             failed_searches += 1
             continue
 
+        if not fetched.complete:
+            # What loaded is still processed; the sweep just stays due for the next run.
+            print(f"::warning::[{search.name}] read only part of the results ({fetched.error})")
+            incomplete_searches += 1
+
+        candidates = fetched.candidates
         found = 0
         for candidate in candidates:
             if candidate.id in state:
@@ -130,16 +138,24 @@ def run(
         state.add(match.candidate.id, now)
         notified += 1
 
-    # Only count a pass as complete if every search made it through, otherwise the
+    # Only count a pass as complete if every search was read to the end, otherwise the
     # next run must repeat it.
-    if failed_searches == 0:
+    if failed_searches == 0 and incomplete_searches == 0:
         if baseline_run:
             state.mark_baselined()
         if full_sweep:
             state.mark_full_sweep(now)
 
     state.prune(now, KEEP_SEEN_DAYS)
-    return RunResult(full_sweep, notified, len(silent), deferred, failed_searches, failed_sends)
+    return RunResult(
+        full_sweep,
+        notified,
+        len(silent),
+        deferred,
+        failed_searches,
+        incomplete_searches,
+        failed_sends,
+    )
 
 
 def main() -> int:
@@ -173,7 +189,7 @@ def main() -> int:
     now = datetime.now(timezone.utc)
     client = make_client()
 
-    def fetch(search: SearchConfig, full_sweep: bool) -> list[Candidate]:
+    def fetch(search: SearchConfig, full_sweep: bool) -> SearchResult:
         # "newest" sorts by day only, so stop a full day past the old-listing cut-off.
         stop_before = (
             None if full_sweep else now - timedelta(days=config.old_listing_after_days + 1)

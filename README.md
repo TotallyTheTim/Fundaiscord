@@ -17,6 +17,13 @@ Polls Funda every 30 minutes via GitHub Actions and posts new matching listings 
 
 The webhook URL must only ever live in the secret, never in the repo.
 
+## Reliable scheduling
+
+GitHub's own `schedule` trigger is best-effort: on a new repo it can fire only a few times a day. The dependable way is an external cron service calling the `workflow_dispatch` API, which starts within seconds. The workflow's own cron stays as a backup; overlapping runs are harmless because the state file deduplicates alerts.
+
+1. GitHub → *Settings → Developer settings → Personal access tokens → Fine-grained tokens*: repository access **only this repo**, permission **Actions: Read and write**, and an expiry date (renew it then).
+2. On [cron-job.org](https://cron-job.org) create a job: URL `https://api.github.com/repos/TotallyTheTim/Fundaiscord/actions/workflows/funda-watch.yml/dispatches`, every 30 minutes, method **POST**, body `{"ref":"main"}`, headers `Authorization: Bearer <token>`, `Accept: application/vnd.github+json`, `Content-Type: application/json`. A success is HTTP 204.
+
 ## Configuration
 
 Everything you'd want to change is in [config.yaml](config.yaml): price, surface, bedrooms, energy labels, what counts as an old listing, the sweep interval, and which wijken to search per city. `data/buurt-wijk.json` maps Funda's buurt names to wijken and is regenerated with `python scripts/build_buurt_map.py`.
@@ -35,5 +42,6 @@ pytest
 - `pyfunda` is unofficial and uses undocumented Funda endpoints, which may break and may conflict with Funda's terms. `funda_client.py` works around a fingerprint block in pyfunda 3.1.5; see the comment there.
 - pyfunda is AGPL-3.0. It is used as a dependency only, none of its code is copied here.
 - State lives in `data/seen-listings.json`, committed by the workflow whenever it changes (at least twice a day, when a full sweep is recorded).
+- Each result page is retried up to 3 times. If a search still only partly loads, the pages that did load are processed, the run logs a GitHub warning (it stays green), and the full sweep is retried on the next run.
 - Alerts fire when a listing starts matching. A further price drop on a listing that already matched is not reported.
 - Until the first real run, a dry-run counts as the baseline run, so it prints only recent matches, never old-listing alerts.

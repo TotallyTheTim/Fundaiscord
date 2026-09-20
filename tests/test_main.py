@@ -1,10 +1,12 @@
 from datetime import timedelta
 from pathlib import Path
 
+import pytest
 from factories import FILTERS, NOW, make_candidate
 
 from config import Config, SearchConfig
 from discord import DiscordError
+from funda_client import SearchResult
 from main import MAX_NOTIFICATIONS_PER_RUN, Fetcher, Match, Notifier, RunResult, run
 from models import Candidate
 from state import SeenState
@@ -51,13 +53,15 @@ class Recorder:
 class FakeFunda:
     """Returns fixed listings and remembers whether each call was a full sweep."""
 
-    def __init__(self, *candidates: Candidate) -> None:
-        self._candidates = list(candidates)
+    def __init__(self, *candidates: Candidate, complete: bool = True) -> None:
+        self._result = SearchResult(
+            list(candidates), complete=complete, error=None if complete else "page 3: timed out"
+        )
         self.full_flags: list[bool] = []
 
-    def __call__(self, search: SearchConfig, full: bool) -> list[Candidate]:
+    def __call__(self, search: SearchConfig, full: bool) -> SearchResult:
         self.full_flags.append(full)
-        return self._candidates
+        return self._result
 
 
 def go(
@@ -182,10 +186,10 @@ def test_after_the_baseline_old_listings_do_alert(tmp_path: Path) -> None:
 def test_baseline_is_not_completed_when_a_search_failed(tmp_path: Path) -> None:
     state = SeenState.load(tmp_path / "s.json")
 
-    def fetch(s: SearchConfig, full: bool) -> list[Candidate]:
+    def fetch(s: SearchConfig, full: bool) -> SearchResult:
         if s.name == "Broken":
             raise RuntimeError("blocked")
-        return []
+        return SearchResult([])
 
     go(state, fetch, Recorder(), search("Broken"), search("Fine"))
 
@@ -227,11 +231,45 @@ def test_force_full_overrides_the_schedule(tmp_path: Path) -> None:
 def test_a_failed_full_sweep_stays_due(tmp_path: Path) -> None:
     state = baselined_state(tmp_path, sweep_age_hours=13)
 
-    def fetch(s: SearchConfig, full: bool) -> list[Candidate]:
+    def fetch(s: SearchConfig, full: bool) -> SearchResult:
         raise RuntimeError("blocked")
 
     go(state, fetch, Recorder())
     assert state.full_sweep_due(NOW, every_hours=12)
+
+
+def test_a_partial_full_sweep_still_processes_what_loaded_and_stays_due(tmp_path: Path) -> None:
+    state, notify = baselined_state(tmp_path, sweep_age_hours=13), Recorder()
+    result = go(state, FakeFunda(make_candidate(), complete=False), notify)
+
+    assert notify.ids == ["1"]
+    assert "1" in state
+    assert state.full_sweep_due(NOW, every_hours=12)
+    assert result.incomplete_searches == 1
+
+
+def test_a_partial_search_is_a_warning_not_a_failed_run(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> None:
+    state = baselined_state(tmp_path)
+    result = go(state, FakeFunda(complete=False), Recorder())
+
+    assert result.ok
+    assert "::warning::" in capsys.readouterr().out
+
+
+def test_baseline_is_not_completed_when_a_search_was_partial(tmp_path: Path) -> None:
+    state = SeenState.load(tmp_path / "s.json")
+    go(state, FakeFunda(complete=False), Recorder())
+
+    assert not state.baselined
+    assert state.last_full_sweep is None
+
+
+def test_a_partial_baseline_still_records_old_listings_silently(tmp_path: Path) -> None:
+    state, notify = SeenState.load(tmp_path / "s.json"), Recorder()
+    go(state, FakeFunda(make_candidate(published=OLD), complete=False), notify)
+
+    assert notify.sent == []
+    assert "1" in state
 
 
 def test_seen_listings_that_reappear_are_kept_alive(tmp_path: Path) -> None:
@@ -246,10 +284,10 @@ def test_seen_listings_that_reappear_are_kept_alive(tmp_path: Path) -> None:
 def test_failed_search_does_not_stop_the_others(tmp_path: Path) -> None:
     state, notify = baselined_state(tmp_path), Recorder()
 
-    def fetch(s: SearchConfig, full: bool) -> list[Candidate]:
+    def fetch(s: SearchConfig, full: bool) -> SearchResult:
         if s.name == "Broken":
             raise RuntimeError("blocked")
-        return [make_candidate()]
+        return SearchResult([make_candidate()])
 
     result = go(state, fetch, notify, search("Broken"), search("Fine"))
 
