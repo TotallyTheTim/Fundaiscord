@@ -1,5 +1,5 @@
 import time
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 
 from curl_cffi import requests as curl_requests
 from funda import Funda
@@ -10,7 +10,7 @@ from models import Candidate
 
 PHOTO_BASE_URL = "https://cloud.funda.nl/"
 PAGE_SIZE = 15
-MAX_PAGES = 10
+MAX_PAGES = 40
 PAGE_DELAY_SECONDS = 1.5
 
 
@@ -27,16 +27,17 @@ def fetch_search(
     client: Funda,
     search: SearchConfig,
     filters: Filters,
-    now: datetime,
+    stop_before: datetime | None,
 ) -> list[Candidate]:
-    """Fetch the newest listings for a search until we've paged past the age window.
+    """Fetch listings for a search, newest first.
 
-    Only price, surface and bedrooms are filtered server-side; label, date and
-    wijk rules need our own logic (see filters.py).
+    With `stop_before` set (quick pass) paging ends once a page holds a listing
+    published before it; None pages through everything (full sweep). "newest" sorts
+    by day only, so callers should leave a day of margin in `stop_before`.
+
+    Only price, surface and bedrooms are filtered server-side; label and wijk rules
+    need our own logic (see filters.py).
     """
-    # "newest" sorts by day only, so listings within a day are shuffled. Keep paging
-    # until a page holds something a full day older than the window.
-    stop_before = now - timedelta(days=filters.max_age_days + 1)
     candidates: list[Candidate] = []
     for page in range(MAX_PAGES):
         results = client.search(
@@ -50,7 +51,9 @@ def fetch_search(
         )
         page_candidates = [to_candidate(listing, search.name) for listing in results]
         candidates.extend(page_candidates)
-        reached_old = any(c.published and c.published < stop_before for c in page_candidates)
+        reached_old = stop_before is not None and any(
+            c.published and c.published < stop_before for c in page_candidates
+        )
         if len(results) < PAGE_SIZE or reached_old:
             break
         time.sleep(PAGE_DELAY_SECONDS)

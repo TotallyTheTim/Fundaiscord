@@ -13,6 +13,11 @@ MAX_ATTEMPTS = 3
 
 COLOR_OK = 0x2ECC71
 COLOR_WARNING = 0xF1C40F
+COLOR_OLD_LISTING = 0xE74C3C
+
+
+NEW_HOUSE_HEADLINE = "🏠 New house found"
+OLD_LISTING_HEADLINE = "🚨 ALERT — OLD LISTING ADDED SINCE LISTING CHANGED"
 
 
 class DiscordError(Exception):
@@ -28,6 +33,8 @@ def build_payload(
     wijk: str | None,
     warnings: tuple[str, ...],
     user_id: str | None,
+    old_listing: bool = False,
+    age_days: int | None = None,
 ) -> dict[str, Any]:
     facts = [
         part
@@ -51,12 +58,14 @@ def build_payload(
         parts = [wijk]
     place = " · ".join(part for part in parts if part)
     lines.append(f"📍 {candidate.city}" + (f" — {place}" if place else ""))
+    if old_listing and age_days is not None:
+        lines.append(f"🕒 Originally listed {age_days} days ago")
     lines.extend(f"⚠️ {warning}" for warning in warnings)
 
     embed: dict[str, Any] = {
         "title": candidate.title,
         "description": "\n".join(lines),
-        "color": COLOR_WARNING if warnings else COLOR_OK,
+        "color": COLOR_OLD_LISTING if old_listing else COLOR_WARNING if warnings else COLOR_OK,
         "footer": {"text": f"Search: {candidate.search_name}"},
     }
     if candidate.url:
@@ -68,7 +77,7 @@ def build_payload(
 
     mention = f"<@{user_id}> " if user_id else ""
     return {
-        "content": f"{mention}🏠 New house found",
+        "content": f"{mention}{OLD_LISTING_HEADLINE if old_listing else NEW_HOUSE_HEADLINE}",
         "allowed_mentions": {"parse": [], "users": [user_id] if user_id else []},
         "embeds": [embed],
     }

@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-from datetime import datetime, timedelta
 
 from config import Filters
 from models import Candidate
@@ -22,7 +21,6 @@ def normalize_label(label: str | None) -> str | None:
 def evaluate(
     candidate: Candidate,
     filters: Filters,
-    now: datetime,
     wijk: str | None,
     wanted_wijken: frozenset[str],
 ) -> Verdict:
@@ -45,11 +43,6 @@ def evaluate(
         rejections.append(f"bedrooms {candidate.bedrooms} below {filters.min_bedrooms}")
 
     _check_energy_label(candidate, filters, rejections, warnings)
-
-    if candidate.published is None:
-        warnings.append("listing date unknown")
-    elif candidate.published < now - timedelta(days=filters.max_age_days):
-        rejections.append(f"published {candidate.published.isoformat()}, too old")
 
     if wanted_wijken:
         if wijk is None:

@@ -6,7 +6,7 @@ from typing import Any
 import pytest
 from factories import make_candidate
 
-from discord import DiscordError, build_payload, format_euro, send
+from discord import COLOR_WARNING, DiscordError, build_payload, format_euro, send
 
 
 def embed_of(payload: dict[str, Any]) -> dict[str, Any]:
@@ -56,6 +56,25 @@ def test_missing_fields_are_left_out_instead_of_printed_as_none() -> None:
 
     assert "None" not in embed["description"]
     assert "/ m²" not in embed["description"]
+
+
+def test_old_listing_alert_has_its_own_headline_colour_and_age() -> None:
+    normal = build_payload(make_candidate(), None, (), "1234")
+    old = build_payload(make_candidate(), None, (), "1234", old_listing=True, age_days=12)
+
+    assert old["content"] == "<@1234> 🚨 ALERT — OLD LISTING ADDED SINCE LISTING CHANGED"
+    assert "🕒 Originally listed 12 days ago" in embed_of(old)["description"]
+    assert embed_of(old)["color"] not in (embed_of(normal)["color"], COLOR_WARNING)
+
+
+def test_old_listing_without_a_known_age_omits_the_age_line() -> None:
+    old = build_payload(make_candidate(), None, (), None, old_listing=True, age_days=None)
+    assert "Originally listed" not in embed_of(old)["description"]
+
+
+def test_a_normal_alert_never_shows_the_age_line() -> None:
+    normal = build_payload(make_candidate(), None, (), None, old_listing=False, age_days=12)
+    assert "Originally listed" not in embed_of(normal)["description"]
 
 
 def test_no_image_when_there_is_no_photo() -> None:

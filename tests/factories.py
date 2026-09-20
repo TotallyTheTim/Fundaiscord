@@ -9,7 +9,6 @@ FILTERS = Filters(
     max_price=351_000,
     min_surface=70,
     min_bedrooms=2,
-    max_age_days=2,
     energy_labels=EnergyLabelRules(
         always=frozenset({"A++++", "A+++", "A++", "A+", "A", "B", "C", "D"}),
         only_below_price={"E": 300_000},

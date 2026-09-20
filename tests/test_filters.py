@@ -1,7 +1,5 @@
-from datetime import datetime, timedelta, timezone
-
 import pytest
-from factories import FILTERS, NOW, make_candidate
+from factories import FILTERS, make_candidate
 
 from filters import Verdict, evaluate
 
@@ -9,11 +7,11 @@ WANTED = frozenset({"Leyenburg"})
 
 
 def check(**overrides: object) -> Verdict:
-    return evaluate(make_candidate(**overrides), FILTERS, NOW, "Leyenburg", WANTED)
+    return evaluate(make_candidate(**overrides), FILTERS, "Leyenburg", WANTED)
 
 
 def check_wijk(wijk: str | None, wanted: frozenset[str] = WANTED) -> Verdict:
-    return evaluate(make_candidate(), FILTERS, NOW, wijk, wanted)
+    return evaluate(make_candidate(), FILTERS, wijk, wanted)
 
 
 def test_matching_listing_is_accepted_without_warnings() -> None:
@@ -62,13 +60,6 @@ def test_label_is_case_and_whitespace_insensitive() -> None:
     assert check(energy_label=" b ").accepted
 
 
-def test_age_window_boundary() -> None:
-    inside = NOW - timedelta(days=2) + timedelta(minutes=1)
-    outside = NOW - timedelta(days=2) - timedelta(minutes=1)
-    assert check(published=inside).accepted
-    assert not check(published=outside).accepted
-
-
 def test_wijk_outside_the_wanted_set_is_rejected() -> None:
     assert not check_wijk("Centrum").accepted
 
@@ -84,7 +75,6 @@ def test_no_wijk_filter_when_search_lists_none() -> None:
         ({"living_area": None}, "surface unknown"),
         ({"bedrooms": None}, "bedrooms unknown"),
         ({"price": None}, "price unknown"),
-        ({"published": None}, "listing date unknown"),
     ],
 )
 def test_missing_fields_pass_with_a_warning(overrides: dict[str, object], warning: str) -> None:
@@ -109,8 +99,3 @@ def test_a_known_failing_field_rejects_even_when_others_are_unknown() -> None:
     verdict = check(price=400_000, energy_label=None)
     assert not verdict.accepted
     assert "energy label unknown" in verdict.warnings
-
-
-def test_timestamps_with_a_non_utc_offset_are_compared_correctly() -> None:
-    published = datetime(2026, 9, 19, 12, 0, tzinfo=timezone(timedelta(hours=2)))
-    assert check(published=published).accepted

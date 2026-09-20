@@ -16,7 +16,6 @@ class Filters:
     max_price: int
     min_surface: int
     min_bedrooms: int
-    max_age_days: int
     energy_labels: EnergyLabelRules
 
 
@@ -30,6 +29,8 @@ class SearchConfig:
 @dataclass(frozen=True)
 class Config:
     notify_existing: bool
+    old_listing_after_days: int
+    full_sweep_every_hours: int
     filters: Filters
     searches: tuple[SearchConfig, ...]
 
@@ -44,7 +45,6 @@ def _parse_filters(raw: dict[str, Any]) -> Filters:
         max_price=int(raw["max_price"]),
         min_surface=int(raw["min_surface"]),
         min_bedrooms=int(raw["min_bedrooms"]),
-        max_age_days=int(raw["max_age_days"]),
         energy_labels=EnergyLabelRules(
             always=frozenset(_label(label) for label in labels.get("always", [])),
             only_below_price={
@@ -69,6 +69,8 @@ def load_config(path: Path) -> Config:
         raise ValueError("config needs at least one search")
     return Config(
         notify_existing=bool(raw.get("startup", {}).get("notify_existing", False)),
+        old_listing_after_days=int(raw["notifications"]["old_listing_after_days"]),
+        full_sweep_every_hours=int(raw["sweep"]["full_every_hours"]),
         filters=_parse_filters(raw["filters"]),
         searches=searches,
     )

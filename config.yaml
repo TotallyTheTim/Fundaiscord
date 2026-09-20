@@ -1,16 +1,26 @@
 # Which houses trigger a Discord alert. Edit and commit; no code changes needed.
 
 startup:
-  # First run only (when data/seen-listings.json doesn't exist yet):
-  #   true  = alert for matches from the last `max_age_days`, mark the rest as seen
+  # The very first run records every listing that matches today. Older ones are marked
+  # as seen without an alert (there could be hundreds); the rest depends on this:
+  #   true  = alert for matches published within `old_listing_after_days`
   #   false = record everything silently, alert from the second run onwards
   notify_existing: true
+
+notifications:
+  # A match we haven't seen before that was published longer ago than this must have
+  # changed (price drop, new label, ...), so it gets the red "OLD LISTING" alert.
+  old_listing_after_days: 3
+
+sweep:
+  # Runs (every 30 min) normally read only the newest result pages. Every this many hours
+  # one run reads all pages, which is what finds old listings that changed.
+  full_every_hours: 12
 
 filters:
   max_price: 351000        # EUR, inclusive
   min_surface: 70          # m², living area
   min_bedrooms: 2
-  max_age_days: 2          # only listings published in the last N days
 
   # A listing with a missing field still alerts, flagged "⚠️ ... unknown".
   energy_labels:

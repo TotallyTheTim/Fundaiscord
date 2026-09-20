@@ -9,6 +9,10 @@ on:
         description: "Print alerts to the log instead of sending them (state is not saved)"
         type: boolean
         default: false
+      full_sweep:
+        description: "Read every result page now, not just the newest (finds old listings that changed)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write # commits data/seen-listings.json back
@@ -34,7 +38,7 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Check Funda
-        run: python src/main.py ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: python src/main.py ${{ inputs.dry_run && '--dry-run' || '' }} ${{ inputs.full_sweep && '--full' || '' }}
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           DISCORD_USER_ID: ${{ secrets.DISCORD_USER_ID }}
