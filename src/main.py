@@ -81,6 +81,8 @@ def run(
             failed_searches += 1
             continue
 
+        if fetched.notice:
+            print(f"::warning::[{search.name}] {fetched.notice}")
         if not fetched.complete:
             # What loaded is still processed; the sweep just stays due for the next run.
             print(f"::warning::[{search.name}] read only part of the results ({fetched.error})")
@@ -194,7 +196,8 @@ def main() -> int:
         stop_before = (
             None if full_sweep else now - timedelta(days=config.old_listing_after_days + 1)
         )
-        return fetch_search(client, search, config.filters, stop_before)
+        areas = wijk_map.area_slugs(search.location, search.wijken)
+        return fetch_search(client, search, config.filters, stop_before, areas)
 
     def notify(match: Match) -> None:
         payload = build_payload(

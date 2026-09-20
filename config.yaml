@@ -30,7 +30,8 @@ filters:
     # F and G are never accepted
 
 # `location` is Funda's slug. `wijken` keeps only listings whose buurt belongs to one of
-# these wijken (see data/buurt-wijk.json). Wijken were ranked 2/3 Leefbaarometer 2024 +
+# these wijken (see data/buurt-wijk.json). Funda can filter by buurt but not by wijk, so
+# each wijk is sent to Funda as the list of its buurten, which means fewer pages to read. Wijken were ranked 2/3 Leefbaarometer 2024 +
 # 1/3 registered crime per 1,000 residents (CBS/Politie, Sep 2025 – Aug 2026).
 searches:
   - name: Den Haag

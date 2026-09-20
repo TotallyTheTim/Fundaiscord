@@ -42,6 +42,7 @@ pytest
 - `pyfunda` is unofficial and uses undocumented Funda endpoints, which may break and may conflict with Funda's terms. `funda_client.py` works around a fingerprint block in pyfunda 3.1.5; see the comment there.
 - pyfunda is AGPL-3.0. It is used as a dependency only, none of its code is copied here.
 - State lives in `data/seen-listings.json`, committed by the workflow whenever it changes (at least twice a day, when a full sweep is recorded).
+- Searches ask Funda for just the buurten of your wijken (`den-haag/<buurt-slug>`), roughly 40% fewer pages for Den Haag. If Funda stops recognising one of the slugs, the search falls back to the whole city with a warning, so nothing is hidden. Funda has no wijk level and pyfunda doesn't expose drawn areas or Funda's `publication_date` filter.
 - Each result page is retried up to 3 times. If a search still only partly loads, the pages that did load are processed, the run logs a GitHub warning (it stays green), and the full sweep is retried on the next run.
 - Alerts fire when a listing starts matching. A further price drop on a listing that already matched is not reported.
 - Until the first real run, a dry-run counts as the baseline run, so it prints only recent matches, never old-listing alerts.

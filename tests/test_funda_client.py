@@ -1,4 +1,5 @@
-from datetime import timedelta
+from collections.abc import Sequence
+from datetime import datetime, timedelta
 from typing import cast
 
 import pytest
@@ -11,6 +12,8 @@ from funda_client import (
     PAGE_DELAY_SECONDS,
     PAGE_SIZE,
     RETRY_DELAYS_SECONDS,
+    UNRESOLVED_AREA_MESSAGE,
+    SearchResult,
     fetch_search,
 )
 from models import Candidate
@@ -33,7 +36,7 @@ class ScriptedClient:
 
     def search(
         self,
-        location: str,
+        location: str | Sequence[str],
         *,
         category: str,
         max_price: int,
@@ -75,8 +78,13 @@ class Sleeps:
         self.calls.append(seconds)
 
 
-def fetch(client: ScriptedClient, sleeps: Sleeps, stop_before: object = None):  # type: ignore[no-untyped-def]
-    return fetch_search(client, SEARCH, FILTERS, stop_before, sleep=sleeps)  # type: ignore[arg-type]
+def fetch(
+    client: ScriptedClient,
+    sleeps: Sleeps,
+    stop_before: datetime | None = None,
+    areas: Sequence[str] = (),
+) -> SearchResult:
+    return fetch_search(client, SEARCH, FILTERS, stop_before, areas, sleep=sleeps)
 
 
 def test_a_short_page_ends_the_search() -> None:
@@ -161,3 +169,49 @@ def test_a_later_page_failing_every_attempt_keeps_the_earlier_pages() -> None:
     assert len(result.candidates) == PAGE_SIZE
     assert result.error is not None and result.error.startswith("page 2:")
     assert sleeps.calls == [PAGE_DELAY_SECONDS, *RETRY_DELAYS_SECONDS]
+
+
+AREAS = ["den-haag/leyenburg", "den-haag/rustenburg"]
+
+
+def test_areas_are_sent_as_the_location_instead_of_the_whole_city() -> None:
+    client = ScriptedClient(short_page("a"))
+    fetch(client, Sleeps(), areas=AREAS)
+
+    assert client.requests[0]["location"] == AREAS
+
+
+def test_without_areas_the_whole_city_is_searched() -> None:
+    client = ScriptedClient(short_page("a"))
+    fetch(client, Sleeps())
+
+    assert client.requests[0]["location"] == "den-haag"
+
+
+def test_an_unknown_area_falls_back_to_the_whole_city_with_a_notice() -> None:
+    unknown = RuntimeError(f"Search failed: {UNRESOLVED_AREA_MESSAGE}(s): ['den-haag/leyenburg']")
+    client, sleeps = ScriptedClient(unknown, short_page("a")), Sleeps()
+    result = fetch(client, sleeps, areas=AREAS)
+
+    assert [r["location"] for r in client.requests] == [AREAS, "den-haag"]
+    assert [c.id for c in result.candidates] == ["a0", "a1"]
+    assert result.complete
+    assert result.notice is not None and "den-haag" in result.notice
+    assert sleeps.calls == []  # an unknown area isn't retried
+
+
+def test_an_unknown_area_without_a_fallback_available_raises() -> None:
+    unknown = RuntimeError(f"Search failed: {UNRESOLVED_AREA_MESSAGE}(s): ['den-haag']")
+    client = ScriptedClient(unknown)
+
+    with pytest.raises(RuntimeError):
+        fetch(client, Sleeps())
+
+
+def test_other_errors_with_areas_are_still_retried_not_treated_as_unknown_areas() -> None:
+    client, sleeps = ScriptedClient(TimeoutError("timed out"), short_page("a")), Sleeps()
+    result = fetch(client, sleeps, areas=AREAS)
+
+    assert result.notice is None
+    assert [r["location"] for r in client.requests] == [AREAS, AREAS]
+    assert sleeps.calls == [RETRY_DELAYS_SECONDS[0]]

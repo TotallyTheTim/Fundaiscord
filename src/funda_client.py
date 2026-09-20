@@ -1,5 +1,5 @@
 import time
-from collections.abc import Callable
+from collections.abc import Callable, Sequence
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from typing import Protocol
@@ -18,12 +18,14 @@ PAGE_DELAY_SECONDS = 2.5
 # Funda occasionally drops a request from GitHub's servers (seen as a 30 s curl timeout
 # with no bytes received). A short pause and another try usually gets through.
 RETRY_DELAYS_SECONDS = (2.0, 5.0)
+# pyfunda's wording when Funda doesn't know one of the requested areas.
+UNRESOLVED_AREA_MESSAGE = "could not resolve location"
 
 
 class SearchClient(Protocol):
     def search(
         self,
-        location: str,
+        location: str | Sequence[str],
         *,
         category: str,
         max_price: int,
@@ -41,6 +43,8 @@ class SearchResult:
     # before that, but the search wasn't read to the end.
     complete: bool = True
     error: str | None = None
+    # Something worth a warning that didn't stop the search, e.g. a fallback.
+    notice: str | None = None
 
 
 def make_client() -> Funda:
@@ -57,6 +61,7 @@ def fetch_search(
     search: SearchConfig,
     filters: Filters,
     stop_before: datetime | None,
+    areas: Sequence[str] = (),
     sleep: Callable[[float], None] = time.sleep,
 ) -> SearchResult:
     """Fetch listings for a search, newest first.
@@ -65,18 +70,31 @@ def fetch_search(
     published before it; None pages through everything (full sweep). "newest" sorts
     by day only, so callers should leave a day of margin in `stop_before`.
 
+    `areas` narrows the search to those Funda areas (buurt slugs) instead of the whole
+    city. If Funda doesn't recognise one of them the search falls back to the whole
+    city, so a renamed buurt can't silently hide listings.
+
     Each page is retried a few times. If a later page still fails, the pages already
     read are returned as an incomplete result; if the very first page fails, that
     raises, since there is nothing to return.
 
-    Only price, surface and bedrooms are filtered server-side; label and wijk rules
-    need our own logic (see filters.py).
+    Only price, surface, bedrooms and area are filtered server-side; label and wijk
+    rules need our own logic (see filters.py).
     """
+    location: str | Sequence[str] = list(areas) if areas else search.location
     candidates: list[Candidate] = []
     for page in range(MAX_PAGES):
         try:
-            results = _search_page(client, search, filters, page, sleep)
+            results = _search_page(client, location, filters, page, sleep)
         except Exception as error:  # curl and pyfunda raise assorted types
+            if page == 0 and areas and UNRESOLVED_AREA_MESSAGE in str(error):
+                fallback = fetch_search(client, search, filters, stop_before, (), sleep)
+                return SearchResult(
+                    fallback.candidates,
+                    fallback.complete,
+                    fallback.error,
+                    notice=f"Funda didn't recognise an area, searched all of {search.location}: {error}",
+                )
             if page == 0:
                 raise
             return SearchResult(candidates, complete=False, error=f"page {page + 1}: {error}")
@@ -93,7 +111,7 @@ def fetch_search(
 
 def _search_page(
     client: SearchClient,
-    search: SearchConfig,
+    location: str | Sequence[str],
     filters: Filters,
     page: int,
     sleep: Callable[[float], None],
@@ -102,7 +120,7 @@ def _search_page(
     for attempt in range(attempts):
         try:
             return client.search(
-                search.location,
+                location,
                 category="buy",
                 max_price=filters.max_price,
                 min_area=filters.min_surface,
@@ -110,8 +128,9 @@ def _search_page(
                 sort="newest",
                 page=page,
             )
-        except Exception:
-            if attempt == attempts - 1:
+        except Exception as error:
+            # An unknown area won't get better by waiting.
+            if attempt == attempts - 1 or UNRESOLVED_AREA_MESSAGE in str(error):
                 raise
             sleep(RETRY_DELAYS_SECONDS[attempt])
     raise AssertionError("unreachable")

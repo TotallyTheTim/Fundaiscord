@@ -320,3 +320,16 @@ def test_notifications_are_capped_per_run_and_oldest_go_first(tmp_path: Path) ->
     # oldest first: the highest ids have the earliest timestamps
     assert notify.sent[0].candidate.id == str(total - 1)
     assert "0" not in state
+
+
+def test_a_search_notice_is_logged_as_a_warning_and_the_run_stays_green(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+) -> None:
+    def fetch(s: SearchConfig, full: bool) -> SearchResult:
+        return SearchResult([make_candidate()], notice="searched all of den-haag")
+
+    notify = Recorder()
+    result = go(baselined_state(tmp_path), fetch, notify)
+
+    assert "::warning::[Den Haag] searched all of den-haag" in capsys.readouterr().out
+    assert result.ok and notify.ids == ["1"]
