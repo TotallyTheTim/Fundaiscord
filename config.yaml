@@ -18,8 +18,8 @@ sweep:
   full_every_hours: 12
 
 filters:
-  max_price: 351000        # EUR, inclusive
-  min_surface: 70          # m², living area
+  max_price: 401000        # EUR, inclusive
+  min_surface: 75          # m², living area
   min_bedrooms: 2
 
   # A listing with a missing field still alerts, flagged "⚠️ ... unknown".
