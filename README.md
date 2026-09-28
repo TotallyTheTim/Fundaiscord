@@ -27,7 +27,14 @@ Each new listing's detail page is read (one extra request per alert) and scored 
 
 ## Web page
 
-The workflow keeps `docs/listings.json` up to date (every current match, with details, score and price history), and [docs/index.html](docs/index.html) is a static page that reads it: **https://totallythetim.github.io/Fundaiscord/**. It has a table with filters (tier, hide erfpacht, price, m², balcony m², VvE, wijken), sorting, a map, a "new since last visit" marker, and ❤️ / 📅 / ❌ status buttons.
+The workflow keeps `docs/listings.json` up to date (every current match, with details, score and price history), and [docs/index.html](docs/index.html) is a static page that reads it: **https://totallythetim.github.io/Fundaiscord/**. It is styled after funda.nl (unofficial: orange header, blue actions, light and dark mode) and has:
+
+- **Tabs** for To triage, Shortlist (interested or viewing requested), Skipped and All. Setting a status moves a listing between them, like a triage queue.
+- **Cards** with a score box, five at-a-glance chips (outdoor space, ownership, VvE, bedrooms, condition), the top reasons, price-drop and NEW badges, and an expandable panel with the full "why" breakdown, facts and timeline. A **Compact** density shows one row per listing.
+- **Search, sort, group** (by wijk, city, tier or status), quick **New** and **Price drops** toggles, and a **Filters** dialog (tiers, price, m², balcony, bedrooms, VvE, wijken, erfpacht).
+- A **map** in step with the list, and a **Compare** table for two to four listings.
+- **Keyboard:** `j`/`k` move, `i` interested, `v` viewing, `s` skip, `Enter` details, `c` compare.
+- The files are `index.html`, `style.css`, `app.js` (the UI) and `logic.js` (the tested decisions: filters, sorting, chips, ranking).
 
 - Turn it on once under *Settings → Pages → Deploy from a branch → `main` / `/docs`*. The site is public, like the repo.
 - Your statuses and filters are saved in your browser only. Use **Export** and **Import** to move statuses to another device.
@@ -53,6 +60,7 @@ pip install -r requirements-dev.txt
 python src/main.py --dry-run   # fetches live, prints alerts, saves nothing
 python src/main.py --dry-run --full   # same, but reads every result page
 pytest
+node --test "tests/js/*.test.mjs"   # the web page's logic (Node 22 or newer, no packages needed)
 ```
 
 ## Notes
