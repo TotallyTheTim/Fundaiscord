@@ -90,6 +90,7 @@ searches:
 scoring:
   base: 50
   vve_expensive_per_m2: 3.5      # EUR/m² per month above which a VvE without a lift counts as expensive
+  supermarket_penalty_cap: -10   # the supermarket-distance penalty never goes past this
   tiers:                         # minimum score per tier; below `ok` is "low"
     top: 70
     good: 55
@@ -118,3 +119,4 @@ scoring:
     label_a_or_b: 4
     label_d: -2
     label_e: -4
+    supermarket_penalty_per_100m: -1   # -1 for every full 100 m to the nearest supermarket (data/supermarkets.json); no bonus for being close

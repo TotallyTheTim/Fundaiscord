@@ -32,14 +32,17 @@ def test_individual_weights_tiers_and_base_can_be_overridden(tmp_path: Path) -> 
 scoring:
   base: 40
   vve_expensive_per_m2: 4.5
+  supermarket_penalty_cap: -20
   tiers: {top: 80}
-  weights: {garden: 10, erfpacht: -60}
+  weights: {garden: 10, erfpacht: -60, supermarket_penalty_per_100m: -2}
 """
     scoring = load_config(_write(tmp_path, extra)).scoring
 
     assert scoring.base == 40 and scoring.vve_expensive_per_m2 == 4.5
+    assert scoring.supermarket_penalty_cap == -20
     assert scoring.tiers.top == 80 and scoring.tiers.good == 55  # untouched keys keep defaults
     assert scoring.weights.garden == 10 and scoring.weights.erfpacht == -60
+    assert scoring.weights.supermarket_penalty_per_100m == -2
     assert scoring.weights.house == 4
 
 

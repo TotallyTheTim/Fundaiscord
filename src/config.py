@@ -64,6 +64,7 @@ def _parse_scoring(raw: dict[str, Any]) -> ScoringConfig:
     return ScoringConfig(
         base=int(raw.get("base", defaults.base)),
         vve_expensive_per_m2=float(raw.get("vve_expensive_per_m2", defaults.vve_expensive_per_m2)),
+        supermarket_penalty_cap=int(raw.get("supermarket_penalty_cap", defaults.supermarket_penalty_cap)),
         tiers=Tiers(**raw.get("tiers", {})),
         weights=Weights(**raw.get("weights", {})),
     )

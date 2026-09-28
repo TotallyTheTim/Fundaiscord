@@ -12,6 +12,7 @@ from config import Config, SearchConfig, load_config
 from discord import DiscordError, build_payload, send
 from filters import Verdict, evaluate
 from funda_client import SearchResult, fetch_details, fetch_search, make_client
+from geo import load_points
 from models import Candidate
 from scoring import Assessment, score_listing
 from state import SeenState
@@ -224,6 +225,7 @@ def main() -> int:
     parser.add_argument("--state", type=Path, default=ROOT / "data" / "seen-listings.json")
     parser.add_argument("--wijken", type=Path, default=ROOT / "data" / "buurt-wijk.json")
     parser.add_argument("--store", type=Path, default=ROOT / "docs" / "listings.json")
+    parser.add_argument("--supermarkets", type=Path, default=ROOT / "data" / "supermarkets.json")
     parser.add_argument(
         "--full",
         action="store_true",
@@ -248,6 +250,7 @@ def main() -> int:
     wijk_map = WijkMap.load(args.wijken)
     state = SeenState.load(args.state)
     store = ListingStore.load(args.store)
+    supermarkets = load_points(args.supermarkets)
     now = datetime.now(timezone.utc)
     client = make_client()
 
@@ -278,7 +281,7 @@ def main() -> int:
 
     def enrich(candidate: Candidate) -> Assessment | None:
         try:
-            details = fetch_details(client, candidate.id)
+            details = fetch_details(client, candidate.id, supermarkets=supermarkets)
         except Exception as error:  # an alert without details beats no alert
             print(f"::warning::details for {candidate.id} unavailable: {error}")
             return None

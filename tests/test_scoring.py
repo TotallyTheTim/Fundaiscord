@@ -126,12 +126,42 @@ def test_energy_label_points(label: str, expected: int) -> None:
     assert sum(r.points for r in result.reasons if "energy label" in r.text) == expected
 
 
+def test_no_supermarket_distance_known_gives_no_reason() -> None:
+    result = score(distance_to_supermarket_m=None)
+    assert not any("supermarket" in r.text for r in result.reasons)
+
+
+def test_within_100m_of_a_supermarket_has_no_penalty() -> None:
+    for distance in (0, 12, 99):
+        result = score(distance_to_supermarket_m=distance)
+        assert not any("supermarket" in r.text for r in result.reasons), distance
+
+
+@pytest.mark.parametrize(
+    ("distance", "expected_points"),
+    [(100, -1), (250, -2), (650, -6), (999, -9)],
+)
+def test_supermarket_penalty_scales_in_100m_steps(distance: int, expected_points: int) -> None:
+    result = score(distance_to_supermarket_m=distance)
+    assert points_for("supermarket", result) == expected_points
+
+
+def test_the_supermarket_penalty_is_capped() -> None:
+    result = score(distance_to_supermarket_m=5000)
+    assert points_for("supermarket", result) == CONFIG.supermarket_penalty_cap
+
+
+def test_the_supermarket_reason_names_the_rounded_distance() -> None:
+    result = score(distance_to_supermarket_m=647.8)
+    assert any(r.text == "648 m to nearest supermarket" for r in result.reasons)
+
+
 def test_the_score_is_clamped_between_0_and_100() -> None:
     best = score({"bedrooms": 4, "energy_label": "A"}, balcony=True, outdoor_m2=20, garden=True,
                  is_apartment=False, floor=1, top_floor_hint=True, move_in_ready=True, year_built=1900,
                  monument=True)
     worst = score(erfpacht=True, needs_work=True, vve_reserve_fund=False, vve_maintenance_plan=False,
-                  vve_registered=False, busy_road=True)
+                  vve_registered=False, busy_road=True, distance_to_supermarket_m=5000)
     assert best.points == 100
     assert worst.points == 0
 

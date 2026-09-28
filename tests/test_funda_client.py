@@ -19,6 +19,7 @@ from funda_client import (
     fetch_details,
     fetch_search,
 )
+from geo import nearest_metres
 from models import Candidate
 
 SEARCH = SearchConfig(name="Den Haag", location="den-haag", wijken=frozenset())
@@ -337,3 +338,27 @@ def test_coordinates_are_taken_from_the_listing_location() -> None:
 def test_a_listing_without_a_location_has_no_coordinates() -> None:
     d = details_from_listing(fake_listing())
     assert d.latitude is None and d.longitude is None
+
+
+def test_distance_to_the_nearest_supermarket_is_computed_when_both_are_known() -> None:
+    here = (52.061, 4.2712)
+    near, far = (52.0615, 4.2716), (52.2, 4.5)
+    d = details_from_listing(fake_listing(coordinates=here), supermarkets=[far, near])
+    assert d.distance_to_supermarket_m == pytest.approx(nearest_metres(here, [far, near]))
+
+
+def test_no_distance_without_supermarket_data() -> None:
+    d = details_from_listing(fake_listing(coordinates=(52.061, 4.2712)), supermarkets=[])
+    assert d.distance_to_supermarket_m is None
+
+
+def test_no_distance_without_coordinates_even_with_supermarket_data() -> None:
+    d = details_from_listing(fake_listing(), supermarkets=[(52.061, 4.2712)])
+    assert d.distance_to_supermarket_m is None
+
+
+def test_fetch_details_passes_supermarkets_through() -> None:
+    supermarkets = [(52.0615, 4.2716)]
+    client = DetailScript(fake_listing(coordinates=(52.061, 4.2712)))
+    d = fetch_details(client, "1", sleep=Sleeps(), supermarkets=supermarkets)
+    assert d.distance_to_supermarket_m is not None

@@ -33,6 +33,7 @@ class Weights:
     label_a_or_b: int = 4
     label_d: int = -2
     label_e: int = -4
+    supermarket_penalty_per_100m: int = -1  # applied for every full 100 m to the nearest one
 
 
 @dataclass(frozen=True)
@@ -48,6 +49,9 @@ class Tiers:
 class ScoringConfig:
     base: int = 50
     vve_expensive_per_m2: float = 3.5
+    # Most negative the supermarket-distance penalty can go, so a data glitch (or a
+    # genuinely remote listing) can't tank the score on its own.
+    supermarket_penalty_cap: int = -10
     tiers: Tiers = field(default_factory=Tiers)
     weights: Weights = field(default_factory=Weights)
 
@@ -124,6 +128,11 @@ def score_listing(candidate: Candidate, details: Details, config: ScoringConfig)
 
     if details.busy_road:
         add(w.busy_road, "busy road")
+
+    if details.distance_to_supermarket_m is not None:
+        steps = int(details.distance_to_supermarket_m // 100)  # 0 for anything under 100 m
+        penalty = max(config.supermarket_penalty_cap, steps * w.supermarket_penalty_per_100m)
+        add(penalty, f"{round(details.distance_to_supermarket_m)} m to nearest supermarket")
 
     label = (candidate.energy_label or "").strip().upper()
     if label.startswith("A") or label == "B":

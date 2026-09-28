@@ -49,6 +49,8 @@ class Details:
     top_floor_hint: bool
     latitude: float | None = None
     longitude: float | None = None
+    # None means unknown (no coordinates, or no supermarket data), never "far away".
+    distance_to_supermarket_m: float | None = None
 
 
 def parse_details(

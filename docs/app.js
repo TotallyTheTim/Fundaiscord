@@ -203,6 +203,7 @@ function panelFor(l) {
     ["Maintenance plan", d.is_apartment ? yn(d.vve_maintenance_plan) : null],
     ["Registered (KvK)", d.is_apartment ? yn(d.vve_registered) : null],
     ["Busy road", d.busy_road ? "yes" : "no"],
+    ["Nearest supermarket", d.distance_to_supermarket_m != null ? `${Math.round(d.distance_to_supermarket_m)} m` : null],
     ["Condition (guess)", d.needs_work ? "needs work" : d.move_in_ready ? "move-in ready" : "no signal"],
     ["Energy label", l.energy_label],
     ["Rank", rank ? `#${rank.rank} of ${rank.of} in ${l.wijk}` : null],

@@ -61,6 +61,7 @@ def make_details(**overrides: object) -> Details:
         "top_floor_hint": False,
         "latitude": 52.06,
         "longitude": 4.27,
+        "distance_to_supermarket_m": None,
     }
     fields.update(overrides)
     return Details(**fields)  # type: ignore[arg-type]

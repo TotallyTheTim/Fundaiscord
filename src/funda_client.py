@@ -1,6 +1,6 @@
 import time
 from collections.abc import Callable, Sequence
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import datetime, timezone
 from typing import Protocol
 
@@ -10,6 +10,7 @@ from funda.listing import Listing
 
 from config import Filters, SearchConfig
 from details import Details, parse_details
+from geo import Point, nearest_metres
 from models import Candidate
 
 PHOTO_BASE_URL = "https://cloud.funda.nl/"
@@ -145,12 +146,13 @@ def fetch_details(
     client: DetailClient,
     listing_id: str,
     sleep: Callable[[float], None] = time.sleep,
+    supermarkets: Sequence[Point] = (),
 ) -> Details:
     """Fetch a listing's detail page (one request) and extract what scoring needs."""
     attempts = len(RETRY_DELAYS_SECONDS) + 1
     for attempt in range(attempts):
         try:
-            return details_from_listing(client.listing(int(listing_id)))
+            return details_from_listing(client.listing(int(listing_id)), supermarkets)
         except Exception:  # curl and pyfunda raise assorted types
             if attempt == attempts - 1:
                 raise
@@ -158,7 +160,7 @@ def fetch_details(
     raise AssertionError("unreachable")
 
 
-def details_from_listing(listing: Listing) -> Details:
+def details_from_listing(listing: Listing, supermarkets: Sequence[Point] = ()) -> Details:
     labels: dict[str, str] = {}
     for section in listing.characteristics or ():
         for item in section.items:
@@ -168,15 +170,21 @@ def details_from_listing(listing: Listing) -> Details:
     properties = listing.property_details
     features = properties.features if properties else None
     location = listing.location
-    return parse_details(
+    latitude = location.latitude if location else None
+    longitude = location.longitude if location else None
+    details = parse_details(
         labels,
         listing.description or "",
         properties.construction_year if properties else None,
         (properties.object_type if properties else None) == "apartment",
         bool(features and features.get("is_monument")),
-        latitude=location.latitude if location else None,
-        longitude=location.longitude if location else None,
+        latitude=latitude,
+        longitude=longitude,
     )
+    if latitude is not None and longitude is not None and supermarkets:
+        distance = nearest_metres((latitude, longitude), supermarkets)
+        details = replace(details, distance_to_supermarket_m=distance)
+    return details
 
 
 def to_candidate(listing: Listing, search_name: str) -> Candidate:
