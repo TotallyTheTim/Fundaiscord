@@ -3,7 +3,7 @@
 import {
   TIERS, TIER_LABEL, STATUS_KEYS, STATUS_LABEL, DAY_MS, defaultFilters, tierOf, wijkLabel, statusOf, daysSince,
   pricePerM2, balconyM2, isNew, priceDrop, criteria, wijkRanks, reasonBars, applyFilters, countTabs, inTab,
-  sortListings, groupListings, euro, euroShort, activeFilters, removeFilter,
+  sortListings, groupListings, euro, euroShort, activeFilters, removeFilter, photoUrl, describeFreshness,
 } from "./logic.js";
 
 const $ = (id) => document.getElementById(id);
@@ -36,7 +36,8 @@ let ranks = new Map();
 let statuses = store.get("fw:statuses", {});
 let filters = loadFilters();
 let lastVisit = store.get("fw:lastVisit", null);
-let photosInList = store.get("fw:photos", false);
+let photosInList = store.get("fw:photos", true);
+let lastCheck = null; // when the workflow last ran, if GitHub told us
 let selectedId = null;
 const openIds = new Set();
 const compareIds = new Set();
@@ -74,15 +75,6 @@ function toast(message) {
   const node = el("div", { class: "toast", role: "status", text: message });
   document.body.append(node);
   setTimeout(() => node.remove(), 2600);
-}
-
-function relativeTime(iso) {
-  const minutes = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
-  if (!Number.isFinite(minutes)) return "at an unknown time";
-  if (minutes < 2) return "just now";
-  if (minutes < 90) return `${minutes} min ago`;
-  const hours = Math.round(minutes / 60);
-  return hours < 48 ? `${hours} h ago` : `${Math.round(hours / 24)} days ago`;
 }
 
 // ---------- computing what to show ----------
@@ -242,7 +234,7 @@ function panelFor(l) {
   }
   timeline.append(links);
 
-  const photo = safeHttps(l.photo_url);
+  const photo = photoUrl(l.photo_url, 800);
   return el("div", { class: "panel" },
     photo ? el("img", { class: "banner", src: photo, alt: `Photo of ${l.title}`, loading: "lazy", referrerpolicy: "no-referrer" }) : null,
     el("div", { class: "cols" },
@@ -253,11 +245,20 @@ function panelFor(l) {
 
 // ---------- list items ----------
 
+// The listing's photo at thumbnail size (about 30 KB instead of the 580 KB original), or a house
+// icon when there's no photo, photos are switched off, or the image fails to load.
+function thumbFor(l) {
+  const src = photosInList ? photoUrl(l.photo_url, 400) : null;
+  if (!src) return el("div", { class: "thumb placeholder", "aria-hidden": "true" }, icon("house"));
+  const img = el("img", { src, alt: `Photo of ${l.title}`, loading: "lazy", decoding: "async", referrerpolicy: "no-referrer" });
+  const box = el("div", { class: "thumb" }, img);
+  img.addEventListener("error", () => { box.className = "thumb placeholder"; box.replaceChildren(icon("house")); });
+  return box;
+}
+
 function buildCard(l) {
   const open = openIds.has(l.id);
-  const thumb = photosInList && safeHttps(l.photo_url)
-    ? el("div", { class: "thumb" }, el("img", { src: l.photo_url, alt: "", loading: "lazy", referrerpolicy: "no-referrer" }))
-    : el("div", { class: "thumb", "aria-hidden": "true" }, icon("house"));
+  const thumb = thumbFor(l);
   const actions = el("div", { class: "actions" }, ...STATUS_KEYS.map((k) => statusButton(l, k, true)),
     el("button", { class: "more-link", type: "button", "aria-expanded": String(open), onclick: (e) => { e.stopPropagation(); toggleOpen(l.id); }, text: open ? "Details ▴" : "Details ▾" }));
   const body = el("div", { class: "body" }, scoreBox(l),
@@ -353,10 +354,10 @@ function renderSummary() {
   const box = $("summary");
   box.replaceChildren();
   if (!generated) { box.textContent = listings.length ? "" : "No data yet. The first workflow run creates it."; return; }
-  const stale = Date.now() - new Date(generated).getTime() > 3 * 3600 * 1000;
   const parts = [`${active.length} matching`];
   if (pending) parts.push(`${pending} awaiting details`);
-  box.append(parts.join(" · ") + " · ", el("span", { class: stale ? "stale" : "", text: `Updated ${relativeTime(generated)}` }));
+  const fresh = describeFreshness(generated, lastCheck, Date.now());
+  box.textContent = fresh ? `${parts.join(" · ")} · ${fresh}` : parts.join(" · ");
 }
 
 function renderCompareBar() {
@@ -463,8 +464,16 @@ function popupFor(l) {
   return box;
 }
 
+function updateMapNote(visible) {
+  const note = $("mapnote");
+  const missing = visible.filter((l) => !(l.details && l.details.latitude !== null && l.details.latitude !== undefined)).length;
+  note.style.display = missing ? "block" : "none";
+  note.textContent = missing ? `${missing} listing${missing === 1 ? "" : "s"} in this view ${missing === 1 ? "isn't" : "aren't"} on the map yet, because their details haven't been read.` : "";
+}
+
 function updateMap(visible, fit) {
   if (!map) return;
+  updateMapNote(visible);
   markerLayer.clearLayers();
   const points = [];
   for (const l of visible) {
@@ -650,7 +659,8 @@ function bind() {
     const split = $("split");
     split.dataset.view = split.dataset.view === "map" ? "list" : "map";
     renderToolbar();
-    if (split.dataset.view === "map" && map) setTimeout(() => map.invalidateSize(), 50);
+    // The map was sized (and fitted) while hidden, so measure it again and frame every marker now it shows.
+    if (split.dataset.view === "map" && map) setTimeout(() => { map.invalidateSize(); updateMap(cache.visible, true); }, 50);
   });
   document.addEventListener("keydown", onKey);
   document.addEventListener("click", (e) => { const menu = $("menu"); if (menu.open && !menu.contains(e.target)) menu.removeAttribute("open"); });
@@ -671,6 +681,24 @@ async function load() {
   ranks = wijkRanks(listings);
   buildFilterDialog();
   render({ fit: true });
+  fetchLastCheck().then((when) => { if (when) { lastCheck = when; renderSummary(); } });
+}
+
+// listings.json only changes when something does, so ask GitHub when the watcher last ran. The site lives
+// at <owner>.github.io/<repo>/, which is also where its Actions runs are. Any failure just means no "Checked" text.
+async function fetchLastCheck() {
+  try {
+    const owner = location.hostname.endsWith(".github.io") ? location.hostname.split(".")[0] : null;
+    const repo = location.pathname.split("/").filter(Boolean)[0];
+    if (!owner || !repo) return null;
+    const url = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/funda-watch.yml/runs?per_page=1&status=completed`;
+    const response = await fetch(url, { headers: { Accept: "application/vnd.github+json" } });
+    if (!response.ok) return null;
+    const data = await response.json();
+    return (data.workflow_runs && data.workflow_runs[0] && data.workflow_runs[0].updated_at) || null;
+  } catch {
+    return null;
+  }
 }
 
 function init() {

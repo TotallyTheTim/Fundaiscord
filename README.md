@@ -33,6 +33,8 @@ The workflow keeps `docs/listings.json` up to date (every current match, with de
 - **Cards** with a score box, five at-a-glance chips (outdoor space, ownership, VvE, bedrooms, condition), the top reasons, price-drop and NEW badges, and an expandable panel with the full "why" breakdown, facts and timeline. A **Compact** density shows one row per listing.
 - **Search, sort, group** (by wijk, city, tier or status), quick **New** and **Price drops** toggles, and a **Filters** dialog (tiers, price, m², balcony, bedrooms, VvE, wijken, erfpacht).
 - A **map** in step with the list, and a **Compare** table for two to four listings.
+- **Photos** on every card (a full-width photo on phones). They are requested at thumbnail size through funda's image CDN (about 30 KB instead of the 580 KB original), loaded lazily as you scroll, and fall back to a house icon if one can't load. The expanded panel uses a mid-size copy. **Photos in the list** can be switched off under the ⋯ menu.
+- **Freshness:** the header says when the watcher last ran (asked from GitHub, so it only appears on the github.io site) and when the list last changed, since `listings.json` is only rewritten when something changes.
 - **Keyboard:** `j`/`k` move, `i` interested, `v` viewing, `s` skip, `Enter` details, `c` compare.
 - The files are `index.html`, `style.css`, `app.js` (the UI) and `logic.js` (the tested decisions: filters, sorting, chips, ranking).
 

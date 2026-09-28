@@ -247,6 +247,35 @@ export function groupListings(list, key, statuses) {
   return result;
 }
 
+// A right-sized version of a Funda photo. The stored URL is the 2160 px original (~580 KB); the CDN
+// resizes with ?options=width=N (it snaps to fixed widths: 400 gives ~460 px and ~30 KB, 800 gives ~1080 px).
+export function photoUrl(url, width) {
+  if (typeof url !== "string" || !url.startsWith("https://")) return null;
+  if (!url.startsWith("https://cloud.funda.nl/")) return url;
+  return `${url.split("?")[0]}?options=width=${width}`;
+}
+
+export function timeAgo(iso, now) {
+  const minutes = Math.round((now - new Date(iso).getTime()) / 60000);
+  if (!Number.isFinite(minutes)) return null;
+  if (minutes < 2) return "just now";
+  if (minutes < 90) return `${Math.max(minutes, 0)} min ago`;
+  const hours = Math.round(minutes / 60);
+  return hours < 48 ? `${hours} h ago` : `${Math.round(hours / 24)} days ago`;
+}
+
+// listings.json is only rewritten when something changed, so its timestamp is "last change",
+// not "last check". The last workflow run (when known) says whether the watcher is alive.
+export function describeFreshness(generatedIso, lastCheckIso, now) {
+  const parts = [];
+  const checked = lastCheckIso ? timeAgo(lastCheckIso, now) : null;
+  const changed = generatedIso ? timeAgo(generatedIso, now) : null;
+  if (checked) parts.push(`Checked ${checked}`);
+  if (changed) parts.push(`list changed ${changed}`);
+  const text = parts.join(" · ");
+  return text ? text.charAt(0).toUpperCase() + text.slice(1) : "";
+}
+
 export function euro(value) {
   return value === null || value === undefined ? "" : `€${Math.round(value).toLocaleString("nl-NL")}`;
 }

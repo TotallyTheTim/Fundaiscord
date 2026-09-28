@@ -315,6 +315,35 @@ test("wijkLabel adds a hint to Rijswijk's numbered wijken and leaves names alone
   assert.equal(L.wijkLabel(null), "Unknown wijk");
 });
 
+test("photoUrl asks Funda's CDN for a resized copy and keeps other hosts untouched", () => {
+  assert.equal(L.photoUrl("https://cloud.funda.nl/valentina_media/220/365/221.jpg", 400), "https://cloud.funda.nl/valentina_media/220/365/221.jpg?options=width=400");
+  assert.equal(L.photoUrl("https://cloud.funda.nl/tiara-media/a/b", 800), "https://cloud.funda.nl/tiara-media/a/b?options=width=800");
+  assert.equal(L.photoUrl("https://cloud.funda.nl/tiara-media/a/b?options=width=999", 400), "https://cloud.funda.nl/tiara-media/a/b?options=width=400", "an existing query is replaced, not stacked");
+  assert.equal(L.photoUrl("https://example.com/x.jpg", 400), "https://example.com/x.jpg");
+});
+
+test("photoUrl refuses anything that isn't an https URL", () => {
+  for (const bad of [null, undefined, "", "http://cloud.funda.nl/x", "javascript:alert(1)", 42]) assert.equal(L.photoUrl(bad, 400), null, String(bad));
+});
+
+test("timeAgo", () => {
+  const ago = (ms) => L.timeAgo(new Date(NOW - ms).toISOString(), NOW);
+  assert.equal(ago(30_000), "just now");
+  assert.equal(ago(10 * 60_000), "10 min ago");
+  assert.equal(ago(3 * 3_600_000), "3 h ago");
+  assert.equal(ago(3 * 86_400_000), "3 days ago");
+  assert.equal(L.timeAgo("nonsense", NOW), null);
+  assert.equal(L.timeAgo(new Date(NOW + 5 * 60_000).toISOString(), NOW), "just now", "a clock a little ahead is not a negative age");
+});
+
+test("describeFreshness separates the last check from the last change", () => {
+  const iso = (ms) => new Date(NOW - ms).toISOString();
+  assert.equal(L.describeFreshness(iso(3 * 3_600_000), iso(12 * 60_000), NOW), "Checked 12 min ago · list changed 3 h ago");
+  assert.equal(L.describeFreshness(iso(3 * 3_600_000), null, NOW), "List changed 3 h ago");
+  assert.equal(L.describeFreshness(null, iso(60_000), NOW), "Checked just now");
+  assert.equal(L.describeFreshness(null, null, NOW), "");
+});
+
 test("euro formatting", () => {
   assert.equal(L.euroShort(401000), "€401k");
   assert.equal(L.euroShort(950), "€950");
