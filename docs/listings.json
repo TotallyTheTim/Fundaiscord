@@ -1,6 +1,90 @@
 {
- "generated": "2026-09-28T13:30:36+00:00",
+ "generated": "2026-09-28T14:00:45+00:00",
  "listings": [
+  {
+   "id": "44433652",
+   "title": "Oostsingel 97",
+   "city": "Delft",
+   "wijk": "Vrijenban",
+   "neighbourhood": "Koepoort",
+   "url": "https://www.funda.nl/detail/koop/delft/appartement-oostsingel-97/44433652/",
+   "price": 355000,
+   "living_area": 85,
+   "bedrooms": 3,
+   "energy_label": "D",
+   "published": "2026-07-22T12:19:10.466538+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/1a577d65-6ec8-4f8a-a9f4-aaec2552322d/e71520a2-5579-42bc-9dfd-3410595aa931",
+   "search_name": "Delft",
+   "first_seen": "2026-09-28T14:00:45+00:00",
+   "last_seen": "2026-09-28",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-09-28",
+     355000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 1,
+    "floor_label": "1e woonlaag",
+    "year_built": 1900,
+    "balcony": false,
+    "outdoor_m2": null,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": null,
+    "vve_reserve_fund": false,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": true,
+    "latitude": 52.014797,
+    "longitude": 4.364219
+   },
+   "score": {
+    "points": 50,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": -10,
+      "text": "VvE has no reserve fund"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1900)"
+     },
+     {
+      "points": 3,
+      "text": "first floor"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
   {
    "id": "44444909",
    "title": "Melkhof 11",
@@ -25,8 +109,52 @@
      352750
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Eigendom belast met erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1984,
+    "balcony": true,
+    "outdoor_m2": 5,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 166.83,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": true,
+    "top_floor_hint": false,
+    "latitude": 52.009884,
+    "longitude": 4.352143
+   },
+   "score": {
+    "points": 25,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 8,
+      "text": "balcony or terrace, 5 m²"
+     },
+     {
+      "points": 8,
+      "text": "move-in ready"
+     },
+     {
+      "points": 4,
+      "text": "energy label B"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -53,8 +181,44 @@
      335000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijk eigendom belast met erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1994,
+    "balcony": false,
+    "outdoor_m2": null,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 268.86,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.00837,
+    "longitude": 4.339198
+   },
+   "score": {
+    "points": 9,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 4,
+      "text": "energy label A"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -1009,8 +1173,64 @@
      395000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1934,
+    "balcony": true,
+    "outdoor_m2": 10,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 50.0,
+    "vve_reserve_fund": false,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": true,
+    "latitude": 52.01112,
+    "longitude": 4.3480034
+   },
+   "score": {
+    "points": 61,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 14,
+      "text": "balcony or terrace, 10 m²"
+     },
+     {
+      "points": -10,
+      "text": "VvE has no reserve fund"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1934)"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -1181,8 +1401,44 @@
      315000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": null,
+    "floor_label": null,
+    "year_built": 1962,
+    "balcony": true,
+    "outdoor_m2": 12,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 203.29,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.01296,
+    "longitude": 4.334179
+   },
+   "score": {
+    "points": 63,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 15,
+      "text": "balcony or terrace, 12 m²"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
