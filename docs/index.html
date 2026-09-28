@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Funda Watch</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+  :root {
+    --bg: #f5f6f8; --card: #ffffff; --text: #1b2430; --muted: #5d6877; --line: #e0e4ea;
+    --accent: #2456d6; --field: #ffffff;
+    --top: #17853f; --good: #2456d6; --ok: #6b7686; --low: #c2610f; --pending: #8a93a1;
+    --bad: #c73a3a; --chip: #eef1f5; --shadow: 0 1px 2px rgba(20, 30, 45, .08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12161c; --card: #1a2029; --text: #e8ecf1; --muted: #9aa5b5; --line: #2b3441;
+      --accent: #6b95ff; --field: #202833;
+      --top: #3fc074; --good: #6b95ff; --ok: #98a3b3; --low: #f0964a; --pending: #7d8797;
+      --bad: #ff7b7b; --chip: #242d39; --shadow: none;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--accent); }
+  button, input, select { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  header { position: sticky; top: 0; z-index: 1000; background: var(--card); border-bottom: 1px solid var(--line); padding: 10px 16px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  header h1 { font-size: 18px; margin: 0; }
+  #summary { color: var(--muted); font-size: 13px; flex: 1 1 200px; }
+  .btn { border: 1px solid var(--line); background: var(--field); border-radius: 8px; padding: 6px 10px; cursor: pointer; }
+  .btn:hover { border-color: var(--accent); }
+  .btn.small { padding: 3px 8px; font-size: 13px; }
+  .btn.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  #filters { background: var(--card); border-bottom: 1px solid var(--line); padding: 10px 16px; display: grid; gap: 10px; }
+  .row { display: flex; gap: 8px 14px; flex-wrap: wrap; align-items: center; }
+  .field { display: flex; flex-direction: column; gap: 2px; font-size: 12px; color: var(--muted); }
+  .field input, .field select { background: var(--field); border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px; width: 110px; color: var(--text); }
+  .field select { width: auto; }
+  .field input[type=search] { width: 200px; }
+  .check { display: flex; gap: 6px; align-items: center; font-size: 14px; cursor: pointer; }
+  .chip-toggle { border: 1px solid var(--line); background: var(--field); border-radius: 999px; padding: 4px 11px; cursor: pointer; font-size: 14px; }
+  .chip-toggle[aria-pressed=true] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  details.wijken { position: relative; }
+  details.wijken summary { list-style: none; cursor: pointer; }
+  details.wijken[open] .wijklist { display: grid; }
+  .wijklist { display: none; position: absolute; z-index: 1200; top: 34px; left: 0; width: 280px; max-height: 320px; overflow: auto; background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 8px; gap: 2px; box-shadow: 0 8px 24px rgba(0, 0, 0, .25); }
+
+  .tabs { display: none; }
+  .layout { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 16px; padding: 16px; align-items: start; }
+  #map { position: sticky; top: 70px; height: calc(100vh - 92px); min-height: 320px; border-radius: 10px; border: 1px solid var(--line); background: var(--chip); }
+  #mapnote { display: none; padding: 20px; color: var(--muted); }
+  #list { display: grid; gap: 10px; min-width: 0; }
+
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px; box-shadow: var(--shadow); display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 12px; cursor: pointer; }
+  .card.selected { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+  .card.gone { opacity: .6; }
+  .score { width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 18px; color: #fff; align-self: start; line-height: 1; text-align: center; }
+  .score small { display: block; font-size: 11px; font-weight: 500; opacity: .9; margin-top: 2px; }
+  .tier-top { background: var(--top); } .tier-good { background: var(--good); } .tier-ok { background: var(--ok); }
+  .tier-low { background: var(--low); } .tier-pending { background: var(--pending); }
+  .title { font-weight: 650; font-size: 16px; }
+  .title a { text-decoration: none; }
+  .title a:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: 13px; }
+  .facts { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 2px; }
+  .price { font-weight: 700; }
+  .chips { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+  .chip { background: var(--chip); border-radius: 6px; padding: 1px 7px; font-size: 12px; white-space: nowrap; }
+  .chip.bad { background: var(--bad); color: #fff; }
+  .badge { font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 4px; background: var(--accent); color: #fff; margin-left: 6px; vertical-align: 2px; }
+  .badge.gone { background: var(--muted); }
+  .reasons { margin: 6px 0 0; padding: 0; list-style: none; font-size: 13px; }
+  .reasons .pos { color: var(--top); } .reasons .neg { color: var(--bad); }
+  .actions { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; align-items: center; }
+  .more { margin-top: 8px; border-top: 1px dashed var(--line); padding-top: 8px; font-size: 13px; display: none; }
+  .card.open .more { display: block; }
+  .more table { border-collapse: collapse; }
+  .more td { padding: 1px 12px 1px 0; vertical-align: top; }
+  .more td:first-child { color: var(--muted); }
+  .more img { max-width: 100%; border-radius: 8px; margin-top: 8px; display: block; }
+  .empty { padding: 40px 16px; text-align: center; color: var(--muted); }
+
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; padding: 12px; }
+    .tabs { display: flex; gap: 8px; padding: 8px 12px 0; }
+    .layout[data-view=list] #map { display: none; }
+    .layout[data-view=map] #list { display: none; }
+    #map { position: relative; top: 0; height: 70vh; }
+    .field input[type=search] { width: 150px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>🏠 Funda Watch</h1>
+  <div id="summary" aria-live="polite">Loading…</div>
+  <button class="btn" id="markSeen" title="Clear the NEW badges">Mark all seen</button>
+  <button class="btn" id="exportBtn" title="Copy your statuses so you can import them on another device">Export</button>
+  <button class="btn" id="importBtn" title="Paste statuses exported from another device">Import</button>
+</header>
+
+<section id="filters" aria-label="Filters">
+  <div class="row" id="tierRow" role="group" aria-label="Tiers"></div>
+  <div class="row">
+    <label class="field">Search<input type="search" id="q" placeholder="street, wijk, buurt"></label>
+    <label class="field">Max price (€)<input type="number" id="maxPrice" min="0" step="5000"></label>
+    <label class="field">Min m²<input type="number" id="minArea" min="0" step="5"></label>
+    <label class="field">Min balcony m²<input type="number" id="minBalcony" min="0" step="1"></label>
+    <label class="field">Min bedrooms<select id="minBeds"><option value="0">any</option><option value="2">2+</option><option value="3">3+</option><option value="4">4+</option></select></label>
+    <label class="field">Max VvE (€/mo)<input type="number" id="maxVve" min="0" step="25"></label>
+    <label class="field">Sort by<select id="sort">
+      <option value="score">Score</option><option value="new">Newest</option>
+      <option value="price">Price, low to high</option><option value="ppm2">€/m², low to high</option>
+      <option value="balcony">Balcony size</option></select></label>
+    <label class="field">Status<select id="status">
+      <option value="hideSkipped">Hide skipped</option><option value="all">All</option><option value="none">No status yet</option>
+      <option value="interested">❤️ Interested</option><option value="viewing">📅 Viewing requested</option><option value="skip">❌ Skipped</option></select></label>
+  </div>
+  <div class="row">
+    <label class="check"><input type="checkbox" id="hideErfpacht"> Hide erfpacht</label>
+    <label class="check"><input type="checkbox" id="onlyNew"> New since last visit</label>
+    <label class="check"><input type="checkbox" id="showGone"> Include no longer matching</label>
+    <details class="wijken" id="wijkBox"><summary class="btn small" id="wijkSummary">Wijken</summary><div class="wijklist" id="wijkList"></div></details>
+    <button class="btn small" id="reset">Reset filters</button>
+  </div>
+</section>
+
+<div class="tabs" id="tabs">
+  <button class="btn on" data-view="list">List</button><button class="btn" data-view="map">Map</button>
+</div>
+<main class="layout" id="layout" data-view="list">
+  <div id="list"></div>
+  <div><div id="map" role="region" aria-label="Map of listings"></div><div id="mapnote"></div></div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+"use strict";
+
+const TIERS = {
+  top: { label: "Top", emoji: "⭐" }, good: { label: "Good", emoji: "👍" }, ok: { label: "Okay", emoji: "😐" },
+  low: { label: "Low", emoji: "🔻" }, pending: { label: "Details pending", emoji: "⏳" },
+};
+const TIER_COLOURS = { top: "#17853f", good: "#2456d6", ok: "#6b7686", low: "#c2610f", pending: "#8a93a1" };
+const STATUSES = {
+  interested: { emoji: "❤️", label: "Interested" },
+  viewing: { emoji: "📅", label: "Viewing requested" },
+  skip: { emoji: "❌", label: "Skipped" },
+};
+// A Discord reaction on the alert can set the status too, once the data carries `reactions`.
+const REACTION_STATUS = { "❤": "interested", "\u{1F4C5}": "viewing", "❌": "skip" };
+const DEFAULT_FILTERS = {
+  tiers: ["top", "good", "ok", "pending"], q: "", maxPrice: "", minArea: "", minBalcony: "", minBeds: "0",
+  maxVve: "", sort: "score", status: "hideSkipped", hideErfpacht: true, onlyNew: false, showGone: false, wijkOff: [],
+};
+
+const $ = (id) => document.getElementById(id);
+const euro = new Intl.NumberFormat("nl-NL", { style: "currency", currency: "EUR", maximumFractionDigits: 0 });
+
+// localStorage can be unavailable (private windows, blocked storage), so every access is guarded.
+const store = {
+  get(key, fallback) {
+    try { const raw = localStorage.getItem(key); return raw === null ? fallback : JSON.parse(raw); } catch { return fallback; }
+  },
+  set(key, value) { try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* keep going without persistence */ } },
+};
+
+let listings = [];
+let generated = null;
+let statuses = store.get("fw:statuses", {});
+let filters = { ...DEFAULT_FILTERS, ...store.get("fw:filters", {}) };
+let lastVisit = store.get("fw:lastVisit", null);
+let selectedId = null;
+let map = null, markerLayer = null;
+const markers = new Map();
+
+function el(tag, props = {}, ...children) {
+  const node = document.createElement(tag);
+  for (const [key, value] of Object.entries(props)) {
+    if (key === "class") node.className = value;
+    else if (key === "text") node.textContent = value;
+    else if (key.startsWith("on")) node.addEventListener(key.slice(2), value);
+    else node.setAttribute(key, value);
+  }
+  for (const child of children) if (child) node.append(child);
+  return node;
+}
+const safeHttps = (url) => (typeof url === "string" && url.startsWith("https://") ? url : null);
+
+const tierOf = (l) => (l.score ? l.score.tier : "pending");
+const statusOf = (l) => {
+  if (statuses[l.id]) return statuses[l.id];
+  for (const emoji of l.reactions || []) {
+    const mapped = REACTION_STATUS[emoji.replace(/️/g, "")];
+    if (mapped) return mapped;
+  }
+  return null;
+};
+const isNew = (l) => lastVisit !== null && l.first_seen > lastVisit;
+const ppm2 = (l) => (l.price && l.living_area ? Math.round(l.price / l.living_area) : null);
+const balconyM2 = (l) => (l.details && l.details.outdoor_m2) || 0;
+
+function matches(l) {
+  const f = filters, d = l.details;
+  if (!l.active && !f.showGone) return false;
+  if (!f.tiers.includes(tierOf(l))) return false;
+  if (f.hideErfpacht && d && d.erfpacht) return false;
+  if (f.wijkOff.includes(l.wijk || "—")) return false;
+  const status = statusOf(l);
+  if (f.status === "hideSkipped" && status === "skip") return false;
+  if (f.status === "none" && status) return false;
+  if (["interested", "viewing", "skip"].includes(f.status) && status !== f.status) return false;
+  if (f.onlyNew && !isNew(l)) return false;
+  if (f.maxPrice !== "" && l.price && l.price > Number(f.maxPrice)) return false;
+  if (f.minArea !== "" && (l.living_area || 0) < Number(f.minArea)) return false;
+  if (f.minBalcony !== "" && balconyM2(l) < Number(f.minBalcony)) return false;
+  if (Number(f.minBeds) && (l.bedrooms || 0) < Number(f.minBeds)) return false;
+  if (f.maxVve !== "" && d && d.vve_monthly && d.vve_monthly > Number(f.maxVve)) return false;
+  if (f.q) {
+    const hay = [l.title, l.wijk, l.neighbourhood, l.city].join(" ").toLowerCase();
+    if (!f.q.toLowerCase().split(/\s+/).every((word) => hay.includes(word))) return false;
+  }
+  return true;
+}
+
+const SORTS = {
+  score: (a, b) => (b.score ? b.score.points : -1) - (a.score ? a.score.points : -1) || b.first_seen.localeCompare(a.first_seen),
+  new: (a, b) => b.first_seen.localeCompare(a.first_seen),
+  price: (a, b) => (a.price ?? Infinity) - (b.price ?? Infinity),
+  ppm2: (a, b) => (ppm2(a) ?? Infinity) - (ppm2(b) ?? Infinity),
+  balcony: (a, b) => balconyM2(b) - balconyM2(a) || SORTS.score(a, b),
+};
+
+function setStatus(id, status) {
+  if (status) statuses[id] = status; else delete statuses[id];
+  store.set("fw:statuses", statuses);
+  render(false);
+}
+
+function chips(l) {
+  const d = l.details, out = [];
+  if (!d) return [el("span", { class: "chip", text: "details pending" })];
+  if (d.erfpacht) out.push(el("span", { class: "chip bad", text: d.erfpacht_perpetual ? "erfpacht (perpetual)" : "erfpacht" }));
+  out.push(el("span", { class: "chip", text: d.is_apartment ? (d.floor === 0 ? "ground floor" : d.floor != null ? `floor ${d.floor}` : "apartment") : "house" }));
+  if (d.balcony) out.push(el("span", { class: "chip", text: d.outdoor_m2 ? `balcony ${d.outdoor_m2} m²` : "balcony" }));
+  if (d.garden) out.push(el("span", { class: "chip", text: "garden" }));
+  if (d.vve_monthly) out.push(el("span", { class: "chip", text: `VvE ${euro.format(d.vve_monthly)}/mo` }));
+  if (d.year_built) out.push(el("span", { class: "chip", text: `built ${d.year_built}` }));
+  if (l.energy_label) out.push(el("span", { class: "chip", text: `label ${l.energy_label}` }));
+  if (d.busy_road) out.push(el("span", { class: "chip", text: "busy road" }));
+  return out;
+}
+
+function detailsTable(l) {
+  const d = l.details, rows = [];
+  const add = (k, v) => { if (v !== null && v !== undefined && v !== "") rows.push(el("tr", {}, el("td", { text: k }), el("td", { text: String(v) }))); };
+  const yn = (v) => (v === true ? "yes" : v === false ? "no" : null);
+  add("Published", l.published ? l.published.slice(0, 10) : null);
+  add("First seen", l.first_seen.slice(0, 10));
+  if (l.price_history && l.price_history.length > 1) add("Price history", l.price_history.map(([date, price]) => `${date}: ${euro.format(price)}`).join("  →  "));
+  if (d) {
+    add("Ownership", d.ownership);
+    add("VvE reserve fund", yn(d.vve_reserve_fund)); add("VvE maintenance plan", yn(d.vve_maintenance_plan));
+    add("VvE registered (KvK)", yn(d.vve_registered)); add("Lift", d.is_apartment ? yn(d.lift) : null);
+  }
+  return el("table", {}, ...rows);
+}
+
+function card(l) {
+  const tier = tierOf(l), score = l.score, status = statusOf(l);
+  const links = el("span", {}, el("a", { href: safeHttps(l.url) || "#", target: "_blank", rel: "noopener noreferrer", text: l.title }));
+  const title = el("div", { class: "title" }, links);
+  if (isNew(l)) title.append(el("span", { class: "badge", text: "NEW" }));
+  if (!l.active) title.append(el("span", { class: "badge gone", text: "NO LONGER MATCHES" }));
+  if (status) title.append(el("span", { class: "chip", text: `${STATUSES[status].emoji} ${STATUSES[status].label}`, style: "margin-left:6px" }));
+
+  const per = ppm2(l);
+  const facts = el("div", { class: "facts" },
+    el("span", { class: "price", text: l.price ? euro.format(l.price) : "price unknown" }),
+    el("span", { text: l.living_area ? `${l.living_area} m²` : "" }),
+    el("span", { text: l.bedrooms != null ? `${l.bedrooms} bedrooms` : "" }),
+    el("span", { class: "meta", text: per ? `${euro.format(per)}/m²` : "" }));
+
+  const reasons = el("ul", { class: "reasons" });
+  for (const r of (score ? score.reasons : []).slice(0, 3)) {
+    reasons.append(el("li", { class: r.points > 0 ? "pos" : "neg", text: `${r.points > 0 ? "✅" : "⚠️"} ${r.points > 0 ? "+" : ""}${r.points} ${r.text}` }));
+  }
+
+  const actions = el("div", { class: "actions" });
+  for (const [key, s] of Object.entries(STATUSES)) {
+    actions.append(el("button", { class: "btn small" + (statuses[l.id] === key ? " on" : ""), title: s.label, "aria-label": s.label,
+      "aria-pressed": String(statuses[l.id] === key), text: `${s.emoji} ${s.label}`,
+      onclick: (e) => { e.stopPropagation(); setStatus(l.id, statuses[l.id] === key ? null : key); } }));
+  }
+  const holder = el("div");
+  const photo = safeHttps(l.photo_url);
+  actions.append(el("button", { class: "btn small", text: "Details ▾", onclick: (e) => {
+    e.stopPropagation();
+    node.classList.toggle("open");
+    // Only fetched once the card is opened, so a long list doesn't download 250 photos.
+    if (photo && node.classList.contains("open") && !holder.firstChild) {
+      holder.append(el("img", { src: photo, alt: `Photo of ${l.title}`, loading: "lazy", referrerpolicy: "no-referrer" }));
+    }
+  } }));
+
+  const more = el("div", { class: "more" }, detailsTable(l));
+  if (score && score.reasons.length > 3) {
+    const all = el("ul", { class: "reasons" });
+    for (const r of score.reasons) all.append(el("li", { class: r.points > 0 ? "pos" : "neg", text: `${r.points > 0 ? "+" : ""}${r.points} ${r.text}` }));
+    more.prepend(all);
+  }
+  if (l.details && l.details.latitude) {
+    more.append(el("div", {}, el("a", { href: `https://www.google.com/maps?q=${l.details.latitude},${l.details.longitude}`, target: "_blank", rel: "noopener noreferrer", text: "Open in Google Maps" })));
+  }
+  more.append(holder);
+
+  const node = el("article", { class: `card${l.id === selectedId ? " selected" : ""}${l.active ? "" : " gone"}`, tabindex: "0", "data-id": l.id },
+    el("div", { class: `score tier-${tier}`, title: TIERS[tier].label },
+      el("div", {}, score ? String(score.points) : "…", el("small", { text: TIERS[tier].emoji }))),
+    el("div", {}, title, facts,
+      el("div", { class: "meta", text: [l.wijk, l.neighbourhood && l.neighbourhood !== l.wijk ? l.neighbourhood : null, l.city].filter(Boolean).join(" · ") }),
+      el("div", { class: "chips" }, ...chips(l)), reasons, actions, more));
+  node.addEventListener("click", () => select(l.id, true));
+  node.addEventListener("keydown", (e) => { if (e.key === "Enter" && e.target === node) select(l.id, true); });
+  return node;
+}
+
+function initMap() {
+  if (typeof L === "undefined") { $("map").style.display = "none"; const note = $("mapnote"); note.style.display = "block"; note.textContent = "The map library couldn't be loaded, so the map is unavailable."; return; }
+  map = L.map("map", { zoomControl: true }).setView([52.06, 4.3], 12);
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "© OpenStreetMap contributors" }).addTo(map);
+  markerLayer = L.layerGroup().addTo(map);
+}
+
+function popupFor(l) {
+  const box = el("div", {}, el("strong", { text: l.title }), el("br"), el("span", { text: `${l.price ? euro.format(l.price) : ""} · ${l.living_area || "?"} m²` }), el("br"));
+  const score = l.score ? `${l.score.points}/100 ${TIERS[tierOf(l)].emoji}` : "details pending";
+  box.append(el("span", { text: score }), el("br"), el("a", { href: safeHttps(l.url) || "#", target: "_blank", rel: "noopener noreferrer", text: "Open on Funda" }));
+  return box;
+}
+
+function updateMap(visible, fit) {
+  if (!map) return;
+  markerLayer.clearLayers();
+  const points = [];
+  for (const l of visible) {
+    const d = l.details;
+    if (!d || d.latitude == null || d.longitude == null) continue;
+    let marker = markers.get(l.id);
+    if (!marker) {
+      marker = L.circleMarker([d.latitude, d.longitude], { radius: 9, weight: 2, color: "#fff", fillOpacity: 0.92 });
+      marker.on("click", () => select(l.id, false));
+      markers.set(l.id, marker);
+    }
+    marker.setStyle({ fillColor: TIER_COLOURS[tierOf(l)], radius: l.id === selectedId ? 13 : 9, weight: l.id === selectedId ? 3 : 2 });
+    marker.bindPopup(() => popupFor(l));
+    markerLayer.addLayer(marker);
+    points.push([d.latitude, d.longitude]);
+  }
+  if (fit && points.length) map.fitBounds(points, { padding: [30, 30], maxZoom: 15 });
+}
+
+function select(id, fromList) {
+  selectedId = id;
+  for (const node of document.querySelectorAll(".card")) node.classList.toggle("selected", node.dataset.id === id);
+  const l = listings.find((x) => x.id === id);
+  if (!l) return;
+  const marker = markers.get(id);
+  if (map && marker && l.details) {
+    if (fromList) map.flyTo([l.details.latitude, l.details.longitude], Math.max(map.getZoom(), 15), { duration: 0.6 });
+    marker.openPopup();
+  }
+  if (!fromList) {
+    const node = document.querySelector(`.card[data-id="${CSS.escape(id)}"]`);
+    if (node) node.scrollIntoView({ block: "center", behavior: "smooth" });
+  }
+  updateMarkerStyles();
+}
+
+function updateMarkerStyles() {
+  for (const [id, marker] of markers) marker.setStyle({ radius: id === selectedId ? 13 : 9, weight: id === selectedId ? 3 : 2 });
+}
+
+let firstRender = true;
+function render(fit = false) {
+  const visible = listings.filter(matches).sort(SORTS[filters.sort] || SORTS.score);
+  const list = $("list");
+  list.replaceChildren();
+  if (!visible.length) {
+    list.append(el("div", { class: "empty", text: listings.length ? "Nothing matches these filters." : "No listings yet. The first workflow run creates this list." }));
+  } else {
+    const frag = document.createDocumentFragment();
+    for (const l of visible) frag.append(card(l));
+    list.append(frag);
+  }
+  const active = listings.filter((l) => l.active).length;
+  const pending = listings.filter((l) => l.active && !l.score).length;
+  const newCount = listings.filter((l) => isNew(l) && l.active).length;
+  const when = generated ? `updated ${relativeTime(generated)}` : "no data yet";
+  $("summary").textContent = `${visible.length} shown · ${active} matching now${newCount ? ` · ${newCount} new` : ""}${pending ? ` · ${pending} awaiting details` : ""} · ${when}`;
+  updateMap(visible, fit || firstRender);
+  firstRender = false;
+}
+
+function relativeTime(iso) {
+  const minutes = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
+  if (!Number.isFinite(minutes)) return "at an unknown time";
+  if (minutes < 2) return "just now";
+  if (minutes < 90) return `${minutes} min ago`;
+  const hours = Math.round(minutes / 60);
+  return hours < 48 ? `${hours} h ago` : `${Math.round(hours / 24)} days ago`;
+}
+
+function setView(view) {
+  $("layout").dataset.view = view;
+  for (const b of document.querySelectorAll("#tabs button")) b.classList.toggle("on", b.dataset.view === view);
+  if (view === "map" && map) setTimeout(() => map.invalidateSize(), 50);
+}
+
+function syncControls() {
+  $("q").value = filters.q; $("maxPrice").value = filters.maxPrice; $("minArea").value = filters.minArea;
+  $("minBalcony").value = filters.minBalcony; $("minBeds").value = filters.minBeds; $("maxVve").value = filters.maxVve;
+  $("sort").value = filters.sort; $("status").value = filters.status;
+  $("hideErfpacht").checked = filters.hideErfpacht; $("onlyNew").checked = filters.onlyNew; $("showGone").checked = filters.showGone;
+  for (const b of document.querySelectorAll("#tierRow button")) b.setAttribute("aria-pressed", String(filters.tiers.includes(b.dataset.tier)));
+  updateWijkSummary();
+}
+
+function updateWijkSummary() {
+  const total = document.querySelectorAll("#wijkList input").length;
+  const on = total - filters.wijkOff.length;
+  $("wijkSummary").textContent = filters.wijkOff.length ? `Wijken (${on}/${total})` : "Wijken (all)";
+}
+
+function buildWijkList() {
+  const counts = new Map();
+  for (const l of listings) counts.set(l.wijk || "—", (counts.get(l.wijk || "—") || 0) + 1);
+  const box = $("wijkList");
+  box.replaceChildren();
+  for (const [name, count] of [...counts].sort((a, b) => a[0].localeCompare(b[0]))) {
+    const input = el("input", { type: "checkbox" });
+    input.checked = !filters.wijkOff.includes(name);
+    input.addEventListener("change", () => {
+      filters.wijkOff = input.checked ? filters.wijkOff.filter((w) => w !== name) : [...filters.wijkOff, name];
+      changed();
+    });
+    box.append(el("label", { class: "check" }, input, el("span", { text: `${name} (${count})` })));
+  }
+  updateWijkSummary();
+}
+
+function changed() { store.set("fw:filters", filters); updateWijkSummary(); render(true); }
+
+function bindControls() {
+  const text = { q: "q", maxPrice: "maxPrice", minArea: "minArea", minBalcony: "minBalcony", maxVve: "maxVve" };
+  for (const [key, id] of Object.entries(text)) $(id).addEventListener("input", (e) => { filters[key] = e.target.value; changed(); });
+  for (const [key, id] of [["minBeds", "minBeds"], ["sort", "sort"], ["status", "status"]]) $(id).addEventListener("change", (e) => { filters[key] = e.target.value; changed(); });
+  for (const key of ["hideErfpacht", "onlyNew", "showGone"]) $(key).addEventListener("change", (e) => { filters[key] = e.target.checked; changed(); });
+  const row = $("tierRow");
+  for (const [key, t] of Object.entries(TIERS)) {
+    row.append(el("button", { class: "chip-toggle", "data-tier": key, "aria-pressed": "false", text: `${t.emoji} ${t.label}`,
+      onclick: (e) => {
+        filters.tiers = filters.tiers.includes(key) ? filters.tiers.filter((x) => x !== key) : [...filters.tiers, key];
+        e.currentTarget.setAttribute("aria-pressed", String(filters.tiers.includes(key)));
+        changed();
+      } }));
+  }
+  $("reset").addEventListener("click", () => { filters = { ...DEFAULT_FILTERS }; syncControls(); buildWijkList(); changed(); });
+  $("markSeen").addEventListener("click", () => { lastVisit = new Date().toISOString(); store.set("fw:lastVisit", lastVisit); render(); });
+  $("exportBtn").addEventListener("click", async () => {
+    const text = JSON.stringify(statuses);
+    try { await navigator.clipboard.writeText(text); alert("Statuses copied. Paste them into Import on your other device."); }
+    catch { prompt("Copy these statuses:", text); }
+  });
+  $("importBtn").addEventListener("click", () => {
+    const text = prompt("Paste exported statuses:");
+    if (!text) return;
+    try {
+      const incoming = JSON.parse(text);
+      if (!incoming || typeof incoming !== "object" || Array.isArray(incoming)) throw new Error("not an object");
+      for (const [id, s] of Object.entries(incoming)) if (STATUSES[s]) statuses[id] = s;
+      store.set("fw:statuses", statuses); render();
+    } catch { alert("That doesn't look like exported statuses."); }
+  });
+  for (const b of document.querySelectorAll("#tabs button")) b.addEventListener("click", () => setView(b.dataset.view));
+  // Remember when you last looked, so the next visit can flag what arrived in between.
+  window.addEventListener("pagehide", () => store.set("fw:lastVisit", new Date().toISOString()));
+}
+
+async function load() {
+  try {
+    const response = await fetch("listings.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    listings = Array.isArray(data.listings) ? data.listings : [];
+    generated = data.generated || null;
+  } catch (error) {
+    $("summary").textContent = "No data yet (listings.json not found). The first workflow run creates it.";
+    listings = [];
+  }
+  buildWijkList();
+  render();
+}
+
+bindControls();
+syncControls();
+initMap();
+load();
+</script>
+</body>
+</html>

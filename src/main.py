@@ -15,6 +15,7 @@ from funda_client import SearchResult, fetch_details, fetch_search, make_client
 from models import Candidate
 from scoring import Assessment, score_listing
 from state import SeenState
+from store import ListingStore
 from wijken import WijkMap
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -24,6 +25,10 @@ KEEP_SEEN_DAYS = 30
 MAX_NOTIFICATIONS_PER_RUN = 25
 SEND_DELAY_SECONDS = 1.0
 DETAIL_DELAY_SECONDS = 1.5
+# Detail pages read per run to fill in listings the web page hasn't got details for yet
+# (one request each). More on the twice-daily full sweep, which has the time.
+MAX_BACKFILL_PER_RUN = 15
+MAX_BACKFILL_PER_FULL_SWEEP = 30
 
 Fetcher = Callable[[SearchConfig, bool], SearchResult]
 
@@ -55,6 +60,7 @@ class RunResult:
     # Searches that returned some pages but not all; reported as a warning, not a failure.
     incomplete_searches: int
     failed_sends: int
+    backfilled: int = 0
 
     @property
     def ok(self) -> bool:
@@ -70,6 +76,7 @@ def run(
     now: datetime,
     force_full: bool = False,
     enrich: Enricher | None = None,
+    store: ListingStore | None = None,
 ) -> RunResult:
     baseline_run = not state.baselined
     full_sweep = (
@@ -77,6 +84,7 @@ def run(
     )
     old_before = now - timedelta(days=config.old_listing_after_days)
     matches: dict[str, Match] = {}
+    accepted_ids: set[str] = set()
     failed_searches = incomplete_searches = 0
 
     for search in config.searches:
@@ -97,14 +105,18 @@ def run(
         candidates = fetched.candidates
         found = 0
         for candidate in candidates:
+            wijk = wijk_map.lookup(search.location, candidate.neighbourhood)
+            verdict = evaluate(candidate, config.filters, wijk, search.wijken)
+            if verdict.accepted:
+                accepted_ids.add(candidate.id)
+                if store is not None:
+                    store.upsert(candidate, wijk, now)  # the web page shows every current match
             if candidate.id in state:
                 state.touch(candidate.id, now)
                 continue
             # A listing can appear in several searches; the ID is what counts.
             if candidate.id in matches:
                 continue
-            wijk = wijk_map.lookup(search.location, candidate.neighbourhood)
-            verdict = evaluate(candidate, config.filters, wijk, search.wijken)
             if verdict.accepted:
                 published = candidate.published
                 matches[candidate.id] = Match(
@@ -136,11 +148,14 @@ def run(
     to_notify = loud[:MAX_NOTIFICATIONS_PER_RUN]
     deferred = len(loud) - len(to_notify)
     if enrich:
+        enriched: list[Match] = []
+        for match in to_notify:
+            assessment = enrich(match.candidate)
+            if assessment is not None and store is not None:
+                store.set_assessment(match.candidate.id, assessment)
+            enriched.append(replace(match, assessment=assessment))
         # Worst first, so the best match is the last message and the one you see.
-        to_notify = sorted(
-            (replace(match, assessment=enrich(match.candidate)) for match in to_notify),
-            key=_send_order,
-        )
+        to_notify = sorted(enriched, key=_send_order)
     notified = failed_sends = 0
     for match in to_notify:
         try:
@@ -159,6 +174,15 @@ def run(
             state.mark_baselined()
         if full_sweep:
             state.mark_full_sweep(now)
+            if store is not None:
+                # Whatever a complete sweep didn't see no longer matches (sold, withdrawn, repriced).
+                store.deactivate_missing(accepted_ids, now)
+
+    backfilled = 0
+    if store is not None:
+        backfilled = _backfill(store, enrich, MAX_BACKFILL_PER_FULL_SWEEP if full_sweep else MAX_BACKFILL_PER_RUN)
+        store.rescore(config.scoring)
+        store.prune(now)
 
     state.prune(now, KEEP_SEEN_DAYS)
     return RunResult(
@@ -169,7 +193,23 @@ def run(
         failed_searches,
         incomplete_searches,
         failed_sends,
+        backfilled,
     )
+
+
+def _backfill(store: ListingStore, enrich: Enricher | None, budget: int) -> int:
+    """Read the detail page of listings the store has no details for, newest first."""
+    if enrich is None:
+        return 0
+    done = 0
+    for listing_id in store.needing_details(budget):
+        assessment = enrich(store.candidate_of(listing_id))
+        if assessment is None:
+            store.record_details_failure(listing_id)
+            continue
+        store.set_assessment(listing_id, assessment)
+        done += 1
+    return done
 
 
 def _send_order(match: Match) -> tuple[int, datetime]:
@@ -183,6 +223,7 @@ def main() -> int:
     parser.add_argument("--config", type=Path, default=ROOT / "config.yaml")
     parser.add_argument("--state", type=Path, default=ROOT / "data" / "seen-listings.json")
     parser.add_argument("--wijken", type=Path, default=ROOT / "data" / "buurt-wijk.json")
+    parser.add_argument("--store", type=Path, default=ROOT / "docs" / "listings.json")
     parser.add_argument(
         "--full",
         action="store_true",
@@ -191,7 +232,7 @@ def main() -> int:
     parser.add_argument(
         "--dry-run",
         action="store_true",
-        help="print alerts instead of sending them, and don't touch the state file",
+        help="print alerts instead of sending them, and don't touch the state or listings files",
     )
     args = parser.parse_args()
     if isinstance(sys.stdout, io.TextIOWrapper):
@@ -206,6 +247,7 @@ def main() -> int:
     config = load_config(args.config)
     wijk_map = WijkMap.load(args.wijken)
     state = SeenState.load(args.state)
+    store = ListingStore.load(args.store)
     now = datetime.now(timezone.utc)
     client = make_client()
 
@@ -246,11 +288,12 @@ def main() -> int:
 
     with client:
         result = run(
-            config, wijk_map, state, fetch, notify, now, force_full=args.full, enrich=enrich
+            config, wijk_map, state, fetch, notify, now, force_full=args.full, enrich=enrich, store=store
         )
 
     if not args.dry_run:
         state.save()
+        store.save(now)
     print(result)
     return 0 if result.ok else 1
 

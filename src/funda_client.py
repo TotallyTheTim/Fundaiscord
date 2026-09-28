@@ -167,12 +167,15 @@ def details_from_listing(listing: Listing) -> Details:
                     labels.setdefault(entry.label, str(entry.value))
     properties = listing.property_details
     features = properties.features if properties else None
+    location = listing.location
     return parse_details(
         labels,
         listing.description or "",
         properties.construction_year if properties else None,
         (properties.object_type if properties else None) == "apartment",
         bool(features and features.get("is_monument")),
+        latitude=location.latitude if location else None,
+        longitude=location.longitude if location else None,
     )
 
 

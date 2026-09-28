@@ -226,6 +226,7 @@ def fake_listing(
     object_type: str = "apartment",
     features: dict[str, bool] | None = None,
     description: str = "",
+    coordinates: tuple[float, float] | None = None,
 ) -> Listing:
     """Just enough of pyfunda's Listing for details_from_listing."""
     built = [
@@ -243,9 +244,12 @@ def fake_listing(
         for title, items in (sections or [])
     ]
     properties = SimpleNamespace(construction_year=year, object_type=object_type, features=features or {})
+    location = SimpleNamespace(latitude=coordinates[0], longitude=coordinates[1]) if coordinates else None
     return cast(
         Listing,
-        SimpleNamespace(characteristics=built, property_details=properties, description=description),
+        SimpleNamespace(
+            characteristics=built, property_details=properties, description=description, location=location
+        ),
     )
 
 
@@ -323,3 +327,13 @@ def test_fetch_details_gives_up_after_the_last_retry() -> None:
     with pytest.raises(TimeoutError):
         fetch_details(client, "1", sleep=sleeps)
     assert sleeps.calls == list(RETRY_DELAYS_SECONDS)
+
+
+def test_coordinates_are_taken_from_the_listing_location() -> None:
+    d = details_from_listing(fake_listing(coordinates=(52.061, 4.2712)))
+    assert (d.latitude, d.longitude) == (52.061, 4.2712)
+
+
+def test_a_listing_without_a_location_has_no_coordinates() -> None:
+    d = details_from_listing(fake_listing())
+    assert d.latitude is None and d.longitude is None

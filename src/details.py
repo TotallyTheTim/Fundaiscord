@@ -47,6 +47,8 @@ class Details:
     needs_work: bool
     move_in_ready: bool
     top_floor_hint: bool
+    latitude: float | None = None
+    longitude: float | None = None
 
 
 def parse_details(
@@ -55,6 +57,8 @@ def parse_details(
     year_built: int | None,
     is_apartment: bool,
     monument: bool,
+    latitude: float | None = None,
+    longitude: float | None = None,
 ) -> Details:
     """Build Details from the detail page's label -> value pairs and description text."""
     text = description.lower()
@@ -88,6 +92,8 @@ def parse_details(
         needs_work=needs_work,
         move_in_ready=not needs_work and bool(_MOVE_IN_READY.search(text)),
         top_floor_hint=bool(_TOP_FLOOR.search(text)),
+        latitude=latitude,
+        longitude=longitude,
     )
 
 
