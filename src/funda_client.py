@@ -9,6 +9,7 @@ from funda import Funda
 from funda.listing import Listing
 
 from config import Filters, SearchConfig
+from details import Details, parse_details
 from models import Candidate
 
 PHOTO_BASE_URL = "https://cloud.funda.nl/"
@@ -34,6 +35,10 @@ class SearchClient(Protocol):
         sort: str,
         page: int,
     ) -> list[Listing]: ...
+
+
+class DetailClient(Protocol):
+    def listing(self, listing_id: int) -> Listing: ...
 
 
 @dataclass(frozen=True)
@@ -134,6 +139,41 @@ def _search_page(
                 raise
             sleep(RETRY_DELAYS_SECONDS[attempt])
     raise AssertionError("unreachable")
+
+
+def fetch_details(
+    client: DetailClient,
+    listing_id: str,
+    sleep: Callable[[float], None] = time.sleep,
+) -> Details:
+    """Fetch a listing's detail page (one request) and extract what scoring needs."""
+    attempts = len(RETRY_DELAYS_SECONDS) + 1
+    for attempt in range(attempts):
+        try:
+            return details_from_listing(client.listing(int(listing_id)))
+        except Exception:  # curl and pyfunda raise assorted types
+            if attempt == attempts - 1:
+                raise
+            sleep(RETRY_DELAYS_SECONDS[attempt])
+    raise AssertionError("unreachable")
+
+
+def details_from_listing(listing: Listing) -> Details:
+    labels: dict[str, str] = {}
+    for section in listing.characteristics or ():
+        for item in section.items:
+            for entry in (item, *item.children):
+                if entry.label is not None and entry.value is not None:
+                    labels.setdefault(entry.label, str(entry.value))
+    properties = listing.property_details
+    features = properties.features if properties else None
+    return parse_details(
+        labels,
+        listing.description or "",
+        properties.construction_year if properties else None,
+        (properties.object_type if properties else None) == "apartment",
+        bool(features and features.get("is_monument")),
+    )
 
 
 def to_candidate(listing: Listing, search_name: str) -> Candidate:

@@ -1,6 +1,7 @@
 from datetime import datetime, timezone
 
 from config import EnergyLabelRules, Filters
+from details import Details
 from models import Candidate
 
 NOW = datetime(2026, 9, 20, 12, 0, tzinfo=timezone.utc)
@@ -33,3 +34,31 @@ def make_candidate(**overrides: object) -> Candidate:
     }
     fields.update(overrides)
     return Candidate(**fields)  # type: ignore[arg-type]
+
+
+def make_details(**overrides: object) -> Details:
+    """A neutral apartment: nothing to add, nothing to subtract when scored."""
+    fields: dict[str, object] = {
+        "ownership": "Volle eigendom",
+        "erfpacht": False,
+        "erfpacht_perpetual": False,
+        "is_apartment": True,
+        "floor": 2,
+        "floor_label": "2e woonlaag",
+        "year_built": 1965,
+        "balcony": False,
+        "outdoor_m2": None,
+        "garden": False,
+        "lift": False,
+        "vve_monthly": None,
+        "vve_reserve_fund": None,
+        "vve_maintenance_plan": None,
+        "vve_registered": None,
+        "busy_road": False,
+        "monument": False,
+        "needs_work": False,
+        "move_in_ready": False,
+        "top_floor_hint": False,
+    }
+    fields.update(overrides)
+    return Details(**fields)  # type: ignore[arg-type]

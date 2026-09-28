@@ -4,15 +4,16 @@ import os
 import sys
 import time
 from collections.abc import Callable
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from config import Config, SearchConfig, load_config
 from discord import DiscordError, build_payload, send
 from filters import Verdict, evaluate
-from funda_client import SearchResult, fetch_search, make_client
+from funda_client import SearchResult, fetch_details, fetch_search, make_client
 from models import Candidate
+from scoring import Assessment, score_listing
 from state import SeenState
 from wijken import WijkMap
 
@@ -22,6 +23,7 @@ KEEP_SEEN_DAYS = 30
 # as seen, so it goes out on the next run.
 MAX_NOTIFICATIONS_PER_RUN = 25
 SEND_DELAY_SECONDS = 1.0
+DETAIL_DELAY_SECONDS = 1.5
 
 Fetcher = Callable[[SearchConfig, bool], SearchResult]
 
@@ -35,9 +37,12 @@ class Match:
     # listing changed (price drop, new label, ...) and only now passes the filters.
     old_listing: bool
     age_days: int | None
+    assessment: Assessment | None = None
 
 
 Notifier = Callable[[Match], None]
+# Fetches a listing's detail page and scores it; None when the details couldn't be read.
+Enricher = Callable[[Candidate], Assessment | None]
 
 
 @dataclass(frozen=True)
@@ -64,6 +69,7 @@ def run(
     notify: Notifier,
     now: datetime,
     force_full: bool = False,
+    enrich: Enricher | None = None,
 ) -> RunResult:
     baseline_run = not state.baselined
     full_sweep = (
@@ -129,6 +135,12 @@ def run(
 
     to_notify = loud[:MAX_NOTIFICATIONS_PER_RUN]
     deferred = len(loud) - len(to_notify)
+    if enrich:
+        # Worst first, so the best match is the last message and the one you see.
+        to_notify = sorted(
+            (replace(match, assessment=enrich(match.candidate)) for match in to_notify),
+            key=_send_order,
+        )
     notified = failed_sends = 0
     for match in to_notify:
         try:
@@ -158,6 +170,12 @@ def run(
         incomplete_searches,
         failed_sends,
     )
+
+
+def _send_order(match: Match) -> tuple[int, datetime]:
+    """Unscored alerts first, then ascending score; ties keep oldest first."""
+    points = match.assessment.score.points if match.assessment else -1
+    return points, match.candidate.published or datetime.min.replace(tzinfo=timezone.utc)
 
 
 def main() -> int:
@@ -207,6 +225,7 @@ def main() -> int:
             user_id,
             old_listing=match.old_listing,
             age_days=match.age_days,
+            assessment=match.assessment,
         )
         if args.dry_run or not webhook_url:
             embed = payload["embeds"][0]
@@ -215,8 +234,20 @@ def main() -> int:
         send(webhook_url, payload)
         time.sleep(SEND_DELAY_SECONDS)
 
+    def enrich(candidate: Candidate) -> Assessment | None:
+        try:
+            details = fetch_details(client, candidate.id)
+        except Exception as error:  # an alert without details beats no alert
+            print(f"::warning::details for {candidate.id} unavailable: {error}")
+            return None
+        finally:
+            time.sleep(DETAIL_DELAY_SECONDS)
+        return Assessment(details, score_listing(candidate, details, config.scoring))
+
     with client:
-        result = run(config, wijk_map, state, fetch, notify, now, force_full=args.full)
+        result = run(
+            config, wijk_map, state, fetch, notify, now, force_full=args.full, enrich=enrich
+        )
 
     if not args.dry_run:
         state.save()

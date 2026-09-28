@@ -17,6 +17,14 @@ Polls Funda every 30 minutes via GitHub Actions and posts new matching listings 
 
 The webhook URL must only ever live in the secret, never in the repo.
 
+## Scoring
+
+Each new listing's detail page is read (one extra request per alert) and scored 0 to 100 from `scoring:` in [config.yaml](config.yaml): erfpacht, balcony size, garden, house, floor, bedrooms (room for an office), needs work / move-in ready, pre-war character, VvE health (reserve fund, maintenance plan, cost per m²), busy road and energy label. The score sets the tier (⭐ top, 👍 good, 😐 okay, 🔻 low), which drives the alert's headline and colour and lists the reasons. Within a run the alerts go out worst first, so the best is the last message. Erfpacht always lands in 🔻 low unless the canon is perpetually bought off.
+
+- The keyword checks ("needs work", "move-in ready", "top floor") read the listing description and are guesses; Funda gives no reliable field for them.
+- If a listing's details can't be read, its alert is still sent, unscored.
+- A misspelled key under `scoring:` is an error, so a typo can't silently do nothing.
+
 ## Reliable scheduling
 
 GitHub's own `schedule` trigger is best-effort: on a new repo it can fire only a few times a day. The dependable way is an external cron service calling the `workflow_dispatch` API, which starts within seconds. The workflow's own cron stays as a backup; overlapping runs are harmless because the state file deduplicates alerts.

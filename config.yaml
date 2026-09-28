@@ -83,3 +83,38 @@ searches:
       - Binnenstad
       - Tanthof-West
       - Tanthof-Oost
+
+# How alerts are ranked. Every new listing starts at `base`; each fact adds or removes
+# points (all optional, these are the defaults). The score picks the tier, which sets the
+# alert's colour and headline. Alerts arrive worst first so the best one is the last message.
+scoring:
+  base: 50
+  vve_expensive_per_m2: 3.5      # EUR/m² per month above which a VvE without a lift counts as expensive
+  tiers:                         # minimum score per tier; below `ok` is "low"
+    top: 70
+    good: 55
+    ok: 40
+  weights:
+    erfpacht: -45                # also forces the "low" tier, unless perpetually bought off
+    erfpacht_perpetual: -25
+    balcony_at_2_m2: 3           # points rise from 2 m² to 8 m², then flatten out by 12 m²
+    balcony_at_8_m2: 12
+    balcony_at_12_m2: 15
+    balcony_unknown_size: 6
+    garden: 3
+    house: 4
+    first_floor: 3
+    top_floor: 3                 # guessed from the description ("top etage", "penthouse", ...)
+    bedrooms_3_plus: 8           # room for an office
+    needs_work: -20              # description says kluswoning / op te knappen / te renoveren
+    move_in_ready: 8             # description says instapklaar / gerenoveerd / nieuwe keuken
+    built_before_1940: 4         # character
+    monument: 2
+    vve_no_reserve_fund: -10
+    vve_no_maintenance_plan: -6
+    vve_not_registered: -6
+    vve_expensive_no_lift: -3
+    busy_road: -2
+    label_a_or_b: 4
+    label_d: -2
+    label_e: -4

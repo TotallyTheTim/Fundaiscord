@@ -2,13 +2,14 @@ from datetime import timedelta
 from pathlib import Path
 
 import pytest
-from factories import FILTERS, NOW, make_candidate
+from factories import FILTERS, NOW, make_candidate, make_details
 
 from config import Config, SearchConfig
 from discord import DiscordError
 from funda_client import SearchResult
 from main import MAX_NOTIFICATIONS_PER_RUN, Fetcher, Match, Notifier, RunResult, run
 from models import Candidate
+from scoring import Assessment, Score
 from state import SeenState
 from wijken import WijkMap
 
@@ -333,3 +334,85 @@ def test_a_search_notice_is_logged_as_a_warning_and_the_run_stays_green(
 
     assert "::warning::[Den Haag] searched all of den-haag" in capsys.readouterr().out
     assert result.ok and notify.ids == ["1"]
+
+
+class FakeEnrich:
+    """Scores listings by id; an id missing from `scores` behaves like a failed detail fetch."""
+
+    def __init__(self, scores: dict[str, int]) -> None:
+        self._scores = scores
+        self.asked: list[str] = []
+
+    def __call__(self, candidate: Candidate) -> Assessment | None:
+        self.asked.append(candidate.id)
+        points = self._scores.get(candidate.id)
+        if points is None:
+            return None
+        return Assessment(make_details(), Score(points, "ok", ()))
+
+
+def go_enriched(
+    state: SeenState, fetch: Fetcher, notify: Notifier, enrich: FakeEnrich, notify_existing: bool = True
+) -> RunResult:
+    config = config_with(search(), notify_existing=notify_existing)
+    return run(config, WIJKEN, state, fetch, notify, NOW, enrich=enrich)
+
+
+def test_alerts_are_sent_worst_first_so_the_best_arrives_last(tmp_path: Path) -> None:
+    state, notify = baselined_state(tmp_path), Recorder()
+    listings = FakeFunda(make_candidate(id="a"), make_candidate(id="b"), make_candidate(id="c"))
+    go_enriched(state, listings, notify, FakeEnrich({"a": 60, "b": 90, "c": 30}))
+
+    assert notify.ids == ["c", "a", "b"]
+
+
+def test_equal_scores_keep_oldest_first(tmp_path: Path) -> None:
+    state, notify = baselined_state(tmp_path), Recorder()
+    older = make_candidate(id="older", published=NOW - timedelta(hours=5))
+    newer = make_candidate(id="newer", published=NOW - timedelta(hours=1))
+    go_enriched(state, FakeFunda(newer, older), notify, FakeEnrich({"older": 70, "newer": 70}))
+
+    assert notify.ids == ["older", "newer"]
+
+
+def test_a_listing_whose_details_failed_is_still_alerted_and_goes_first(tmp_path: Path) -> None:
+    state, notify = baselined_state(tmp_path), Recorder()
+    listings = FakeFunda(make_candidate(id="ok"), make_candidate(id="broken"))
+    result = go_enriched(state, listings, notify, FakeEnrich({"ok": 80}))
+
+    assert notify.ids == ["broken", "ok"]
+    assert notify.sent[0].assessment is None and notify.sent[1].assessment is not None
+    assert "broken" in state and result.notified == 2
+
+
+def test_the_assessment_is_attached_to_the_match(tmp_path: Path) -> None:
+    state, notify = baselined_state(tmp_path), Recorder()
+    go_enriched(state, FakeFunda(make_candidate(id="a")), notify, FakeEnrich({"a": 77}))
+
+    assessment = notify.sent[0].assessment
+    assert assessment is not None and assessment.score.points == 77
+
+
+def test_details_are_not_fetched_for_listings_that_are_only_recorded_silently(tmp_path: Path) -> None:
+    state, notify = SeenState.load(tmp_path / "s.json"), Recorder()
+    enrich = FakeEnrich({})
+    go_enriched(state, FakeFunda(make_candidate(published=OLD)), notify, enrich)
+
+    assert enrich.asked == []  # baseline run: old listing is recorded, never alerted
+
+
+def test_details_are_only_fetched_for_listings_that_will_be_alerted(tmp_path: Path) -> None:
+    state, notify = baselined_state(tmp_path), Recorder()
+    state.add("seen", NOW)
+    enrich = FakeEnrich({"new": 50})
+    listings = FakeFunda(make_candidate(id="seen"), make_candidate(id="new"), make_candidate(id="dear", price=900_000))
+    go_enriched(state, listings, notify, enrich)
+
+    assert enrich.asked == ["new"]
+
+
+def test_without_an_enricher_alerts_still_work_and_carry_no_assessment(tmp_path: Path) -> None:
+    state, notify = baselined_state(tmp_path), Recorder()
+    go(state, FakeFunda(make_candidate()), notify)
+
+    assert notify.sent[0].assessment is None

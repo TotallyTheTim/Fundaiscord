@@ -4,9 +4,10 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from typing import Any
 
 import pytest
-from factories import make_candidate
+from factories import make_candidate, make_details
 
-from discord import COLOR_WARNING, DiscordError, build_payload, format_euro, send
+from discord import COLOR_OLD_LISTING, COLOR_WARNING, DiscordError, build_payload, format_euro, send
+from scoring import Assessment, Reason, Score
 
 
 def embed_of(payload: dict[str, Any]) -> dict[str, Any]:
@@ -142,3 +143,97 @@ def test_send_retries_after_a_rate_limit() -> None:
 def test_send_raises_on_other_http_errors() -> None:
     with WebhookServer([500]) as server, pytest.raises(DiscordError):
         send(server.url, build_payload(make_candidate(), None, (), None))
+
+
+def assessed(tier: str = "top", points: int = 84, reasons: tuple[Reason, ...] = (), **detail_overrides: object) -> Assessment:
+    return Assessment(make_details(**detail_overrides), Score(points, tier, reasons))
+
+
+def test_an_assessed_alert_leads_with_the_tier_and_score() -> None:
+    payload = build_payload(make_candidate(), "Leyenburg", (), "1234", assessment=assessed("top", 84))
+
+    assert payload["content"] == "<@1234> ⭐ Top match"
+    assert embed_of(payload)["description"].startswith("**84/100 · ⭐ Top match**")
+    assert "New house found" not in payload["content"]
+
+
+@pytest.mark.parametrize(
+    ("tier", "headline"),
+    [("top", "⭐ Top match"), ("good", "👍 Good match"), ("ok", "😐 Okay"), ("low", "🔻 Low match")],
+)
+def test_each_tier_has_its_own_headline_and_colour(tier: str, headline: str) -> None:
+    payload = build_payload(make_candidate(), None, (), None, assessment=assessed(tier))
+    assert headline in payload["content"]
+
+
+def test_the_tier_colours_are_all_different() -> None:
+    colours = {
+        embed_of(build_payload(make_candidate(), None, (), None, assessment=assessed(t)))["color"]
+        for t in ("top", "good", "ok", "low")
+    }
+    assert len(colours) == 4
+
+
+def test_an_old_listing_stays_red_but_still_shows_its_tier() -> None:
+    payload = build_payload(
+        make_candidate(), None, (), "1", old_listing=True, age_days=9, assessment=assessed("good", 60)
+    )
+
+    assert "OLD LISTING" in payload["content"] and "👍 Good match" in payload["content"]
+    assert embed_of(payload)["color"] == COLOR_OLD_LISTING
+
+
+def test_the_details_lines_show_type_floor_year_ownership_outdoor_and_vve() -> None:
+    assessment = assessed(
+        floor=3,
+        year_built=1912,
+        balcony=True,
+        outdoor_m2=10,
+        vve_monthly=200.0,
+        vve_reserve_fund=True,
+        vve_maintenance_plan=False,
+    )
+    description = embed_of(build_payload(make_candidate(), None, (), None, assessment=assessment))["description"]
+
+    assert "🏠 Apartment · floor 3 · built 1912 · freehold" in description
+    assert "🌿 balcony/terrace 10 m²" in description
+    assert "🏢 VvE €200/mo · reserve ✅ · plan ❌" in description
+
+
+def test_erfpacht_is_called_out_in_bold() -> None:
+    assessment = assessed("low", 20, erfpacht=True, ownership="Gemeentelijke erfpacht")
+    description = embed_of(build_payload(make_candidate(), None, (), None, assessment=assessment))["description"]
+
+    assert "**erfpacht**" in description and "freehold" not in description
+
+
+def test_a_ground_floor_house_without_outdoor_space_or_vve() -> None:
+    assessment = assessed(is_apartment=False, floor=0, vve_monthly=None, vve_reserve_fund=None)
+    description = embed_of(build_payload(make_candidate(), None, (), None, assessment=assessment))["description"]
+
+    assert "🏠 House · ground floor" in description
+    assert "🌿 no outdoor space" in description
+    assert "VvE" not in description
+
+
+def test_unknown_vve_answers_show_a_question_mark() -> None:
+    assessment = assessed(vve_monthly=150.0, vve_reserve_fund=None, vve_maintenance_plan=None)
+    description = embed_of(build_payload(make_candidate(), None, (), None, assessment=assessment))["description"]
+
+    assert "reserve ? · plan ?" in description
+
+
+def test_reasons_are_listed_with_signs_and_capped() -> None:
+    reasons = tuple(Reason(p, f"reason {i}") for i, p in enumerate((14, 8, -6, 4, 3, -2, 1, 1)))
+    description = embed_of(build_payload(make_candidate(), None, (), None, assessment=assessed(reasons=reasons)))[
+        "description"
+    ]
+
+    assert "✅ +14 reason 0" in description
+    assert "⚠️ -6 reason 2" in description
+    assert "reason 5" in description and "reason 6" not in description  # capped at six lines
+
+
+def test_without_an_assessment_the_original_layout_is_unchanged() -> None:
+    description = embed_of(build_payload(make_candidate(), None, (), None))["description"]
+    assert "/100" not in description and "🌿" not in description
