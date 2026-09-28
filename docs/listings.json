@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-28T20:00:46+00:00",
+ "generated": "2026-09-28T20:30:32+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -1083,7 +1083,8 @@
     "move_in_ready": false,
     "top_floor_hint": true,
     "latitude": 52.014797,
-    "longitude": 4.364219
+    "longitude": 4.364219,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 50,
@@ -1447,7 +1448,8 @@
     "move_in_ready": true,
     "top_floor_hint": false,
     "latitude": 52.009884,
-    "longitude": 4.352143
+    "longitude": 4.352143,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 25,
@@ -1519,7 +1521,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.00837,
-    "longitude": 4.339198
+    "longitude": 4.339198,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 9,
@@ -1863,7 +1866,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.058964,
-    "longitude": 4.3353267
+    "longitude": 4.3353267,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 44,
@@ -1951,7 +1955,8 @@
     "move_in_ready": true,
     "top_floor_hint": false,
     "latitude": 52.059956,
-    "longitude": 4.3427296
+    "longitude": 4.3427296,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 77,
@@ -2027,7 +2032,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.092995,
-    "longitude": 4.3616467
+    "longitude": 4.3616467,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 21,
@@ -2095,7 +2101,8 @@
     "move_in_ready": false,
     "top_floor_hint": true,
     "latitude": 52.061993,
-    "longitude": 4.302118
+    "longitude": 4.302118,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 19,
@@ -2187,7 +2194,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.08922,
-    "longitude": 4.3433475
+    "longitude": 4.3433475,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 55,
@@ -2255,7 +2263,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.104397,
-    "longitude": 4.2850614
+    "longitude": 4.2850614,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 63,
@@ -2331,7 +2340,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.08401,
-    "longitude": 4.34633
+    "longitude": 4.34633,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 60,
@@ -2407,7 +2417,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.095398,
-    "longitude": 4.355523
+    "longitude": 4.355523,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 17,
@@ -2475,7 +2486,8 @@
     "move_in_ready": false,
     "top_floor_hint": true,
     "latitude": 52.060513,
-    "longitude": 4.278021
+    "longitude": 4.278021,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 46,
@@ -2555,7 +2567,8 @@
     "move_in_ready": false,
     "top_floor_hint": true,
     "latitude": 52.059895,
-    "longitude": 4.2749
+    "longitude": 4.2749,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 68,
@@ -2627,7 +2640,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.035057,
-    "longitude": 4.3063874
+    "longitude": 4.3063874,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 54,
@@ -2691,7 +2705,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.014553,
-    "longitude": 4.3511295
+    "longitude": 4.3511295,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 53,
@@ -2755,7 +2770,8 @@
     "move_in_ready": false,
     "top_floor_hint": true,
     "latitude": 52.057076,
-    "longitude": 4.2741632
+    "longitude": 4.2741632,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 64,
@@ -2835,7 +2851,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.070744,
-    "longitude": 4.2768087
+    "longitude": 4.2768087,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 49,
@@ -2907,7 +2924,8 @@
     "move_in_ready": true,
     "top_floor_hint": false,
     "latitude": 52.04796,
-    "longitude": 4.2379055
+    "longitude": 4.2379055,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 84,
@@ -2979,7 +2997,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.107067,
-    "longitude": 4.273371
+    "longitude": 4.273371,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 50,
@@ -3034,7 +3053,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.089146,
-    "longitude": 4.339974
+    "longitude": 4.339974,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 54,
@@ -3098,7 +3118,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.09319,
-    "longitude": 4.3706293
+    "longitude": 4.3706293,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 15,
@@ -3166,7 +3187,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.059036,
-    "longitude": 4.335049
+    "longitude": 4.335049,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 35,
@@ -3242,7 +3264,8 @@
     "move_in_ready": true,
     "top_floor_hint": false,
     "latitude": 52.05792,
-    "longitude": 4.2655754
+    "longitude": 4.2655754,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 79,
@@ -3314,7 +3337,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.04642,
-    "longitude": 4.374222
+    "longitude": 4.374222,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 54,
@@ -3374,7 +3398,8 @@
     "move_in_ready": false,
     "top_floor_hint": true,
     "latitude": 52.069954,
-    "longitude": 4.277648
+    "longitude": 4.277648,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 49,
@@ -3462,7 +3487,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.007343,
-    "longitude": 4.3642845
+    "longitude": 4.3642845,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 17,
@@ -3530,7 +3556,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.049324,
-    "longitude": 4.3829517
+    "longitude": 4.3829517,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 71,
@@ -3598,7 +3625,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.055138,
-    "longitude": 4.231249
+    "longitude": 4.231249,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 29,
@@ -3678,7 +3706,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.07489,
-    "longitude": 4.28376
+    "longitude": 4.28376,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 61,
@@ -3746,7 +3775,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.053707,
-    "longitude": 4.338288
+    "longitude": 4.338288,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 66,
@@ -3818,7 +3848,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.08689,
-    "longitude": 4.3382854
+    "longitude": 4.3382854,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 67,
@@ -3886,7 +3917,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.099922,
-    "longitude": 4.3619294
+    "longitude": 4.3619294,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 48,
@@ -3954,7 +3986,8 @@
     "move_in_ready": true,
     "top_floor_hint": false,
     "latitude": 52.057255,
-    "longitude": 4.338525
+    "longitude": 4.338525,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 73,
@@ -4038,7 +4071,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.056953,
-    "longitude": 4.229506
+    "longitude": 4.229506,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 64,
@@ -4098,7 +4132,8 @@
     "move_in_ready": false,
     "top_floor_hint": true,
     "latitude": 52.06841,
-    "longitude": 4.2833505
+    "longitude": 4.2833505,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 56,
@@ -4174,7 +4209,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.097973,
-    "longitude": 4.358453
+    "longitude": 4.358453,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 18,
@@ -4246,7 +4282,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.058983,
-    "longitude": 4.273187
+    "longitude": 4.273187,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 53,
@@ -4306,7 +4343,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.061,
-    "longitude": 4.2712164
+    "longitude": 4.2712164,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 57,
@@ -4370,7 +4408,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 51.983475,
-    "longitude": 4.337486
+    "longitude": 4.337486,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 70,
@@ -4438,7 +4477,8 @@
     "move_in_ready": true,
     "top_floor_hint": false,
     "latitude": 52.103256,
-    "longitude": 4.2761955
+    "longitude": 4.2761955,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 69,
@@ -4510,7 +4550,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.034184,
-    "longitude": 4.2852063
+    "longitude": 4.2852063,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 29,
@@ -5022,7 +5063,8 @@
     "move_in_ready": false,
     "top_floor_hint": true,
     "latitude": 52.01112,
-    "longitude": 4.3480034
+    "longitude": 4.3480034,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 61,
@@ -5274,7 +5316,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.010773,
-    "longitude": 4.336759
+    "longitude": 4.336759,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 17,
@@ -5430,7 +5473,8 @@
     "move_in_ready": false,
     "top_floor_hint": true,
     "latitude": 52.00783,
-    "longitude": 4.347949
+    "longitude": 4.347949,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 57,
@@ -5810,7 +5854,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.01296,
-    "longitude": 4.334179
+    "longitude": 4.334179,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 63,
@@ -6266,7 +6311,8 @@
     "move_in_ready": true,
     "top_floor_hint": false,
     "latitude": 52.01296,
-    "longitude": 4.334179
+    "longitude": 4.334179,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 80,
@@ -6508,8 +6554,57 @@
      400000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijk eigendom belast met erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": true,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 2000,
+    "balcony": true,
+    "outdoor_m2": 6,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 155.69,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.021523,
+    "longitude": 4.2963805,
+    "distance_to_supermarket_m": 106.39981441709742
+   },
+   "score": {
+    "points": 45,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": -25,
+      "text": "erfpacht (perpetual, bought off)"
+     },
+     {
+      "points": 9,
+      "text": "balcony or terrace, 6 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 4,
+      "text": "energy label A"
+     },
+     {
+      "points": -1,
+      "text": "106 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -6536,8 +6631,53 @@
      295000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1936,
+    "balcony": true,
+    "outdoor_m2": 6,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 139.15,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.060913,
+    "longitude": 4.273372,
+    "distance_to_supermarket_m": 259.6632589124648
+   },
+   "score": {
+    "points": 69,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 9,
+      "text": "balcony or terrace, 6 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1936)"
+     },
+     {
+      "points": -2,
+      "text": "260 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -6564,8 +6704,57 @@
      275000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijk eigendom belast met erfpacht (einddatum erfpacht: 31-12-2035)",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 4,
+    "floor_label": "4e woonlaag",
+    "year_built": 1963,
+    "balcony": true,
+    "outdoor_m2": 5,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 314.44,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": true,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.096508,
+    "longitude": 4.3576117,
+    "distance_to_supermarket_m": 362.0088222268636
+   },
+   "score": {
+    "points": 0,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": -20,
+      "text": "needs work"
+     },
+     {
+      "points": 8,
+      "text": "balcony or terrace, 5 m²"
+     },
+     {
+      "points": -4,
+      "text": "energy label E"
+     },
+     {
+      "points": -3,
+      "text": "362 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -6592,8 +6781,57 @@
      349500
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijke erfpacht (einddatum erfpacht: 31-12-2027)",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1955,
+    "balcony": true,
+    "outdoor_m2": 10,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 95.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": true,
+    "latitude": 52.078575,
+    "longitude": 4.261767,
+    "distance_to_supermarket_m": 205.75185083923338
+   },
+   "score": {
+    "points": 24,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 14,
+      "text": "balcony or terrace, 10 m²"
+     },
+     {
+      "points": 4,
+      "text": "energy label B"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
+     },
+     {
+      "points": -2,
+      "text": "206 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -6620,8 +6858,57 @@
      369500
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 4,
+    "floor_label": "4e woonlaag",
+    "year_built": 1952,
+    "balcony": true,
+    "outdoor_m2": 10,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 150.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": true,
+    "top_floor_hint": false,
+    "latitude": 52.058247,
+    "longitude": 4.268056,
+    "distance_to_supermarket_m": 449.43568196889754
+   },
+   "score": {
+    "points": 70,
+    "tier": "top",
+    "reasons": [
+     {
+      "points": 14,
+      "text": "balcony or terrace, 10 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 8,
+      "text": "move-in ready"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -4,
+      "text": "449 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -6648,8 +6935,65 @@
      350000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 0,
+    "floor_label": "Begane grond",
+    "year_built": 1926,
+    "balcony": true,
+    "outdoor_m2": 6,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 40.0,
+    "vve_reserve_fund": false,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.068237,
+    "longitude": 4.2796855,
+    "distance_to_supermarket_m": 182.38252415038392
+   },
+   "score": {
+    "points": 57,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": -10,
+      "text": "VvE has no reserve fund"
+     },
+     {
+      "points": 9,
+      "text": "balcony or terrace, 6 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1926)"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": -1,
+      "text": "182 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -6698,7 +7042,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.049202,
-    "longitude": 4.3307242
+    "longitude": 4.3307242,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 64,
@@ -6748,8 +7093,53 @@
      355000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijk eigendom belast met erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": true,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1927,
+    "balcony": true,
+    "outdoor_m2": 5,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 154.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.104507,
+    "longitude": 4.277163,
+    "distance_to_supermarket_m": 69.94452131521486
+   },
+   "score": {
+    "points": 45,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": -25,
+      "text": "erfpacht (perpetual, bought off)"
+     },
+     {
+      "points": 8,
+      "text": "balcony or terrace, 5 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1927)"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -6776,8 +7166,49 @@
      365000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1931,
+    "balcony": true,
+    "outdoor_m2": 5,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 85.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.066235,
+    "longitude": 4.2525067,
+    "distance_to_supermarket_m": 86.10013707475038
+   },
+   "score": {
+    "points": 60,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 8,
+      "text": "balcony or terrace, 5 m²"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1931)"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -6826,7 +7257,8 @@
     "move_in_ready": true,
     "top_floor_hint": false,
     "latitude": 52.06596,
-    "longitude": 4.2687297
+    "longitude": 4.2687297,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 72,
@@ -6880,8 +7312,57 @@
      349500
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijk eigendom belast met erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 0,
+    "floor_label": "Begane grond",
+    "year_built": 1932,
+    "balcony": false,
+    "outdoor_m2": null,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 112.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.0609,
+    "longitude": 4.306547,
+    "distance_to_supermarket_m": 414.6058297278692
+   },
+   "score": {
+    "points": 2,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1932)"
+     },
+     {
+      "points": -4,
+      "text": "415 m to nearest supermarket"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -7160,8 +7641,61 @@
      315000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1951,
+    "balcony": true,
+    "outdoor_m2": 9,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 105.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": true,
+    "top_floor_hint": false,
+    "latitude": 52.06052,
+    "longitude": 4.272057,
+    "distance_to_supermarket_m": 220.3097080488176
+   },
+   "score": {
+    "points": 75,
+    "tier": "top",
+    "reasons": [
+     {
+      "points": 13,
+      "text": "balcony or terrace, 9 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 8,
+      "text": "move-in ready"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "energy label B"
+     },
+     {
+      "points": -2,
+      "text": "220 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -7630,7 +8164,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.096355,
-    "longitude": 4.270331
+    "longitude": 4.270331,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 52,
@@ -8394,7 +8929,8 @@
     "move_in_ready": false,
     "top_floor_hint": true,
     "latitude": 52.017418,
-    "longitude": 4.3613906
+    "longitude": 4.3613906,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 60,
@@ -8636,8 +9172,65 @@
      350000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": null,
+    "floor_label": null,
+    "year_built": 1925,
+    "balcony": true,
+    "outdoor_m2": 7,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 140.0,
+    "vve_reserve_fund": false,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.081234,
+    "longitude": 4.2706513,
+    "distance_to_supermarket_m": 211.8244877240282
+   },
+   "score": {
+    "points": 58,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 10,
+      "text": "balcony or terrace, 7 m²"
+     },
+     {
+      "points": -10,
+      "text": "VvE has no reserve fund"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1925)"
+     },
+     {
+      "points": 4,
+      "text": "energy label B"
+     },
+     {
+      "points": -2,
+      "text": "212 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -8664,8 +9257,45 @@
      340000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 11,
+    "floor_label": "11e woonlaag",
+    "year_built": 1975,
+    "balcony": true,
+    "outdoor_m2": 12,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 235.75,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": true,
+    "latitude": 52.092117,
+    "longitude": 4.357333,
+    "distance_to_supermarket_m": 52.21895367051715
+   },
+   "score": {
+    "points": 68,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 15,
+      "text": "balcony or terrace, 12 m²"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -8692,8 +9322,57 @@
      285000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1926,
+    "balcony": false,
+    "outdoor_m2": null,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 150.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.068527,
+    "longitude": 4.279379,
+    "distance_to_supermarket_m": 167.3403487962042
+   },
+   "score": {
+    "points": 53,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1926)"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     },
+     {
+      "points": -1,
+      "text": "167 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -8720,8 +9399,57 @@
      269500
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1933,
+    "balcony": true,
+    "outdoor_m2": 6,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 100.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": true,
+    "move_in_ready": false,
+    "top_floor_hint": true,
+    "latitude": 52.064404,
+    "longitude": 4.285534,
+    "distance_to_supermarket_m": 166.1359255951573
+   },
+   "score": {
+    "points": 45,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": -20,
+      "text": "needs work"
+     },
+     {
+      "points": 9,
+      "text": "balcony or terrace, 6 m²"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1933)"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
+     },
+     {
+      "points": -1,
+      "text": "166 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -8770,7 +9498,8 @@
     "move_in_ready": true,
     "top_floor_hint": true,
     "latitude": 52.060196,
-    "longitude": 4.3420544
+    "longitude": 4.3420544,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 60,
@@ -8828,8 +9557,65 @@
      335000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1969,
+    "balcony": true,
+    "outdoor_m2": 4,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": null,
+    "vve_reserve_fund": false,
+    "vve_maintenance_plan": false,
+    "vve_registered": false,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": true,
+    "top_floor_hint": false,
+    "latitude": 52.060246,
+    "longitude": 4.2660303,
+    "distance_to_supermarket_m": 304.83381741925075
+   },
+   "score": {
+    "points": 43,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": -10,
+      "text": "VvE has no reserve fund"
+     },
+     {
+      "points": 8,
+      "text": "move-in ready"
+     },
+     {
+      "points": 6,
+      "text": "balcony or terrace, 4 m²"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -6,
+      "text": "VvE not registered at the KvK"
+     },
+     {
+      "points": 4,
+      "text": "energy label B"
+     },
+     {
+      "points": -3,
+      "text": "305 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -8878,7 +9664,8 @@
     "move_in_ready": true,
     "top_floor_hint": false,
     "latitude": 52.069687,
-    "longitude": 4.2702136
+    "longitude": 4.2702136,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 69,
@@ -8950,7 +9737,8 @@
     "move_in_ready": true,
     "top_floor_hint": false,
     "latitude": 52.07636,
-    "longitude": 4.2741704
+    "longitude": 4.2741704,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 72,
@@ -9026,7 +9814,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.104362,
-    "longitude": 4.277126
+    "longitude": 4.277126,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 0,
@@ -9114,7 +9903,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.071625,
-    "longitude": 4.2773743
+    "longitude": 4.2773743,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 62,
@@ -9178,7 +9968,8 @@
     "move_in_ready": true,
     "top_floor_hint": false,
     "latitude": 52.06278,
-    "longitude": 4.2661033
+    "longitude": 4.2661033,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 84,
@@ -9250,7 +10041,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.05765,
-    "longitude": 4.259181
+    "longitude": 4.259181,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 32,
@@ -9318,7 +10110,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.053314,
-    "longitude": 4.339205
+    "longitude": 4.339205,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 62,
@@ -9390,7 +10183,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.0641,
-    "longitude": 4.2872443
+    "longitude": 4.2872443,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 29,
@@ -9470,7 +10264,8 @@
     "move_in_ready": true,
     "top_floor_hint": true,
     "latitude": 52.051895,
-    "longitude": 4.3345118
+    "longitude": 4.3345118,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 81,
@@ -9546,7 +10341,8 @@
     "move_in_ready": true,
     "top_floor_hint": false,
     "latitude": 52.059902,
-    "longitude": 4.300693
+    "longitude": 4.300693,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 62,
@@ -9610,7 +10406,8 @@
     "move_in_ready": true,
     "top_floor_hint": true,
     "latitude": 52.059143,
-    "longitude": 4.275047
+    "longitude": 4.275047,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 71,
@@ -9690,7 +10487,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.00852,
-    "longitude": 4.3541856
+    "longitude": 4.3541856,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 42,
@@ -9762,7 +10560,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.081642,
-    "longitude": 4.3436613
+    "longitude": 4.3436613,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 62,
@@ -9838,7 +10637,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.05983,
-    "longitude": 4.337932
+    "longitude": 4.337932,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 63,
@@ -9914,7 +10714,8 @@
     "move_in_ready": true,
     "top_floor_hint": false,
     "latitude": 52.059837,
-    "longitude": 4.3006835
+    "longitude": 4.3006835,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 62,
@@ -9978,7 +10779,8 @@
     "move_in_ready": true,
     "top_floor_hint": true,
     "latitude": 52.069225,
-    "longitude": 4.28017
+    "longitude": 4.28017,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 79,
@@ -10062,7 +10864,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.06201,
-    "longitude": 4.2885766
+    "longitude": 4.2885766,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 59,
@@ -10134,7 +10937,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.048893,
-    "longitude": 4.238376
+    "longitude": 4.238376,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 47,
@@ -10214,7 +11018,8 @@
     "move_in_ready": false,
     "top_floor_hint": true,
     "latitude": 52.09329,
-    "longitude": 4.2691226
+    "longitude": 4.2691226,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 56,
@@ -10290,7 +11095,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.066032,
-    "longitude": 4.2819653
+    "longitude": 4.2819653,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 73,
@@ -10358,7 +11164,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.048363,
-    "longitude": 4.2363234
+    "longitude": 4.2363234,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 72,
@@ -10422,7 +11229,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.07623,
-    "longitude": 4.2584567
+    "longitude": 4.2584567,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 21,
@@ -10490,7 +11298,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.06607,
-    "longitude": 4.243944
+    "longitude": 4.243944,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 0,
@@ -10562,7 +11371,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.052284,
-    "longitude": 4.3322434
+    "longitude": 4.3322434,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 51,
@@ -10626,7 +11436,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.059402,
-    "longitude": 4.334999
+    "longitude": 4.334999,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 56,
@@ -10686,7 +11497,8 @@
     "move_in_ready": false,
     "top_floor_hint": true,
     "latitude": 52.06928,
-    "longitude": 4.277031
+    "longitude": 4.277031,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 44,
@@ -10774,7 +11586,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.093616,
-    "longitude": 4.3628383
+    "longitude": 4.3628383,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 66,
@@ -10838,7 +11651,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.09344,
-    "longitude": 4.3630476
+    "longitude": 4.3630476,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 25,
@@ -10910,7 +11724,8 @@
     "move_in_ready": true,
     "top_floor_hint": false,
     "latitude": 52.053967,
-    "longitude": 4.2354937
+    "longitude": 4.2354937,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 64,
@@ -10982,7 +11797,8 @@
     "move_in_ready": false,
     "top_floor_hint": false,
     "latitude": 52.065876,
-    "longitude": 4.275807
+    "longitude": 4.275807,
+    "distance_to_supermarket_m": null
    },
    "score": {
     "points": 43,
