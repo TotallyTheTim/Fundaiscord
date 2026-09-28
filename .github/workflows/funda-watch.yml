@@ -15,7 +15,7 @@ on:
         default: false
 
 permissions:
-  contents: write # commits data/seen-listings.json back
+  contents: write # commits data/seen-listings.json and docs/listings.json back
 
 # Two overlapping runs would both alert on the same listing and race on the state push.
 concurrency:
@@ -49,7 +49,7 @@ jobs:
         run: |
           git config user.name "funda-watch"
           git config user.email "funda-watch@users.noreply.github.com"
-          git add data/
+          git add data/ docs/
           git diff --cached --quiet && exit 0
           git commit -m "Update listing state"
           git push || (git pull --rebase && git push)
