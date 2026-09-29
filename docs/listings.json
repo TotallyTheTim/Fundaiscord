@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T16:30:31+00:00",
+ "generated": "2026-09-29T20:00:40+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -5587,7 +5587,7 @@
    "bedrooms": 3,
    "energy_label": "B",
    "published": "2026-09-14T17:20:50.029752+02:00",
-   "photo_url": "https://cloud.funda.nl/tiara-media/6ecd7747-da6f-487a-9e1c-9b4f22e09fa3/fa47e167-a787-48f1-a26f-c41f05eed5de",
+   "photo_url": "https://cloud.funda.nl/tiara-media/6ecd7747-da6f-487a-9e1c-9b4f22e09fa3/62f47038-b19c-4b2e-8cd4-11f128c3949c",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-09-29",
@@ -15061,8 +15061,8 @@
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-09-29",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-09-29",
    "price_history": [
     [
      "2026-09-28",
@@ -16042,8 +16042,8 @@
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-09-29",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-09-29",
    "price_history": [
     [
      "2026-09-28",
@@ -19031,7 +19031,7 @@
    "price": 375000,
    "living_area": 88,
    "bedrooms": 3,
-   "energy_label": "B",
+   "energy_label": "A",
    "published": "2026-09-20T23:08:07.944726+02:00",
    "photo_url": "https://cloud.funda.nl/tiara-media/d0383dd1-a8be-459f-b1ea-ac4b0080fac4/e0f9b5b4-69cb-46ef-b60c-3979d09a0032",
    "search_name": "Den Haag",
@@ -19096,7 +19096,7 @@
      },
      {
       "points": 4,
-      "text": "energy label B"
+      "text": "energy label A"
      },
      {
       "points": 3,
