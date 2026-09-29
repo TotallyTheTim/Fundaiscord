@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T01:00:42+00:00",
+ "generated": "2026-09-29T01:30:31+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -109,8 +109,57 @@
      350000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijk eigendom belast met erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 0,
+    "floor_label": "Begane grond",
+    "year_built": 1912,
+    "balcony": false,
+    "outdoor_m2": null,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 182.91,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.111385,
+    "longitude": 4.2859015,
+    "distance_to_supermarket_m": 132.06210276550544
+   },
+   "score": {
+    "points": 9,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1912)"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     },
+     {
+      "points": -1,
+      "text": "132 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -137,8 +186,69 @@
      350000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 1,
+    "floor_label": "1e woonlaag",
+    "year_built": 1928,
+    "balcony": true,
+    "outdoor_m2": 32,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 80.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": true,
+    "top_floor_hint": false,
+    "latitude": 52.06898,
+    "longitude": 4.284564,
+    "distance_to_supermarket_m": 189.68262413056982
+   },
+   "score": {
+    "points": 79,
+    "tier": "top",
+    "reasons": [
+     {
+      "points": 15,
+      "text": "balcony or terrace, 32 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 8,
+      "text": "move-in ready"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1928)"
+     },
+     {
+      "points": 3,
+      "text": "first floor"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     },
+     {
+      "points": -1,
+      "text": "190 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -238,8 +348,65 @@
      350000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 1,
+    "floor_label": "1e woonlaag",
+    "year_built": 1931,
+    "balcony": true,
+    "outdoor_m2": 5,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 100.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": true,
+    "latitude": 52.008526,
+    "longitude": 4.348195,
+    "distance_to_supermarket_m": 490.8762863486668
+   },
+   "score": {
+    "points": 56,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 8,
+      "text": "balcony or terrace, 5 m²"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1931)"
+     },
+     {
+      "points": -4,
+      "text": "491 m to nearest supermarket"
+     },
+     {
+      "points": 3,
+      "text": "first floor"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -266,8 +433,61 @@
      299000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 1,
+    "floor_label": "1e woonlaag",
+    "year_built": 1961,
+    "balcony": true,
+    "outdoor_m2": 7,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 455.44,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": true,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.00162,
+    "longitude": 4.349816,
+    "distance_to_supermarket_m": 285.64977128839126
+   },
+   "score": {
+    "points": 67,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 10,
+      "text": "balcony or terrace, 7 m²"
+     },
+     {
+      "points": 8,
+      "text": "4 bedrooms (room for an office)"
+     },
+     {
+      "points": -4,
+      "text": "energy label E"
+     },
+     {
+      "points": 3,
+      "text": "first floor"
+     },
+     {
+      "points": 2,
+      "text": "monument"
+     },
+     {
+      "points": -2,
+      "text": "286 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -294,8 +514,53 @@
      375000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": null,
+    "floor_label": null,
+    "year_built": 1942,
+    "balcony": true,
+    "outdoor_m2": 36,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 147.84,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.06292,
+    "longitude": 4.2570133,
+    "distance_to_supermarket_m": 402.4571509117771
+   },
+   "score": {
+    "points": 67,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 15,
+      "text": "balcony or terrace, 36 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -4,
+      "text": "402 m to nearest supermarket"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -322,8 +587,61 @@
      375000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": false,
+    "floor": null,
+    "floor_label": null,
+    "year_built": 1906,
+    "balcony": true,
+    "outdoor_m2": 1,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": null,
+    "vve_reserve_fund": null,
+    "vve_maintenance_plan": null,
+    "vve_registered": null,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": true,
+    "latitude": 52.06996,
+    "longitude": 4.2791877,
+    "distance_to_supermarket_m": 252.95502852203157
+   },
+   "score": {
+    "points": 65,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 4,
+      "text": "house"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1906)"
+     },
+     {
+      "points": 3,
+      "text": "balcony or terrace, 1 m²"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
+     },
+     {
+      "points": -2,
+      "text": "253 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -350,8 +668,69 @@
      395000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1947,
+    "balcony": true,
+    "outdoor_m2": 49,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": null,
+    "vve_reserve_fund": false,
+    "vve_maintenance_plan": false,
+    "vve_registered": false,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": true,
+    "top_floor_hint": false,
+    "latitude": 52.055485,
+    "longitude": 4.333301,
+    "distance_to_supermarket_m": 138.72066534824214
+   },
+   "score": {
+    "points": 57,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 15,
+      "text": "balcony or terrace, 49 m²"
+     },
+     {
+      "points": -10,
+      "text": "VvE has no reserve fund"
+     },
+     {
+      "points": 8,
+      "text": "move-in ready"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -6,
+      "text": "VvE not registered at the KvK"
+     },
+     {
+      "points": 4,
+      "text": "energy label B"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": -1,
+      "text": "139 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -378,8 +757,57 @@
      325000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijke erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": null,
+    "floor_label": null,
+    "year_built": 1932,
+    "balcony": true,
+    "outdoor_m2": 5,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 137.5,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.061405,
+    "longitude": 4.300183,
+    "distance_to_supermarket_m": 109.37913755612216
+   },
+   "score": {
+    "points": 24,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 8,
+      "text": "balcony or terrace, 5 m²"
+     },
+     {
+      "points": 8,
+      "text": "4 bedrooms (room for an office)"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1932)"
+     },
+     {
+      "points": -1,
+      "text": "109 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -475,8 +903,61 @@
      325000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 0,
+    "floor_label": "Begane grond",
+    "year_built": 1934,
+    "balcony": true,
+    "outdoor_m2": 6,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 125.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.05899,
+    "longitude": 4.27624,
+    "distance_to_supermarket_m": 408.1167049979765
+   },
+   "score": {
+    "points": 54,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": 9,
+      "text": "balcony or terrace, 6 m²"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1934)"
+     },
+     {
+      "points": -4,
+      "text": "408 m to nearest supermarket"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -587,8 +1068,61 @@
      350000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijk eigendom belast met erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": null,
+    "floor_label": null,
+    "year_built": 1937,
+    "balcony": true,
+    "outdoor_m2": 7,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 165.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.05985,
+    "longitude": 4.2935076,
+    "distance_to_supermarket_m": 165.7353141317749
+   },
+   "score": {
+    "points": 30,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 10,
+      "text": "balcony or terrace, 7 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1937)"
+     },
+     {
+      "points": 4,
+      "text": "energy label B"
+     },
+     {
+      "points": -1,
+      "text": "166 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -615,8 +1149,57 @@
      400000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijke erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 1,
+    "floor_label": "1e woonlaag",
+    "year_built": 1950,
+    "balcony": true,
+    "outdoor_m2": 3,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 75.0,
+    "vve_reserve_fund": false,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.065544,
+    "longitude": 4.23587,
+    "distance_to_supermarket_m": 353.2009227163788
+   },
+   "score": {
+    "points": 0,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": -10,
+      "text": "VvE has no reserve fund"
+     },
+     {
+      "points": 4,
+      "text": "balcony or terrace, 3 m²"
+     },
+     {
+      "points": 3,
+      "text": "first floor"
+     },
+     {
+      "points": -3,
+      "text": "353 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -643,8 +1226,49 @@
      325000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 6,
+    "floor_label": "6e woonlaag",
+    "year_built": 1976,
+    "balcony": true,
+    "outdoor_m2": 10,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 636.47,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": true,
+    "top_floor_hint": false,
+    "latitude": 52.048363,
+    "longitude": 4.2363234,
+    "distance_to_supermarket_m": 25.92222249149155
+   },
+   "score": {
+    "points": 80,
+    "tier": "top",
+    "reasons": [
+     {
+      "points": 14,
+      "text": "balcony or terrace, 10 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 8,
+      "text": "move-in ready"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -19086,8 +19710,69 @@
      369000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijke erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 0,
+    "floor_label": "Begane grond",
+    "year_built": 1927,
+    "balcony": false,
+    "outdoor_m2": null,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 40.0,
+    "vve_reserve_fund": false,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.066113,
+    "longitude": 4.276971,
+    "distance_to_supermarket_m": 222.54255564541236
+   },
+   "score": {
+    "points": 0,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": -10,
+      "text": "VvE has no reserve fund"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1927)"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": -2,
+      "text": "223 m to nearest supermarket"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -19170,8 +19855,61 @@
      329500
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1927,
+    "balcony": true,
+    "outdoor_m2": null,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 110.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.06948,
+    "longitude": 4.2832813,
+    "distance_to_supermarket_m": 230.4629972824121
+   },
+   "score": {
+    "points": 58,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 6,
+      "text": "balcony or terrace"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1927)"
+     },
+     {
+      "points": -2,
+      "text": "230 m to nearest supermarket"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -19198,8 +19936,65 @@
      325000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1928,
+    "balcony": true,
+    "outdoor_m2": 3,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 205.47,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": true,
+    "latitude": 52.068447,
+    "longitude": 4.2810216,
+    "distance_to_supermarket_m": 274.78438614586884
+   },
+   "score": {
+    "points": 65,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "balcony or terrace, 3 m²"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1928)"
+     },
+     {
+      "points": 4,
+      "text": "energy label A"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
+     },
+     {
+      "points": -2,
+      "text": "275 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   }
  ]
