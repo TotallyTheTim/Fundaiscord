@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T20:00:40+00:00",
+ "generated": "2026-09-29T22:00:41+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -7342,6 +7342,75 @@
      {
       "points": 4,
       "text": "energy label A+"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44525257",
+   "title": "Volendamlaan 848",
+   "city": "Den Haag",
+   "wijk": "Leyenburg",
+   "neighbourhood": "Leyenburg",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-volendamlaan-848/44525257/",
+   "price": 325000,
+   "living_area": 95,
+   "bedrooms": 3,
+   "energy_label": "C",
+   "published": "2026-09-30T00:00:11.692935+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/88550aab-5272-437a-a4eb-98b55aab5f10/947f4686-ca73-4d25-9e96-ee9ae511cf87",
+   "search_name": "Den Haag",
+   "first_seen": "2026-09-29T22:00:41+00:00",
+   "last_seen": "2026-09-29",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-09-29",
+     325000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 9,
+    "floor_label": "9e woonlaag",
+    "year_built": 1969,
+    "balcony": true,
+    "outdoor_m2": 13,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 196.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": true,
+    "top_floor_hint": false,
+    "latitude": 52.06198,
+    "longitude": 4.2686553,
+    "distance_to_supermarket_m": 41.47180779434295
+   },
+   "score": {
+    "points": 81,
+    "tier": "top",
+    "reasons": [
+     {
+      "points": 15,
+      "text": "balcony or terrace, 13 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 8,
+      "text": "move-in ready"
      }
     ]
    },
