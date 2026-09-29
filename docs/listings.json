@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T08:24:24+00:00",
+ "generated": "2026-09-29T09:30:30+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -19332,6 +19332,79 @@
      {
       "points": 4,
       "text": "energy label B"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "80974760",
+   "title": "Laan van Wateringse Veld 1534",
+   "city": "Den Haag",
+   "wijk": "Wateringse Veld",
+   "neighbourhood": "Zonne Veld",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-laan-van-wateringse-veld-1534/80974760/",
+   "price": 399000,
+   "living_area": 86,
+   "bedrooms": 2,
+   "energy_label": "A+",
+   "published": "2026-09-29T11:09:36.561873+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/7aa9cc92-1859-4321-9487-a79cbfec5a32/d2120a1e-7954-4f76-aa51-aab558ba9218",
+   "search_name": "Den Haag",
+   "first_seen": "2026-09-29T09:30:30+00:00",
+   "last_seen": "2026-09-29",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-09-29",
+     399000
+    ]
+   ],
+   "details": {
+    "ownership": "Erfpacht belast met vruchtgebruik",
+    "erfpacht": true,
+    "erfpacht_perpetual": true,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 2000,
+    "balcony": true,
+    "outdoor_m2": 6,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 288.44,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.01968,
+    "longitude": 4.299636,
+    "distance_to_supermarket_m": 159.93204514251607
+   },
+   "score": {
+    "points": 37,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -25,
+      "text": "erfpacht (perpetual, bought off)"
+     },
+     {
+      "points": 9,
+      "text": "balcony or terrace, 6 m²"
+     },
+     {
+      "points": 4,
+      "text": "energy label A+"
+     },
+     {
+      "points": -1,
+      "text": "160 m to nearest supermarket"
      }
     ]
    },
