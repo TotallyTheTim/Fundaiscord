@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T15:30:31+00:00",
+ "generated": "2026-09-29T16:30:31+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -20257,6 +20257,75 @@
      {
       "points": 3,
       "text": "first floor"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "80980551",
+   "title": "Gevers Deynootweg 1050",
+   "city": "Den Haag",
+   "wijk": "Belgisch Park",
+   "neighbourhood": "Belgisch Park",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-gevers-deynootweg-1050/80980551/",
+   "price": 385000,
+   "living_area": 75,
+   "bedrooms": 2,
+   "energy_label": "C",
+   "published": "2026-09-29T18:20:10.112608+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/39487bd0-b73e-4f5b-87fd-365087f00e44/79e9d1e8-0181-56b9-adc3-fa5909d9709d",
+   "search_name": "Den Haag",
+   "first_seen": "2026-09-29T16:30:31+00:00",
+   "last_seen": "2026-09-29",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-09-29",
+     385000
+    ]
+   ],
+   "details": {
+    "ownership": "Gemeentelijk eigendom belast met erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 5,
+    "floor_label": "5e woonlaag",
+    "year_built": 1987,
+    "balcony": true,
+    "outdoor_m2": null,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": null,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.11471,
+    "longitude": 4.284237,
+    "distance_to_supermarket_m": 400.7025848539766
+   },
+   "score": {
+    "points": 7,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 6,
+      "text": "balcony or terrace"
+     },
+     {
+      "points": -4,
+      "text": "401 m to nearest supermarket"
      }
     ]
    },
