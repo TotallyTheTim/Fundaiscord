@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-28T23:30:33+00:00",
+ "generated": "2026-09-29T00:00:44+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -966,8 +966,45 @@
      380000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 1,
+    "floor_label": "1e woonlaag",
+    "year_built": 1914,
+    "balcony": false,
+    "outdoor_m2": null,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 75.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.1112,
+    "longitude": 4.2868176,
+    "distance_to_supermarket_m": 90.81290558275175
+   },
+   "score": {
+    "points": 57,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 4,
+      "text": "pre-war character (1914)"
+     },
+     {
+      "points": 3,
+      "text": "first floor"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -994,8 +1031,61 @@
      375000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijk eigendom belast met erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 1,
+    "floor_label": "1e woonlaag",
+    "year_built": 1995,
+    "balcony": true,
+    "outdoor_m2": 7,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 99.27,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.059982,
+    "longitude": 4.296677,
+    "distance_to_supermarket_m": 276.46679563703873
+   },
+   "score": {
+    "points": 28,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 10,
+      "text": "balcony or terrace, 7 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 4,
+      "text": "energy label A"
+     },
+     {
+      "points": 3,
+      "text": "first floor"
+     },
+     {
+      "points": -2,
+      "text": "276 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -1078,8 +1168,49 @@
      380000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1992,
+    "balcony": true,
+    "outdoor_m2": 5,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 298.17,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 51.981304,
+    "longitude": 4.3413024,
+    "distance_to_supermarket_m": 297.56632158225176
+   },
+   "score": {
+    "points": 60,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 8,
+      "text": "balcony or terrace, 5 m²"
+     },
+     {
+      "points": 4,
+      "text": "energy label A"
+     },
+     {
+      "points": -2,
+      "text": "298 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -1097,7 +1228,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/1a577d65-6ec8-4f8a-a9f4-aaec2552322d/e71520a2-5579-42bc-9dfd-3410595aa931",
    "search_name": "Delft",
    "first_seen": "2026-09-28T14:00:45+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -1191,8 +1322,49 @@
      370000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1992,
+    "balcony": true,
+    "outdoor_m2": 5,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 298.17,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 51.980186,
+    "longitude": 4.3416896,
+    "distance_to_supermarket_m": 328.8935817898582
+   },
+   "score": {
+    "points": 59,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 8,
+      "text": "balcony or terrace, 5 m²"
+     },
+     {
+      "points": 4,
+      "text": "energy label A"
+     },
+     {
+      "points": -3,
+      "text": "329 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -1219,8 +1391,57 @@
      275000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1928,
+    "balcony": true,
+    "outdoor_m2": 8,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 75.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.06936,
+    "longitude": 4.2843695,
+    "distance_to_supermarket_m": 171.23073935458552
+   },
+   "score": {
+    "points": 67,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 12,
+      "text": "balcony or terrace, 8 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1928)"
+     },
+     {
+      "points": -1,
+      "text": "171 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -1247,8 +1468,57 @@
      310000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijk eigendom belast met erfpacht (einddatum erfpacht: 31-12-2035)",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1961,
+    "balcony": true,
+    "outdoor_m2": 12,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 202.27,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.096344,
+    "longitude": 4.35676,
+    "distance_to_supermarket_m": 421.973744253321
+   },
+   "score": {
+    "points": 22,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 15,
+      "text": "balcony or terrace, 12 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -4,
+      "text": "422 m to nearest supermarket"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -1275,8 +1545,53 @@
      349000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 1,
+    "floor_label": "1e woonlaag",
+    "year_built": 1922,
+    "balcony": true,
+    "outdoor_m2": 10,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 157.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.053905,
+    "longitude": 4.3374496,
+    "distance_to_supermarket_m": 146.3949786123693
+   },
+   "score": {
+    "points": 70,
+    "tier": "top",
+    "reasons": [
+     {
+      "points": 14,
+      "text": "balcony or terrace, 10 m²"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1922)"
+     },
+     {
+      "points": 3,
+      "text": "first floor"
+     },
+     {
+      "points": -1,
+      "text": "146 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -1748,7 +2063,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/97bec5f3-93cf-4076-b01a-0874b15f55bf/955553a4-4eaf-4c56-b747-1662349309f5",
    "search_name": "Delft",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -1895,8 +2210,61 @@
      400000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijke erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": true,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1925,
+    "balcony": true,
+    "outdoor_m2": 31,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 131.53,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.05495,
+    "longitude": 4.231708,
+    "distance_to_supermarket_m": 307.55603678467236
+   },
+   "score": {
+    "points": 52,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": -25,
+      "text": "erfpacht (perpetual, bought off)"
+     },
+     {
+      "points": 15,
+      "text": "balcony or terrace, 31 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1925)"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": -3,
+      "text": "308 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -1923,8 +2291,65 @@
      395000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijke erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1934,
+    "balcony": true,
+    "outdoor_m2": 9,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 90.0,
+    "vve_reserve_fund": false,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.093754,
+    "longitude": 4.2679358,
+    "distance_to_supermarket_m": 397.92598027548246
+   },
+   "score": {
+    "points": 1,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 13,
+      "text": "balcony or terrace, 9 m²"
+     },
+     {
+      "points": -10,
+      "text": "VvE has no reserve fund"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1934)"
+     },
+     {
+      "points": -3,
+      "text": "398 m to nearest supermarket"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -2219,7 +2644,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/9f972931-78da-48cb-8e8f-9ecdf4643e3c/db1cc624-69e3-4fb6-9d3d-153372b8adfc",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -2308,7 +2733,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/f4f96358-d22c-49ec-84e3-ec8c100988ec/1e46cfd4-ded9-4e26-bc30-9a80a0b11004",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -2993,7 +3418,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/376088e3-be26-48f2-b6cc-79f9cd48a14d/14c64cb2-74a5-4070-a582-e128a8124bf0",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -3058,7 +3483,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/b9cfad28-b2d6-40b5-a08b-bbb139fa6c2f/aed62dde-8e62-4023-922c-c74f7672b921",
    "search_name": "Delft",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -3540,7 +3965,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/534422c3-92b5-4540-9c11-cde458aeac27/6bc94af5-3b47-4a69-aeb9-2645ad507350",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -3840,7 +4265,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/f30b58a2-18b8-4fa5-962c-366512118718/7ab86f51-47aa-4b34-9a12-c4f1411fdcd5",
    "search_name": "Delft",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -4059,7 +4484,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/f6ec33f5-fad2-4a65-9f9c-0f1a793dec25/07063d44-fe6e-40ee-a666-07e48d50e5b1",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -4128,7 +4553,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/6f14ebc5-3a58-4f0a-b411-3358f417dee2/f35bfa9c-89ea-4e0a-9b43-11e2766b03d9",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -4201,7 +4626,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/9578d2d3-a236-4953-8398-4c8a6deca5e1/0ec303d0-76aa-4030-ae36-b96d8514bd03",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -4270,7 +4695,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/eaad5420-3b5a-47db-9321-ee083e362a0d/6975e1de-745d-4db6-8803-8b73c6d20b4c",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -4339,7 +4764,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/2510111d-9967-49c6-8dca-6e3298edb565/3346ebfd-0d69-4417-b214-53292c63ab48",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -4696,7 +5121,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/c0a7ef6a-9168-4118-b6df-e4143fe91086/2e0cbf00-a185-43f2-919a-885da0339b2d",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -4761,7 +5186,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/b0e2831c-795f-4315-b33d-251cb70a4648/f275ef89-f5da-403b-88fa-1dad96be5b6c",
    "search_name": "Delft",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -6216,7 +6641,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/733f261b-7aab-40e3-b065-5a820ffdf52f/df88ac74-d4de-4dd2-a05d-6b8696742da8",
    "search_name": "Delft",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -6739,7 +7164,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/2609fa76-9bb4-461a-944a-9466f87cb11b/703d37e2-9e3a-40f9-934b-e2b683d4922e",
    "search_name": "Delft",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -7047,7 +7472,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/b74587ff-8f84-4c56-9bb8-1f5c9fb1f012/99413f28-0ebb-4df9-833a-74653ff2659d",
    "search_name": "Delft",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -7951,7 +8376,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/61c393c5-c8cb-4656-928c-1a7e0f2d2c1c/465e734f-9ab4-41db-bbf9-e3493697f519",
    "search_name": "Delft",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -9066,7 +9491,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/bfd54c75-e5f8-42d6-8b8c-b1fa1a8e0684/1206088b-5562-4b04-add2-10dba73d7619",
    "search_name": "Delft",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -10124,7 +10549,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/ca321c7d-d6b5-426f-aac4-0d6aa67b9d59/4cc82f51-574a-4245-b598-b1e15a748089",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -11957,8 +12382,57 @@
      335000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijk eigendom belast met erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 0,
+    "floor_label": "Begane grond",
+    "year_built": 1933,
+    "balcony": false,
+    "outdoor_m2": null,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 100.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.054317,
+    "longitude": 4.234901,
+    "distance_to_supermarket_m": 119.10995625746662
+   },
+   "score": {
+    "points": 9,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1933)"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     },
+     {
+      "points": -1,
+      "text": "119 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -11985,8 +12459,49 @@
      350000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1965,
+    "balcony": true,
+    "outdoor_m2": 6,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 191.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.08794,
+    "longitude": 4.353988,
+    "distance_to_supermarket_m": 471.72348412476697
+   },
+   "score": {
+    "points": 53,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": 9,
+      "text": "balcony or terrace, 6 m²"
+     },
+     {
+      "points": -4,
+      "text": "472 m to nearest supermarket"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -12358,8 +12873,57 @@
      400000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Gemeentelijke erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": null,
+    "floor_label": null,
+    "year_built": 1987,
+    "balcony": true,
+    "outdoor_m2": 3,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 269.67,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": true,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": true,
+    "top_floor_hint": false,
+    "latitude": 52.114563,
+    "longitude": 4.284337,
+    "distance_to_supermarket_m": 383.50880938889856
+   },
+   "score": {
+    "points": 12,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 8,
+      "text": "move-in ready"
+     },
+     {
+      "points": 4,
+      "text": "balcony or terrace, 3 m²"
+     },
+     {
+      "points": -3,
+      "text": "384 m to nearest supermarket"
+     },
+     {
+      "points": -2,
+      "text": "busy road"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -12386,8 +12950,49 @@
      350000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 4,
+    "floor_label": "4e woonlaag",
+    "year_built": 1962,
+    "balcony": true,
+    "outdoor_m2": 6,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 280.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.06119,
+    "longitude": 4.2309785,
+    "distance_to_supermarket_m": 175.9465542140268
+   },
+   "score": {
+    "points": 56,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 9,
+      "text": "balcony or terrace, 6 m²"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     },
+     {
+      "points": -1,
+      "text": "176 m to nearest supermarket"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -12414,8 +13019,49 @@
      290000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 6,
+    "floor_label": "6e woonlaag",
+    "year_built": 1965,
+    "balcony": true,
+    "outdoor_m2": 10,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 330.88,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": true,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.062275,
+    "longitude": 4.262856,
+    "distance_to_supermarket_m": 426.16609244486045
+   },
+   "score": {
+    "points": 58,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 14,
+      "text": "balcony or terrace, 10 m²"
+     },
+     {
+      "points": -4,
+      "text": "426 m to nearest supermarket"
+     },
+     {
+      "points": -2,
+      "text": "busy road"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -12442,8 +13088,53 @@
      350000
     ]
    ],
-   "details": null,
-   "score": null,
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 0,
+    "floor_label": "Begane grond",
+    "year_built": 1940,
+    "balcony": true,
+    "outdoor_m2": 1,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 102.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.0561,
+    "longitude": 4.26928,
+    "distance_to_supermarket_m": 406.6103247590817
+   },
+   "score": {
+    "points": 60,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -4,
+      "text": "407 m to nearest supermarket"
+     },
+     {
+      "points": 3,
+      "text": "balcony or terrace, 1 m²"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     }
+    ]
+   },
    "details_failures": 0
   },
   {
@@ -13612,7 +14303,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/e233c464-413d-4c76-9bca-78fbdafcc5c3/c4c3b409-3c90-5a56-956a-2b489b4a1cd8",
    "search_name": "Delft",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -14564,7 +15255,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/14dc4e15-7e80-44a9-97cf-140caf5499fe/11a098e3-6f05-4759-a0c0-042998a97f7e",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -15176,7 +15867,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/68bed00a-ff04-4ac3-b122-4cfc4d1c03b5/f574a1d5-8df4-4f9d-8a77-5eaf93c2d6b7",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -15330,7 +16021,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/04adff34-90f6-4422-b5ec-b7d63681165e/179a7b7b-3b3d-41c1-aac5-1529100f3907",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -15553,7 +16244,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/619b3c6f-e175-49b9-b65e-e2af149e8f15/c32b4d5f-0169-5b14-a6d5-324f19f780e9",
    "search_name": "Delft",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -15703,7 +16394,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/ad30b4fc-bbcb-4fbd-87dd-12d215597fc9/6d257e09-5a81-4e59-b8cb-3cfa70a3c0c0",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16161,7 +16852,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/80756a86-4665-4c66-833f-95bb72476803/ad639bda-5f2c-4a18-8deb-62ddfed62b89",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16230,7 +16921,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/2e5f5816-20dd-4e2f-80d9-9844f37761ac/136fdae7-d3a6-4411-ac50-11ece4ffc957",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16295,7 +16986,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/31edaf73-da69-4b7d-9dbf-914af42b9b27/7980d413-2070-4f5f-9350-84202028f0c3",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16364,7 +17055,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/c1acffec-f7a5-4b2a-a591-10b55cee25fa/43eb8c48-881e-4b58-8280-18b19acee832",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16437,7 +17128,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/c41f24c8-2864-41cf-9a5c-74a2332851a5/88aeb0e2-e407-4cd1-b719-110df0964a99",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16502,7 +17193,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/bd84f8f2-4b67-4e20-b6d2-300e6b45bd60/44132111-f6d9-5cec-bdb3-99beca569e73",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16563,7 +17254,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/454aa214-8279-4abe-b49a-a1611bc26eed/c80bc071-cd87-430b-b629-2d27c98a8679",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-09-28",
+   "last_seen": "2026-09-29",
    "active": true,
    "inactive_since": null,
    "price_history": [
