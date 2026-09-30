@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-30T20:00:40+00:00",
+ "generated": "2026-09-30T22:00:41+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -7484,6 +7484,87 @@
      {
       "points": -1,
       "text": "137 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44526185",
+   "title": "Schwerinkade 44",
+   "city": "Den Haag",
+   "wijk": "Loosduinen",
+   "neighbourhood": "Kom Loosduinen",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-schwerinkade-44/44526185/",
+   "price": 299500,
+   "living_area": 75,
+   "bedrooms": 2,
+   "energy_label": "D",
+   "published": "2026-10-01T00:00:10.047113+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/2a8ff054-bffb-4ee5-a045-ce9fbfdb974d/e472485c-2157-42cd-9a3e-11f1bebf6c8f",
+   "search_name": "Den Haag",
+   "first_seen": "2026-09-30T22:00:41+00:00",
+   "last_seen": "2026-09-30",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-09-30",
+     299500
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1935,
+    "balcony": true,
+    "outdoor_m2": 5,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 155.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": true,
+    "top_floor_hint": true,
+    "latitude": 52.051186,
+    "longitude": 4.2378564,
+    "distance_to_supermarket_m": 284.4421444633204
+   },
+   "score": {
+    "points": 69,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 8,
+      "text": "balcony or terrace, 5 m²"
+     },
+     {
+      "points": 8,
+      "text": "move-in ready"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1935)"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
+     },
+     {
+      "points": -2,
+      "text": "284 m to nearest supermarket"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
      }
     ]
    },
