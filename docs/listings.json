@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-30T08:00:40+00:00",
+ "generated": "2026-09-30T20:00:40+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -223,7 +223,7 @@
    "wijk": "Belgisch Park",
    "neighbourhood": "Belgisch Park",
    "url": "https://www.funda.nl/detail/koop/den-haag/appartement-bosschestraat-6/43300676/",
-   "price": 350000,
+   "price": 345000,
    "living_area": 94,
    "bedrooms": 2,
    "energy_label": "D",
@@ -238,6 +238,10 @@
     [
      "2026-09-28",
      350000
+    ],
+    [
+     "2026-09-30",
+     345000
     ]
    ],
    "details": {
@@ -791,8 +795,8 @@
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-09-30",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-09-30",
    "price_history": [
     [
      "2026-09-28",
@@ -8911,8 +8915,8 @@
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-09-30",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-09-30",
    "price_history": [
     [
      "2026-09-28",
@@ -17517,7 +17521,7 @@
    "bedrooms": 3,
    "energy_label": "B",
    "published": "2026-09-10T15:41:47.403617+02:00",
-   "photo_url": "https://cloud.funda.nl/tiara-media/0552f867-d9a5-49b0-8f2d-bd81ee625c50/062f15e0-65ba-4770-b5d8-ff5c8eee7df6",
+   "photo_url": "https://cloud.funda.nl/tiara-media/0552f867-d9a5-49b0-8f2d-bd81ee625c50/5edd4263-e6f5-427d-9829-ddf9a4f0e08d",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-09-30",
