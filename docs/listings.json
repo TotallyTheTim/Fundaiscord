@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-01T12:30:37+00:00",
+ "generated": "2026-10-01T15:00:47+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -20715,6 +20715,83 @@
      {
       "points": -1,
       "text": "139 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "80984080",
+   "title": "Zonnebloemstraat 35",
+   "city": "Den Haag",
+   "wijk": "Bomen- en Bloemenbuurt",
+   "neighbourhood": "Bloemenbuurt-West",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-zonnebloemstraat-35/80984080/",
+   "price": 325000,
+   "living_area": 87,
+   "bedrooms": 3,
+   "energy_label": "A",
+   "published": "2026-10-01T16:56:39.806387+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/7227ae9e-78c0-4a86-abcb-3cfc6bfb65ad/ab928e31-86eb-475c-ad6a-1cb24a098dfa",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-01T15:00:47+00:00",
+   "last_seen": "2026-10-01",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-01",
+     325000
+    ]
+   ],
+   "details": {
+    "ownership": "Erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": null,
+    "floor_label": null,
+    "year_built": 1956,
+    "balcony": true,
+    "outdoor_m2": 9,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 294.99,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.072857,
+    "longitude": 4.2550836,
+    "distance_to_supermarket_m": 488.1897643577179
+   },
+   "score": {
+    "points": 26,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 13,
+      "text": "balcony or terrace, 9 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -4,
+      "text": "488 m to nearest supermarket"
+     },
+     {
+      "points": 4,
+      "text": "energy label A"
      }
     ]
    },
