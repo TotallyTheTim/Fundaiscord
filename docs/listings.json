@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-01T09:00:42+00:00",
+ "generated": "2026-10-01T10:00:40+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -7565,6 +7565,87 @@
      {
       "points": -2,
       "text": "energy label D"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44528066",
+   "title": "Lunterenstraat 72",
+   "city": "Den Haag",
+   "wijk": "Rustenburg en Oostbroek",
+   "neighbourhood": "Oostbroek-Noord",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-lunterenstraat-72/44528066/",
+   "price": 349000,
+   "living_area": 87,
+   "bedrooms": 3,
+   "energy_label": "A",
+   "published": "2026-10-01T11:40:37.565238+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/c79425c2-c8d3-4f15-b442-0661e142a9df/46ab4b9c-3b4c-448c-aae9-27b5f9e8e9b0",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-01T10:00:40+00:00",
+   "last_seen": "2026-10-01",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-01",
+     349000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1929,
+    "balcony": true,
+    "outdoor_m2": 4,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 95.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": true,
+    "top_floor_hint": false,
+    "latitude": 52.06934,
+    "longitude": 4.2818723,
+    "distance_to_supermarket_m": 323.0998214480922
+   },
+   "score": {
+    "points": 77,
+    "tier": "top",
+    "reasons": [
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 8,
+      "text": "move-in ready"
+     },
+     {
+      "points": 6,
+      "text": "balcony or terrace, 4 m²"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1929)"
+     },
+     {
+      "points": 4,
+      "text": "energy label A"
+     },
+     {
+      "points": -3,
+      "text": "323 m to nearest supermarket"
      }
     ]
    },
