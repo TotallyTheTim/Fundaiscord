@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-01T10:00:40+00:00",
+ "generated": "2026-10-01T12:30:37+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -7646,6 +7646,79 @@
      {
       "points": -3,
       "text": "323 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44529782",
+   "title": "Lunterenstraat 220",
+   "city": "Den Haag",
+   "wijk": "Rustenburg en Oostbroek",
+   "neighbourhood": "Oostbroek-Noord",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-lunterenstraat-220/44529782/",
+   "price": 349500,
+   "living_area": 78,
+   "bedrooms": 3,
+   "energy_label": "C",
+   "published": "2026-10-01T14:21:15.382805+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/1d41015e-948a-48ff-a574-2cdc6b069803/3e0b1075-ba85-43a6-a942-b37d06b98d34",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-01T12:30:37+00:00",
+   "last_seen": "2026-10-01",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-01",
+     349500
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 0,
+    "floor_label": "Begane grond",
+    "year_built": 1928,
+    "balcony": true,
+    "outdoor_m2": 4,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 125.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.06796,
+    "longitude": 4.27784,
+    "distance_to_supermarket_m": 58.2975541121487
+   },
+   "score": {
+    "points": 71,
+    "tier": "top",
+    "reasons": [
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 6,
+      "text": "balcony or terrace, 4 m²"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1928)"
+     },
+     {
+      "points": 3,
+      "text": "garden"
      }
     ]
    },
