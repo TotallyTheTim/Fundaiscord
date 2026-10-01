@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-01T15:00:47+00:00",
+ "generated": "2026-10-01T20:00:41+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -1111,8 +1111,8 @@
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-10-01",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-10-01",
    "price_history": [
     [
      "2026-09-28",
@@ -1849,8 +1849,8 @@
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-10-01",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-10-01",
    "price_history": [
     [
      "2026-09-28",
@@ -3272,8 +3272,8 @@
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-10-01",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-10-01",
    "price_history": [
     [
      "2026-09-28",
