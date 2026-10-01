@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-01T20:00:41+00:00",
+ "generated": "2026-10-01T22:00:46+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -20792,6 +20792,79 @@
      {
       "points": 4,
       "text": "energy label A"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "80984232",
+   "title": "Medemblikstraat 48",
+   "city": "Den Haag",
+   "wijk": "Leyenburg",
+   "neighbourhood": "Leyenburg",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-medemblikstraat-48/80984232/",
+   "price": 295000,
+   "living_area": 82,
+   "bedrooms": 3,
+   "energy_label": "C",
+   "published": "2026-10-02T00:00:17.527833+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/1af162bd-5606-4882-93f5-fbd5b72273d2/98277115-8a62-4221-a932-9f7e2d1cb96d",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-01T22:00:46+00:00",
+   "last_seen": "2026-10-01",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-01",
+     295000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1940,
+    "balcony": true,
+    "outdoor_m2": 6,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 133.53,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": true,
+    "latitude": 52.064735,
+    "longitude": 4.2680283,
+    "distance_to_supermarket_m": 286.71805433509866
+   },
+   "score": {
+    "points": 68,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 9,
+      "text": "balcony or terrace, 6 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
+     },
+     {
+      "points": -2,
+      "text": "287 m to nearest supermarket"
      }
     ]
    },
