@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-02T08:00:43+00:00",
+ "generated": "2026-10-02T13:30:37+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -7346,6 +7346,148 @@
      {
       "points": 4,
       "text": "energy label A+"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44521073",
+   "title": "Margarethaland 269",
+   "city": "Den Haag",
+   "wijk": "Mariahoeve en Marlot",
+   "neighbourhood": "Landen",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-margarethaland-269/44521073/",
+   "price": 359000,
+   "living_area": 87,
+   "bedrooms": 2,
+   "energy_label": "C",
+   "published": "2026-10-02T15:19:23.284208+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/03f38c14-1204-49cc-bf99-2f03cfed7c1e/a487445a-3103-4cde-96f8-fe242087f4e3",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-02T13:30:37+00:00",
+   "last_seen": "2026-10-02",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-02",
+     359000
+    ]
+   ],
+   "details": {
+    "ownership": "Gemeentelijke erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": true,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1986,
+    "balcony": true,
+    "outdoor_m2": 4,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 139.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.092438,
+    "longitude": 4.3686557,
+    "distance_to_supermarket_m": 630.0548666792537
+   },
+   "score": {
+    "points": 25,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -25,
+      "text": "erfpacht (perpetual, bought off)"
+     },
+     {
+      "points": 6,
+      "text": "balcony or terrace, 4 m²"
+     },
+     {
+      "points": -6,
+      "text": "630 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44521277",
+   "title": "Kornalijnhorst 24",
+   "city": "Den Haag",
+   "wijk": "Mariahoeve en Marlot",
+   "neighbourhood": "Burgen en Horsten",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-kornalijnhorst-24/44521277/",
+   "price": 349000,
+   "living_area": 120,
+   "bedrooms": 2,
+   "energy_label": "C",
+   "published": "2026-10-02T15:28:28.216959+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/03c9e278-9e09-4069-b09c-a9b1082aa802/adac3842-bbd3-434b-976d-b95760a66d2f",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-02T13:30:37+00:00",
+   "last_seen": "2026-10-02",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-02",
+     349000
+    ]
+   ],
+   "details": {
+    "ownership": "Gemeentelijk eigendom belast met erfpacht (einddatum erfpacht: 21-12-2031)",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1968,
+    "balcony": true,
+    "outdoor_m2": 9,
+    "garden": true,
+    "lift": true,
+    "vve_monthly": 444.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.09626,
+    "longitude": 4.360477,
+    "distance_to_supermarket_m": 177.07440314902416
+   },
+   "score": {
+    "points": 20,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 13,
+      "text": "balcony or terrace, 9 m²"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": -1,
+      "text": "177 m to nearest supermarket"
      }
     ]
    },
