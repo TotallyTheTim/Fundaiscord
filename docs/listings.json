@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-02T19:30:31+00:00",
+ "generated": "2026-10-02T20:30:31+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -1252,8 +1252,8 @@
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-10-02",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-10-02",
    "price_history": [
     [
      "2026-09-28",
@@ -1499,8 +1499,8 @@
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-10-02",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-10-02",
    "price_history": [
     [
      "2026-09-28",
@@ -11189,8 +11189,8 @@
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-10-02",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-10-02",
    "price_history": [
     [
      "2026-09-28",
@@ -16597,8 +16597,8 @@
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-10-02",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-10-02",
    "price_history": [
     [
      "2026-09-28",
@@ -18123,7 +18123,7 @@
    "wijk": "Vruchtenbuurt",
    "neighbourhood": "Vruchtenbuurt",
    "url": "https://www.funda.nl/detail/koop/den-haag/appartement-mient-477/80940255/",
-   "price": 340000,
+   "price": 325000,
    "living_area": 81,
    "bedrooms": 3,
    "energy_label": "C",
@@ -18138,6 +18138,10 @@
     [
      "2026-09-28",
      340000
+    ],
+    [
+     "2026-10-02",
+     325000
     ]
    ],
    "details": {
@@ -18166,7 +18170,7 @@
     "distance_to_supermarket_m": 350.95836731829286
    },
    "score": {
-    "points": 56,
+    "points": 60,
     "tier": "good",
     "reasons": [
      {
@@ -18194,8 +18198,8 @@
       "text": "351 m to nearest supermarket"
      },
      {
-      "points": -1,
-      "text": "€4,198/m² vs €4,157/m² typical"
+      "points": 3,
+      "text": "€4,012/m² vs €4,157/m² typical"
      }
     ]
    },
