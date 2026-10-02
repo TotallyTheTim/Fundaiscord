@@ -18,8 +18,11 @@ def points_for(reason_text: str, result: Score) -> int:
     return next(r.points for r in result.reasons if reason_text in r.text)
 
 
+PRICE_AT_REFERENCE = CONFIG.price_per_m2_reference * 80  # cancels the price/m² signal at living_area=80
+
+
 def test_a_neutral_listing_scores_the_base_with_no_reasons() -> None:
-    result = score()
+    result = score({"price": PRICE_AT_REFERENCE})
     assert result.points == 50 and result.reasons == ()
     assert result.tier == "ok"
 
@@ -107,23 +110,86 @@ def test_vve_problems_each_subtract() -> None:
 
 
 def test_a_healthy_vve_costs_nothing() -> None:
-    result = score(vve_reserve_fund=True, vve_maintenance_plan=True, vve_registered=True, vve_monthly=150.0)
+    result = score(
+        {"price": PRICE_AT_REFERENCE},
+        vve_reserve_fund=True, vve_maintenance_plan=True, vve_registered=True, vve_monthly=150.0,
+    )
     assert result.reasons == ()
 
 
-def test_an_expensive_vve_only_counts_without_a_lift() -> None:
-    expensive = {"vve_monthly": 400.0}  # about €5/m² on 80 m²
-    assert points_for("VvE €", score({"living_area": 80}, **expensive)) == -3
-    assert not any("VvE €" in r.text for r in score({"living_area": 80}, lift=True, **expensive).reasons)
+def test_vve_cost_is_free_up_to_the_threshold() -> None:
+    at_threshold = CONFIG.vve_expensive_per_m2 * 80  # living_area defaults to 80 -> exactly 0 excess
+    assert not any("VvE €" in r.text for r in score(vve_monthly=at_threshold).reasons)
+
+
+def test_vve_cost_above_the_threshold_scales_with_the_excess() -> None:
+    # 80 m², EUR 400/mo -> EUR 5.00/m², 2.5 above the 2.5 threshold, rate -4 -> -10
+    assert points_for("VvE €", score(vve_monthly=400.0)) == -10
+
+
+def test_a_lift_halves_the_vve_cost_penalty_instead_of_waiving_it() -> None:
+    assert points_for("VvE €", score(vve_monthly=400.0, lift=True)) == -5
+
+
+def test_the_vve_cost_penalty_is_capped() -> None:
+    assert points_for("VvE €", score(vve_monthly=2000.0)) == CONFIG.vve_expensive_cap
+
+
+def test_the_vve_cost_reason_says_whether_a_lift_helped() -> None:
+    no_lift = next(r.text for r in score(vve_monthly=400.0).reasons if "VvE €" in r.text)
+    with_lift = next(r.text for r in score(vve_monthly=400.0, lift=True).reasons if "VvE €" in r.text)
+    assert "no lift" in no_lift
+    assert "lift halves this" in with_lift
 
 
 @pytest.mark.parametrize(
     ("label", "expected"),
-    [("A++", 4), ("A", 4), ("B", 4), ("C", 0), ("D", -2), ("E", -4)],
+    [
+        ("A++++", 30), ("A+++", 25), ("A++", 20), ("A+", 15), ("A", 10), ("B", 5),
+        ("C", 0),
+        ("D", -6), ("E", -12), ("F", -18), ("G", -24),
+    ],
 )
-def test_energy_label_points(label: str, expected: int) -> None:
+def test_energy_label_points_ramp_from_c(label: str, expected: int) -> None:
     result = score_listing(make_candidate(bedrooms=2, energy_label=label), details(), CONFIG)
     assert sum(r.points for r in result.reasons if "energy label" in r.text) == expected
+
+
+def test_energy_label_is_case_and_whitespace_insensitive() -> None:
+    result = score_listing(make_candidate(bedrooms=2, energy_label=" a+++ "), details(), CONFIG)
+    assert points_for("energy label", result) == 25
+
+
+def test_an_unrecognised_energy_label_contributes_nothing() -> None:
+    result = score_listing(make_candidate(bedrooms=2, energy_label="unknown"), details(), CONFIG)
+    assert not any("energy label" in r.text for r in result.reasons)
+
+
+def test_price_per_m2_is_neutral_exactly_at_the_reference() -> None:
+    result = score({"price": PRICE_AT_REFERENCE, "living_area": 80})
+    assert not any("typical" in r.text for r in result.reasons)
+
+
+def test_below_reference_price_per_m2_gives_a_bonus() -> None:
+    cheap = round((CONFIG.price_per_m2_reference - 500) * 80)  # EUR 500/m² cheaper than typical
+    assert points_for("typical", score({"price": cheap, "living_area": 80})) == 10  # 500 * 0.02
+
+
+def test_above_reference_price_per_m2_gives_a_penalty() -> None:
+    pricey = round((CONFIG.price_per_m2_reference + 500) * 80)
+    assert points_for("typical", score({"price": pricey, "living_area": 80})) == -10
+
+
+def test_the_price_per_m2_bonus_and_penalty_are_both_capped() -> None:
+    very_cheap = round((CONFIG.price_per_m2_reference - 5000) * 80)
+    very_pricey = round((CONFIG.price_per_m2_reference + 5000) * 80)
+    assert points_for("typical", score({"price": very_cheap, "living_area": 80})) == CONFIG.price_per_m2_cap
+    assert points_for("typical", score({"price": very_pricey, "living_area": 80})) == -CONFIG.price_per_m2_cap
+
+
+def test_no_price_per_m2_signal_without_both_price_and_area() -> None:
+    assert not any("typical" in r.text for r in score({"price": None}).reasons)
+    assert not any("typical" in r.text for r in score({"living_area": None}).reasons)
 
 
 def test_no_supermarket_distance_known_gives_no_reason() -> None:
@@ -172,7 +238,10 @@ def test_the_score_is_clamped_between_0_and_100() -> None:
 )
 def test_tier_boundaries(points: int, tier: str) -> None:
     config = replace(CONFIG, base=points, weights=Weights(), tiers=Tiers())
-    assert score_listing(make_candidate(bedrooms=2, energy_label="C"), details(), config).tier == tier
+    # Price defaults to below the reference (a bonus); pin it at the reference so `base`
+    # alone decides the tier, keeping this test isolated to just the tier thresholds.
+    candidate = make_candidate(bedrooms=2, energy_label="C", price=config.price_per_m2_reference * 80)
+    assert score_listing(candidate, details(), config).tier == tier
 
 
 def test_reasons_are_ordered_by_impact() -> None:
@@ -188,6 +257,6 @@ def test_weights_can_be_overridden() -> None:
 
 
 def test_zero_weights_leave_no_reason() -> None:
-    config = replace(CONFIG, weights=Weights(garden=0))
+    config = replace(CONFIG, weights=Weights(garden=0, price_per_m2_rate=0))
     result = score_listing(make_candidate(bedrooms=2, energy_label="C"), details(garden=True), config)
     assert result.reasons == ()

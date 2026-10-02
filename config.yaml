@@ -89,8 +89,11 @@ searches:
 # alert's colour and headline. Alerts arrive worst first so the best one is the last message.
 scoring:
   base: 50
-  vve_expensive_per_m2: 3.5      # EUR/m² per month above which a VvE without a lift counts as expensive
+  vve_expensive_per_m2: 2.5      # EUR/m² per month above which a VvE fee starts counting as expensive
+  vve_expensive_cap: -15         # the VvE-cost penalty never goes past this
   supermarket_penalty_cap: -10   # the supermarket-distance penalty never goes past this
+  price_per_m2_reference: 4157   # "normal" EUR/m² (today's real market median); cheaper = bonus, pricier = penalty
+  price_per_m2_cap: 12           # the price/m² bonus and penalty are both capped at this many points
   tiers:                         # minimum score per tier; below `ok` is "low"
     top: 70
     good: 55
@@ -114,9 +117,9 @@ scoring:
     vve_no_reserve_fund: -10
     vve_no_maintenance_plan: -6
     vve_not_registered: -6
-    vve_expensive_no_lift: -3
+    vve_expensive_per_m2_rate: -4      # points per EUR/m²/month above vve_expensive_per_m2; a lift halves this rate (not waives it)
     busy_road: -2
-    label_a_or_b: 4
-    label_d: -2
-    label_e: -4
-    supermarket_penalty_per_100m: -1   # -1 for every full 100 m to the nearest supermarket (data/supermarkets.json); no bonus for being close
+    label_step_up: 5                   # per step better than "C" (B=+5, A=+10, A+=+15, ...)
+    label_step_down: 6                 # magnitude per step worse than "C" (D=-6, E=-12, ...)
+    supermarket_penalty_per_100m: -1   # -1 for every full 100 m to the nearest supermarket (docs/supermarkets.json); no bonus for being close
+    price_per_m2_rate: 0.02            # points per EUR/m² below (bonus) or above (penalty) price_per_m2_reference

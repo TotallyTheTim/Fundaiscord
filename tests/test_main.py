@@ -453,13 +453,15 @@ def test_the_stored_record_gets_the_wijk_of_its_buurt(tmp_path: Path) -> None:
 
 def test_a_notified_listing_gets_its_details_stored(tmp_path: Path) -> None:
     state, store = baselined_state(tmp_path), new_store(tmp_path)
-    go_stored(state, store, FakeFunda(make_candidate(id="a")), Recorder(), FakeEnrich({"a": 77}))
+    # price pinned at the scoring default's price/m² reference, so it contributes no bonus/penalty
+    candidate = make_candidate(id="a", price=4157 * 80)
+    go_stored(state, store, FakeFunda(candidate), Recorder(), FakeEnrich({"a": 77}))
 
     record = store.get("a")
     assert record.details == make_details()
     # The stored score is recomputed from the details with the current weights at the end
-    # of the run (3 bedrooms +8, label B +4 on the base of 50), not the fake's placeholder 77.
-    assert record.score is not None and record.score.points == 62
+    # of the run (3 bedrooms +8, label B +5 on the base of 50), not the fake's placeholder 77.
+    assert record.score is not None and record.score.points == 63
 
 
 def test_listings_without_details_are_backfilled_with_a_budget(tmp_path: Path) -> None:
@@ -549,10 +551,12 @@ def test_a_failed_search_during_a_full_sweep_does_not_deactivate_anything(tmp_pa
 
 def test_stored_scores_follow_the_current_weights(tmp_path: Path) -> None:
     state, store = baselined_state(tmp_path), new_store(tmp_path)
+    # price pinned at the scoring default's price/m² reference, so it contributes no bonus/penalty
+    candidate = make_candidate(id="1", bedrooms=2, energy_label="C", price=4157 * 80)
     state.add("1", NOW)
-    store.upsert(make_candidate(id="1", bedrooms=2, energy_label="C"), None, NOW)
+    store.upsert(candidate, None, NOW)
     store.set_assessment("1", Assessment(make_details(garden=True), Score(1, "low", ())))
-    go_stored(state, store, FakeFunda(make_candidate(id="1", bedrooms=2, energy_label="C")), Recorder())
+    go_stored(state, store, FakeFunda(candidate), Recorder())
 
     score = store.get("1").score
     assert score is not None and score.points == 53  # base 50 + garden 3, not the stale 1

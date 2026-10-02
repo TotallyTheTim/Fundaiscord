@@ -101,7 +101,8 @@ def test_candidate_of_rebuilds_the_candidate(tmp_path: Path) -> None:
 
 def test_rescore_uses_stored_details_and_the_current_weights(tmp_path: Path) -> None:
     store = new_store(tmp_path)
-    store.upsert(make_candidate(id="7", bedrooms=2, energy_label="C"), None, NOW)
+    # price pinned at the scoring default's price/m² reference, so it contributes no bonus/penalty
+    store.upsert(make_candidate(id="7", bedrooms=2, energy_label="C", price=4157 * 80), None, NOW)
     store.set_assessment("7", assessment(50, "ok", garden=True))
     store.upsert(make_candidate(id="8"), None, NOW)  # no details yet
 
