@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-02T15:01:20+00:00",
+ "generated": "2026-10-02T15:30:36+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -51,7 +51,7 @@
     "distance_to_supermarket_m": 92.14327959023183
    },
    "score": {
-    "points": 63,
+    "points": 64,
     "tier": "good",
     "reasons": [
      {
@@ -59,7 +59,15 @@
       "text": "balcony or terrace, 13 m²"
      },
      {
-      "points": -2,
+      "points": 12,
+      "text": "€2,198/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -7,
+      "text": "VvE €5.8/m² (lift halves this)"
+     },
+     {
+      "points": -6,
       "text": "energy label D"
      }
     ]
@@ -116,16 +124,24 @@
     "distance_to_supermarket_m": 241.77239416958582
    },
    "score": {
-    "points": 63,
-    "tier": "good",
+    "points": 74,
+    "tier": "top",
     "reasons": [
      {
       "points": 15,
       "text": "balcony or terrace, 20 m²"
      },
      {
+      "points": 12,
+      "text": "€2,820/m² vs €4,157/m² typical"
+     },
+     {
       "points": -2,
       "text": "242 m to nearest supermarket"
+     },
+     {
+      "points": -1,
+      "text": "VvE €3.1/m² (lift halves this)"
      }
     ]
    },
@@ -181,12 +197,16 @@
     "distance_to_supermarket_m": 285.70055736488547
    },
    "score": {
-    "points": 37,
-    "tier": "low",
+    "points": 45,
+    "tier": "ok",
     "reasons": [
      {
       "points": -25,
       "text": "erfpacht (perpetual, bought off)"
+     },
+     {
+      "points": 12,
+      "text": "€3,250/m² vs €4,157/m² typical"
      },
      {
       "points": 10,
@@ -201,16 +221,16 @@
       "text": "VvE has no maintenance plan"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "pre-war character (1931)"
      },
      {
       "points": -2,
       "text": "286 m to nearest supermarket"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -270,12 +290,20 @@
     "distance_to_supermarket_m": 132.06210276550544
    },
    "score": {
-    "points": 9,
+    "points": 15,
     "tier": "low",
     "reasons": [
      {
       "points": -45,
       "text": "erfpacht"
+     },
+     {
+      "points": 10,
+      "text": "€3,670/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": 4,
@@ -284,10 +312,6 @@
      {
       "points": 3,
       "text": "garden"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      },
      {
       "points": -1,
@@ -347,7 +371,7 @@
     "distance_to_supermarket_m": 189.68262413056982
    },
    "score": {
-    "points": 79,
+    "points": 71,
     "tier": "top",
     "reasons": [
      {
@@ -367,16 +391,20 @@
       "text": "VvE has no maintenance plan"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "pre-war character (1928)"
      },
      {
-      "points": 3,
-      "text": "first floor"
+      "points": -4,
+      "text": "€4,375/m² vs €4,157/m² typical"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": 3,
+      "text": "first floor"
      },
      {
       "points": -1,
@@ -436,8 +464,8 @@
     "distance_to_supermarket_m": 217.36913839005493
    },
    "score": {
-    "points": 68,
-    "tier": "good",
+    "points": 70,
+    "tier": "top",
     "reasons": [
      {
       "points": 14,
@@ -448,12 +476,20 @@
       "text": "3 bedrooms (room for an office)"
      },
      {
-      "points": -2,
-      "text": "217 m to nearest supermarket"
+      "points": 8,
+      "text": "€3,750/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": -2,
-      "text": "energy label D"
+      "text": "VvE €3.4/m² (lift halves this)"
+     },
+     {
+      "points": -2,
+      "text": "217 m to nearest supermarket"
      }
     ]
    },
@@ -509,9 +545,13 @@
     "distance_to_supermarket_m": 490.8762863486668
    },
    "score": {
-    "points": 56,
-    "tier": "good",
+    "points": 43,
+    "tier": "ok",
     "reasons": [
+     {
+      "points": -9,
+      "text": "€4,605/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
@@ -519,6 +559,10 @@
      {
       "points": -6,
       "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": 4,
@@ -535,10 +579,6 @@
      {
       "points": 3,
       "text": "top floor"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -598,6 +638,14 @@
     "tier": "good",
     "reasons": [
      {
+      "points": 12,
+      "text": "€2,848/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -12,
+      "text": "energy label E"
+     },
+     {
       "points": 10,
       "text": "balcony or terrace, 7 m²"
      },
@@ -607,7 +655,7 @@
      },
      {
       "points": -4,
-      "text": "energy label E"
+      "text": "VvE €4.3/m² (lift halves this)"
      },
      {
       "points": 3,
@@ -675,7 +723,7 @@
     "distance_to_supermarket_m": 402.4571509117771
    },
    "score": {
-    "points": 67,
+    "points": 59,
     "tier": "good",
     "reasons": [
      {
@@ -687,12 +735,16 @@
       "text": "3 bedrooms (room for an office)"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": -4,
       "text": "402 m to nearest supermarket"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": -4,
+      "text": "€4,360/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -748,9 +800,13 @@
     "distance_to_supermarket_m": 252.95502852203157
    },
    "score": {
-    "points": 65,
+    "points": 60,
     "tier": "good",
     "reasons": [
+     {
+      "points": -5,
+      "text": "€4,412/m² vs €4,157/m² typical"
+     },
      {
       "points": 4,
       "text": "house"
@@ -829,12 +885,16 @@
     "distance_to_supermarket_m": 138.72066534824214
    },
    "score": {
-    "points": 57,
-    "tier": "good",
+    "points": 46,
+    "tier": "ok",
     "reasons": [
      {
       "points": 15,
       "text": "balcony or terrace, 49 m²"
+     },
+     {
+      "points": -12,
+      "text": "€4,759/m² vs €4,157/m² typical"
      },
      {
       "points": -10,
@@ -853,7 +913,7 @@
       "text": "VvE not registered at the KvK"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
      },
      {
@@ -918,12 +978,16 @@
     "distance_to_supermarket_m": 109.37913755612216
    },
    "score": {
-    "points": 24,
+    "points": 36,
     "tier": "low",
     "reasons": [
      {
       "points": -45,
       "text": "erfpacht"
+     },
+     {
+      "points": 12,
+      "text": "€2,754/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -995,9 +1059,17 @@
     "distance_to_supermarket_m": 59.10385447979187
    },
    "score": {
-    "points": 63,
+    "points": 68,
     "tier": "good",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€2,731/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -10,
+      "text": "VvE €5.1/m² (no lift)"
+     },
      {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
@@ -1005,10 +1077,6 @@
      {
       "points": 8,
       "text": "4 bedrooms (room for an office)"
-     },
-     {
-      "points": -3,
-      "text": "VvE €5.1/m² without a lift"
      }
     ]
    },
@@ -1064,8 +1132,8 @@
     "distance_to_supermarket_m": 408.1167049979765
    },
    "score": {
-    "points": 54,
-    "tier": "ok",
+    "points": 55,
+    "tier": "good",
     "reasons": [
      {
       "points": 9,
@@ -1074,6 +1142,14 @@
      {
       "points": -6,
       "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
+      "points": 5,
+      "text": "€3,916/m² vs €4,157/m² typical"
      },
      {
       "points": 4,
@@ -1086,10 +1162,6 @@
      {
       "points": 3,
       "text": "garden"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -1145,12 +1217,16 @@
     "distance_to_supermarket_m": 369.00648023875993
    },
    "score": {
-    "points": 59,
-    "tier": "good",
+    "points": 71,
+    "tier": "top",
     "reasons": [
      {
       "points": 12,
       "text": "balcony or terrace, 8 m²"
+     },
+     {
+      "points": 12,
+      "text": "€3,349/m² vs €4,157/m² typical"
      },
      {
       "points": -3,
@@ -1210,12 +1286,20 @@
     "distance_to_supermarket_m": 454.09540674661304
    },
    "score": {
-    "points": 56,
+    "points": 62,
     "tier": "good",
     "reasons": [
      {
+      "points": 12,
+      "text": "€3,496/m² vs €4,157/m² typical"
+     },
+     {
       "points": 8,
       "text": "4 bedrooms (room for an office)"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": 4,
@@ -1227,7 +1311,7 @@
      },
      {
       "points": -2,
-      "text": "energy label D"
+      "text": "VvE €2.9/m² (no lift)"
      }
     ]
    },
@@ -1283,7 +1367,7 @@
     "distance_to_supermarket_m": 144.2051709507967
    },
    "score": {
-    "points": 36,
+    "points": 29,
     "tier": "low",
     "reasons": [
      {
@@ -1291,12 +1375,20 @@
       "text": "erfpacht (perpetual, bought off)"
      },
      {
+      "points": -11,
+      "text": "€4,700/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
+     {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
      },
      {
-      "points": 4,
-      "text": "energy label A"
+      "points": -2,
+      "text": "VvE €3.7/m² (lift halves this)"
      },
      {
       "points": -1,
@@ -1356,12 +1448,16 @@
     "distance_to_supermarket_m": 165.7353141317749
    },
    "score": {
-    "points": 30,
+    "points": 43,
     "tier": "low",
     "reasons": [
      {
       "points": -45,
       "text": "erfpacht"
+     },
+     {
+      "points": 12,
+      "text": "€3,070/m² vs €4,157/m² typical"
      },
      {
       "points": 10,
@@ -1372,12 +1468,12 @@
       "text": "3 bedrooms (room for an office)"
      },
      {
-      "points": 4,
-      "text": "pre-war character (1937)"
+      "points": 5,
+      "text": "energy label B"
      },
      {
       "points": 4,
-      "text": "energy label B"
+      "text": "pre-war character (1937)"
      },
      {
       "points": -1,
@@ -1459,6 +1555,10 @@
      {
       "points": -3,
       "text": "353 m to nearest supermarket"
+     },
+     {
+      "points": -3,
+      "text": "€4,301/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -1514,12 +1614,16 @@
     "distance_to_supermarket_m": 25.92222249149155
    },
    "score": {
-    "points": 80,
+    "points": 86,
     "tier": "top",
     "reasons": [
      {
       "points": 14,
       "text": "balcony or terrace, 10 m²"
+     },
+     {
+      "points": 12,
+      "text": "€2,754/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -1528,6 +1632,10 @@
      {
       "points": 8,
       "text": "move-in ready"
+     },
+     {
+      "points": -6,
+      "text": "VvE €5.4/m² (lift halves this)"
      }
     ]
    },
@@ -1583,12 +1691,16 @@
     "distance_to_supermarket_m": 240.39316059825097
    },
    "score": {
-    "points": 3,
+    "points": 16,
     "tier": "low",
     "reasons": [
      {
       "points": -45,
       "text": "erfpacht"
+     },
+     {
+      "points": 12,
+      "text": "€3,274/m² vs €4,157/m² typical"
      },
      {
       "points": -10,
@@ -1603,7 +1715,7 @@
       "text": "VvE has no maintenance plan"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
      },
      {
@@ -1668,7 +1780,7 @@
     "distance_to_supermarket_m": 335.10557901183324
    },
    "score": {
-    "points": 50,
+    "points": 45,
     "tier": "ok",
     "reasons": [
      {
@@ -1680,6 +1792,10 @@
       "text": "VvE has no maintenance plan"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 3,
       "text": "garden"
      },
@@ -1688,8 +1804,8 @@
       "text": "335 m to nearest supermarket"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": -1,
+      "text": "€4,213/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -1745,12 +1861,16 @@
     "distance_to_supermarket_m": 383.50880938889856
    },
    "score": {
-    "points": 5,
+    "points": 0,
     "tier": "low",
     "reasons": [
      {
       "points": -45,
       "text": "erfpacht"
+     },
+     {
+      "points": -4,
+      "text": "€4,345/m² vs €4,157/m² typical"
      },
      {
       "points": 3,
@@ -1759,6 +1879,10 @@
      {
       "points": -3,
       "text": "384 m to nearest supermarket"
+     },
+     {
+      "points": -2,
+      "text": "VvE €3.5/m² (lift halves this)"
      }
     ]
    },
@@ -1814,20 +1938,28 @@
     "distance_to_supermarket_m": 298.3416998623307
    },
    "score": {
-    "points": 60,
-    "tier": "good",
+    "points": 70,
+    "tier": "top",
     "reasons": [
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
      },
      {
-      "points": 4,
-      "text": "energy label A"
+      "points": 5,
+      "text": "€3,895/m² vs €4,157/m² typical"
      },
      {
       "points": -2,
       "text": "298 m to nearest supermarket"
+     },
+     {
+      "points": -1,
+      "text": "VvE €3.1/m² (lift halves this)"
      }
     ]
    },
@@ -1883,12 +2015,20 @@
     "distance_to_supermarket_m": 178.4300512104648
    },
    "score": {
-    "points": 58,
+    "points": 62,
     "tier": "good",
     "reasons": [
      {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
+     },
+     {
+      "points": 6,
+      "text": "€3,878/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -2,
+      "text": "VvE €3.4/m² (lift halves this)"
      },
      {
       "points": -1,
@@ -1948,9 +2088,13 @@
     "distance_to_supermarket_m": 127.15692783417418
    },
    "score": {
-    "points": 65,
-    "tier": "good",
+    "points": 71,
+    "tier": "top",
     "reasons": [
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
@@ -1966,10 +2110,6 @@
      {
       "points": 4,
       "text": "pre-war character (1934)"
-     },
-     {
-      "points": 4,
-      "text": "energy label A"
      },
      {
       "points": -1,
@@ -2045,20 +2185,24 @@
       "text": "balcony or terrace, 8 m²"
      },
      {
+      "points": -12,
+      "text": "energy label E"
+     },
+     {
+      "points": 10,
+      "text": "€3,667/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -4,
+      "text": "VvE €3.5/m² (no lift)"
+     },
+     {
       "points": -4,
       "text": "408 m to nearest supermarket"
      },
      {
-      "points": -4,
-      "text": "energy label E"
-     },
-     {
       "points": 3,
       "text": "first floor"
-     },
-     {
-      "points": -3,
-      "text": "VvE €3.5/m² without a lift"
      }
     ]
    },
@@ -2114,12 +2258,16 @@
     "distance_to_supermarket_m": 534.6800148426876
    },
    "score": {
-    "points": 54,
+    "points": 50,
     "tier": "ok",
     "reasons": [
      {
       "points": 10,
       "text": "balcony or terrace, 7 m²"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": -5,
@@ -2132,10 +2280,6 @@
      {
       "points": -2,
       "text": "busy road"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -2191,7 +2335,7 @@
     "distance_to_supermarket_m": 132.2414883358371
    },
    "score": {
-    "points": 77,
+    "points": 73,
     "tier": "top",
     "reasons": [
      {
@@ -2205,6 +2349,14 @@
      {
       "points": 8,
       "text": "move-in ready"
+     },
+     {
+      "points": -2,
+      "text": "VvE €3.3/m² (lift halves this)"
+     },
+     {
+      "points": -2,
+      "text": "€4,247/m² vs €4,157/m² typical"
      },
      {
       "points": -1,
@@ -2264,7 +2416,7 @@
     "distance_to_supermarket_m": 490.6594066586095
    },
    "score": {
-    "points": 22,
+    "points": 30,
     "tier": "low",
     "reasons": [
      {
@@ -2276,8 +2428,16 @@
       "text": "balcony or terrace, 9 m²"
      },
      {
+      "points": 12,
+      "text": "€3,165/m² vs €4,157/m² typical"
+     },
+     {
       "points": 8,
       "text": "4 bedrooms (room for an office)"
+     },
+     {
+      "points": -4,
+      "text": "VvE €4.3/m² (lift halves this)"
      },
      {
       "points": -4,
@@ -2337,7 +2497,7 @@
     "distance_to_supermarket_m": 488.78726008441146
    },
    "score": {
-    "points": 14,
+    "points": 24,
     "tier": "low",
     "reasons": [
      {
@@ -2349,8 +2509,16 @@
       "text": "balcony or terrace, 9 m²"
      },
      {
+      "points": 12,
+      "text": "€3,182/m² vs €4,157/m² typical"
+     },
+     {
       "points": -4,
       "text": "489 m to nearest supermarket"
+     },
+     {
+      "points": -2,
+      "text": "VvE €3.7/m² (lift halves this)"
      }
     ]
    },
@@ -2414,16 +2582,24 @@
       "text": "erfpacht"
      },
      {
+      "points": 5,
+      "text": "energy label B"
+     },
+     {
       "points": 4,
       "text": "balcony or terrace, 3 m²"
      },
      {
-      "points": 4,
-      "text": "energy label B"
-     },
-     {
       "points": -3,
       "text": "383 m to nearest supermarket"
+     },
+     {
+      "points": -2,
+      "text": "VvE €3.6/m² (lift halves this)"
+     },
+     {
+      "points": 1,
+      "text": "€4,107/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -2479,12 +2655,16 @@
     "distance_to_supermarket_m": 90.81290558275175
    },
    "score": {
-    "points": 57,
-    "tier": "good",
+    "points": 53,
+    "tier": "ok",
     "reasons": [
      {
       "points": 4,
       "text": "pre-war character (1914)"
+     },
+     {
+      "points": -4,
+      "text": "€4,368/m² vs €4,157/m² typical"
      },
      {
       "points": 3,
@@ -2556,12 +2736,16 @@
       "text": "balcony or terrace, 7 m²"
      },
      {
+      "points": 10,
+      "text": "energy label A"
+     },
+     {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
      },
      {
-      "points": 4,
-      "text": "energy label A"
+      "points": -6,
+      "text": "€4,464/m² vs €4,157/m² typical"
      },
      {
       "points": 3,
@@ -2625,7 +2809,7 @@
     "distance_to_supermarket_m": 219.3599693479856
    },
    "score": {
-    "points": 5,
+    "points": 3,
     "tier": "low",
     "reasons": [
      {
@@ -2633,16 +2817,24 @@
       "text": "erfpacht"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "balcony or terrace, 3 m²"
      },
      {
-      "points": -2,
-      "text": "219 m to nearest supermarket"
+      "points": 4,
+      "text": "€3,941/m² vs €4,157/m² typical"
      },
      {
       "points": -2,
-      "text": "energy label D"
+      "text": "VvE €3.7/m² (lift halves this)"
+     },
+     {
+      "points": -2,
+      "text": "219 m to nearest supermarket"
      }
     ]
    },
@@ -2698,7 +2890,7 @@
     "distance_to_supermarket_m": 216.02805192230832
    },
    "score": {
-    "points": 69,
+    "points": 56,
     "tier": "good",
     "reasons": [
      {
@@ -2706,16 +2898,20 @@
       "text": "balcony or terrace, 27 m²"
      },
      {
+      "points": -9,
+      "text": "€4,630/m² vs €4,157/m² typical"
+     },
+     {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
      },
      {
-      "points": -2,
-      "text": "216 m to nearest supermarket"
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": -2,
-      "text": "energy label D"
+      "text": "216 m to nearest supermarket"
      }
     ]
    },
@@ -2771,20 +2967,28 @@
     "distance_to_supermarket_m": 297.56632158225176
    },
    "score": {
-    "points": 60,
+    "points": 69,
     "tier": "good",
     "reasons": [
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
      },
      {
       "points": 4,
-      "text": "energy label A"
+      "text": "€3,958/m² vs €4,157/m² typical"
      },
      {
       "points": -2,
       "text": "298 m to nearest supermarket"
+     },
+     {
+      "points": -1,
+      "text": "VvE €3.1/m² (lift halves this)"
      }
     ]
    },
@@ -2840,7 +3044,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 50,
+    "points": 46,
     "tier": "ok",
     "reasons": [
      {
@@ -2856,6 +3060,10 @@
       "text": "VvE has no maintenance plan"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "pre-war character (1900)"
      },
@@ -2866,10 +3074,6 @@
      {
       "points": 3,
       "text": "top floor"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -2925,20 +3129,28 @@
     "distance_to_supermarket_m": 328.8935817898582
    },
    "score": {
-    "points": 59,
+    "points": 69,
     "tier": "good",
     "reasons": [
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
      },
      {
-      "points": 4,
-      "text": "energy label A"
+      "points": 5,
+      "text": "€3,895/m² vs €4,157/m² typical"
      },
      {
       "points": -3,
       "text": "329 m to nearest supermarket"
+     },
+     {
+      "points": -1,
+      "text": "VvE €3.1/m² (lift halves this)"
      }
     ]
    },
@@ -2994,12 +3206,16 @@
     "distance_to_supermarket_m": 171.23073935458552
    },
    "score": {
-    "points": 67,
-    "tier": "good",
+    "points": 79,
+    "tier": "top",
     "reasons": [
      {
       "points": 12,
       "text": "balcony or terrace, 8 m²"
+     },
+     {
+      "points": 12,
+      "text": "€3,235/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -3071,7 +3287,7 @@
     "distance_to_supermarket_m": 421.973744253321
    },
    "score": {
-    "points": 22,
+    "points": 20,
     "tier": "low",
     "reasons": [
      {
@@ -3087,12 +3303,20 @@
       "text": "3 bedrooms (room for an office)"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": -4,
       "text": "422 m to nearest supermarket"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": 3,
+      "text": "€4,026/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.6/m² (no lift)"
      }
     ]
    },
@@ -3221,7 +3445,7 @@
     "distance_to_supermarket_m": 231.634660430363
    },
    "score": {
-    "points": 40,
+    "points": 43,
     "tier": "ok",
     "reasons": [
      {
@@ -3241,7 +3465,7 @@
       "text": "VvE has no maintenance plan"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
      },
      {
@@ -3251,6 +3475,10 @@
      {
       "points": -2,
       "text": "232 m to nearest supermarket"
+     },
+     {
+      "points": 2,
+      "text": "€4,064/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -3306,12 +3534,16 @@
     "distance_to_supermarket_m": 165.5395233967433
    },
    "score": {
-    "points": 48,
-    "tier": "ok",
+    "points": 56,
+    "tier": "good",
     "reasons": [
      {
       "points": -20,
       "text": "needs work"
+     },
+     {
+      "points": 12,
+      "text": "€2,864/m² vs €4,157/m² typical"
      },
      {
       "points": 9,
@@ -3322,12 +3554,12 @@
       "text": "4 bedrooms (room for an office)"
      },
      {
-      "points": 4,
-      "text": "pre-war character (1931)"
+      "points": -6,
+      "text": "energy label D"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": 4,
+      "text": "pre-war character (1931)"
      },
      {
       "points": -1,
@@ -3387,16 +3619,24 @@
     "distance_to_supermarket_m": 215.64128145646532
    },
    "score": {
-    "points": 67,
-    "tier": "good",
+    "points": 71,
+    "tier": "top",
     "reasons": [
      {
       "points": 15,
       "text": "balcony or terrace, 12 m²"
      },
      {
-      "points": 4,
+      "points": 5,
+      "text": "€3,916/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 5,
       "text": "energy label B"
+     },
+     {
+      "points": -2,
+      "text": "VvE €3.1/m² (no lift)"
      },
      {
       "points": -2,
@@ -3533,12 +3773,16 @@
     "distance_to_supermarket_m": 412.57214452680023
    },
    "score": {
-    "points": 7,
+    "points": 0,
     "tier": "low",
     "reasons": [
      {
       "points": -45,
       "text": "erfpacht"
+     },
+     {
+      "points": -12,
+      "text": "€5,333/m² vs €4,157/m² typical"
      },
      {
       "points": 6,
@@ -3547,6 +3791,10 @@
      {
       "points": -4,
       "text": "413 m to nearest supermarket"
+     },
+     {
+      "points": -3,
+      "text": "VvE €3.9/m² (lift halves this)"
      }
     ]
    },
@@ -3602,24 +3850,28 @@
     "distance_to_supermarket_m": 395.3000740124443
    },
    "score": {
-    "points": 50,
+    "points": 54,
     "tier": "ok",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,571/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
      },
      {
-      "points": -3,
-      "text": "VvE €4.4/m² without a lift"
+      "points": -7,
+      "text": "VvE €4.4/m² (no lift)"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": -3,
       "text": "395 m to nearest supermarket"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -3675,7 +3927,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 25,
+    "points": 20,
     "tier": "low",
     "reasons": [
      {
@@ -3691,7 +3943,11 @@
       "text": "move-in ready"
      },
      {
-      "points": 4,
+      "points": -6,
+      "text": "€4,465/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 5,
       "text": "energy label B"
      }
     ]
@@ -3748,7 +4004,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 9,
+    "points": 13,
     "tier": "low",
     "reasons": [
      {
@@ -3756,8 +4012,12 @@
       "text": "erfpacht"
      },
      {
-      "points": 4,
+      "points": 10,
       "text": "energy label A"
+     },
+     {
+      "points": -2,
+      "text": "VvE €3.3/m² (lift halves this)"
      }
     ]
    },
@@ -3813,8 +4073,8 @@
     "distance_to_supermarket_m": 307.55603678467236
    },
    "score": {
-    "points": 52,
-    "tier": "ok",
+    "points": 64,
+    "tier": "good",
     "reasons": [
      {
       "points": -25,
@@ -3823,6 +4083,10 @@
      {
       "points": 15,
       "text": "balcony or terrace, 31 m²"
+     },
+     {
+      "points": 12,
+      "text": "€3,571/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -3894,7 +4158,7 @@
     "distance_to_supermarket_m": 397.92598027548246
    },
    "score": {
-    "points": 1,
+    "points": 0,
     "tier": "low",
     "reasons": [
      {
@@ -3906,6 +4170,10 @@
       "text": "balcony or terrace, 9 m²"
      },
      {
+      "points": -12,
+      "text": "€4,877/m² vs €4,157/m² typical"
+     },
+     {
       "points": -10,
       "text": "VvE has no reserve fund"
      },
@@ -3914,16 +4182,16 @@
       "text": "VvE has no maintenance plan"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "pre-war character (1934)"
      },
      {
       "points": -3,
       "text": "398 m to nearest supermarket"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -3979,9 +4247,13 @@
     "distance_to_supermarket_m": 140.69596254371098
    },
    "score": {
-    "points": 63,
+    "points": 68,
     "tier": "good",
     "reasons": [
+     {
+      "points": 10,
+      "text": "€3,652/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
@@ -3991,16 +4263,16 @@
       "text": "3 bedrooms (room for an office)"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
+      "points": -4,
+      "text": "VvE €3.6/m² (no lift)"
+     },
+     {
       "points": 3,
       "text": "first floor"
-     },
-     {
-      "points": -3,
-      "text": "VvE €3.6/m² without a lift"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      },
      {
       "points": -1,
@@ -4060,9 +4332,17 @@
     "distance_to_supermarket_m": 199.11220527243216
    },
    "score": {
-    "points": 54,
-    "tier": "ok",
+    "points": 62,
+    "tier": "good",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,385/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
      {
       "points": 4,
       "text": "pre-war character (1934)"
@@ -4070,10 +4350,6 @@
      {
       "points": 3,
       "text": "garden"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      },
      {
       "points": -1,
@@ -4133,8 +4409,8 @@
     "distance_to_supermarket_m": 210.0799149019979
    },
    "score": {
-    "points": 55,
-    "tier": "good",
+    "points": 43,
+    "tier": "ok",
     "reasons": [
      {
       "points": -20,
@@ -4143,6 +4419,10 @@
      {
       "points": 12,
       "text": "balcony or terrace, 8 m²"
+     },
+     {
+      "points": -12,
+      "text": "€4,819/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -4214,20 +4494,24 @@
     "distance_to_supermarket_m": 21.74041967835532
    },
    "score": {
-    "points": 59,
+    "points": 60,
     "tier": "good",
     "reasons": [
+     {
+      "points": -12,
+      "text": "energy label E"
+     },
      {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
      },
      {
-      "points": 4,
-      "text": "pre-war character (1928)"
+      "points": 9,
+      "text": "€3,688/m² vs €4,157/m² typical"
      },
      {
-      "points": -4,
-      "text": "energy label E"
+      "points": 4,
+      "text": "pre-war character (1928)"
      }
     ]
    },
@@ -4283,7 +4567,7 @@
     "distance_to_supermarket_m": 541.6316709293831
    },
    "score": {
-    "points": 13,
+    "points": 15,
     "tier": "low",
     "reasons": [
      {
@@ -4295,12 +4579,20 @@
       "text": "balcony or terrace, 12 m²"
      },
      {
+      "points": 8,
+      "text": "€3,750/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": -5,
       "text": "542 m to nearest supermarket"
      },
      {
       "points": -2,
-      "text": "energy label D"
+      "text": "VvE €3.7/m² (lift halves this)"
      }
     ]
    },
@@ -4356,7 +4648,7 @@
     "distance_to_supermarket_m": 460.581402691354
    },
    "score": {
-    "points": 25,
+    "points": 22,
     "tier": "low",
     "reasons": [
      {
@@ -4364,12 +4656,20 @@
       "text": "erfpacht (perpetual, bought off)"
      },
      {
+      "points": 10,
+      "text": "energy label A"
+     },
+     {
+      "points": -8,
+      "text": "€4,545/m² vs €4,157/m² typical"
+     },
+     {
       "points": -4,
       "text": "461 m to nearest supermarket"
      },
      {
-      "points": 4,
-      "text": "energy label A"
+      "points": -1,
+      "text": "VvE €2.9/m² (lift halves this)"
      }
     ]
    },
@@ -4425,7 +4725,7 @@
     "distance_to_supermarket_m": 136.5958243427898
    },
    "score": {
-    "points": 65,
+    "points": 69,
     "tier": "good",
     "reasons": [
      {
@@ -4433,12 +4733,20 @@
       "text": "balcony or terrace, 7 m²"
      },
      {
+      "points": 9,
+      "text": "€3,701/m² vs €4,157/m² typical"
+     },
+     {
       "points": 8,
       "text": "move-in ready"
      },
      {
-      "points": -2,
+      "points": -6,
       "text": "energy label D"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.8/m² (no lift)"
      },
      {
       "points": -1,
@@ -4498,7 +4806,7 @@
     "distance_to_supermarket_m": 439.7797941753736
    },
    "score": {
-    "points": 15,
+    "points": 22,
     "tier": "low",
     "reasons": [
      {
@@ -4510,12 +4818,20 @@
       "text": "move-in ready"
      },
      {
+      "points": 8,
+      "text": "€3,779/m² vs €4,157/m² typical"
+     },
+     {
       "points": 6,
       "text": "balcony or terrace, 4 m²"
      },
      {
       "points": -4,
       "text": "440 m to nearest supermarket"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.7/m² (no lift)"
      }
     ]
    },
@@ -4571,7 +4887,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 44,
+    "points": 47,
     "tier": "ok",
     "reasons": [
      {
@@ -4587,6 +4903,10 @@
       "text": "4 bedrooms (room for an office)"
      },
      {
+      "points": 7,
+      "text": "€3,827/m² vs €4,157/m² typical"
+     },
+     {
       "points": -6,
       "text": "VvE has no maintenance plan"
      },
@@ -4595,16 +4915,16 @@
       "text": "VvE not registered at the KvK"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "pre-war character (1925)"
      },
      {
       "points": -2,
       "text": "busy road"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -4660,9 +4980,17 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 77,
+    "points": 71,
     "tier": "top",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€5,267/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
@@ -4674,10 +5002,6 @@
      {
       "points": 4,
       "text": "pre-war character (1928)"
-     },
-     {
-      "points": 4,
-      "text": "energy label A"
      },
      {
       "points": 3,
@@ -4737,12 +5061,16 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 21,
+    "points": 27,
     "tier": "low",
     "reasons": [
      {
       "points": -45,
       "text": "erfpacht"
+     },
+     {
+      "points": 9,
+      "text": "€3,706/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -4751,6 +5079,10 @@
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -3,
+      "text": "VvE €3.9/m² (lift halves this)"
      }
     ]
    },
@@ -4806,7 +5138,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 19,
+    "points": 37,
     "tier": "low",
     "reasons": [
      {
@@ -4814,8 +5146,16 @@
       "text": "erfpacht"
      },
      {
+      "points": 12,
+      "text": "€3,559/m² vs €4,157/m² typical"
+     },
+     {
       "points": -10,
       "text": "VvE has no reserve fund"
+     },
+     {
+      "points": 10,
+      "text": "energy label A"
      },
      {
       "points": 8,
@@ -4832,10 +5172,6 @@
      {
       "points": 4,
       "text": "pre-war character (1932)"
-     },
-     {
-      "points": 4,
-      "text": "energy label A"
      },
      {
       "points": 3,
@@ -4899,9 +5235,17 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 55,
-    "tier": "good",
+    "points": 39,
+    "tier": "low",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€4,878/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
      {
       "points": 4,
       "text": "pre-war character (1930)"
@@ -4909,10 +5253,6 @@
      {
       "points": 3,
       "text": "garden"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -4968,9 +5308,13 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 63,
-    "tier": "good",
+    "points": 52,
+    "tier": "ok",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€5,197/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
@@ -4980,12 +5324,12 @@
       "text": "VvE has no maintenance plan"
      },
      {
-      "points": 4,
-      "text": "pre-war character (1899)"
+      "points": 5,
+      "text": "energy label B"
      },
      {
       "points": 4,
-      "text": "energy label B"
+      "text": "pre-war character (1899)"
      },
      {
       "points": 3,
@@ -5045,9 +5389,13 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 60,
-    "tier": "good",
+    "points": 47,
+    "tier": "ok",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€4,938/m² vs €4,157/m² typical"
+     },
      {
       "points": 10,
       "text": "balcony or terrace, 7 m²"
@@ -5067,6 +5415,10 @@
      {
       "points": 4,
       "text": "pre-war character (1930)"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.8/m² (no lift)"
      }
     ]
    },
@@ -5122,7 +5474,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 17,
+    "points": 23,
     "tier": "low",
     "reasons": [
      {
@@ -5134,8 +5486,16 @@
       "text": "balcony or terrace, 10 m²"
      },
      {
-      "points": -2,
+      "points": 12,
+      "text": "€3,438/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
       "text": "energy label D"
+     },
+     {
+      "points": -2,
+      "text": "VvE €2.9/m² (no lift)"
      }
     ]
    },
@@ -5191,9 +5551,17 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 46,
+    "points": 50,
     "tier": "ok",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,274/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -12,
+      "text": "energy label E"
+     },
      {
       "points": -10,
       "text": "VvE has no reserve fund"
@@ -5209,10 +5577,6 @@
      {
       "points": 4,
       "text": "pre-war character (1906)"
-     },
-     {
-      "points": -4,
-      "text": "energy label E"
      },
      {
       "points": 3,
@@ -5272,9 +5636,13 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 68,
-    "tier": "good",
+    "points": 74,
+    "tier": "top",
     "reasons": [
+     {
+      "points": 10,
+      "text": "€3,641/m² vs €4,157/m² typical"
+     },
      {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
@@ -5284,12 +5652,12 @@
       "text": "5 bedrooms (room for an office)"
      },
      {
-      "points": 3,
-      "text": "top floor"
+      "points": -6,
+      "text": "energy label D"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": 3,
+      "text": "top floor"
      }
     ]
    },
@@ -5345,7 +5713,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 54,
+    "points": 53,
     "tier": "ok",
     "reasons": [
      {
@@ -5353,8 +5721,12 @@
       "text": "balcony or terrace, 4 m²"
      },
      {
-      "points": -2,
+      "points": -6,
       "text": "energy label D"
+     },
+     {
+      "points": 3,
+      "text": "€4,000/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -5410,16 +5782,20 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 53,
+    "points": 40,
     "tier": "ok",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€5,197/m² vs €4,157/m² typical"
+     },
      {
       "points": 6,
       "text": "balcony or terrace, 4 m²"
      },
      {
-      "points": -3,
-      "text": "VvE €3.6/m² without a lift"
+      "points": -4,
+      "text": "VvE €3.6/m² (no lift)"
      }
     ]
    },
@@ -5475,9 +5851,17 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 64,
+    "points": 68,
     "tier": "good",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,568/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -12,
+      "text": "energy label E"
+     },
      {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
@@ -5493,10 +5877,6 @@
      {
       "points": 4,
       "text": "pre-war character (1938)"
-     },
-     {
-      "points": -4,
-      "text": "energy label E"
      },
      {
       "points": 3,
@@ -5556,12 +5936,20 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 49,
+    "points": 53,
     "tier": "ok",
     "reasons": [
      {
+      "points": 8,
+      "text": "€3,738/m² vs €4,157/m² typical"
+     },
+     {
       "points": -6,
       "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": 4,
@@ -5570,10 +5958,6 @@
      {
       "points": 3,
       "text": "garden"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -5629,12 +6013,16 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 84,
+    "points": 91,
     "tier": "top",
     "reasons": [
      {
       "points": 14,
       "text": "balcony or terrace, 10 m²"
+     },
+     {
+      "points": 12,
+      "text": "€2,991/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -5645,7 +6033,11 @@
       "text": "move-in ready"
      },
      {
-      "points": 4,
+      "points": -6,
+      "text": "VvE €5.4/m² (lift halves this)"
+     },
+     {
+      "points": 5,
       "text": "energy label B"
      }
     ]
@@ -5702,9 +6094,14 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 50,
-    "tier": "ok",
-    "reasons": []
+    "points": 38,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -12,
+      "text": "€5,320/m² vs €4,157/m² typical"
+     }
+    ]
    },
    "details_failures": 0
   },
@@ -5758,9 +6155,13 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 54,
+    "points": 42,
     "tier": "ok",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€4,753/m² vs €4,157/m² typical"
+     },
      {
       "points": 10,
       "text": "balcony or terrace, 7 m²"
@@ -5823,7 +6224,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 15,
+    "points": 24,
     "tier": "low",
     "reasons": [
      {
@@ -5831,12 +6232,20 @@
       "text": "erfpacht"
      },
      {
+      "points": 10,
+      "text": "energy label A"
+     },
+     {
       "points": 6,
       "text": "balcony or terrace, 4 m²"
      },
      {
       "points": 4,
-      "text": "energy label A"
+      "text": "€3,963/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.9/m² (no lift)"
      }
     ]
    },
@@ -5969,7 +6378,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 79,
+    "points": 86,
     "tier": "top",
     "reasons": [
      {
@@ -5983,6 +6392,10 @@
      {
       "points": 8,
       "text": "move-in ready"
+     },
+     {
+      "points": 7,
+      "text": "€3,831/m² vs €4,157/m² typical"
      },
      {
       "points": -2,
@@ -6042,12 +6455,20 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 54,
+    "points": 47,
     "tier": "ok",
     "reasons": [
      {
-      "points": 4,
+      "points": -12,
+      "text": "€4,854/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
       "text": "energy label A"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.8/m² (lift halves this)"
      }
     ]
    },
@@ -6103,7 +6524,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 49,
+    "points": 41,
     "tier": "ok",
     "reasons": [
      {
@@ -6127,16 +6548,20 @@
       "text": "VvE not registered at the KvK"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "pre-war character (1915)"
      },
      {
-      "points": 3,
-      "text": "top floor"
+      "points": -4,
+      "text": "€4,333/m² vs €4,157/m² typical"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": 3,
+      "text": "top floor"
      }
     ]
    },
@@ -6192,7 +6617,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 17,
+    "points": 15,
     "tier": "low",
     "reasons": [
      {
@@ -6204,8 +6629,16 @@
       "text": "balcony or terrace, 5 m²"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
+     },
+     {
+      "points": -2,
+      "text": "€4,250/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.8/m² (no lift)"
      }
     ]
    },
@@ -6261,20 +6694,28 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 71,
+    "points": 76,
     "tier": "top",
     "reasons": [
+     {
+      "points": 15,
+      "text": "energy label A+"
+     },
      {
       "points": 14,
       "text": "balcony or terrace, 11 m²"
      },
      {
-      "points": 4,
-      "text": "energy label A+"
+      "points": -4,
+      "text": "€4,360/m² vs €4,157/m² typical"
      },
      {
       "points": 3,
       "text": "first floor"
+     },
+     {
+      "points": -2,
+      "text": "VvE €3.7/m² (lift halves this)"
      }
     ]
    },
@@ -6330,7 +6771,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 29,
+    "points": 27,
     "tier": "low",
     "reasons": [
      {
@@ -6356,6 +6797,10 @@
      {
       "points": 3,
       "text": "garden"
+     },
+     {
+      "points": -2,
+      "text": "€4,280/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -6411,16 +6856,20 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 61,
+    "points": 55,
     "tier": "good",
     "reasons": [
      {
-      "points": 4,
-      "text": "pre-war character (1898)"
+      "points": -12,
+      "text": "€5,000/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
+      "text": "energy label A"
      },
      {
       "points": 4,
-      "text": "energy label A"
+      "text": "pre-war character (1898)"
      },
      {
       "points": 3,
@@ -6480,24 +6929,28 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 66,
-    "tier": "good",
+    "points": 54,
+    "tier": "ok",
     "reasons": [
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
      },
      {
+      "points": -8,
+      "text": "€4,562/m² vs €4,157/m² typical"
+     },
+     {
       "points": 6,
       "text": "balcony or terrace, 4 m²"
      },
      {
-      "points": 4,
-      "text": "pre-war character (1923)"
+      "points": -6,
+      "text": "energy label D"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": 4,
+      "text": "pre-war character (1923)"
      }
     ]
    },
@@ -6553,20 +7006,24 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 67,
+    "points": 57,
     "tier": "good",
     "reasons": [
+     {
+      "points": -11,
+      "text": "€4,706/m² vs €4,157/m² typical"
+     },
      {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
      },
      {
-      "points": 4,
-      "text": "pre-war character (1915)"
+      "points": 5,
+      "text": "energy label B"
      },
      {
       "points": 4,
-      "text": "energy label B"
+      "text": "pre-war character (1915)"
      }
     ]
    },
@@ -6622,7 +7079,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 48,
+    "points": 51,
     "tier": "ok",
     "reasons": [
      {
@@ -6636,6 +7093,14 @@
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 5,
+      "text": "€3,911/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -2,
+      "text": "VvE €3.4/m² (lift halves this)"
      }
     ]
    },
@@ -6691,9 +7156,13 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 73,
+    "points": 83,
     "tier": "top",
     "reasons": [
+     {
+      "points": 10,
+      "text": "€3,636/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
@@ -6776,9 +7245,17 @@
     "distance_to_supermarket_m": 375.83287545616537
    },
    "score": {
-    "points": 63,
+    "points": 57,
     "tier": "good",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€4,750/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "move-in ready"
@@ -6794,10 +7271,6 @@
      {
       "points": 4,
       "text": "pre-war character (1934)"
-     },
-     {
-      "points": 4,
-      "text": "energy label A"
      },
      {
       "points": -3,
@@ -6857,12 +7330,20 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 64,
-    "tier": "good",
+    "points": 74,
+    "tier": "top",
     "reasons": [
      {
       "points": 14,
       "text": "balcony or terrace, 10 m²"
+     },
+     {
+      "points": 12,
+      "text": "€3,351/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -2,
+      "text": "VvE €3.4/m² (lift halves this)"
      }
     ]
    },
@@ -6918,9 +7399,21 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 56,
+    "points": 62,
     "tier": "good",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,354/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
+      "points": -5,
+      "text": "VvE €3.7/m² (no lift)"
+     },
      {
       "points": 4,
       "text": "balcony or terrace, 3 m²"
@@ -6932,14 +7425,6 @@
      {
       "points": 3,
       "text": "top floor"
-     },
-     {
-      "points": -3,
-      "text": "VvE €3.7/m² without a lift"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -6995,7 +7480,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 18,
+    "points": 24,
     "tier": "low",
     "reasons": [
      {
@@ -7007,12 +7492,20 @@
       "text": "balcony or terrace, 4 m²"
      },
      {
-      "points": 4,
+      "points": 6,
+      "text": "€3,869/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 5,
       "text": "energy label B"
      },
      {
       "points": 3,
       "text": "first floor"
+     },
+     {
+      "points": -1,
+      "text": "VvE €3.0/m² (lift halves this)"
      }
     ]
    },
@@ -7068,9 +7561,13 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 53,
+    "points": 41,
     "tier": "ok",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€4,803/m² vs €4,157/m² typical"
+     },
      {
       "points": 3,
       "text": "garden"
@@ -7129,9 +7626,13 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 57,
-    "tier": "good",
+    "points": 50,
+    "tier": "ok",
     "reasons": [
+     {
+      "points": -7,
+      "text": "€4,489/m² vs €4,157/m² typical"
+     },
      {
       "points": 4,
       "text": "pre-war character (1939)"
@@ -7194,20 +7695,28 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 70,
-    "tier": "top",
+    "points": 64,
+    "tier": "good",
     "reasons": [
      {
       "points": 13,
       "text": "balcony or terrace, 9 m²"
      },
      {
-      "points": 4,
+      "points": -11,
+      "text": "€4,706/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
       "text": "energy label A"
      },
      {
       "points": 3,
       "text": "first floor"
+     },
+     {
+      "points": -1,
+      "text": "VvE €3.1/m² (lift halves this)"
      }
     ]
    },
@@ -7263,9 +7772,17 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 69,
+    "points": 63,
     "tier": "good",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€5,267/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "move-in ready"
@@ -7273,10 +7790,6 @@
      {
       "points": 4,
       "text": "pre-war character (1905)"
-     },
-     {
-      "points": 4,
-      "text": "energy label A"
      },
      {
       "points": 3,
@@ -7336,16 +7849,24 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 29,
-    "tier": "low",
+    "points": 49,
+    "tier": "ok",
     "reasons": [
      {
       "points": -25,
       "text": "erfpacht (perpetual, bought off)"
      },
      {
-      "points": 4,
+      "points": 15,
       "text": "energy label A+"
+     },
+     {
+      "points": 10,
+      "text": "€3,641/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.9/m² (lift halves this)"
      }
     ]
    },
@@ -7401,7 +7922,7 @@
     "distance_to_supermarket_m": 630.0548666792537
    },
    "score": {
-    "points": 25,
+    "points": 24,
     "tier": "low",
     "reasons": [
      {
@@ -7415,6 +7936,10 @@
      {
       "points": -6,
       "text": "630 m to nearest supermarket"
+     },
+     {
+      "points": -1,
+      "text": "€4,224/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -7470,7 +7995,7 @@
     "distance_to_supermarket_m": 177.07440314902416
    },
    "score": {
-    "points": 20,
+    "points": 30,
     "tier": "low",
     "reasons": [
      {
@@ -7482,8 +8007,16 @@
       "text": "balcony or terrace, 9 m²"
      },
      {
+      "points": 12,
+      "text": "€2,908/m² vs €4,157/m² typical"
+     },
+     {
       "points": 3,
       "text": "garden"
+     },
+     {
+      "points": -2,
+      "text": "VvE €3.7/m² (lift halves this)"
      },
      {
       "points": -1,
@@ -7543,12 +8076,20 @@
     "distance_to_supermarket_m": 237.61334840681172
    },
    "score": {
-    "points": 47,
-    "tier": "ok",
+    "points": 34,
+    "tier": "low",
     "reasons": [
+     {
+      "points": -9,
+      "text": "€4,622/m² vs €4,157/m² typical"
+     },
      {
       "points": -6,
       "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": 4,
@@ -7561,10 +8102,6 @@
      {
       "points": -2,
       "text": "238 m to nearest supermarket"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -7620,9 +8157,13 @@
     "distance_to_supermarket_m": 139.01090754719672
    },
    "score": {
-    "points": 68,
-    "tier": "good",
+    "points": 80,
+    "tier": "top",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€2,963/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
@@ -7693,12 +8234,16 @@
     "distance_to_supermarket_m": 41.47180779434295
    },
    "score": {
-    "points": 81,
+    "points": 93,
     "tier": "top",
     "reasons": [
      {
       "points": 15,
       "text": "balcony or terrace, 13 m²"
+     },
+     {
+      "points": 12,
+      "text": "€3,421/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -7762,7 +8307,7 @@
     "distance_to_supermarket_m": 137.07518115773522
    },
    "score": {
-    "points": 10,
+    "points": 14,
     "tier": "low",
     "reasons": [
      {
@@ -7772,6 +8317,10 @@
      {
       "points": 6,
       "text": "balcony or terrace, 4 m²"
+     },
+     {
+      "points": 4,
+      "text": "€3,976/m² vs €4,157/m² typical"
      },
      {
       "points": -1,
@@ -7831,7 +8380,7 @@
     "distance_to_supermarket_m": 284.4421444633204
    },
    "score": {
-    "points": 69,
+    "points": 68,
     "tier": "good",
     "reasons": [
      {
@@ -7843,6 +8392,10 @@
       "text": "move-in ready"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "pre-war character (1935)"
      },
@@ -7851,12 +8404,12 @@
       "text": "top floor"
      },
      {
-      "points": -2,
-      "text": "284 m to nearest supermarket"
+      "points": 3,
+      "text": "€3,993/m² vs €4,157/m² typical"
      },
      {
       "points": -2,
-      "text": "energy label D"
+      "text": "284 m to nearest supermarket"
      }
     ]
    },
@@ -7912,9 +8465,13 @@
     "distance_to_supermarket_m": 323.0998214480922
    },
    "score": {
-    "points": 77,
+    "points": 86,
     "tier": "top",
     "reasons": [
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
@@ -7932,12 +8489,12 @@
       "text": "pre-war character (1929)"
      },
      {
-      "points": 4,
-      "text": "energy label A"
-     },
-     {
       "points": -3,
       "text": "323 m to nearest supermarket"
+     },
+     {
+      "points": 3,
+      "text": "€4,011/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -7993,8 +8550,8 @@
     "distance_to_supermarket_m": 58.2975541121487
    },
    "score": {
-    "points": 71,
-    "tier": "top",
+    "points": 65,
+    "tier": "good",
     "reasons": [
      {
       "points": 8,
@@ -8003,6 +8560,10 @@
      {
       "points": 6,
       "text": "balcony or terrace, 4 m²"
+     },
+     {
+      "points": -6,
+      "text": "€4,481/m² vs €4,157/m² typical"
      },
      {
       "points": 4,
@@ -8066,9 +8627,17 @@
     "distance_to_supermarket_m": 275.27792110300595
    },
    "score": {
-    "points": 70,
+    "points": 88,
     "tier": "top",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,486/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "4 bedrooms (room for an office)"
@@ -8080,10 +8649,6 @@
      {
       "points": 4,
       "text": "pre-war character (1825)"
-     },
-     {
-      "points": 4,
-      "text": "energy label A"
      },
      {
       "points": -2,
@@ -8143,9 +8708,13 @@
     "distance_to_supermarket_m": 182.30397251184135
    },
    "score": {
-    "points": 56,
-    "tier": "good",
+    "points": 42,
+    "tier": "ok",
     "reasons": [
+     {
+      "points": -10,
+      "text": "€4,667/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "move-in ready"
@@ -8155,16 +8724,16 @@
       "text": "VvE has no maintenance plan"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "pre-war character (1934)"
      },
      {
       "points": 3,
       "text": "garden"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      },
      {
       "points": -1,
@@ -8224,9 +8793,13 @@
     "distance_to_supermarket_m": 191.64753749777785
    },
    "score": {
-    "points": 73,
+    "points": 83,
     "tier": "top",
     "reasons": [
+     {
+      "points": 10,
+      "text": "€3,667/m² vs €4,157/m² typical"
+     },
      {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
@@ -8301,7 +8874,7 @@
     "distance_to_supermarket_m": 80.28065553040851
    },
    "score": {
-    "points": 69,
+    "points": 64,
     "tier": "good",
     "reasons": [
      {
@@ -8309,7 +8882,11 @@
       "text": "balcony or terrace, 12 m²"
      },
      {
-      "points": 4,
+      "points": -6,
+      "text": "€4,444/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 5,
       "text": "energy label B"
      }
     ]
@@ -8366,7 +8943,7 @@
     "distance_to_supermarket_m": 78.00689950115643
    },
    "score": {
-    "points": 23,
+    "points": 35,
     "tier": "low",
     "reasons": [
      {
@@ -8376,6 +8953,10 @@
      {
       "points": 15,
       "text": "balcony or terrace, 13 m²"
+     },
+     {
+      "points": 12,
+      "text": "€3,431/m² vs €4,157/m² typical"
      },
      {
       "points": 3,
@@ -8435,7 +9016,7 @@
     "distance_to_supermarket_m": 188.043060892034
    },
    "score": {
-    "points": 28,
+    "points": 32,
     "tier": "low",
     "reasons": [
      {
@@ -8451,8 +9032,16 @@
       "text": "3 bedrooms (room for an office)"
      },
      {
-      "points": 4,
+      "points": 6,
+      "text": "€3,873/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 5,
       "text": "energy label B"
+     },
+     {
+      "points": -3,
+      "text": "VvE €3.9/m² (lift halves this)"
      },
      {
       "points": -1,
@@ -8512,9 +9101,13 @@
     "distance_to_supermarket_m": 178.39503817654443
    },
    "score": {
-    "points": 59,
-    "tier": "good",
+    "points": 49,
+    "tier": "ok",
     "reasons": [
+     {
+      "points": -10,
+      "text": "€4,667/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
@@ -8589,12 +9182,16 @@
     "distance_to_supermarket_m": 352.1453104056117
    },
    "score": {
-    "points": 59,
+    "points": 58,
     "tier": "good",
     "reasons": [
      {
       "points": 10,
       "text": "balcony or terrace, 7 m²"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": 4,
@@ -8605,8 +9202,8 @@
       "text": "352 m to nearest supermarket"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": 3,
+      "text": "€4,023/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -8662,9 +9259,17 @@
     "distance_to_supermarket_m": 255.6131405044547
    },
    "score": {
-    "points": 76,
+    "points": 70,
     "tier": "top",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€4,872/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
@@ -8680,10 +9285,6 @@
      {
       "points": 4,
       "text": "pre-war character (1913)"
-     },
-     {
-      "points": 4,
-      "text": "energy label A"
      },
      {
       "points": -2,
@@ -8743,7 +9344,7 @@
     "distance_to_supermarket_m": 297.70834839521746
    },
    "score": {
-    "points": 76,
+    "points": 85,
     "tier": "top",
     "reasons": [
      {
@@ -8755,16 +9356,20 @@
       "text": "move-in ready"
      },
      {
+      "points": 8,
+      "text": "€3,780/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 5,
+      "text": "energy label B"
+     },
+     {
       "points": 4,
       "text": "balcony or terrace, 3 m²"
      },
      {
       "points": 4,
       "text": "pre-war character (1927)"
-     },
-     {
-      "points": 4,
-      "text": "energy label B"
      },
      {
       "points": -2,
@@ -8824,7 +9429,7 @@
     "distance_to_supermarket_m": 131.98838224107845
    },
    "score": {
-    "points": 73,
+    "points": 78,
     "tier": "top",
     "reasons": [
      {
@@ -8836,8 +9441,16 @@
       "text": "3 bedrooms (room for an office)"
      },
      {
+      "points": 6,
+      "text": "€3,878/m² vs €4,157/m² typical"
+     },
+     {
       "points": 3,
       "text": "top floor"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.7/m² (no lift)"
      },
      {
       "points": -1,
@@ -8897,7 +9510,7 @@
     "distance_to_supermarket_m": 374.51164503798174
    },
    "score": {
-    "points": 0,
+    "points": 4,
     "tier": "low",
     "reasons": [
      {
@@ -8923,6 +9536,10 @@
      {
       "points": -6,
       "text": "VvE not registered at the KvK"
+     },
+     {
+      "points": 6,
+      "text": "€3,873/m² vs €4,157/m² typical"
      },
      {
       "points": 4,
@@ -8986,12 +9603,16 @@
     "distance_to_supermarket_m": 369.00648023875993
    },
    "score": {
-    "points": 49,
-    "tier": "ok",
+    "points": 61,
+    "tier": "good",
     "reasons": [
      {
       "points": 12,
       "text": "balcony or terrace, 8 m²"
+     },
+     {
+      "points": 12,
+      "text": "€3,349/m² vs €4,157/m² typical"
      },
      {
       "points": -10,
@@ -9010,12 +9631,16 @@
       "text": "VvE not registered at the KvK"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
      },
      {
       "points": -3,
       "text": "369 m to nearest supermarket"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.6/m² (no lift)"
      }
     ]
    },
@@ -9071,9 +9696,13 @@
     "distance_to_supermarket_m": 331.7272314244409
    },
    "score": {
-    "points": 61,
-    "tier": "good",
+    "points": 73,
+    "tier": "top",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,125/m² vs €4,157/m² typical"
+     },
      {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
@@ -9148,7 +9777,7 @@
     "distance_to_supermarket_m": 217.3433064800206
    },
    "score": {
-    "points": 24,
+    "points": 30,
     "tier": "low",
     "reasons": [
      {
@@ -9168,12 +9797,16 @@
       "text": "VvE has no maintenance plan"
      },
      {
-      "points": 4,
-      "text": "pre-war character (1911)"
+      "points": 5,
+      "text": "€3,901/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 5,
+      "text": "energy label B"
      },
      {
       "points": 4,
-      "text": "energy label B"
+      "text": "pre-war character (1911)"
      },
      {
       "points": 3,
@@ -9237,9 +9870,17 @@
     "distance_to_supermarket_m": 33.568581993630644
    },
    "score": {
-    "points": 69,
-    "tier": "good",
+    "points": 73,
+    "tier": "top",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,312/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -12,
+      "text": "energy label E"
+     },
      {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
@@ -9251,10 +9892,6 @@
      {
       "points": 4,
       "text": "pre-war character (1936)"
-     },
-     {
-      "points": -4,
-      "text": "energy label E"
      },
      {
       "points": 3,
@@ -9314,12 +9951,16 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 61,
-    "tier": "good",
+    "points": 45,
+    "tier": "ok",
     "reasons": [
      {
       "points": 14,
       "text": "balcony or terrace, 10 m²"
+     },
+     {
+      "points": -12,
+      "text": "€4,759/m² vs €4,157/m² typical"
      },
      {
       "points": -10,
@@ -9334,16 +9975,16 @@
       "text": "VvE has no maintenance plan"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "pre-war character (1934)"
      },
      {
       "points": 3,
       "text": "top floor"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -9399,7 +10040,7 @@
     "distance_to_supermarket_m": 232.08115976143017
    },
    "score": {
-    "points": 27,
+    "points": 31,
     "tier": "low",
     "reasons": [
      {
@@ -9417,6 +10058,10 @@
      {
       "points": 8,
       "text": "move-in ready"
+     },
+     {
+      "points": 4,
+      "text": "€3,963/m² vs €4,157/m² typical"
      },
      {
       "points": -2,
@@ -9476,8 +10121,8 @@
     "distance_to_supermarket_m": 127.01418189418905
    },
    "score": {
-    "points": 59,
-    "tier": "good",
+    "points": 54,
+    "tier": "ok",
     "reasons": [
      {
       "points": 8,
@@ -9486,6 +10131,10 @@
      {
       "points": -6,
       "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -5,
+      "text": "€4,396/m² vs €4,157/m² typical"
      },
      {
       "points": 4,
@@ -9561,16 +10210,24 @@
     "distance_to_supermarket_m": 295.61345266285116
    },
    "score": {
-    "points": 68,
-    "tier": "good",
+    "points": 77,
+    "tier": "top",
     "reasons": [
      {
       "points": 12,
       "text": "balcony or terrace, 8 m²"
      },
      {
+      "points": 12,
+      "text": "€3,277/m² vs €4,157/m² typical"
+     },
+     {
       "points": 8,
       "text": "4 bedrooms (room for an office)"
+     },
+     {
+      "points": -3,
+      "text": "VvE €3.8/m² (lift halves this)"
      },
      {
       "points": -2,
@@ -9630,9 +10287,13 @@
     "distance_to_supermarket_m": 151.92362341440898
    },
    "score": {
-    "points": 57,
-    "tier": "good",
+    "points": 45,
+    "tier": "ok",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€4,803/m² vs €4,157/m² typical"
+     },
      {
       "points": 4,
       "text": "balcony or terrace, 3 m²"
@@ -9699,7 +10360,7 @@
     "distance_to_supermarket_m": 468.23476135192624
    },
    "score": {
-    "points": 57,
+    "points": 62,
     "tier": "good",
     "reasons": [
      {
@@ -9707,12 +10368,16 @@
       "text": "balcony or terrace, 11 m²"
      },
      {
-      "points": -4,
-      "text": "468 m to nearest supermarket"
+      "points": 12,
+      "text": "€3,457/m² vs €4,157/m² typical"
      },
      {
-      "points": -3,
-      "text": "VvE €5.1/m² without a lift"
+      "points": -10,
+      "text": "VvE €5.1/m² (no lift)"
+     },
+     {
+      "points": -4,
+      "text": "468 m to nearest supermarket"
      }
     ]
    },
@@ -9768,12 +10433,16 @@
     "distance_to_supermarket_m": 292.40740667801873
    },
    "score": {
-    "points": 65,
-    "tier": "good",
+    "points": 74,
+    "tier": "top",
     "reasons": [
      {
       "points": 14,
       "text": "balcony or terrace, 10 m²"
+     },
+     {
+      "points": 9,
+      "text": "€3,724/m² vs €4,157/m² typical"
      },
      {
       "points": 3,
@@ -9837,7 +10506,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 17,
+    "points": 13,
     "tier": "low",
     "reasons": [
      {
@@ -9853,8 +10522,16 @@
       "text": "balcony or terrace, 4 m²"
      },
      {
-      "points": -2,
+      "points": -6,
       "text": "energy label D"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.8/m² (no lift)"
+     },
+     {
+      "points": 1,
+      "text": "€4,085/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -10019,6 +10696,10 @@
       "text": "top floor"
      },
      {
+      "points": -2,
+      "text": "€4,276/m² vs €4,157/m² typical"
+     },
+     {
       "points": -1,
       "text": "154 m to nearest supermarket"
      }
@@ -10145,9 +10826,13 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 57,
-    "tier": "good",
+    "points": 45,
+    "tier": "ok",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€4,803/m² vs €4,157/m² typical"
+     },
      {
       "points": 6,
       "text": "balcony or terrace, 4 m²"
@@ -10218,7 +10903,7 @@
     "distance_to_supermarket_m": 551.3450782462559
    },
    "score": {
-    "points": 10,
+    "points": 20,
     "tier": "low",
     "reasons": [
      {
@@ -10230,12 +10915,16 @@
       "text": "balcony or terrace, 9 m²"
      },
      {
-      "points": -5,
-      "text": "551 m to nearest supermarket"
+      "points": 12,
+      "text": "€3,465/m² vs €4,157/m² typical"
      },
      {
-      "points": -3,
-      "text": "VvE €3.7/m² without a lift"
+      "points": -5,
+      "text": "VvE €3.7/m² (no lift)"
+     },
+     {
+      "points": -5,
+      "text": "551 m to nearest supermarket"
      }
     ]
    },
@@ -10291,12 +10980,16 @@
     "distance_to_supermarket_m": 467.9137108002605
    },
    "score": {
-    "points": 47,
+    "points": 42,
     "tier": "ok",
     "reasons": [
      {
       "points": -6,
       "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -5,
+      "text": "€4,425/m² vs €4,157/m² typical"
      },
      {
       "points": 4,
@@ -10364,24 +11057,28 @@
     "distance_to_supermarket_m": 358.92964718159504
    },
    "score": {
-    "points": 54,
-    "tier": "ok",
+    "points": 32,
+    "tier": "low",
     "reasons": [
      {
       "points": 12,
       "text": "balcony or terrace, 8 m²"
      },
      {
-      "points": -3,
-      "text": "VvE €4.8/m² without a lift"
+      "points": -12,
+      "text": "€5,267/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -9,
+      "text": "VvE €4.8/m² (no lift)"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": -3,
       "text": "359 m to nearest supermarket"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -10437,9 +11134,13 @@
     "distance_to_supermarket_m": 384.74090220711554
    },
    "score": {
-    "points": 70,
-    "tier": "top",
+    "points": 58,
+    "tier": "good",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€4,817/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
@@ -10522,7 +11223,7 @@
     "distance_to_supermarket_m": 596.441116788611
    },
    "score": {
-    "points": 43,
+    "points": 42,
     "tier": "ok",
     "reasons": [
      {
@@ -10548,6 +11249,10 @@
      {
       "points": 3,
       "text": "top floor"
+     },
+     {
+      "points": -1,
+      "text": "€4,205/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -10603,8 +11308,8 @@
     "distance_to_supermarket_m": 153.88375643513447
    },
    "score": {
-    "points": 69,
-    "tier": "good",
+    "points": 77,
+    "tier": "top",
     "reasons": [
      {
       "points": 12,
@@ -10613,6 +11318,10 @@
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 8,
+      "text": "€3,760/m² vs €4,157/m² typical"
      },
      {
       "points": -1,
@@ -10672,7 +11381,7 @@
     "distance_to_supermarket_m": 498.01440207217445
    },
    "score": {
-    "points": 16,
+    "points": 0,
     "tier": "low",
     "reasons": [
      {
@@ -10684,6 +11393,14 @@
       "text": "balcony or terrace, 11 m²"
      },
      {
+      "points": -12,
+      "text": "€4,753/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": -4,
       "text": "498 m to nearest supermarket"
      },
@@ -10692,8 +11409,8 @@
       "text": "top floor"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": -1,
+      "text": "VvE €3.0/m² (lift halves this)"
      }
     ]
    },
@@ -10749,7 +11466,7 @@
     "distance_to_supermarket_m": 371.404666808831
    },
    "score": {
-    "points": 70,
+    "points": 73,
     "tier": "top",
     "reasons": [
      {
@@ -10767,6 +11484,10 @@
      {
       "points": -3,
       "text": "371 m to nearest supermarket"
+     },
+     {
+      "points": 3,
+      "text": "€4,026/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -10822,7 +11543,7 @@
     "distance_to_supermarket_m": 155.35204372494346
    },
    "score": {
-    "points": 65,
+    "points": 66,
     "tier": "good",
     "reasons": [
      {
@@ -10830,12 +11551,12 @@
       "text": "move-in ready"
      },
      {
-      "points": 4,
-      "text": "balcony or terrace, 3 m²"
+      "points": 5,
+      "text": "energy label B"
      },
      {
       "points": 4,
-      "text": "energy label B"
+      "text": "balcony or terrace, 3 m²"
      },
      {
       "points": -1,
@@ -10899,6 +11620,10 @@
     "tier": "good",
     "reasons": [
      {
+      "points": 10,
+      "text": "energy label A"
+     },
+     {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
      },
@@ -10907,12 +11632,12 @@
       "text": "VvE has no maintenance plan"
      },
      {
-      "points": 4,
-      "text": "pre-war character (1933)"
+      "points": -6,
+      "text": "€4,481/m² vs €4,157/m² typical"
      },
      {
       "points": 4,
-      "text": "energy label A"
+      "text": "pre-war character (1933)"
      },
      {
       "points": 3,
@@ -10980,7 +11705,7 @@
     "distance_to_supermarket_m": 194.9997144994254
    },
    "score": {
-    "points": 17,
+    "points": 10,
     "tier": "low",
     "reasons": [
      {
@@ -10990,6 +11715,14 @@
      {
       "points": 13,
       "text": "balcony or terrace, 9 m²"
+     },
+     {
+      "points": -4,
+      "text": "€4,356/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -3,
+      "text": "VvE €3.9/m² (lift halves this)"
      },
      {
       "points": -1,
@@ -11057,8 +11790,12 @@
       "text": "balcony or terrace, 12 m²"
      },
      {
-      "points": -2,
+      "points": -6,
       "text": "energy label D"
+     },
+     {
+      "points": 4,
+      "text": "€3,938/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -11114,7 +11851,7 @@
     "distance_to_supermarket_m": 397.4096646709408
    },
    "score": {
-    "points": 26,
+    "points": 3,
     "tier": "low",
     "reasons": [
      {
@@ -11126,8 +11863,20 @@
       "text": "balcony or terrace, 17 m²"
      },
      {
+      "points": -12,
+      "text": "€5,333/m² vs €4,157/m² typical"
+     },
+     {
       "points": 8,
       "text": "move-in ready"
+     },
+     {
+      "points": -7,
+      "text": "VvE €5.8/m² (lift halves this)"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": 3,
@@ -11136,10 +11885,6 @@
      {
       "points": -3,
       "text": "397 m to nearest supermarket"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -11195,9 +11940,13 @@
     "distance_to_supermarket_m": 145.64140784586522
    },
    "score": {
-    "points": 46,
-    "tier": "ok",
+    "points": 58,
+    "tier": "good",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,438/m² vs €4,157/m² typical"
+     },
      {
       "points": -10,
       "text": "VvE has no reserve fund"
@@ -11272,7 +12021,7 @@
     "distance_to_supermarket_m": 394.22946896547444
    },
    "score": {
-    "points": 8,
+    "points": 0,
     "tier": "low",
     "reasons": [
      {
@@ -11280,8 +12029,16 @@
       "text": "erfpacht"
      },
      {
+      "points": -12,
+      "text": "€4,993/m² vs €4,157/m² typical"
+     },
+     {
       "points": 6,
       "text": "balcony or terrace, 4 m²"
+     },
+     {
+      "points": -3,
+      "text": "VvE €4.2/m² (lift halves this)"
      },
      {
       "points": -3,
@@ -11341,7 +12098,7 @@
     "distance_to_supermarket_m": 239.49695112696992
    },
    "score": {
-    "points": 74,
+    "points": 86,
     "tier": "top",
     "reasons": [
      {
@@ -11349,16 +12106,24 @@
       "text": "balcony or terrace, 10 m²"
      },
      {
+      "points": 12,
+      "text": "€3,191/m² vs €4,157/m² typical"
+     },
+     {
       "points": 8,
       "text": "4 bedrooms (room for an office)"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
      },
      {
       "points": -2,
       "text": "239 m to nearest supermarket"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.9/m² (no lift)"
      }
     ]
    },
@@ -11414,7 +12179,7 @@
     "distance_to_supermarket_m": 380.0111293614062
    },
    "score": {
-    "points": 15,
+    "points": 6,
     "tier": "low",
     "reasons": [
      {
@@ -11424,6 +12189,10 @@
      {
       "points": 13,
       "text": "balcony or terrace, 9 m²"
+     },
+     {
+      "points": -9,
+      "text": "€4,630/m² vs €4,157/m² typical"
      },
      {
       "points": -3,
@@ -11483,7 +12252,7 @@
     "distance_to_supermarket_m": 58.306251473559264
    },
    "score": {
-    "points": 70,
+    "points": 74,
     "tier": "top",
     "reasons": [
      {
@@ -11497,6 +12266,10 @@
      {
       "points": 4,
       "text": "pre-war character (1924)"
+     },
+     {
+      "points": 4,
+      "text": "€3,969/m² vs €4,157/m² typical"
      },
      {
       "points": -2,
@@ -11556,12 +12329,16 @@
     "distance_to_supermarket_m": 197.34282923332648
    },
    "score": {
-    "points": 1,
+    "points": 13,
     "tier": "low",
     "reasons": [
      {
       "points": -45,
       "text": "erfpacht"
+     },
+     {
+      "points": 12,
+      "text": "€2,874/m² vs €4,157/m² typical"
      },
      {
       "points": -10,
@@ -11637,7 +12414,7 @@
     "distance_to_supermarket_m": 527.7182935225577
    },
    "score": {
-    "points": 55,
+    "points": 60,
     "tier": "good",
     "reasons": [
      {
@@ -11659,6 +12436,10 @@
      {
       "points": -5,
       "text": "528 m to nearest supermarket"
+     },
+     {
+      "points": 5,
+      "text": "€3,910/m² vs €4,157/m² typical"
      },
      {
       "points": 3,
@@ -11718,9 +12499,13 @@
     "distance_to_supermarket_m": 435.55049698787735
    },
    "score": {
-    "points": 51,
-    "tier": "ok",
+    "points": 61,
+    "tier": "good",
     "reasons": [
+     {
+      "points": 10,
+      "text": "€3,652/m² vs €4,157/m² typical"
+     },
      {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
@@ -11795,7 +12580,7 @@
     "distance_to_supermarket_m": 652.0095411513412
    },
    "score": {
-    "points": 38,
+    "points": 31,
     "tier": "low",
     "reasons": [
      {
@@ -11807,11 +12592,15 @@
       "text": "balcony or terrace, 8 m²"
      },
      {
+      "points": -8,
+      "text": "€4,578/m² vs €4,157/m² typical"
+     },
+     {
       "points": -6,
       "text": "652 m to nearest supermarket"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
      },
      {
@@ -11872,20 +12661,28 @@
     "distance_to_supermarket_m": 276.2133010070241
    },
    "score": {
-    "points": 55,
+    "points": 60,
     "tier": "good",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,316/m² vs €4,157/m² typical"
+     },
      {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
      },
      {
-      "points": -2,
-      "text": "276 m to nearest supermarket"
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
+      "points": -3,
+      "text": "VvE €4.1/m² (lift halves this)"
      },
      {
       "points": -2,
-      "text": "energy label D"
+      "text": "276 m to nearest supermarket"
      }
     ]
    },
@@ -11941,9 +12738,13 @@
     "distance_to_supermarket_m": 222.71366848901337
    },
    "score": {
-    "points": 72,
-    "tier": "top",
+    "points": 61,
+    "tier": "good",
     "reasons": [
+     {
+      "points": -11,
+      "text": "€4,688/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
@@ -12018,9 +12819,13 @@
     "distance_to_supermarket_m": 300.9186799507515
    },
    "score": {
-    "points": 61,
-    "tier": "good",
+    "points": 73,
+    "tier": "top",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,108/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
@@ -12091,7 +12896,7 @@
     "distance_to_supermarket_m": 452.4668568297868
    },
    "score": {
-    "points": 32,
+    "points": 37,
     "tier": "low",
     "reasons": [
      {
@@ -12099,16 +12904,24 @@
       "text": "needs work"
      },
      {
+      "points": 12,
+      "text": "€3,292/m² vs €4,157/m² typical"
+     },
+     {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": -4,
       "text": "452 m to nearest supermarket"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": -3,
+      "text": "VvE €4.1/m² (lift halves this)"
      }
     ]
    },
@@ -12164,7 +12977,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 80,
+    "points": 83,
     "tier": "top",
     "reasons": [
      {
@@ -12178,6 +12991,10 @@
      {
       "points": 8,
       "text": "move-in ready"
+     },
+     {
+      "points": 3,
+      "text": "€3,987/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -12233,7 +13050,7 @@
     "distance_to_supermarket_m": 180.9621412407432
    },
    "score": {
-    "points": 65,
+    "points": 67,
     "tier": "good",
     "reasons": [
      {
@@ -12245,12 +13062,16 @@
       "text": "balcony or terrace, 4 m²"
      },
      {
-      "points": 4,
-      "text": "pre-war character (1930)"
+      "points": 6,
+      "text": "€3,869/m² vs €4,157/m² typical"
      },
      {
-      "points": -2,
+      "points": -6,
       "text": "energy label D"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1930)"
      },
      {
       "points": -1,
@@ -12310,7 +13131,7 @@
     "distance_to_supermarket_m": 143.89197487486183
    },
    "score": {
-    "points": 51,
+    "points": 45,
     "tier": "ok",
     "reasons": [
      {
@@ -12320,6 +13141,10 @@
      {
       "points": 15,
       "text": "balcony or terrace, 13 m²"
+     },
+     {
+      "points": -6,
+      "text": "€4,477/m² vs €4,157/m² typical"
      },
      {
       "points": 4,
@@ -12387,7 +13212,7 @@
     "distance_to_supermarket_m": 394.26362848132646
    },
    "score": {
-    "points": 15,
+    "points": 10,
     "tier": "low",
     "reasons": [
      {
@@ -12405,6 +13230,10 @@
      {
       "points": -6,
       "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -5,
+      "text": "€4,396/m² vs €4,157/m² typical"
      },
      {
       "points": 3,
@@ -12468,12 +13297,20 @@
     "distance_to_supermarket_m": 465.98855220155014
    },
    "score": {
-    "points": 62,
+    "points": 56,
     "tier": "good",
     "reasons": [
      {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
+     },
+     {
+      "points": -7,
+      "text": "€4,518/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 5,
+      "text": "energy label B"
      },
      {
       "points": 4,
@@ -12482,10 +13319,6 @@
      {
       "points": -4,
       "text": "466 m to nearest supermarket"
-     },
-     {
-      "points": 4,
-      "text": "energy label B"
      }
     ]
    },
@@ -12541,15 +13374,19 @@
     "distance_to_supermarket_m": 221.5681434044424
    },
    "score": {
-    "points": 62,
-    "tier": "good",
+    "points": 75,
+    "tier": "top",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,070/m² vs €4,157/m² typical"
+     },
      {
       "points": 10,
       "text": "balcony or terrace, 7 m²"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
      },
      {
@@ -12610,12 +13447,16 @@
     "distance_to_supermarket_m": 242.21125924611525
    },
    "score": {
-    "points": 72,
-    "tier": "top",
+    "points": 60,
+    "tier": "good",
     "reasons": [
      {
       "points": 12,
       "text": "balcony or terrace, 8 m²"
+     },
+     {
+      "points": -12,
+      "text": "€4,877/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -12683,12 +13524,16 @@
     "distance_to_supermarket_m": 363.38346000828807
    },
    "score": {
-    "points": 57,
-    "tier": "good",
+    "points": 51,
+    "tier": "ok",
     "reasons": [
      {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
+     },
+     {
+      "points": -6,
+      "text": "€4,464/m² vs €4,157/m² typical"
      },
      {
       "points": 4,
@@ -12756,12 +13601,20 @@
     "distance_to_supermarket_m": 106.39981441709742
    },
    "score": {
-    "points": 45,
-    "tier": "ok",
+    "points": 39,
+    "tier": "low",
     "reasons": [
      {
       "points": -25,
       "text": "erfpacht (perpetual, bought off)"
+     },
+     {
+      "points": -12,
+      "text": "€4,878/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
+      "text": "energy label A"
      },
      {
       "points": 9,
@@ -12770,10 +13623,6 @@
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
-     },
-     {
-      "points": 4,
-      "text": "energy label A"
      },
      {
       "points": -1,
@@ -12833,8 +13682,8 @@
     "distance_to_supermarket_m": 259.6632589124648
    },
    "score": {
-    "points": 69,
-    "tier": "good",
+    "points": 75,
+    "tier": "top",
     "reasons": [
      {
       "points": 9,
@@ -12843,6 +13692,10 @@
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 6,
+      "text": "€3,882/m² vs €4,157/m² typical"
      },
      {
       "points": 4,
@@ -12918,12 +13771,20 @@
       "text": "needs work"
      },
      {
+      "points": 12,
+      "text": "€3,481/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -12,
+      "text": "energy label E"
+     },
+     {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
      },
      {
-      "points": -4,
-      "text": "energy label E"
+      "points": -3,
+      "text": "VvE €4.0/m² (lift halves this)"
      },
      {
       "points": -3,
@@ -12983,7 +13844,7 @@
     "distance_to_supermarket_m": 205.75185083923338
    },
    "score": {
-    "points": 24,
+    "points": 21,
     "tier": "low",
     "reasons": [
      {
@@ -12995,8 +13856,12 @@
       "text": "balcony or terrace, 10 m²"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
+     },
+     {
+      "points": -4,
+      "text": "€4,369/m² vs €4,157/m² typical"
      },
      {
       "points": 3,
@@ -13060,12 +13925,16 @@
     "distance_to_supermarket_m": 449.43568196889754
    },
    "score": {
-    "points": 70,
+    "points": 82,
     "tier": "top",
     "reasons": [
      {
       "points": 14,
       "text": "balcony or terrace, 10 m²"
+     },
+     {
+      "points": 12,
+      "text": "€3,158/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -13137,7 +14006,7 @@
     "distance_to_supermarket_m": 182.38252415038392
    },
    "score": {
-    "points": 57,
+    "points": 58,
     "tier": "good",
     "reasons": [
      {
@@ -13167,6 +14036,10 @@
      {
       "points": -1,
       "text": "182 m to nearest supermarket"
+     },
+     {
+      "points": 1,
+      "text": "€4,118/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -13222,9 +14095,13 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 64,
-    "tier": "good",
+    "points": 52,
+    "tier": "ok",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€4,807/m² vs €4,157/m² typical"
+     },
      {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
@@ -13295,8 +14172,8 @@
     "distance_to_supermarket_m": 69.94452131521486
    },
    "score": {
-    "points": 45,
-    "tier": "ok",
+    "points": 39,
+    "tier": "low",
     "reasons": [
      {
       "points": -25,
@@ -13309,6 +14186,10 @@
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -6,
+      "text": "€4,438/m² vs €4,157/m² typical"
      },
      {
       "points": 4,
@@ -13368,20 +14249,24 @@
     "distance_to_supermarket_m": 86.10013707475038
    },
    "score": {
-    "points": 60,
-    "tier": "good",
+    "points": 44,
+    "tier": "ok",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€4,803/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
      },
      {
-      "points": 4,
-      "text": "pre-war character (1931)"
+      "points": -6,
+      "text": "energy label D"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": 4,
+      "text": "pre-war character (1931)"
      }
     ]
    },
@@ -13437,9 +14322,13 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 72,
+    "points": 84,
     "tier": "top",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,371/m² vs €4,157/m² typical"
+     },
      {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
@@ -13514,12 +14403,16 @@
     "distance_to_supermarket_m": 414.6058297278692
    },
    "score": {
-    "points": 2,
+    "points": 14,
     "tier": "low",
     "reasons": [
      {
       "points": -45,
       "text": "erfpacht"
+     },
+     {
+      "points": 12,
+      "text": "€3,530/m² vs €4,157/m² typical"
      },
      {
       "points": -6,
@@ -13591,12 +14484,16 @@
     "distance_to_supermarket_m": 265.1298146189724
    },
    "score": {
-    "points": 57,
-    "tier": "good",
+    "points": 50,
+    "tier": "ok",
     "reasons": [
      {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
+     },
+     {
+      "points": -7,
+      "text": "€4,500/m² vs €4,157/m² typical"
      },
      {
       "points": -2,
@@ -13656,7 +14553,7 @@
     "distance_to_supermarket_m": 318.85110169070146
    },
    "score": {
-    "points": 70,
+    "points": 77,
     "tier": "top",
     "reasons": [
      {
@@ -13666,6 +14563,10 @@
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 7,
+      "text": "€3,788/m² vs €4,157/m² typical"
      },
      {
       "points": -3,
@@ -13725,12 +14626,24 @@
     "distance_to_supermarket_m": 444.8536124654577
    },
    "score": {
-    "points": 55,
-    "tier": "good",
+    "points": 37,
+    "tier": "low",
     "reasons": [
      {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
+     },
+     {
+      "points": -7,
+      "text": "VvE €5.9/m² (lift halves this)"
+     },
+     {
+      "points": -7,
+      "text": "€4,529/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": -4,
@@ -13739,10 +14652,6 @@
      {
       "points": 3,
       "text": "top floor"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -13798,12 +14707,16 @@
     "distance_to_supermarket_m": 46.30049145061521
    },
    "score": {
-    "points": 71,
-    "tier": "top",
+    "points": 64,
+    "tier": "good",
     "reasons": [
      {
       "points": 15,
       "text": "balcony or terrace, 34 m²"
+     },
+     {
+      "points": -7,
+      "text": "€4,487/m² vs €4,157/m² typical"
      },
      {
       "points": 3,
@@ -13867,7 +14780,7 @@
     "distance_to_supermarket_m": 177.4926371640489
    },
    "score": {
-    "points": 77,
+    "points": 89,
     "tier": "top",
     "reasons": [
      {
@@ -13875,16 +14788,20 @@
       "text": "balcony or terrace, 8 m²"
      },
      {
+      "points": 11,
+      "text": "€3,590/m² vs €4,157/m² typical"
+     },
+     {
       "points": 8,
       "text": "move-in ready"
      },
      {
-      "points": 4,
-      "text": "pre-war character (1927)"
+      "points": 5,
+      "text": "energy label B"
      },
      {
       "points": 4,
-      "text": "energy label B"
+      "text": "pre-war character (1927)"
      },
      {
       "points": -1,
@@ -13944,7 +14861,7 @@
     "distance_to_supermarket_m": 326.9693730871604
    },
    "score": {
-    "points": 20,
+    "points": 15,
     "tier": "low",
     "reasons": [
      {
@@ -13960,12 +14877,20 @@
       "text": "balcony or terrace, 4 m²"
      },
      {
-      "points": 4,
+      "points": -5,
+      "text": "€4,412/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 5,
       "text": "energy label B"
      },
      {
       "points": -3,
       "text": "327 m to nearest supermarket"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.9/m² (lift halves this)"
      }
     ]
    },
@@ -14021,7 +14946,7 @@
     "distance_to_supermarket_m": 386.58583456076195
    },
    "score": {
-    "points": 30,
+    "points": 25,
     "tier": "low",
     "reasons": [
      {
@@ -14035,6 +14960,10 @@
      {
       "points": -6,
       "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -5,
+      "text": "€4,389/m² vs €4,157/m² typical"
      },
      {
       "points": 4,
@@ -14106,7 +15035,7 @@
     "distance_to_supermarket_m": 238.73632255292162
    },
    "score": {
-    "points": 61,
+    "points": 64,
     "tier": "good",
     "reasons": [
      {
@@ -14124,6 +15053,10 @@
      {
       "points": 4,
       "text": "pre-war character (1937)"
+     },
+     {
+      "points": 3,
+      "text": "€4,012/m² vs €4,157/m² typical"
      },
      {
       "points": -2,
@@ -14187,12 +15120,16 @@
     "distance_to_supermarket_m": 279.2704055228713
    },
    "score": {
-    "points": 79,
+    "points": 83,
     "tier": "top",
     "reasons": [
      {
       "points": 14,
       "text": "balcony or terrace, 11 m²"
+     },
+     {
+      "points": 9,
+      "text": "€3,723/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -14203,6 +15140,10 @@
       "text": "move-in ready"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 3,
       "text": "first floor"
      },
@@ -14211,8 +15152,8 @@
       "text": "279 m to nearest supermarket"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": -1,
+      "text": "VvE €2.9/m² (lift halves this)"
      }
     ]
    },
@@ -14268,7 +15209,7 @@
     "distance_to_supermarket_m": 220.3097080488176
    },
    "score": {
-    "points": 75,
+    "points": 79,
     "tier": "top",
     "reasons": [
      {
@@ -14288,8 +15229,12 @@
       "text": "VvE has no maintenance plan"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
+     },
+     {
+      "points": 3,
+      "text": "€3,987/m² vs €4,157/m² typical"
      },
      {
       "points": -2,
@@ -14361,8 +15306,16 @@
       "text": "VvE has no reserve fund"
      },
      {
+      "points": 7,
+      "text": "€3,824/m² vs €4,157/m² typical"
+     },
+     {
       "points": -6,
       "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": 4,
@@ -14371,10 +15324,6 @@
      {
       "points": -2,
       "text": "busy road"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      },
      {
       "points": -1,
@@ -14434,7 +15383,7 @@
     "distance_to_supermarket_m": 220.27532174399775
    },
    "score": {
-    "points": 9,
+    "points": 14,
     "tier": "low",
     "reasons": [
      {
@@ -14442,16 +15391,24 @@
       "text": "erfpacht"
      },
      {
+      "points": 12,
+      "text": "€3,565/m² vs €4,157/m² typical"
+     },
+     {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
      },
      {
-      "points": -2,
-      "text": "220 m to nearest supermarket"
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
+      "points": -3,
+      "text": "VvE €3.9/m² (lift halves this)"
      },
      {
       "points": -2,
-      "text": "energy label D"
+      "text": "220 m to nearest supermarket"
      }
     ]
    },
@@ -14507,9 +15464,13 @@
     "distance_to_supermarket_m": 159.25721214176392
    },
    "score": {
-    "points": 45,
-    "tier": "ok",
+    "points": 57,
+    "tier": "good",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,434/m² vs €4,157/m² typical"
+     },
      {
       "points": -6,
       "text": "VvE has no maintenance plan"
@@ -14580,24 +15541,28 @@
     "distance_to_supermarket_m": 199.38349146785623
    },
    "score": {
-    "points": 56,
-    "tier": "good",
+    "points": 45,
+    "tier": "ok",
     "reasons": [
      {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
      },
      {
+      "points": -6,
+      "text": "VvE €4.0/m² (no lift)"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
+      "points": -4,
+      "text": "€4,333/m² vs €4,157/m² typical"
+     },
+     {
       "points": 3,
       "text": "first floor"
-     },
-     {
-      "points": -3,
-      "text": "VvE €4.0/m² without a lift"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      },
      {
       "points": -1,
@@ -14657,8 +15622,8 @@
     "distance_to_supermarket_m": 175.2600804572691
    },
    "score": {
-    "points": 38,
-    "tier": "low",
+    "points": 43,
+    "tier": "ok",
     "reasons": [
      {
       "points": -20,
@@ -14671,6 +15636,10 @@
      {
       "points": -6,
       "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 5,
+      "text": "€3,925/m² vs €4,157/m² typical"
      },
      {
       "points": 4,
@@ -14738,12 +15707,16 @@
     "distance_to_supermarket_m": 329.211602695267
    },
    "score": {
-    "points": 81,
+    "points": 91,
     "tier": "top",
     "reasons": [
      {
       "points": 14,
       "text": "balcony or terrace, 11 m²"
+     },
+     {
+      "points": 12,
+      "text": "€3,421/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -14754,8 +15727,12 @@
       "text": "move-in ready"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
+     },
+     {
+      "points": -3,
+      "text": "VvE €3.8/m² (lift halves this)"
      },
      {
       "points": -3,
@@ -14815,7 +15792,7 @@
     "distance_to_supermarket_m": 251.6560419655243
    },
    "score": {
-    "points": 55,
+    "points": 68,
     "tier": "good",
     "reasons": [
      {
@@ -14827,6 +15804,10 @@
       "text": "balcony or terrace, 8 m²"
      },
      {
+      "points": 10,
+      "text": "energy label A"
+     },
+     {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
      },
@@ -14835,8 +15816,8 @@
       "text": "move-in ready"
      },
      {
-      "points": 4,
-      "text": "energy label A"
+      "points": 7,
+      "text": "€3,824/m² vs €4,157/m² typical"
      },
      {
       "points": -2,
@@ -14896,7 +15877,7 @@
     "distance_to_supermarket_m": 111.57321643194804
    },
    "score": {
-    "points": 60,
+    "points": 63,
     "tier": "good",
     "reasons": [
      {
@@ -14904,8 +15885,16 @@
       "text": "balcony or terrace, 12 m²"
      },
      {
-      "points": -4,
+      "points": 12,
+      "text": "€3,120/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -12,
       "text": "energy label E"
+     },
+     {
+      "points": -1,
+      "text": "VvE €3.1/m² (lift halves this)"
      },
      {
       "points": -1,
@@ -14965,7 +15954,7 @@
     "distance_to_supermarket_m": 182.30397251184135
    },
    "score": {
-    "points": 72,
+    "points": 76,
     "tier": "top",
     "reasons": [
      {
@@ -14977,16 +15966,20 @@
       "text": "3 bedrooms (room for an office)"
      },
      {
+      "points": 8,
+      "text": "€3,735/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "pre-war character (1933)"
      },
      {
       "points": 3,
       "text": "top floor"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      },
      {
       "points": -1,
@@ -15046,12 +16039,16 @@
     "distance_to_supermarket_m": 119.10995625746662
    },
    "score": {
-    "points": 9,
+    "points": 3,
     "tier": "low",
     "reasons": [
      {
       "points": -45,
       "text": "erfpacht"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": 4,
@@ -15063,7 +16060,7 @@
      },
      {
       "points": -2,
-      "text": "energy label D"
+      "text": "€4,241/m² vs €4,157/m² typical"
      },
      {
       "points": -1,
@@ -15123,7 +16120,7 @@
     "distance_to_supermarket_m": 471.72348412476697
    },
    "score": {
-    "points": 53,
+    "points": 48,
     "tier": "ok",
     "reasons": [
      {
@@ -15131,12 +16128,16 @@
       "text": "balcony or terrace, 6 m²"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": -4,
       "text": "472 m to nearest supermarket"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": -1,
+      "text": "€4,217/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -15192,20 +16193,24 @@
     "distance_to_supermarket_m": 362.2558843695767
    },
    "score": {
-    "points": 59,
+    "points": 67,
     "tier": "good",
     "reasons": [
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "move-in ready"
      },
      {
-      "points": 4,
-      "text": "energy label A"
-     },
-     {
       "points": -3,
       "text": "362 m to nearest supermarket"
+     },
+     {
+      "points": 2,
+      "text": "€4,070/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -15261,12 +16266,16 @@
     "distance_to_supermarket_m": 10.373211015215553
    },
    "score": {
-    "points": 68,
-    "tier": "good",
+    "points": 76,
+    "tier": "top",
     "reasons": [
      {
       "points": 14,
       "text": "balcony or terrace, 11 m²"
+     },
+     {
+      "points": 12,
+      "text": "€2,912/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -15277,12 +16286,12 @@
       "text": "VvE has no maintenance plan"
      },
      {
-      "points": 4,
-      "text": "pre-war character (1932)"
+      "points": -6,
+      "text": "energy label D"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": 4,
+      "text": "pre-war character (1932)"
      }
     ]
    },
@@ -15338,9 +16347,13 @@
     "distance_to_supermarket_m": 296.0149671992612
    },
    "score": {
-    "points": 64,
-    "tier": "good",
+    "points": 52,
+    "tier": "ok",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€4,812/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
@@ -15476,16 +16489,20 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 52,
+    "points": 42,
     "tier": "ok",
     "reasons": [
      {
-      "points": 4,
-      "text": "pre-war character (1924)"
+      "points": -6,
+      "text": "€4,433/m² vs €4,157/m² typical"
      },
      {
-      "points": -2,
+      "points": -6,
       "text": "energy label D"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1924)"
      }
     ]
    },
@@ -15541,7 +16558,7 @@
     "distance_to_supermarket_m": 103.2924122231148
    },
    "score": {
-    "points": 20,
+    "points": 21,
     "tier": "low",
     "reasons": [
      {
@@ -15553,7 +16570,7 @@
       "text": "balcony or terrace, 8 m²"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
      },
      {
@@ -15614,7 +16631,7 @@
     "distance_to_supermarket_m": 99.66051605503054
    },
    "score": {
-    "points": 10,
+    "points": 17,
     "tier": "low",
     "reasons": [
      {
@@ -15628,6 +16645,10 @@
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 7,
+      "text": "€3,824/m² vs €4,157/m² typical"
      },
      {
       "points": 6,
@@ -15695,7 +16716,7 @@
     "distance_to_supermarket_m": 256.3817518561634
    },
    "score": {
-    "points": 33,
+    "points": 36,
     "tier": "low",
     "reasons": [
      {
@@ -15703,7 +16724,7 @@
       "text": "erfpacht (perpetual, bought off)"
      },
      {
-      "points": 4,
+      "points": 10,
       "text": "energy label A"
      },
      {
@@ -15713,6 +16734,10 @@
      {
       "points": 3,
       "text": "first floor"
+     },
+     {
+      "points": -3,
+      "text": "€4,302/m² vs €4,157/m² typical"
      },
      {
       "points": -2,
@@ -15772,12 +16797,16 @@
     "distance_to_supermarket_m": 524.1813177816178
    },
    "score": {
-    "points": 7,
+    "points": 0,
     "tier": "low",
     "reasons": [
      {
       "points": -45,
       "text": "erfpacht"
+     },
+     {
+      "points": -12,
+      "text": "€4,753/m² vs €4,157/m² typical"
      },
      {
       "points": -5,
@@ -15845,12 +16874,16 @@
     "distance_to_supermarket_m": 258.81785224409526
    },
    "score": {
-    "points": 38,
-    "tier": "low",
+    "points": 50,
+    "tier": "ok",
     "reasons": [
      {
       "points": -25,
       "text": "erfpacht (perpetual, bought off)"
+     },
+     {
+      "points": 12,
+      "text": "€3,262/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -15922,9 +16955,17 @@
     "distance_to_supermarket_m": 149.25756393370162
    },
    "score": {
-    "points": 68,
+    "points": 64,
     "tier": "good",
     "reasons": [
+     {
+      "points": -10,
+      "text": "€4,671/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "move-in ready"
@@ -15932,10 +16973,6 @@
      {
       "points": 4,
       "text": "pre-war character (1928)"
-     },
-     {
-      "points": 4,
-      "text": "energy label A"
      },
      {
       "points": 3,
@@ -15999,12 +17036,16 @@
     "distance_to_supermarket_m": 383.50880938889856
    },
    "score": {
-    "points": 12,
+    "points": 0,
     "tier": "low",
     "reasons": [
      {
       "points": -45,
       "text": "erfpacht"
+     },
+     {
+      "points": -12,
+      "text": "€4,878/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -16017,6 +17058,10 @@
      {
       "points": -3,
       "text": "384 m to nearest supermarket"
+     },
+     {
+      "points": -2,
+      "text": "VvE €3.3/m² (lift halves this)"
      },
      {
       "points": -2,
@@ -16076,16 +17121,24 @@
     "distance_to_supermarket_m": 175.9465542140268
    },
    "score": {
-    "points": 56,
+    "points": 63,
     "tier": "good",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,465/m² vs €4,157/m² typical"
+     },
      {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
      },
      {
-      "points": -2,
+      "points": -6,
       "text": "energy label D"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.8/m² (no lift)"
      },
      {
       "points": -1,
@@ -16145,7 +17198,7 @@
     "distance_to_supermarket_m": 426.16609244486045
    },
    "score": {
-    "points": 58,
+    "points": 66,
     "tier": "good",
     "reasons": [
      {
@@ -16153,8 +17206,16 @@
       "text": "balcony or terrace, 10 m²"
      },
      {
+      "points": 11,
+      "text": "€3,625/m² vs €4,157/m² typical"
+     },
+     {
       "points": -4,
       "text": "426 m to nearest supermarket"
+     },
+     {
+      "points": -3,
+      "text": "VvE €4.1/m² (lift halves this)"
      },
      {
       "points": -2,
@@ -16214,7 +17275,7 @@
     "distance_to_supermarket_m": 406.6103247590817
    },
    "score": {
-    "points": 60,
+    "points": 63,
     "tier": "good",
     "reasons": [
      {
@@ -16232,6 +17293,10 @@
      {
       "points": 3,
       "text": "garden"
+     },
+     {
+      "points": 3,
+      "text": "€4,023/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -16287,7 +17352,7 @@
     "distance_to_supermarket_m": 479.0180147126141
    },
    "score": {
-    "points": 74,
+    "points": 81,
     "tier": "top",
     "reasons": [
      {
@@ -16301,6 +17366,10 @@
      {
       "points": 8,
       "text": "move-in ready"
+     },
+     {
+      "points": 7,
+      "text": "€3,822/m² vs €4,157/m² typical"
      },
      {
       "points": -4,
@@ -16364,7 +17433,7 @@
     "distance_to_supermarket_m": 277.5513769989079
    },
    "score": {
-    "points": 32,
+    "points": 38,
     "tier": "low",
     "reasons": [
      {
@@ -16376,6 +17445,10 @@
       "text": "balcony or terrace, 12 m²"
      },
      {
+      "points": 11,
+      "text": "€3,598/m² vs €4,157/m² typical"
+     },
+     {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
      },
@@ -16384,12 +17457,16 @@
       "text": "move-in ready"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": -2,
       "text": "278 m to nearest supermarket"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": -1,
+      "text": "VvE €2.6/m² (no lift)"
      }
     ]
    },
@@ -16445,7 +17522,7 @@
     "distance_to_supermarket_m": 423.4323304276615
    },
    "score": {
-    "points": 0,
+    "points": 9,
     "tier": "low",
     "reasons": [
      {
@@ -16455,6 +17532,10 @@
      {
       "points": -20,
       "text": "needs work"
+     },
+     {
+      "points": 12,
+      "text": "€3,520/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -16526,7 +17607,7 @@
     "distance_to_supermarket_m": 417.0320955436301
    },
    "score": {
-    "points": 51,
+    "points": 50,
     "tier": "ok",
     "reasons": [
      {
@@ -16544,6 +17625,10 @@
      {
       "points": -2,
       "text": "busy road"
+     },
+     {
+      "points": -1,
+      "text": "€4,200/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -16599,8 +17684,8 @@
     "distance_to_supermarket_m": 530.4061748679512
    },
    "score": {
-    "points": 69,
-    "tier": "good",
+    "points": 72,
+    "tier": "top",
     "reasons": [
      {
       "points": 10,
@@ -16615,12 +17700,16 @@
       "text": "move-in ready"
      },
      {
-      "points": -5,
-      "text": "530 m to nearest supermarket"
+      "points": 7,
+      "text": "€3,803/m² vs €4,157/m² typical"
      },
      {
-      "points": -2,
+      "points": -6,
       "text": "energy label D"
+     },
+     {
+      "points": -5,
+      "text": "530 m to nearest supermarket"
      }
     ]
    },
@@ -16753,7 +17842,7 @@
     "distance_to_supermarket_m": 420.0540835297049
    },
    "score": {
-    "points": 60,
+    "points": 69,
     "tier": "good",
     "reasons": [
      {
@@ -16761,8 +17850,16 @@
       "text": "balcony or terrace, 11 m²"
      },
      {
+      "points": 10,
+      "text": "€3,642/m² vs €4,157/m² typical"
+     },
+     {
       "points": -4,
       "text": "420 m to nearest supermarket"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.7/m² (no lift)"
      }
     ]
    },
@@ -16818,16 +17915,20 @@
     "distance_to_supermarket_m": 97.2096666916012
    },
    "score": {
-    "points": 65,
+    "points": 66,
     "tier": "good",
     "reasons": [
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
      },
      {
-      "points": 4,
-      "text": "energy label A"
+      "points": -5,
+      "text": "€4,389/m² vs €4,157/m² typical"
      },
      {
       "points": 3,
@@ -16887,7 +17988,7 @@
     "distance_to_supermarket_m": 209.99376727107156
    },
    "score": {
-    "points": 25,
+    "points": 26,
     "tier": "low",
     "reasons": [
      {
@@ -16907,12 +18008,20 @@
       "text": "move-in ready"
      },
      {
-      "points": -2,
-      "text": "210 m to nearest supermarket"
+      "points": 7,
+      "text": "€3,807/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": -2,
-      "text": "energy label D"
+      "text": "VvE €3.7/m² (lift halves this)"
+     },
+     {
+      "points": -2,
+      "text": "210 m to nearest supermarket"
      }
     ]
    },
@@ -16968,8 +18077,8 @@
     "distance_to_supermarket_m": 479.41903849933846
    },
    "score": {
-    "points": 64,
-    "tier": "good",
+    "points": 53,
+    "tier": "ok",
     "reasons": [
      {
       "points": 8,
@@ -16980,6 +18089,10 @@
       "text": "move-in ready"
      },
      {
+      "points": -7,
+      "text": "€4,506/m² vs €4,157/m² typical"
+     },
+     {
       "points": 6,
       "text": "balcony or terrace, 4 m²"
      },
@@ -16988,16 +18101,16 @@
       "text": "VvE has no maintenance plan"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "pre-war character (1927)"
      },
      {
       "points": -4,
       "text": "479 m to nearest supermarket"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -17053,7 +18166,7 @@
     "distance_to_supermarket_m": 350.95836731829286
    },
    "score": {
-    "points": 57,
+    "points": 56,
     "tier": "good",
     "reasons": [
      {
@@ -17079,6 +18192,10 @@
      {
       "points": -3,
       "text": "351 m to nearest supermarket"
+     },
+     {
+      "points": -1,
+      "text": "€4,198/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -17134,12 +18251,16 @@
     "distance_to_supermarket_m": 146.95303826597328
    },
    "score": {
-    "points": 75,
+    "points": 79,
     "tier": "top",
     "reasons": [
      {
       "points": 10,
       "text": "balcony or terrace, 7 m²"
+     },
+     {
+      "points": 10,
+      "text": "energy label A"
      },
      {
       "points": 8,
@@ -17150,8 +18271,8 @@
       "text": "pre-war character (1927)"
      },
      {
-      "points": 4,
-      "text": "energy label A"
+      "points": -2,
+      "text": "€4,268/m² vs €4,157/m² typical"
      },
      {
       "points": -1,
@@ -17211,11 +18332,15 @@
     "distance_to_supermarket_m": 366.54763823133226
    },
    "score": {
-    "points": 46,
+    "points": 50,
     "tier": "ok",
     "reasons": [
      {
-      "points": -4,
+      "points": 12,
+      "text": "€3,554/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -12,
       "text": "energy label E"
      },
      {
@@ -17280,9 +18405,13 @@
     "distance_to_supermarket_m": 220.56730575693993
    },
    "score": {
-    "points": 81,
+    "points": 91,
     "tier": "top",
     "reasons": [
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
@@ -17301,7 +18430,7 @@
      },
      {
       "points": 4,
-      "text": "energy label A"
+      "text": "€3,941/m² vs €4,157/m² typical"
      },
      {
       "points": 3,
@@ -17365,7 +18494,7 @@
     "distance_to_supermarket_m": 234.91684696204746
    },
    "score": {
-    "points": 19,
+    "points": 25,
     "tier": "low",
     "reasons": [
      {
@@ -17379,6 +18508,10 @@
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 6,
+      "text": "€3,849/m² vs €4,157/m² typical"
      },
      {
       "points": -2,
@@ -17438,9 +18571,13 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 60,
-    "tier": "good",
+    "points": 48,
+    "tier": "ok",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€4,817/m² vs €4,157/m² typical"
+     },
      {
       "points": 4,
       "text": "pre-war character (1912)"
@@ -17507,7 +18644,7 @@
     "distance_to_supermarket_m": 385.27522185534366
    },
    "score": {
-    "points": 23,
+    "points": 29,
     "tier": "low",
     "reasons": [
      {
@@ -17523,7 +18660,11 @@
       "text": "3 bedrooms (room for an office)"
      },
      {
-      "points": 4,
+      "points": 5,
+      "text": "€3,889/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 5,
       "text": "energy label B"
      },
      {
@@ -17584,8 +18725,8 @@
     "distance_to_supermarket_m": 250.19633125913552
    },
    "score": {
-    "points": 73,
-    "tier": "top",
+    "points": 64,
+    "tier": "good",
     "reasons": [
      {
       "points": 9,
@@ -17594,6 +18735,14 @@
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
+      "points": -5,
+      "text": "€4,390/m² vs €4,157/m² typical"
      },
      {
       "points": 4,
@@ -17610,10 +18759,6 @@
      {
       "points": -2,
       "text": "250 m to nearest supermarket"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -17669,12 +18814,16 @@
     "distance_to_supermarket_m": 276.36158176068733
    },
    "score": {
-    "points": 64,
-    "tier": "good",
+    "points": 50,
+    "tier": "ok",
     "reasons": [
      {
       "points": 15,
       "text": "balcony or terrace, 13 m²"
+     },
+     {
+      "points": -10,
+      "text": "€4,634/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -17689,6 +18838,10 @@
       "text": "VvE not registered at the KvK"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "pre-war character (1917)"
      },
@@ -17699,10 +18852,6 @@
      {
       "points": -2,
       "text": "276 m to nearest supermarket"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -17758,12 +18907,16 @@
     "distance_to_supermarket_m": 266.41043678768295
    },
    "score": {
-    "points": 5,
+    "points": 13,
     "tier": "low",
     "reasons": [
      {
       "points": -45,
       "text": "erfpacht"
+     },
+     {
+      "points": 12,
+      "text": "€3,058/m² vs €4,157/m² typical"
      },
      {
       "points": -10,
@@ -17790,16 +18943,16 @@
       "text": "VvE not registered at the KvK"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "pre-war character (1931)"
      },
      {
       "points": -2,
       "text": "266 m to nearest supermarket"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -17855,12 +19008,16 @@
     "distance_to_supermarket_m": 416.43607121602616
    },
    "score": {
-    "points": 15,
+    "points": 0,
     "tier": "low",
     "reasons": [
      {
       "points": -45,
       "text": "erfpacht"
+     },
+     {
+      "points": -11,
+      "text": "€4,688/m² vs €4,157/m² typical"
      },
      {
       "points": 10,
@@ -17875,16 +19032,16 @@
       "text": "VvE has no maintenance plan"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "pre-war character (1923)"
      },
      {
       "points": -4,
       "text": "416 m to nearest supermarket"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -17940,9 +19097,13 @@
     "distance_to_supermarket_m": 350.5163176856395
    },
    "score": {
-    "points": 62,
-    "tier": "good",
+    "points": 48,
+    "tier": "ok",
     "reasons": [
+     {
+      "points": -10,
+      "text": "€4,667/m² vs €4,157/m² typical"
+     },
      {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
@@ -17952,12 +19113,12 @@
       "text": "move-in ready"
      },
      {
-      "points": -3,
-      "text": "351 m to nearest supermarket"
+      "points": -6,
+      "text": "energy label D"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": -3,
+      "text": "351 m to nearest supermarket"
      }
     ]
    },
@@ -18013,7 +19174,7 @@
     "distance_to_supermarket_m": 156.051754384986
    },
    "score": {
-    "points": 70,
+    "points": 76,
     "tier": "top",
     "reasons": [
      {
@@ -18021,12 +19182,20 @@
       "text": "balcony or terrace, 13 m²"
      },
      {
+      "points": 12,
+      "text": "€3,495/m² vs €4,157/m² typical"
+     },
+     {
       "points": 8,
       "text": "move-in ready"
      },
      {
-      "points": -2,
+      "points": -6,
       "text": "energy label D"
+     },
+     {
+      "points": -2,
+      "text": "VvE €3.6/m² (lift halves this)"
      },
      {
       "points": -1,
@@ -18086,8 +19255,8 @@
     "distance_to_supermarket_m": 211.8244877240282
    },
    "score": {
-    "points": 58,
-    "tier": "good",
+    "points": 52,
+    "tier": "ok",
     "reasons": [
      {
       "points": 10,
@@ -18102,16 +19271,20 @@
       "text": "3 bedrooms (room for an office)"
      },
      {
+      "points": -7,
+      "text": "€4,487/m² vs €4,157/m² typical"
+     },
+     {
       "points": -6,
       "text": "VvE has no maintenance plan"
      },
      {
-      "points": 4,
-      "text": "pre-war character (1925)"
+      "points": 5,
+      "text": "energy label B"
      },
      {
       "points": 4,
-      "text": "energy label B"
+      "text": "pre-war character (1925)"
      },
      {
       "points": -2,
@@ -18171,12 +19344,16 @@
     "distance_to_supermarket_m": 52.21895367051715
    },
    "score": {
-    "points": 68,
-    "tier": "good",
+    "points": 73,
+    "tier": "top",
     "reasons": [
      {
       "points": 15,
       "text": "balcony or terrace, 12 m²"
+     },
+     {
+      "points": 5,
+      "text": "€3,908/m² vs €4,157/m² typical"
      },
      {
       "points": 3,
@@ -18236,9 +19413,13 @@
     "distance_to_supermarket_m": 167.3403487962042
    },
    "score": {
-    "points": 53,
-    "tier": "ok",
+    "points": 61,
+    "tier": "good",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,239/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
@@ -18248,12 +19429,12 @@
       "text": "VvE has no maintenance plan"
      },
      {
-      "points": 4,
-      "text": "pre-war character (1926)"
+      "points": -6,
+      "text": "energy label D"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": 4,
+      "text": "pre-war character (1926)"
      },
      {
       "points": -1,
@@ -18313,12 +19494,16 @@
     "distance_to_supermarket_m": 166.1359255951573
    },
    "score": {
-    "points": 45,
-    "tier": "ok",
+    "points": 57,
+    "tier": "good",
     "reasons": [
      {
       "points": -20,
       "text": "needs work"
+     },
+     {
+      "points": 12,
+      "text": "€3,287/m² vs €4,157/m² typical"
      },
      {
       "points": 9,
@@ -18390,16 +19575,24 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 60,
-    "tier": "good",
+    "points": 49,
+    "tier": "ok",
     "reasons": [
      {
       "points": 8,
       "text": "move-in ready"
      },
      {
+      "points": -7,
+      "text": "€4,489/m² vs €4,157/m² typical"
+     },
+     {
       "points": -6,
       "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": 4,
@@ -18412,10 +19605,6 @@
      {
       "points": 3,
       "text": "top floor"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -18471,7 +19660,7 @@
     "distance_to_supermarket_m": 304.83381741925075
    },
    "score": {
-    "points": 43,
+    "points": 40,
     "tier": "ok",
     "reasons": [
      {
@@ -18495,8 +19684,12 @@
       "text": "VvE not registered at the KvK"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
+     },
+     {
+      "points": -4,
+      "text": "€4,351/m² vs €4,157/m² typical"
      },
      {
       "points": -3,
@@ -18556,9 +19749,13 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 69,
-    "tier": "good",
+    "points": 75,
+    "tier": "top",
     "reasons": [
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "move-in ready"
@@ -18566,10 +19763,6 @@
      {
       "points": 4,
       "text": "pre-war character (1926)"
-     },
-     {
-      "points": 4,
-      "text": "energy label A"
      },
      {
       "points": 3,
@@ -18629,7 +19822,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 72,
+    "points": 75,
     "tier": "top",
     "reasons": [
      {
@@ -18641,16 +19834,20 @@
       "text": "move-in ready"
      },
      {
+      "points": 7,
+      "text": "€3,791/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "balcony or terrace, 3 m²"
      },
      {
       "points": 4,
       "text": "pre-war character (1909)"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -18726,16 +19923,20 @@
       "text": "VvE not registered at the KvK"
      },
      {
+      "points": -5,
+      "text": "€4,427/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 5,
+      "text": "energy label B"
+     },
+     {
       "points": 4,
       "text": "balcony or terrace, 3 m²"
      },
      {
       "points": 4,
       "text": "pre-war character (1927)"
-     },
-     {
-      "points": 4,
-      "text": "energy label B"
      },
      {
       "points": -2,
@@ -18795,7 +19996,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 62,
+    "points": 65,
     "tier": "good",
     "reasons": [
      {
@@ -18805,6 +20006,10 @@
      {
       "points": 4,
       "text": "pre-war character (1906)"
+     },
+     {
+      "points": 3,
+      "text": "€3,993/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -18876,8 +20081,12 @@
       "text": "move-in ready"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.8/m² (lift halves this)"
      }
     ]
    },
@@ -18933,7 +20142,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 32,
+    "points": 21,
     "tier": "low",
     "reasons": [
      {
@@ -18941,7 +20150,11 @@
       "text": "erfpacht (perpetual, bought off)"
      },
      {
-      "points": 4,
+      "points": -12,
+      "text": "€5,197/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 5,
       "text": "energy label B"
      },
      {
@@ -19002,9 +20215,13 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 62,
-    "tier": "good",
+    "points": 50,
+    "tier": "ok",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€4,877/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
@@ -19075,7 +20292,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 29,
+    "points": 36,
     "tier": "low",
     "reasons": [
      {
@@ -19089,6 +20306,10 @@
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 7,
+      "text": "€3,827/m² vs €4,157/m² typical"
      },
      {
       "points": -6,
@@ -19156,7 +20377,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 81,
+    "points": 83,
     "tier": "top",
     "reasons": [
      {
@@ -19172,12 +20393,16 @@
       "text": "move-in ready"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
      },
      {
       "points": 3,
       "text": "top floor"
+     },
+     {
+      "points": 1,
+      "text": "€4,115/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -19233,16 +20458,20 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 62,
-    "tier": "good",
+    "points": 79,
+    "tier": "top",
     "reasons": [
+     {
+      "points": 11,
+      "text": "€3,602/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "move-in ready"
-     },
-     {
-      "points": 4,
-      "text": "energy label A"
      }
     ]
    },
@@ -19314,16 +20543,20 @@
       "text": "VvE has no maintenance plan"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
+      "points": 4,
+      "text": "€3,947/m² vs €4,157/m² typical"
+     },
+     {
       "points": 3,
       "text": "first floor"
      },
      {
       "points": 3,
       "text": "top floor"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -19379,9 +20612,17 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 42,
+    "points": 51,
     "tier": "ok",
     "reasons": [
+     {
+      "points": 25,
+      "text": "energy label A+++"
+     },
+     {
+      "points": -12,
+      "text": "€4,817/m² vs €4,157/m² typical"
+     },
      {
       "points": -10,
       "text": "VvE has no reserve fund"
@@ -19393,10 +20634,6 @@
      {
       "points": 4,
       "text": "pre-war character (1921)"
-     },
-     {
-      "points": 4,
-      "text": "energy label A+++"
      }
     ]
    },
@@ -19452,9 +20689,13 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 62,
-    "tier": "good",
+    "points": 51,
+    "tier": "ok",
     "reasons": [
+     {
+      "points": -11,
+      "text": "€4,688/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
@@ -19529,7 +20770,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 63,
+    "points": 67,
     "tier": "good",
     "reasons": [
      {
@@ -19541,16 +20782,20 @@
       "text": "4 bedrooms (room for an office)"
      },
      {
+      "points": 8,
+      "text": "€3,740/m² vs €4,157/m² typical"
+     },
+     {
       "points": -6,
       "text": "VvE has no maintenance plan"
      },
      {
-      "points": 4,
-      "text": "pre-war character (1932)"
+      "points": -6,
+      "text": "energy label D"
      },
      {
-      "points": -2,
-      "text": "energy label D"
+      "points": 4,
+      "text": "pre-war character (1932)"
      }
     ]
    },
@@ -19606,16 +20851,20 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 62,
-    "tier": "good",
+    "points": 80,
+    "tier": "top",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,358/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "move-in ready"
-     },
-     {
-      "points": 4,
-      "text": "energy label A"
      }
     ]
    },
@@ -19671,9 +20920,13 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 79,
+    "points": 83,
     "tier": "top",
     "reasons": [
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "balcony or terrace, 5 m²"
@@ -19695,12 +20948,12 @@
       "text": "pre-war character (1927)"
      },
      {
-      "points": 4,
-      "text": "energy label A"
-     },
-     {
       "points": 3,
       "text": "top floor"
+     },
+     {
+      "points": -2,
+      "text": "€4,261/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -19756,9 +21009,13 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 59,
-    "tier": "good",
+    "points": 71,
+    "tier": "top",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,353/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "5 bedrooms (room for an office)"
@@ -19829,7 +21086,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 47,
+    "points": 50,
     "tier": "ok",
     "reasons": [
      {
@@ -19841,12 +21098,12 @@
       "text": "3 bedrooms (room for an office)"
      },
      {
-      "points": 4,
-      "text": "balcony or terrace, 3 m²"
+      "points": 5,
+      "text": "energy label B"
      },
      {
       "points": 4,
-      "text": "energy label B"
+      "text": "balcony or terrace, 3 m²"
      },
      {
       "points": 3,
@@ -19855,6 +21112,10 @@
      {
       "points": 3,
       "text": "first floor"
+     },
+     {
+      "points": 2,
+      "text": "€4,082/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -19910,9 +21171,17 @@
     "distance_to_supermarket_m": 89.74570126342424
    },
    "score": {
-    "points": 62,
+    "points": 66,
     "tier": "good",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,488/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -12,
+      "text": "energy label E"
+     },
      {
       "points": 8,
       "text": "move-in ready"
@@ -19924,10 +21193,6 @@
      {
       "points": 4,
       "text": "pre-war character (1934)"
-     },
-     {
-      "points": -4,
-      "text": "energy label E"
      }
     ]
    },
@@ -19983,12 +21248,16 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 56,
-    "tier": "good",
+    "points": 44,
+    "tier": "ok",
     "reasons": [
      {
       "points": 15,
       "text": "balcony or terrace, 18 m²"
+     },
+     {
+      "points": -12,
+      "text": "€5,000/m² vs €4,157/m² typical"
      },
      {
       "points": -10,
@@ -20060,7 +21329,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 73,
+    "points": 78,
     "tier": "top",
     "reasons": [
      {
@@ -20068,12 +21337,16 @@
       "text": "balcony or terrace, 14 m²"
      },
      {
+      "points": 5,
+      "text": "energy label B"
+     },
+     {
       "points": 4,
       "text": "pre-war character (1933)"
      },
      {
       "points": 4,
-      "text": "energy label B"
+      "text": "€3,977/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -20129,7 +21402,7 @@
     "distance_to_supermarket_m": 159.93204514251607
    },
    "score": {
-    "points": 37,
+    "points": 36,
     "tier": "low",
     "reasons": [
      {
@@ -20137,12 +21410,20 @@
       "text": "erfpacht (perpetual, bought off)"
      },
      {
+      "points": 15,
+      "text": "energy label A+"
+     },
+     {
+      "points": -10,
+      "text": "€4,640/m² vs €4,157/m² typical"
+     },
+     {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
      },
      {
-      "points": 4,
-      "text": "energy label A+"
+      "points": -2,
+      "text": "VvE €3.4/m² (lift halves this)"
      },
      {
       "points": -1,
@@ -20202,7 +21483,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 72,
+    "points": 78,
     "tier": "top",
     "reasons": [
      {
@@ -20210,8 +21491,16 @@
       "text": "balcony or terrace, 11 m²"
      },
      {
+      "points": 12,
+      "text": "€3,233/m² vs €4,157/m² typical"
+     },
+     {
       "points": 8,
       "text": "4 bedrooms (room for an office)"
+     },
+     {
+      "points": -6,
+      "text": "VvE €5.5/m² (lift halves this)"
      }
     ]
    },
@@ -20267,7 +21556,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 21,
+    "points": 18,
     "tier": "low",
     "reasons": [
      {
@@ -20279,8 +21568,12 @@
       "text": "balcony or terrace, 8 m²"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
+     },
+     {
+      "points": -4,
+      "text": "€4,360/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -20336,7 +21629,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 0,
+    "points": 5,
     "tier": "low",
     "reasons": [
      {
@@ -20346,6 +21639,10 @@
      {
       "points": -10,
       "text": "VvE has no reserve fund"
+     },
+     {
+      "points": 10,
+      "text": "€3,647/m² vs €4,157/m² typical"
      },
      {
       "points": 6,
@@ -20409,16 +21706,20 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 51,
-    "tier": "ok",
+    "points": 35,
+    "tier": "low",
     "reasons": [
+     {
+      "points": -12,
+      "text": "€4,873/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
      {
       "points": 3,
       "text": "garden"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -20474,12 +21775,20 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 56,
-    "tier": "good",
+    "points": 52,
+    "tier": "ok",
     "reasons": [
      {
       "points": 6,
       "text": "balcony or terrace"
+     },
+     {
+      "points": -3,
+      "text": "€4,309/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -1,
+      "text": "VvE €2.8/m² (no lift)"
      }
     ]
    },
@@ -20547,8 +21856,12 @@
       "text": "balcony or terrace, 12 m²"
      },
      {
-      "points": -2,
+      "points": -6,
       "text": "energy label D"
+     },
+     {
+      "points": 4,
+      "text": "€3,934/m² vs €4,157/m² typical"
      },
      {
       "points": -1,
@@ -20608,12 +21921,16 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 44,
-    "tier": "ok",
+    "points": 57,
+    "tier": "good",
     "reasons": [
      {
       "points": -20,
       "text": "needs work"
+     },
+     {
+      "points": 12,
+      "text": "€3,495/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -20624,12 +21941,12 @@
       "text": "VvE has no maintenance plan"
      },
      {
-      "points": 4,
-      "text": "pre-war character (1912)"
+      "points": 5,
+      "text": "energy label B"
      },
      {
       "points": 4,
-      "text": "energy label B"
+      "text": "pre-war character (1912)"
      },
      {
       "points": 3,
@@ -20697,8 +22014,8 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 66,
-    "tier": "good",
+    "points": 72,
+    "tier": "top",
     "reasons": [
      {
       "points": 8,
@@ -20707,6 +22024,10 @@
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 6,
+      "text": "€3,869/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -20762,7 +22083,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 25,
+    "points": 30,
     "tier": "low",
     "reasons": [
      {
@@ -20778,8 +22099,16 @@
       "text": "3 bedrooms (room for an office)"
      },
      {
-      "points": 4,
+      "points": 6,
+      "text": "€3,869/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 5,
       "text": "energy label B"
+     },
+     {
+      "points": -2,
+      "text": "VvE €3.3/m² (lift halves this)"
      }
     ]
    },
@@ -20835,7 +22164,7 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 64,
+    "points": 66,
     "tier": "good",
     "reasons": [
      {
@@ -20853,6 +22182,10 @@
      {
       "points": 4,
       "text": "pre-war character (1934)"
+     },
+     {
+      "points": 2,
+      "text": "€4,076/m² vs €4,157/m² typical"
      }
     ]
    },
@@ -20908,19 +22241,23 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 43,
-    "tier": "ok",
+    "points": 34,
+    "tier": "low",
     "reasons": [
      {
       "points": -25,
       "text": "erfpacht (perpetual, bought off)"
      },
      {
+      "points": -10,
+      "text": "€4,647/m² vs €4,157/m² typical"
+     },
+     {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
      },
      {
@@ -20985,12 +22322,16 @@
     "distance_to_supermarket_m": 400.7025848539766
    },
    "score": {
-    "points": 7,
+    "points": 0,
     "tier": "low",
     "reasons": [
      {
       "points": -45,
       "text": "erfpacht"
+     },
+     {
+      "points": -12,
+      "text": "€5,133/m² vs €4,157/m² typical"
      },
      {
       "points": 6,
@@ -21054,12 +22395,16 @@
     "distance_to_supermarket_m": 650.089514427067
    },
    "score": {
-    "points": 19,
+    "points": 5,
     "tier": "low",
     "reasons": [
      {
       "points": -25,
       "text": "erfpacht (perpetual, bought off)"
+     },
+     {
+      "points": -10,
+      "text": "€4,667/m² vs €4,157/m² typical"
      },
      {
       "points": -6,
@@ -21070,16 +22415,16 @@
       "text": "650 m to nearest supermarket"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "balcony or terrace, 3 m²"
      },
      {
       "points": 4,
       "text": "pre-war character (1929)"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -21135,7 +22480,7 @@
     "distance_to_supermarket_m": 138.66287044833078
    },
    "score": {
-    "points": 5,
+    "points": 9,
     "tier": "low",
     "reasons": [
      {
@@ -21153,6 +22498,10 @@
      {
       "points": 4,
       "text": "pre-war character (1930)"
+     },
+     {
+      "points": 4,
+      "text": "€3,971/m² vs €4,157/m² typical"
      },
      {
       "points": 3,
@@ -21216,7 +22565,7 @@
     "distance_to_supermarket_m": 488.1897643577179
    },
    "score": {
-    "points": 26,
+    "points": 36,
     "tier": "low",
     "reasons": [
      {
@@ -21228,16 +22577,24 @@
       "text": "balcony or terrace, 9 m²"
      },
      {
+      "points": 10,
+      "text": "energy label A"
+     },
+     {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
      },
      {
-      "points": -4,
-      "text": "488 m to nearest supermarket"
+      "points": 8,
+      "text": "€3,736/m² vs €4,157/m² typical"
      },
      {
-      "points": 4,
-      "text": "energy label A"
+      "points": -4,
+      "text": "VvE €3.4/m² (no lift)"
+     },
+     {
+      "points": -4,
+      "text": "488 m to nearest supermarket"
      }
     ]
    },
@@ -21293,9 +22650,13 @@
     "distance_to_supermarket_m": 286.71805433509866
    },
    "score": {
-    "points": 68,
-    "tier": "good",
+    "points": 79,
+    "tier": "top",
     "reasons": [
+     {
+      "points": 11,
+      "text": "€3,598/m² vs €4,157/m² typical"
+     },
      {
       "points": 9,
       "text": "balcony or terrace, 6 m²"
@@ -21366,7 +22727,7 @@
     "distance_to_supermarket_m": 502.6721219638808
    },
    "score": {
-    "points": 21,
+    "points": 31,
     "tier": "low",
     "reasons": [
      {
@@ -21376,6 +22737,10 @@
      {
       "points": 15,
       "text": "balcony or terrace, 17 m²"
+     },
+     {
+      "points": 10,
+      "text": "€3,657/m² vs €4,157/m² typical"
      },
      {
       "points": -5,
@@ -21443,9 +22808,13 @@
     "distance_to_supermarket_m": 48.877975971542625
    },
    "score": {
-    "points": 58,
+    "points": 67,
     "tier": "good",
     "reasons": [
+     {
+      "points": 9,
+      "text": "€3,684/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "move-in ready"
@@ -21504,7 +22873,7 @@
     "distance_to_supermarket_m": 214.6026035836288
    },
    "score": {
-    "points": 26,
+    "points": 34,
     "tier": "low",
     "reasons": [
      {
@@ -21512,12 +22881,16 @@
       "text": "needs work"
      },
      {
-      "points": -2,
-      "text": "215 m to nearest supermarket"
+      "points": 12,
+      "text": "€3,191/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": -2,
-      "text": "energy label D"
+      "text": "215 m to nearest supermarket"
      }
     ]
    },
@@ -21573,7 +22946,7 @@
     "distance_to_supermarket_m": 119.8580051353507
    },
    "score": {
-    "points": 29,
+    "points": 28,
     "tier": "low",
     "reasons": [
      {
@@ -21589,12 +22962,16 @@
       "text": "move-in ready"
      },
      {
-      "points": 4,
+      "points": 5,
       "text": "energy label B"
      },
      {
       "points": 3,
       "text": "first floor"
+     },
+     {
+      "points": -2,
+      "text": "€4,235/m² vs €4,157/m² typical"
      },
      {
       "points": -1,
@@ -21670,8 +23047,16 @@
       "text": "3 bedrooms (room for an office)"
      },
      {
+      "points": -7,
+      "text": "€4,500/m² vs €4,157/m² typical"
+     },
+     {
       "points": -6,
       "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": 4,
@@ -21684,10 +23069,6 @@
      {
       "points": -2,
       "text": "223 m to nearest supermarket"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -21743,7 +23124,7 @@
     "distance_to_supermarket_m": 216.02805192230832
    },
    "score": {
-    "points": 71,
+    "points": 74,
     "tier": "top",
     "reasons": [
      {
@@ -21753,6 +23134,10 @@
      {
       "points": 8,
       "text": "5 bedrooms (room for an office)"
+     },
+     {
+      "points": 3,
+      "text": "€3,988/m² vs €4,157/m² typical"
      },
      {
       "points": -2,
@@ -21812,7 +23197,7 @@
     "distance_to_supermarket_m": 306.32424284284195
    },
    "score": {
-    "points": 65,
+    "points": 69,
     "tier": "good",
     "reasons": [
      {
@@ -21820,20 +23205,24 @@
       "text": "balcony or terrace, 24 m²"
      },
      {
+      "points": 12,
+      "text": "€2,302/m² vs €4,157/m² typical"
+     },
+     {
       "points": 8,
       "text": "4 bedrooms (room for an office)"
      },
      {
-      "points": -3,
-      "text": "VvE €4.2/m² without a lift"
+      "points": -7,
+      "text": "VvE €4.2/m² (no lift)"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
      },
      {
       "points": -3,
       "text": "306 m to nearest supermarket"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -21889,9 +23278,13 @@
     "distance_to_supermarket_m": 230.4629972824121
    },
    "score": {
-    "points": 58,
+    "points": 66,
     "tier": "good",
     "reasons": [
+     {
+      "points": 12,
+      "text": "€3,328/m² vs €4,157/m² typical"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
@@ -21905,16 +23298,16 @@
       "text": "VvE has no maintenance plan"
      },
      {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
       "points": 4,
       "text": "pre-war character (1927)"
      },
      {
       "points": -2,
       "text": "230 m to nearest supermarket"
-     },
-     {
-      "points": -2,
-      "text": "energy label D"
      }
     ]
    },
@@ -21970,9 +23363,17 @@
     "distance_to_supermarket_m": 274.78438614586884
    },
    "score": {
-    "points": 65,
-    "tier": "good",
+    "points": 81,
+    "tier": "top",
     "reasons": [
+     {
+      "points": 10,
+      "text": "€3,652/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
      {
       "points": 8,
       "text": "3 bedrooms (room for an office)"
@@ -21988,10 +23389,6 @@
      {
       "points": 4,
       "text": "pre-war character (1928)"
-     },
-     {
-      "points": 4,
-      "text": "energy label A"
      },
      {
       "points": 3,
