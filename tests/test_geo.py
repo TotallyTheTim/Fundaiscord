@@ -54,3 +54,10 @@ def test_load_points_missing_key_is_an_empty_list(tmp_path: Path) -> None:
     path = tmp_path / "empty.json"
     path.write_text("{}", encoding="utf-8")
     assert load_points(path) == []
+
+
+def test_load_points_ignores_a_trailing_name_used_only_by_the_web_page(tmp_path: Path) -> None:
+    path = tmp_path / "points.json"
+    path.write_text(json.dumps({"points": [[52.08, 4.32, "Albert Heijn"], [52.01, 4.36, None]]}), encoding="utf-8")
+
+    assert load_points(path) == [(52.08, 4.32), (52.01, 4.36)]

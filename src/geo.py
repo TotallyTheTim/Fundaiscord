@@ -28,9 +28,13 @@ def nearest_metres(point: Point, others: Iterable[Point]) -> float | None:
 
 
 def load_points(path: Path) -> list[Point]:
-    """Reads a {"points": [[lat, lon], ...]} file. Missing or unreadable means no points."""
+    """Reads a {"points": [[lat, lon], ...]} file. Missing or unreadable means no points.
+
+    Each entry may carry a third element (a name, for the web page's map popups);
+    it's ignored here since scoring only needs the coordinates.
+    """
     try:
         raw = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError):
         return []
-    return [(float(lat), float(lon)) for lat, lon in raw.get("points", [])]
+    return [(float(entry[0]), float(entry[1])) for entry in raw.get("points", [])]

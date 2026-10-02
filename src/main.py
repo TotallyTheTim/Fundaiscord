@@ -225,7 +225,7 @@ def main() -> int:
     parser.add_argument("--state", type=Path, default=ROOT / "data" / "seen-listings.json")
     parser.add_argument("--wijken", type=Path, default=ROOT / "data" / "buurt-wijk.json")
     parser.add_argument("--store", type=Path, default=ROOT / "docs" / "listings.json")
-    parser.add_argument("--supermarkets", type=Path, default=ROOT / "data" / "supermarkets.json")
+    parser.add_argument("--supermarkets", type=Path, default=ROOT / "docs" / "supermarkets.json")
     parser.add_argument(
         "--full",
         action="store_true",

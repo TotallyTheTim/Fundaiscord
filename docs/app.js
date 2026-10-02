@@ -37,12 +37,14 @@ let statuses = store.get("fw:statuses", {});
 let filters = loadFilters();
 let lastVisit = store.get("fw:lastVisit", null);
 let photosInList = store.get("fw:photos", true);
+let supermarketsVisible = store.get("fw:supermarkets", true);
+let supermarketPoints = []; // [{lat, lon, name}], loaded once alongside listings.json
 let lastCheck = null; // when the workflow last ran, if GitHub told us
 let selectedId = null;
 const openIds = new Set();
 const compareIds = new Set();
 let cache = null;
-let map = null, markerLayer = null;
+let map = null, markerLayer = null, supermarketLayer = null;
 const markers = new Map();
 
 const TIER_COLOURS = { top: "#22ab34", good: "#0071b3", ok: "#8a8a8a", low: "#c93328", pending: "#bdbdbd" };
@@ -333,6 +335,7 @@ function renderToolbar() {
   $("filtersCount").hidden = active === 0;
   $("filtersCount").textContent = String(active);
   $("photosToggle").checked = photosInList;
+  $("supermarketsToggle").checked = supermarketsVisible;
   const shown = $("split").dataset.view === "map";
   $("viewToggle").textContent = shown ? "List" : "Map";
 }
@@ -454,7 +457,23 @@ function initMap() {
   }
   map = L.map("map").setView([52.06, 4.3], 12);
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "© OpenStreetMap contributors" }).addTo(map);
+  // Supermarkets sit below the house markers (added first) and are static, so they're
+  // built once when the data arrives rather than rebuilt on every filter change.
+  supermarketLayer = L.layerGroup();
+  if (supermarketsVisible) supermarketLayer.addTo(map);
   markerLayer = L.layerGroup().addTo(map);
+}
+
+function renderSupermarkets() {
+  if (!supermarketLayer) return;
+  supermarketLayer.clearLayers();
+  for (const s of supermarketPoints) {
+    const marker = L.circleMarker([s.lat, s.lon], {
+      radius: 4, weight: 1, color: "#fff", fillColor: "#8e44ad", fillOpacity: 0.85,
+    });
+    marker.bindPopup(() => el("div", {}, `🛒 ${s.name || "Supermarket"}`));
+    supermarketLayer.addLayer(marker);
+  }
 }
 
 function popupFor(l) {
@@ -656,6 +675,12 @@ function bind() {
   $("importBtn").addEventListener("click", () => { $("menu").removeAttribute("open"); importStatuses(); });
   $("resetBtn").addEventListener("click", () => { $("menu").removeAttribute("open"); resetFilters(); });
   $("photosToggle").addEventListener("change", (e) => { photosInList = e.target.checked; store.set("fw:photos", photosInList); render(); });
+  $("supermarketsToggle").addEventListener("change", (e) => {
+    supermarketsVisible = e.target.checked;
+    store.set("fw:supermarkets", supermarketsVisible);
+    if (!supermarketLayer) return;
+    if (supermarketsVisible) supermarketLayer.addTo(map); else map.removeLayer(supermarketLayer);
+  });
   $("viewToggle").addEventListener("click", () => {
     const split = $("split");
     split.dataset.view = split.dataset.view === "map" ? "list" : "map";
@@ -679,10 +704,26 @@ async function load() {
   } catch {
     listings = [];
   }
+  loadSupermarkets();  // best-effort; the map still works if this fails
   ranks = wijkRanks(listings);
   buildFilterDialog();
   render({ fit: true });
   fetchLastCheck().then((when) => { if (when) { lastCheck = when; renderSummary(); } });
+}
+
+async function loadSupermarkets() {
+  try {
+    const response = await fetch("supermarkets.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    const points = Array.isArray(data.points) ? data.points : [];
+    supermarketPoints = points
+      .filter((p) => Array.isArray(p) && Number.isFinite(p[0]) && Number.isFinite(p[1]))
+      .map(([lat, lon, name]) => ({ lat, lon, name: typeof name === "string" ? name : null }));
+  } catch {
+    supermarketPoints = [];
+  }
+  renderSupermarkets();
 }
 
 // listings.json only changes when something does, so ask GitHub when the watcher last ran. The site lives

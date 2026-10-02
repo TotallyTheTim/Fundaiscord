@@ -22,7 +22,7 @@ The webhook URL must only ever live in the secret, never in the repo.
 Each new listing's detail page is read (one extra request per alert) and scored 0 to 100 from `scoring:` in [config.yaml](config.yaml): erfpacht, balcony size, garden, house, floor, bedrooms (room for an office), needs work / move-in ready, pre-war character, VvE health (reserve fund, maintenance plan, cost per m²), busy road, distance to the nearest supermarket, and energy label. The score sets the tier (⭐ top, 👍 good, 😐 okay, 🔻 low), which drives the alert's headline and colour and lists the reasons. Within a run the alerts go out worst first, so the best is the last message. Erfpacht always lands in 🔻 low unless the canon is perpetually bought off.
 
 - The keyword checks ("needs work", "move-in ready", "top floor") read the listing description and are guesses; Funda gives no reliable field for them.
-- Supermarket distance comes from `data/supermarkets.json` (OpenStreetMap, regenerated with `python scripts/build_supermarkets.py`), never Funda. It's a straight-line distance to the nearest one, −1 point per 100 m past the first 100 m, capped at `supermarket_penalty_cap`. No coordinates or no supermarket data means no penalty, not a guess.
+- Supermarket distance comes from `docs/supermarkets.json` (OpenStreetMap, regenerated with `python scripts/build_supermarkets.py`), never Funda. It's a straight-line distance to the nearest one, −1 point per 100 m past the first 100 m, capped at `supermarket_penalty_cap`. No coordinates or no supermarket data means no penalty, not a guess. The same file also feeds the web page's map (see below).
 - If a listing's details can't be read, its alert is still sent, unscored.
 - A misspelled key under `scoring:` is an error, so a typo can't silently do nothing.
 
@@ -43,6 +43,7 @@ The workflow keeps `docs/listings.json` up to date (every current match, with de
 - Your statuses and filters are saved in your browser only. Use **Export** and **Import** to move statuses to another device.
 - A listing shows "details pending" until its detail page has been read (15 per run, 30 on full sweeps), and only scored listings appear on the map (coordinates come from the detail page).
 - A listing that stops matching (sold, withdrawn, repriced) is kept, hidden by default, and removed after 60 days.
+- The map also shows every supermarket from `docs/supermarkets.json` as a small purple dot (toggle under the ⋯ menu), so you can eyeball how close a listing really is.
 - Scores are recomputed from the stored details every run, so changing the weights in `config.yaml` re-ranks everything.
 
 ## Reliable scheduling
@@ -64,7 +65,7 @@ python src/main.py --dry-run   # fetches live, prints alerts, saves nothing
 python src/main.py --dry-run --full   # same, but reads every result page
 pytest
 node --test "tests/js/*.test.mjs"   # the web page's logic (Node 22 or newer, no packages needed)
-python scripts/build_supermarkets.py   # refresh data/supermarkets.json from OpenStreetMap
+python scripts/build_supermarkets.py   # refresh docs/supermarkets.json from OpenStreetMap
 ```
 
 ## Notes
