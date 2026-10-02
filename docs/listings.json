@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-02T14:30:34+00:00",
+ "generated": "2026-10-02T15:01:20+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -7488,6 +7488,156 @@
      {
       "points": -1,
       "text": "177 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44522507",
+   "title": "Heelsumstraat 73",
+   "city": "Den Haag",
+   "wijk": "Rustenburg en Oostbroek",
+   "neighbourhood": "Oostbroek-Noord",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-heelsumstraat-73/44522507/",
+   "price": 379000,
+   "living_area": 82,
+   "bedrooms": 2,
+   "energy_label": "D",
+   "published": "2026-10-02T16:45:02.877563+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/2ae2e873-91c8-4940-a132-7036f06604f3/9ac5a945-219b-4761-b737-bc3256ce923b",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-02T15:01:20+00:00",
+   "last_seen": "2026-10-02",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-02",
+     379000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 0,
+    "floor_label": "Begane grond",
+    "year_built": 1929,
+    "balcony": false,
+    "outdoor_m2": null,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 50.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.068455,
+    "longitude": 4.2804565,
+    "distance_to_supermarket_m": 237.61334840681172
+   },
+   "score": {
+    "points": 47,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1929)"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": -2,
+      "text": "238 m to nearest supermarket"
+     },
+     {
+      "points": -2,
+      "text": "energy label D"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44522516",
+   "title": "Generaal Spoorlaan 639",
+   "city": "Rijswijk (ZH)",
+   "wijk": "Wijk 08",
+   "neighbourhood": "Ministerbuurt",
+   "url": "https://www.funda.nl/detail/koop/rijswijk-zh/appartement-generaal-spoorlaan-639/44522516/",
+   "price": 400000,
+   "living_area": 135,
+   "bedrooms": 3,
+   "energy_label": "C",
+   "published": "2026-10-02T16:43:26.776120+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/ea948489-078b-4a02-bdf2-e1fc72578727/6f914595-dd97-4c2a-ad30-8497b59d98cf",
+   "search_name": "Rijswijk",
+   "first_seen": "2026-10-02T15:01:20+00:00",
+   "last_seen": "2026-10-02",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-02",
+     400000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 5,
+    "floor_label": "5e woonlaag",
+    "year_built": 1966,
+    "balcony": true,
+    "outdoor_m2": 5,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 370.35,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": true,
+    "latitude": 52.03658,
+    "longitude": 4.306463,
+    "distance_to_supermarket_m": 139.01090754719672
+   },
+   "score": {
+    "points": 68,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 8,
+      "text": "balcony or terrace, 5 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
+     },
+     {
+      "points": -1,
+      "text": "139 m to nearest supermarket"
      }
     ]
    },
@@ -21161,6 +21311,83 @@
      {
       "points": -2,
       "text": "287 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "80985590",
+   "title": "Leyweg 55",
+   "city": "Den Haag",
+   "wijk": "Loosduinen",
+   "neighbourhood": "Houtwijk",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-leyweg-55/80985590/",
+   "price": 395000,
+   "living_area": 108,
+   "bedrooms": 2,
+   "energy_label": "C",
+   "published": "2026-10-02T17:00:08.478665+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/10e40e4a-43c0-4362-ba7e-cef30f886ebb/1a47aba5-ad47-41ef-8ea8-ac5bda58ab24",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-02T15:01:20+00:00",
+   "last_seen": "2026-10-02",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-02",
+     395000
+    ]
+   ],
+   "details": {
+    "ownership": "Gemeentelijke erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1980,
+    "balcony": true,
+    "outdoor_m2": 17,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 80.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": true,
+    "latitude": 52.06027,
+    "longitude": 4.262472,
+    "distance_to_supermarket_m": 502.6721219638808
+   },
+   "score": {
+    "points": 21,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 15,
+      "text": "balcony or terrace, 17 m²"
+     },
+     {
+      "points": -5,
+      "text": "503 m to nearest supermarket"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
      }
     ]
    },
