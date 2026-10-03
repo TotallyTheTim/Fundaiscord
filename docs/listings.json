@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-03T03:00:40+00:00",
+ "generated": "2026-10-03T06:30:29+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -22911,6 +22911,91 @@
      {
       "points": 3,
       "text": "top floor"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "80986440",
+   "title": "Frans Halskade 6",
+   "city": "Rijswijk (ZH)",
+   "wijk": "Wijk 02",
+   "neighbourhood": "Rembrandtkwartier",
+   "url": "https://www.funda.nl/detail/koop/rijswijk-zh/appartement-frans-halskade-6/80986440/",
+   "price": 389000,
+   "living_area": 93,
+   "bedrooms": 3,
+   "energy_label": "D",
+   "published": "2026-10-03T08:29:01.564798+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/b55c1613-1b2d-4c42-8c1e-cdd124dff9cd/4a471b23-c93e-43d0-b5a1-0d7531b831cb",
+   "search_name": "Rijswijk",
+   "first_seen": "2026-10-03T06:30:29+00:00",
+   "last_seen": "2026-10-03",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-03",
+     389000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 0,
+    "floor_label": "Begane grond",
+    "year_built": 1935,
+    "balcony": true,
+    "outdoor_m2": 7,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 160.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.052696,
+    "longitude": 4.3340945,
+    "distance_to_supermarket_m": 198.89874516360877
+   },
+   "score": {
+    "points": 67,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 10,
+      "text": "balcony or terrace, 7 m²"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1935)"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": -1,
+      "text": "199 m to nearest supermarket"
+     },
+     {
+      "points": -1,
+      "text": "€4,183/m² vs €4,157/m² typical"
      }
     ]
    },
