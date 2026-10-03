@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-03T09:00:38+00:00",
+ "generated": "2026-10-03T21:00:42+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -16078,8 +16078,8 @@
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-10-03",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-10-03",
    "price_history": [
     [
      "2026-09-28",
