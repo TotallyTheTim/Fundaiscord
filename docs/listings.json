@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-03T00:00:38+00:00",
+ "generated": "2026-10-03T03:00:40+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -7867,6 +7867,79 @@
      {
       "points": -1,
       "text": "VvE €2.9/m² (lift halves this)"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44520946",
+   "title": "Beukstraat 40",
+   "city": "Den Haag",
+   "wijk": "Bomen- en Bloemenbuurt",
+   "neighbourhood": "Bomenbuurt",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-beukstraat-40/44520946/",
+   "price": 375000,
+   "living_area": 84,
+   "bedrooms": 2,
+   "energy_label": "C",
+   "published": "2026-10-03T05:00:02.187074+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/d2cd5478-d2c8-4264-8801-58a5384e33ee/3873bc0d-62ae-4182-ba43-33ead666496d",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-03T03:00:40+00:00",
+   "last_seen": "2026-10-03",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-03",
+     375000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1922,
+    "balcony": true,
+    "outdoor_m2": 4,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 100.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.078526,
+    "longitude": 4.2713323,
+    "distance_to_supermarket_m": 188.8412403749232
+   },
+   "score": {
+    "points": 53,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": 6,
+      "text": "balcony or terrace, 4 m²"
+     },
+     {
+      "points": -6,
+      "text": "€4,464/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1922)"
+     },
+     {
+      "points": -1,
+      "text": "189 m to nearest supermarket"
      }
     ]
    },
