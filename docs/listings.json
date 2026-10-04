@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-04T09:30:28+00:00",
+ "generated": "2026-10-04T15:30:29+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -19771,6 +19771,87 @@
      {
       "points": -3,
       "text": "305 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "80961060",
+   "title": "Dignaland 26",
+   "city": "Den Haag",
+   "wijk": "Mariahoeve en Marlot",
+   "neighbourhood": "Landen",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-dignaland-26/80961060/",
+   "price": 285000,
+   "living_area": 75,
+   "bedrooms": 2,
+   "energy_label": "D",
+   "published": "2026-10-04T17:15:40.667945+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/a398fd6b-ecac-41b5-834e-563895b0131e/829584fb-b4e8-474e-bf26-c09cd6a512a7",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-04T15:30:29+00:00",
+   "last_seen": "2026-10-04",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-04",
+     285000
+    ]
+   ],
+   "details": {
+    "ownership": "Gemeentelijk eigendom belast met erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1962,
+    "balcony": true,
+    "outdoor_m2": 9,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 270.23,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.09355,
+    "longitude": 4.3654766,
+    "distance_to_supermarket_m": 408.14460009013004
+   },
+   "score": {
+    "points": 11,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 13,
+      "text": "balcony or terrace, 9 m²"
+     },
+     {
+      "points": 7,
+      "text": "€3,800/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
+      "points": -4,
+      "text": "VvE €3.6/m² (no lift)"
+     },
+     {
+      "points": -4,
+      "text": "408 m to nearest supermarket"
      }
     ]
    },
