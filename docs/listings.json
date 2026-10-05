@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05T15:30:32+00:00",
+ "generated": "2026-10-05T21:35:40+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -2135,8 +2135,8 @@
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-10-05",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-10-05",
    "price_history": [
     [
      "2026-09-28",
@@ -5902,8 +5902,8 @@
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-10-05",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-10-05",
    "price_history": [
     [
      "2026-09-28",
@@ -20878,7 +20878,7 @@
    "neighbourhood": "Bezuidenhout-Oost",
    "url": "https://www.funda.nl/detail/koop/den-haag/appartement-johannes-camphuijsstraat-332/80968056/",
    "price": 375000,
-   "living_area": 80,
+   "living_area": 81,
    "bedrooms": 3,
    "energy_label": "C",
    "published": "2026-09-18T19:00:05.681525+02:00",
@@ -20920,12 +20920,12 @@
     "distance_to_supermarket_m": null
    },
    "score": {
-    "points": 51,
+    "points": 53,
     "tier": "ok",
     "reasons": [
      {
-      "points": -11,
-      "text": "€4,688/m² vs €4,157/m² typical"
+      "points": -9,
+      "text": "€4,630/m² vs €4,157/m² typical"
      },
      {
       "points": 8,
@@ -22114,7 +22114,7 @@
    "bedrooms": 3,
    "energy_label": "B",
    "published": "2026-09-28T12:05:26.981385+02:00",
-   "photo_url": "https://cloud.funda.nl/tiara-media/454aa214-8279-4abe-b49a-a1611bc26eed/c80bc071-cd87-430b-b629-2d27c98a8679",
+   "photo_url": "https://cloud.funda.nl/tiara-media/454aa214-8279-4abe-b49a-a1611bc26eed/f998ad9d-f7f1-407f-9988-99c39ba07e2f",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
    "last_seen": "2026-10-05",
