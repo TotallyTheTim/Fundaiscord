@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05T10:00:39+00:00",
+ "generated": "2026-10-05T14:30:31+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -8252,6 +8252,79 @@
      {
       "points": -1,
       "text": "139 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44523092",
+   "title": "Louis Davidsstraat 285",
+   "city": "Den Haag",
+   "wijk": "Waldeck",
+   "neighbourhood": "Waldeck-Zuid",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-louis-davidsstraat-285/44523092/",
+   "price": 345000,
+   "living_area": 84,
+   "bedrooms": 2,
+   "energy_label": "C",
+   "published": "2026-10-05T16:03:17.266681+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/9a7b63ac-eed3-4d6b-a76f-8cad0096b678/23d48473-05f8-4b8e-9cd5-4afe124c81d0",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-05T14:30:31+00:00",
+   "last_seen": "2026-10-05",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-05",
+     345000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1967,
+    "balcony": true,
+    "outdoor_m2": 8,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 291.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.05711,
+    "longitude": 4.231031,
+    "distance_to_supermarket_m": 241.4026376569816
+   },
+   "score": {
+    "points": 59,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 12,
+      "text": "balcony or terrace, 8 m²"
+     },
+     {
+      "points": -2,
+      "text": "VvE €3.5/m² (lift halves this)"
+     },
+     {
+      "points": -2,
+      "text": "241 m to nearest supermarket"
+     },
+     {
+      "points": 1,
+      "text": "€4,107/m² vs €4,157/m² typical"
      }
     ]
    },
