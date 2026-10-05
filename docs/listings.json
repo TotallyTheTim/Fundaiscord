@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05T14:30:31+00:00",
+ "generated": "2026-10-05T15:30:32+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -23150,6 +23150,156 @@
      {
       "points": -1,
       "text": "€4,183/m² vs €4,157/m² typical"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "80988057",
+   "title": "Loenensestraat 35",
+   "city": "Den Haag",
+   "wijk": "Rustenburg en Oostbroek",
+   "neighbourhood": "Rustenburg",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-loenensestraat-35/80988057/",
+   "price": 325000,
+   "living_area": 81,
+   "bedrooms": 3,
+   "energy_label": "C",
+   "published": "2026-10-05T17:08:56.353744+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/17418061-54b6-4503-a2da-be6a124d7fce/1ea711ee-4f03-4566-8019-bb40c46adfd3",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-05T15:30:32+00:00",
+   "last_seen": "2026-10-05",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-05",
+     325000
+    ]
+   ],
+   "details": {
+    "ownership": "Gemeentelijke erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 0,
+    "floor_label": "Begane grond",
+    "year_built": 1928,
+    "balcony": false,
+    "outdoor_m2": null,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 75.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.062485,
+    "longitude": 4.280753,
+    "distance_to_supermarket_m": 60.828337077357986
+   },
+   "score": {
+    "points": 17,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1928)"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": 3,
+      "text": "€4,012/m² vs €4,157/m² typical"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "80988102",
+   "title": "Landréstraat 987",
+   "city": "Den Haag",
+   "wijk": "Waldeck",
+   "neighbourhood": "Waldeck-Noord",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-landrestraat-987/80988102/",
+   "price": 395000,
+   "living_area": 112,
+   "bedrooms": 2,
+   "energy_label": "C",
+   "published": "2026-10-05T17:27:18.382568+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/4e26bc0b-8e70-4f82-b1ad-6535a5684582/4d3103b3-54b5-4fd7-bae6-06deb20e4af4",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-05T15:30:32+00:00",
+   "last_seen": "2026-10-05",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-05",
+     395000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 4,
+    "floor_label": "4e woonlaag",
+    "year_built": 1965,
+    "balcony": true,
+    "outdoor_m2": 7,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 299.22,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.05851,
+    "longitude": 4.227007,
+    "distance_to_supermarket_m": 261.0025942498171
+   },
+   "score": {
+    "points": 70,
+    "tier": "top",
+    "reasons": [
+     {
+      "points": 12,
+      "text": "€3,527/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
+      "text": "balcony or terrace, 7 m²"
+     },
+     {
+      "points": -2,
+      "text": "261 m to nearest supermarket"
      }
     ]
    },
