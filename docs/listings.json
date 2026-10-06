@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-06T09:30:32+00:00",
+ "generated": "2026-10-06T11:30:30+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -16,7 +16,7 @@
    "photo_url": "https://cloud.funda.nl/valentina_media/220/365/221.jpg",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -89,7 +89,7 @@
    "photo_url": "https://cloud.funda.nl/valentina_media/218/679/167.jpg",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -163,8 +163,8 @@
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-10-05",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-10-06",
    "price_history": [
     [
      "2026-09-28",
@@ -251,7 +251,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/d6104d74-4a7c-4cc2-911a-7465b9f562c8/5d183c14-8ab6-4be4-b7eb-e245b43e86db",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -336,7 +336,7 @@
    "photo_url": "https://cloud.funda.nl/valentina_media/227/397/713.jpg",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -429,7 +429,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/f2d4ea9a-a7e1-4caf-8ced-be617e7ec0fa/b80dec98-7b10-4d39-a2e6-f4145f856421",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -510,7 +510,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/bdf49e44-f70a-4559-b26b-5297fcf3bb09/25508eab-c138-443e-a55f-89b758fba6de",
    "search_name": "Delft",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -599,7 +599,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/52f28d56-55cf-4e5d-b05a-f32c7b67e140/7e45997b-97c0-445c-941f-8b14ed071e53",
    "search_name": "Delft",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -688,7 +688,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/437cf2d3-68e1-4781-adeb-b7f680707ae8/1a91dd8e-20c4-4dd7-97b5-83344525d908",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -765,7 +765,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/bf2c5ea8-dbd0-4042-9ebb-4456aefcb0a7/757241c0-fcac-49dc-a71b-364e916efe83",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -943,7 +943,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/20c9a608-caec-4533-ad4c-e315ac944d4b/446215cd-218c-4b7a-853c-3a94bb5d874d",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -1024,7 +1024,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/68da2d28-0ebf-4b7c-87cc-04eb56088057/3a1614df-355b-47a4-a16e-b65197889f0b",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -1097,7 +1097,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/4ecfeae1-d583-4d91-866c-19b6dabf1ed9/62fa2d28-9223-4847-b645-64f532c04ed5",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -1332,7 +1332,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/e18f9fea-6d0a-4854-b681-19c7fe90964d/525d016d-831e-405c-b6e9-f96975544cda",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -1413,7 +1413,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/2676ce36-ef36-4e29-856b-c102c129f9ba/61157b6a-1f2c-42d5-8baf-af69b6cb48d4",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -1579,7 +1579,7 @@
    "photo_url": "https://cloud.funda.nl/valentina_media/226/120/888.jpg",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -1656,7 +1656,7 @@
    "photo_url": "https://cloud.funda.nl/valentina_media/194/282/819.jpg",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -1745,7 +1745,7 @@
    "photo_url": "https://cloud.funda.nl/valentina_media/211/005/457.jpg",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -1826,7 +1826,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/0f9e88af-6d25-4483-8012-a480bf6070b4/0d102651-cc26-4752-b74f-caa7a12ac22d",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -1903,7 +1903,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/3d97f723-c801-4189-97e8-6bc8f2cce1a4/df3df748-9f23-49c2-94b0-81adb4958ceb",
    "search_name": "Delft",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -2053,7 +2053,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/9e18fc10-5602-4d11-908d-482e816b13d9/11b5f135-959e-4aa1-a8cf-7a1e2916cd98",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -2223,7 +2223,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/bb1dfa84-d6ed-4336-9015-b63b3928bf9f/246b2d3c-6bbf-4c85-9d97-6969386d920a",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -2300,7 +2300,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/cc3e0335-7911-47a3-9ee1-7e435076c4ae/86ade371-5a47-4d10-a958-1162cbcd588a",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -2381,7 +2381,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/714ecec3-1a3b-4c3e-8d65-5078e7b72b96/cbae0d23-b1ee-4b82-ad46-80ad50f649a6",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -2462,7 +2462,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/97d24e33-274d-49e3-a9f0-10f98bedfb03/d9e3da39-0992-4cea-be00-bc13cae71c3e",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -2539,7 +2539,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/46a61975-5e8a-4c55-b230-17cb45b699f0/3393ac17-ac33-441b-a73b-c6398ff18e06",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -2620,7 +2620,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/609dd31d-67df-497d-8c75-6b78445297c6/bcc2d3e0-7e30-4fa7-bf8c-200119cc5527",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -2689,7 +2689,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/4844e96d-16b2-41e2-8802-309a0ca2bf3a/181ff006-5848-4ebf-96a4-1a1d05a5a0c5",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -2774,7 +2774,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/17590de8-f973-438f-82e0-a2c529141d07/8353a340-4015-4c65-a8e2-4753ab46aa89",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -2855,7 +2855,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/7aabc552-910f-45ef-8adf-e41a4e8d7306/b59f6e13-8774-4be2-8cb0-08ba98180fdc",
    "search_name": "Delft",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -2932,7 +2932,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/0f3a8619-732b-43ca-b37c-83d7162661e4/a3b9f9fa-9b6f-4f3c-b451-d922d1f0b955",
    "search_name": "Delft",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -3080,6 +3080,91 @@
    "details_failures": 0
   },
   {
+   "id": "44433785",
+   "title": "Driebergenstraat 91",
+   "city": "Den Haag",
+   "wijk": "Leyenburg",
+   "neighbourhood": "Leyenburg",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-driebergenstraat-91/44433785/",
+   "price": 299500,
+   "living_area": 79,
+   "bedrooms": 2,
+   "energy_label": "E",
+   "published": "2026-07-21T09:42:05.741335+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/3aa1e037-9518-438b-b231-15a348d8aa6a/9bcc5734-6fa4-450e-ac7d-8ce5162f4ae6",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-06T11:30:30+00:00",
+   "last_seen": "2026-10-06",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-06",
+     299500
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1936,
+    "balcony": true,
+    "outdoor_m2": 7,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 75.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": true,
+    "latitude": 52.06003,
+    "longitude": 4.273661,
+    "distance_to_supermarket_m": 334.6981051356813
+   },
+   "score": {
+    "points": 53,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": -12,
+      "text": "energy label E"
+     },
+     {
+      "points": 10,
+      "text": "balcony or terrace, 7 m²"
+     },
+     {
+      "points": 7,
+      "text": "€3,791/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1936)"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
+     },
+     {
+      "points": -3,
+      "text": "335 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
    "id": "44433877",
    "title": "Afrikalaan 190",
    "city": "Delft",
@@ -3094,7 +3179,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/7e592906-2066-4263-94ac-72518c801206/c9f1d9f0-507b-4444-82ce-5494e4cd3814",
    "search_name": "Delft",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -3171,7 +3256,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/917a06b6-86ef-4be7-ada5-c8c58a922bc4/7e609c4a-837c-44f0-b818-2c7de7862463",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -3252,7 +3337,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/96086ef7-7c12-4a99-959d-85730ca8237b/be17eecb-9162-4269-a555-52bcf39aae0e",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -3337,7 +3422,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/a916089d-5206-4190-9a43-eb413084dce2/484e6cf1-8610-4410-a182-ba00719a8d2e",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -3410,7 +3495,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/7e0338d3-1630-4ff1-8c7d-8f391612eea6/84c47d1e-e888-475e-ba3c-2cedf351b36b",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -3584,7 +3669,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/c87f6f74-8580-47d8-a3ff-735921f011cb/f63119e4-8028-4fbe-8b45-84f2ddbc1cf9",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -3661,7 +3746,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/b4562e4c-eeb7-4165-b4b1-5624f523a831/430142be-e5bd-4cfe-9cd4-0ea0c5e56b7d",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -3738,7 +3823,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/3a094aba-f78a-45c6-b6a5-494698efc626/a811f67c-533e-47f1-8efc-941dfbbd6902",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -3815,7 +3900,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/fd42fb98-1ab2-42c9-9028-8b5dd575044d/49140601-c614-40a0-b212-0ff25a0ea23f",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -4038,7 +4123,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/1584bacf-e872-4004-a657-99e7c4861f86/27136e53-9b3e-48f6-8d76-6463528b7e13",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -4123,7 +4208,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/db8a580d-ca7c-4b15-aeed-0a196181f951/c71b4c13-13bc-443c-a2db-96d1d6a5c14e",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -4297,7 +4382,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/fac8a277-02c8-4b1e-ad63-3b2aa6722e5c/4e0d25cf-58da-4f63-a1a8-0fa17b10a512",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -4374,7 +4459,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/16800c55-4ddd-42a1-90af-af72f7b9f155/2fe912b1-4bd8-40af-b1ec-6adf9cb99c26",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -4459,7 +4544,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/663db11c-abf0-4022-a4b1-9a45a1c57ce9/72cc7f41-cb23-4845-a564-ee677f9b108b",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -4532,7 +4617,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/92ff1155-6df8-43ef-81a9-02c0a6081a01/b6e4a6eb-6040-40f6-9f6c-43be6ba1bd69",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -4613,7 +4698,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/16425073-771b-493d-890d-1693ce0d8ab4/69091d82-4bc3-4802-a9de-c64f93d3598b",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -4690,7 +4775,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/04b880df-64bb-41c8-9b42-1da070d62da2/a503fcec-4cb4-46ab-afab-53d7d2f3506a",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -4771,7 +4856,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/096bc111-d3bd-4656-af5e-32383f8caafd/e8f6be52-e649-427e-9609-6a82dc85d98f",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -5026,7 +5111,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/f37a425a-323d-4f40-bb50-09323eb2994f/f8d31b2e-224b-44e9-adcb-d04a0e7e9826",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -5103,7 +5188,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/5328602d-e587-4e7a-b4fd-bca7ca596695/27cdae39-9261-4dc0-8617-4727596d6e77",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -5200,7 +5285,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/fcdfcd50-7226-48f5-a9e3-7071c130e5c0/6a09a6bf-6b5a-4b74-a815-4fbf03aa105b",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -5273,7 +5358,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/c6623c84-f218-4640-9658-f7829772c196/f77a0da8-cc6c-40a3-941b-45a0f60fb9e6",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -5354,7 +5439,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/339e7b2f-0708-4fc6-befa-9ce6bbad922a/54c444e0-2de7-470c-a9e1-4631fa36f201",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -5439,7 +5524,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/0d798177-f8b4-4426-b7ff-d852d433ed5c/d2f9c8fb-0848-4e03-b579-299d0fca7860",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -5516,7 +5601,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/0dccb5e2-7665-4f2a-a074-d05651375907/32c91a70-bece-4327-823d-a448815d6844",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -5601,7 +5686,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/fb898e13-d486-42f7-85d0-c41921672c4f/697b4b5e-0560-4da7-bc0a-9953305335b0",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -5816,7 +5901,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/10d603bd-0268-4f4d-85ce-082e843f0c57/4a72f483-96c7-4f60-be94-5649336216f7",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -5978,7 +6063,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/6ecd7747-da6f-487a-9e1c-9b4f22e09fa3/62f47038-b19c-4b2e-8cd4-11f128c3949c",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -6059,7 +6144,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/3e8e0f57-074e-4e18-81a3-f3c9403290c2/9cb513ba-d139-4f5b-985a-260b8d36deef",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -6120,7 +6205,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/aa43e0f1-d7be-43bc-ac41-91f82f5d2118/67056905-3c9d-4ec8-b893-55c60aea2050",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -6189,7 +6274,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/d5738424-b9b0-4e31-9916-02cdf17121bb/25606404-6b5a-4bf2-84f7-9a1bc38e6570",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -6343,7 +6428,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/78a8c1cd-172d-4b90-a2e3-e0ac51218c9b/5952caff-acf6-493a-98df-4c4d356590d3",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -6420,7 +6505,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/66c0fb4e-d746-49b2-9075-67fabc563287/3bc5645d-8766-4aa3-bc3f-fc764d560df5",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -6489,7 +6574,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/d752ce0d-46ff-4f8a-be65-d654d3789eb8/b7c183a4-dfc9-4989-8b09-68520cafc2c5",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -6659,7 +6744,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/343c57cd-5f96-428c-9483-20d61ebd677b/da8d16e1-40ec-4c26-8bdd-b8377566f7a1",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -6736,7 +6821,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/b03b3675-0f66-4cc8-893b-34cf9f753ada/64d7e3ac-a695-4bea-9b3f-4f9f417f3bfc",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -6821,7 +6906,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/f6ec33f5-fad2-4a65-9f9c-0f1a793dec25/07063d44-fe6e-40ee-a666-07e48d50e5b1",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -6971,7 +7056,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/9578d2d3-a236-4953-8398-4c8a6deca5e1/0ec303d0-76aa-4030-ae36-b96d8514bd03",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -7044,7 +7129,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/eaad5420-3b5a-47db-9321-ee083e362a0d/6975e1de-745d-4db6-8803-8b73c6d20b4c",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -7210,7 +7295,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/000e330a-c196-4c06-8fe8-a448fb55f252/813e1bc1-c364-45c6-b23b-a9baaff223ec",
    "search_name": "Den Haag",
    "first_seen": "2026-09-29T08:00:40+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -7295,7 +7380,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/7bd3ec4e-eaec-4038-ac31-f54c4ff22bcd/dbdbcfbb-ab44-434d-b2b1-495485c00baf",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -7364,7 +7449,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/770e9b49-8202-49bc-9ed4-e9249cbf9dac/ff958a12-b2c6-45da-8482-b5bb8c8c2790",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -7445,7 +7530,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/9611e4a3-fbbf-465a-9812-28a13ee92fb4/8b186982-4fe6-4bb9-8d06-a24e93dfdace",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -7526,7 +7611,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/a3143d9f-1b55-4e1e-9442-a711b20e7752/4148e6a9-e675-43dd-823a-27871f9d03ab",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -7591,7 +7676,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/c0a7ef6a-9168-4118-b6df-e4143fe91086/2e0cbf00-a185-43f2-919a-885da0339b2d",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -7737,7 +7822,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/41dbe648-0b3d-463a-8516-1f80a00f8ee5/af95605a-b0eb-45d6-a5ef-58dc527b08db",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -7814,7 +7899,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/cd8dc85f-4e4c-4395-b3dd-d156aad8213e/35c7262b-78fc-4266-84ab-9a7a71aefa0f",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -8033,7 +8118,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/03c9e278-9e09-4069-b09c-a9b1082aa802/adac3842-bbd3-434b-976d-b95760a66d2f",
    "search_name": "Den Haag",
    "first_seen": "2026-10-02T13:30:37+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -8430,7 +8515,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/88550aab-5272-437a-a4eb-98b55aab5f10/947f4686-ca73-4d25-9e96-ee9ae511cf87",
    "search_name": "Den Haag",
    "first_seen": "2026-09-29T22:00:41+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -8503,7 +8588,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/37b75db9-5e78-49dc-b5c7-e76c0b80c8de/26f1931e-8c7c-453a-82a9-2264277606a4",
    "search_name": "Den Haag",
    "first_seen": "2026-09-29T10:00:39+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -8576,7 +8661,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/2a8ff054-bffb-4ee5-a045-ce9fbfdb974d/e472485c-2157-42cd-9a3e-11f1bebf6c8f",
    "search_name": "Den Haag",
    "first_seen": "2026-09-30T22:00:41+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -8661,7 +8746,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/c79425c2-c8d3-4f15-b442-0661e142a9df/46ab4b9c-3b4c-448c-aae9-27b5f9e8e9b0",
    "search_name": "Den Haag",
    "first_seen": "2026-10-01T10:00:40+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -8746,7 +8831,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/1d41015e-948a-48ff-a574-2cdc6b069803/3e0b1075-ba85-43a6-a942-b37d06b98d34",
    "search_name": "Den Haag",
    "first_seen": "2026-10-01T12:30:37+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -8823,7 +8908,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/e824a521-85c7-4ea7-9a8f-293c9ef9f1a0/933b38a4-df08-44bb-b732-3453e174f419",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -8904,7 +8989,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/55022f4f-11e5-4a2b-b3d7-262bfaa36f9a/a9ae609e-c8b2-4980-85dc-1f418d12a365",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -8989,7 +9074,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/86b745d3-0e05-422c-89de-8854bda51647/1a28b824-2de3-439f-9801-95d16b62f5cf",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -9070,7 +9155,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/08d5e519-9a01-4019-b41a-03f64ed60b7a/e1bbf32a-26da-467b-a48a-1be8de3fb18e",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -9139,7 +9224,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/8f1d1183-b095-4437-80d4-c9411850b430/357e3c4d-861e-4370-b9de-0aca983bba29",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -9212,7 +9297,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/94bc5bcc-4bf9-4921-9b53-e3bde39bac42/a10e61ab-e89a-4a1d-976f-ef1e9bee8d0b",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -9297,7 +9382,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/2e5257c7-c45e-4e44-95fd-8bb370405ae6/7cfd84e6-4637-42f2-aa49-f1adc1de9d3b",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -9379,8 +9464,8 @@
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-10-05",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-10-06",
    "price_history": [
     [
      "2026-09-28",
@@ -9455,7 +9540,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/8819266c-4906-4035-b580-c48da83735a6/02a0176f-54c9-4325-9439-3cd3f99cc749",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -9540,7 +9625,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/d9fa4186-3afd-4d9b-81a8-5bd2c2bd28d4/f22c6120-207c-43d3-8e84-6e06d05d7977",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -9625,7 +9710,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/42f97310-0749-4c56-967d-c7950760e9df/10c8abce-105f-402a-a8d3-88e1533a0146",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -9706,7 +9791,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/70881682-c0c0-4fc0-be0c-c3255c8b12a8/11b6ce88-208f-45eb-a57f-38bdc3680a66",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -9799,7 +9884,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/5972f43d-33cd-4beb-b157-57b4dc222255/4860bf18-266a-42cb-b85b-12ad3798898d",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -9892,7 +9977,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/e7e6be2e-00d8-4fc0-968e-62b81c72dd9e/79df97f7-7a91-48a5-9dfb-e050edf89aaa",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -9973,7 +10058,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/f8081a51-af01-416e-806f-a301d57ded2f/14996e8c-5348-4605-9011-7766bcf0c631",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -10066,7 +10151,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/ec548af6-9730-45e2-aac7-2273d9a5586f/04387647-d453-4afc-84fe-d84a903c5cf4",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -10236,7 +10321,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/64a147ef-ac47-42aa-a371-8744171c10fa/33afda00-27a4-421b-85b8-09a5af945f12",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -10406,7 +10491,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/3e35fa7c-9272-4fc4-9f2d-648b338420ee/3390a16c-8164-45ac-be7a-4359f1a0c3d9",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -10483,7 +10568,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/1c780e4f-8f69-4823-a3b6-08aa3ccf9f44/59a6a234-2ddb-4c9e-9d95-aa3c7446d1f6",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -10556,7 +10641,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/54ea7af0-648b-4de4-b3da-51350ec58d2e/bd76159e-dfed-4e25-8f7c-e1a9e5785cd8",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -10629,7 +10714,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/30045830-0894-4ee3-8950-eabf98c5962d/012d728b-d44a-439c-93ed-654beabd2ebd",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -10783,7 +10868,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/5a48eb62-5a27-4454-b2d3-e7b6b97bbdfb/fd8881d1-deb6-441f-868e-568ae6d2facd",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -10860,7 +10945,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/ab371ad6-43e4-46d2-83d9-5cc0e4542b6a/0c041d88-407a-4452-a1ee-6651d6347788",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -10953,7 +11038,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/4b806337-d4be-4325-8c4c-ba9226a6f0e2/a494a861-e462-4fd5-a478-b41332c7831e",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -11023,8 +11108,8 @@
    "search_name": "Delft",
    "first_seen": "2026-09-28T13:00:44+00:00",
    "last_seen": "2026-10-06",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-10-06",
    "price_history": [
     [
      "2026-09-28",
@@ -11099,7 +11184,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/8421b62a-07fe-40c6-9a4c-73c338b15a19/96b82e27-59e9-4598-b31b-964057d61a0c",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -11176,7 +11261,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/8f3fd2bf-d051-4dde-b04f-a2bcf4bdf942/9eb6d4ef-b31d-4b92-8e50-416804476977",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -11253,7 +11338,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/9a4cc341-d491-417a-bf77-b7a0f0461dda/e669ed46-9b44-4413-9010-89a477033c2f",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -11330,7 +11415,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/a4966f4b-4a16-417c-b583-bb73d22a160d/e1a4c372-ab83-4884-8a18-bc9097d514c3",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -11504,7 +11589,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/90b52a00-7856-4cb6-83ba-99a79b19819d/bcb00119-596c-4671-a267-ecf67773400d",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -11577,7 +11662,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/c9439fb4-6055-452e-bd47-f1fb30cd6f86/92660a8c-2467-46f0-a783-8c19a2b8b706",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -11662,7 +11747,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/f34eadd6-b61f-49eb-b61a-9f1966081d70/e60129d1-b36b-4f49-bf2f-c5e4b7805195",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -11739,7 +11824,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/6e325263-4443-46d6-90eb-2bf4c582b947/edabf1ad-0c53-4836-850d-e48615c0fbaf",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -11812,7 +11897,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/977337ea-8c3b-4fdd-8eb3-7f4d028ad09f/68887a33-e1b6-44af-8b0f-f7ce0ce45151",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -11901,7 +11986,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/385eb9e2-99c1-4163-b756-fd057cdd3006/3ae560fd-68ee-496b-a35e-2c7ec2219dcd",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -12047,7 +12132,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/dfa9a268-a6f0-464b-8c73-6ab427eb3e8d/57df0faf-f949-4bd5-b9fb-5e87e8f65ab8",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -12136,7 +12221,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/8cf8dcdd-472a-4596-bbbc-4d987d213f5a/f138c681-41b1-4b02-88f6-5ab348cb5cfb",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -12217,7 +12302,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/1ccbd16f-e9fa-4827-95ed-0f6b34f7b740/69c20929-da44-4125-b17b-2255f74e67f1",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -12294,7 +12379,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/52f0932b-38b7-47c1-99f7-44b84011b19c/31148ef7-7bf1-4849-8327-87df259b9f93",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -12375,7 +12460,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/52931b67-cf73-4af4-99e3-93bbd561cebb/0e3be57f-b300-4ff8-aae1-a42fc55e9b7a",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -12448,7 +12533,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/b4656cb6-6ee4-4369-957f-09b2f5927127/f313dc5a-e05f-4f7f-932d-f955438f5b03",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -12525,7 +12610,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/04ec39e1-a05b-4ddd-a32b-0826990e502e/4b6c1883-10a0-49e3-9208-2d4e5150a0c6",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -12610,7 +12695,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/79846406-3418-41e6-9d1c-7cea6de2dad2/d94a3df0-cef9-47bc-a2be-98515a46565c",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -12695,7 +12780,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/a3a1db35-81a0-4f8d-9a65-32f06f9c2e70/9230994c-bfd0-4d6e-bf55-1302607a3135",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -12776,7 +12861,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/b9781ab4-62e8-4ad1-93fc-10d4ca982da9/67c0be61-4ec2-4b64-9fe3-e4569d7523d9",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -12857,7 +12942,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/94001526-eb5b-49e8-8996-9d0a8e52a57a/9020726c-853e-489d-9bf6-51a1fb0b8121",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -12934,7 +13019,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/7a5f1761-9ca6-4c91-8813-3ef3e66f67d3/4c5fef9c-bd5e-492d-a624-34d0b9443cac",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -13015,7 +13100,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/59eae479-dab1-4595-b759-fa5bd522267b/8f7f72cb-ea99-4149-89a8-9427d216ac31",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -13092,7 +13177,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/ad4be0ef-6473-467e-83d5-3255ce6a1e19/1c44be7b-622c-4438-91c5-913eef1b03d2",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -13246,7 +13331,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/3e1507b4-f697-4b97-b252-b2d47c452e1c/a2e0cdc5-8544-455a-98c0-e0dc790f7cfd",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -13327,7 +13412,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/7e58daaa-d833-4fcc-bf70-e444355b2eab/97254fdc-2781-4022-a398-70eb8400aebd",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -13408,7 +13493,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/6f8e7f6e-c8c9-4283-b432-2b4214ad49df/98450163-6fcc-49c7-b388-36032b2a6379",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -13493,7 +13578,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/09f15007-a510-48cf-acb2-4877f4172aff/b769a23c-b1ef-4338-83e8-26c0e849ceae",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -13570,7 +13655,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/4e3ac4c3-57ba-4223-8ee1-90b3d833a82a/1a6e557b-e14b-4e4e-872f-92a00e47e0c5",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -13643,7 +13728,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/caa6d112-661a-4ca9-b263-68ec92557fdd/063c48a9-ddf1-4b05-8cee-9de9851e0a55",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -13720,7 +13805,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/a399c7e1-d385-429f-acb8-3307259f239d/8a0b8cfe-b26d-4005-904c-45bc9abc9503",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -13797,7 +13882,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/8e842b29-6744-4dd0-82f6-57c3fd02dc6c/0c82bebc-c752-4df9-985a-cafad4f4aa48",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -13878,7 +13963,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/1f39a0d9-7600-403e-b67c-f6255d8e9d5c/ee400cbb-4ee9-4ca9-8670-35c5f25e4ac9",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -13955,7 +14040,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/9d0bcd3b-ebb2-46d5-9d59-5d6f5a0f375a/4189e7e4-8c78-4e29-bf1e-c14a1c695f73",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -14040,7 +14125,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/67f610e4-7fff-4123-b3df-0718e4ba7ac1/8b663c48-b55a-46d1-b869-badc19faa73e",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -14121,7 +14206,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/070096cb-8b3c-4f40-bd6a-996daa7918eb/6fb3801a-265f-4727-838a-95da1838ca86",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -14202,7 +14287,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/e56e58f6-f827-4da0-8f8b-27de39fb1a39/932594ea-a666-494d-a6b0-8148d3d7da8e",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -14291,7 +14376,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/ca321c7d-d6b5-426f-aac4-0d6aa67b9d59/4cc82f51-574a-4245-b598-b1e15a748089",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -14368,7 +14453,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/7ab6b95f-535e-4dcc-b92a-def46bdaa09a/4f94c31d-2b25-4dd1-965c-f11dba4f3753",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -14445,7 +14530,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/dd59763c-36d1-4cbb-8b16-f37a146cf6af/bb460f54-7e67-457b-9f8a-3fa991c7345d",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -14518,7 +14603,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/081c7aa4-568b-4330-86d7-adbfe2e65d09/df36723d-72f7-45e6-abda-e17b6341de3d",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -14599,7 +14684,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/acafa5bf-80f7-48d0-8a9a-39f90379e971/c7f4de5b-cff3-46d9-b3fc-d27d97f49cf3",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -14680,7 +14765,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/2021c92d-d87c-43ef-9c2d-c8415a528860/ca6cf56a-f2cc-4a43-91ee-ee3e7c02e699",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -14749,7 +14834,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/f4aaea0a-e364-4e81-af3c-bedf18e15794/2ba548ce-5b3c-43c4-bd32-eec7890c5bfc",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -14822,7 +14907,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/5bc7a9a4-b3ee-49b1-99ba-a4f2cb809661/9eb9cac8-09e7-4521-9f3d-b5aa19b71879",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -14903,7 +14988,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/f75935a2-3ef4-4aed-9021-bf63877161c6/775e37a8-a9c2-4b44-9737-6c8474c602d6",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -14976,7 +15061,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/073a2f0c-fca5-4035-94c3-b1f9b57db2ea/8e144fb3-1722-4346-97aa-61a374748e8b",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -15057,7 +15142,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/6dddeb5b-e533-4fd5-884d-08f05dbd76f8/d2b5f8c3-d220-4d64-a5f0-d98fd4d110a2",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -15142,7 +15227,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/a5029f3d-9cdc-4605-b6ff-024cd555e161/0ad8776c-2ff2-47c9-9a6f-83ad04beb144",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -15231,7 +15316,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/3a985585-b056-4dac-8690-9969aeff59c9/25eec4de-00a5-4bc6-9a85-763fd0bc34eb",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -15316,7 +15401,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/2e94f2b0-c7e4-4cce-8e23-6575e51a179e/52c85e50-11d0-47f6-b2cd-f962d15b4604",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -15405,7 +15490,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/a9a6b55b-032e-46de-a79e-5373e02e7f33/e6c881b3-4e3d-446d-a536-7a959080610c",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -15579,7 +15664,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/8930d2a3-3217-463e-a568-2276b7a02295/e1357b4e-4545-482a-a568-0f0c46841639",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -15660,7 +15745,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/2feae1db-ae5e-4a65-a9bf-33642a836be0/1ee4214c-7e26-4ad3-945f-45f422179b5b",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -15737,7 +15822,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/6227abc2-103a-4fc1-8d43-7000f8849a30/c5303ce4-b923-4b6f-ba1c-d17b5ff4d61a",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -15818,7 +15903,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/d8a406e0-15f6-4d06-a34b-1a941d8b7ae3/c8e852c5-f995-4447-a18d-a4a1f0c61c42",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16073,7 +16158,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/2cc02293-7e72-454b-bef7-e64d8028a9df/990d58ff-792c-4e52-a836-b43ae40cce1c",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16150,7 +16235,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/280b04cd-f7ad-488c-8a5f-9b32138689d0/ee6c17e3-6467-42e8-bafb-176508a259ab",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16316,7 +16401,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/e498b0ee-541a-4e72-8bbc-189cb5d88fe3/7eee59dc-2f44-42f9-a2fd-08acc4559483",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16389,7 +16474,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/e004c8e9-5327-442c-be51-3ad84c09a261/38ff3ea1-2d68-4eac-b1af-92eefdd5fd46",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16462,7 +16547,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/8323ae85-6b3b-4beb-8555-18d2c9308e10/ac5fddc9-1a47-460d-9274-5aecff2b0598",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16543,7 +16628,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/1fe34b0a-5a82-4b10-b83f-a7bc6bd6ad47/7165370e-7b82-4579-9c8d-f1e8d75e7f9d",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16620,7 +16705,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/6f2ae872-e7e4-4fe7-9f00-dee1347c8bcf/47cbebc5-a202-4439-bf21-9c8658db6d90",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16685,7 +16770,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/0077d0e0-e015-4226-964c-8492aff9ef16/d284d3f5-a650-479b-a51e-ee1831844536",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16754,7 +16839,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/42907268-257d-4213-ae15-6d2d13ae17a2/5d8c9c23-f9db-4e57-a5c3-46276c7774ed",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -16993,7 +17078,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/b5ffa15b-f7c2-4e9a-8536-fcb3c3606687/cfb7e02f-7c53-46bc-a67e-36d90b86e12e",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -17070,7 +17155,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/966534de-c83e-4b23-ac95-2392a556b814/f1db2861-0ceb-4e7f-80c8-2da0cbacdde6",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -17151,7 +17236,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/ebcfc36c-548b-4b60-9eea-6ade423c53f9/bd9172d4-ee91-43cf-aa81-1c8954c8edcd",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -17232,7 +17317,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/a818c5d4-6421-4825-8f02-38a2f98269b1/6fa0e0d3-1343-4c00-8216-18645bebfb07",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -17317,7 +17402,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/5f1b17c8-aec8-4d48-835f-de452a0f384e/c345c3d0-87c6-40c0-a24f-57b6e499e042",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -17394,7 +17479,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/e3a37d9a-03fe-4c0f-bb39-2de856c07dc7/118f91e2-41e1-48c4-913c-cfb529177eed",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -17471,7 +17556,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/6d8f822d-1006-429f-9e46-ad9dcb1a8a6e/fe9b9828-37d7-42a9-818d-85928a257591",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -17548,7 +17633,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/944224d5-d690-488e-affe-9bdc0ceeed5e/26ddb51c-83ac-4a5e-882c-c5877065292f",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -17629,7 +17714,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/47783d50-d51a-4039-9e5a-09266039fe25/a1f625bf-0379-467d-85e6-23722d683e58",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -17718,7 +17803,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/cc6f25df-a307-42d8-acd5-03c060701073/ebd58bcf-31fd-4ec8-b9dc-12ea054d7453",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -17803,7 +17888,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/3c49b009-4a90-460e-873c-57a83c74d258/047be2b5-3fad-4fdd-8db7-1170ebf7f229",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -17880,7 +17965,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/ed45b605-5ffb-4389-a923-29a19962486f/e4e39459-b40b-42e8-ae46-c945f35ccdaa",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -18038,7 +18123,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/23ff5db4-0e7f-4a21-9f89-886a81057e24/63b1129b-52bc-47ea-b541-002702dd9354",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -18111,7 +18196,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/f14eeafd-7878-44f1-a8bd-658d5dd62ec5/87e96c11-0555-43dd-8d62-7a4d577032ea",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -18184,7 +18269,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/356e7d54-9b89-400c-8499-8616517fe40c/91202238-7553-48f9-b2cd-5a14ea230e49",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -18273,7 +18358,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/df5db368-f2fe-4f0f-b846-1627ccc1be0a/3d282757-1a51-4153-ad62-05704a222f70",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -18362,7 +18447,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/034c7137-68f8-433b-bc8d-0e9b8bf0d85b/6d699199-d248-445e-a423-a98d8645b001",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -18451,7 +18536,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/970f2c63-18ef-4b68-9e0e-f9d846d496dc/354182b2-a07b-4905-8f4e-8b798aa9d8b3",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -18532,7 +18617,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/0ff1f032-3fa7-4cbf-99d4-d4463b7dce5e/45a2ca2c-c412-4b92-8df0-540f76235117",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -18605,7 +18690,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/20060a06-fdc3-4498-8b1b-cc382ca1c4a7/3a5f8ef1-8c92-40bc-b04d-a0d216b9ca24",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -18694,7 +18779,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/0e409ab5-fc3f-4eef-87fd-98b2a6ebf9ef/071f0cda-4be5-462c-9b22-e95e384fa8d2",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -18844,7 +18929,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/ae986ce6-c3a3-49d8-baa5-5750ee15c60e/653393c9-7c33-4c73-88f0-e5b315a320ff",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -18925,7 +19010,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/bf03998e-1d8b-4fd7-8eea-960b6f770d8a/77c7895d-9402-4531-b342-a3d54e798a59",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -19014,7 +19099,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/b1226b52-050e-462a-9268-9e21bd0b70b4/9d49a1c8-63c9-4c96-9d92-e5cf5ab67ed3",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -19107,7 +19192,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/2d020115-6ab3-4d7b-ae6f-0a9a4edd3710/92f6c9cc-a59a-47d1-8db5-d414ee0ee077",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -19208,7 +19293,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/97a5870c-d66a-48ac-81e4-f85e64341e74/6c7b2baa-578c-4d00-8f04-44348608f79b",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -19297,7 +19382,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/92162f07-faea-48c5-8072-2a24ae555025/85f43577-a384-4d1c-815e-6952e3ca0387",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -19374,7 +19459,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/3317bf0c-d887-4b5a-96a2-53e5b686b6c8/f5252048-c18c-40a3-8eb3-9e0c7852f4d2",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -19455,7 +19540,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/0552f867-d9a5-49b0-8f2d-bd81ee625c50/5edd4263-e6f5-427d-9829-ddf9a4f0e08d",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -19544,7 +19629,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/055c3bc7-5942-4753-bc2a-eb68abb27d46/c8d20cd1-31ac-4820-8458-a5935bc5cf63",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -19613,7 +19698,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/85409b4a-6eba-4911-af84-31169c89d81e/b4d19809-3d30-4311-a756-c917bf0b9c73",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -19694,7 +19779,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/fec0bf6b-5735-4519-9b1f-e42e65dcf669/3e8dd982-ee5f-5604-b39e-d405c9b680b3",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -19775,7 +19860,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/14dc4e15-7e80-44a9-97cf-140caf5499fe/11a098e3-6f05-4759-a0c0-042998a97f7e",
    "search_name": "Rijswijk",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -19860,7 +19945,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/e03e409b-fb87-4ecc-951e-4cb27619ab8b/f0f8f9ee-7ed9-40af-abe9-5f650b055952",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -20030,7 +20115,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/72e86666-7693-48ff-93f9-85c4a58fb264/1db1b9b1-462a-4e3e-a923-dc6c135e8b2c",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -20103,7 +20188,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/a458040c-cd40-4383-83ea-47055f5c8f25/7fc2696c-d7c2-40aa-ac03-d7ea86d8d2d5",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -20184,7 +20269,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/85a3d87d-464d-4d2d-a75a-9e2e21c6c66a/a68d6902-73dd-4ad8-aa33-f9de68684cb0",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -20277,7 +20362,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/ec76cbd4-0684-4379-9db2-152e96ed7131/4d8e3c85-98d9-4171-a73a-efb46015eec8",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -20346,7 +20431,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/97dc93c4-06e7-4421-b297-435bed7f43b8/3af9d8e3-e4cd-455c-bdac-5e042bed16b6",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -20423,7 +20508,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/a3627e35-a8dd-484a-966b-0a6773950a96/60883735-eb67-4083-b6a0-a148b635705f",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -20573,7 +20658,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/c4a8524a-6edc-4238-a42e-bc8c6fee5bb6/a060f295-5dc5-45f3-a3a6-2e67e480ab5c",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -20739,7 +20824,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/e4b84db1-b451-4e68-a33e-b77d9885cd2c/2e31edc6-e339-47e6-900d-dc38a542fc76",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -20808,7 +20893,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/8cc54458-686d-45d6-97f6-a2b85d94282d/335e961b-b8f0-40fd-a17a-1a577c1a1da1",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -20970,7 +21055,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/5b8abc43-1c40-4784-8e6e-2df681b08d9f/706088f0-3a7c-4b9b-bdf4-c0b798457cab",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -21132,7 +21217,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/e02dc4f5-013c-4e0e-8f8d-d1383f0dc7bb/bc8ac3a8-65e3-4196-8bde-f7a01321b84e",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -21201,7 +21286,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/d0383dd1-a8be-459f-b1ea-ac4b0080fac4/e0f9b5b4-69cb-46ef-b60c-3979d09a0032",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -21290,7 +21375,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/080d30b2-a7e7-4c92-bf11-4fdb5abe5e28/da897c56-5076-4187-9c42-81a84c847730",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -21367,7 +21452,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/ea3aa71f-5cbd-4e68-b2cd-a28e1d2e7aa5/6e831f81-5570-42a5-82e4-1f81b7588a56",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -21452,7 +21537,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/a51c7ee9-d662-4f4a-9864-cb942941fe4a/6ade381c-d412-5977-a599-ba78b122ee37",
    "search_name": "Den Haag",
    "first_seen": "2026-10-02T06:00:37+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -21529,7 +21614,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/f148b476-2833-4962-bfe9-9cc6c8738fd3/93154e01-9854-4d84-b098-7eca2daae19b",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -21610,7 +21695,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/80756a86-4665-4c66-833f-95bb72476803/ad639bda-5f2c-4a18-8deb-62ddfed62b89",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -21683,7 +21768,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/7aa9cc92-1859-4321-9487-a79cbfec5a32/d2120a1e-7954-4f76-aa51-aab558ba9218",
    "search_name": "Den Haag",
    "first_seen": "2026-09-29T09:30:30+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -21764,7 +21849,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/2e5f5816-20dd-4e2f-80d9-9844f37761ac/136fdae7-d3a6-4411-ac50-11ece4ffc957",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -21837,7 +21922,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/31edaf73-da69-4b7d-9dbf-914af42b9b27/7980d413-2070-4f5f-9350-84202028f0c3",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -21910,7 +21995,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/c1acffec-f7a5-4b2a-a591-10b55cee25fa/43eb8c48-881e-4b58-8280-18b19acee832",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -22125,7 +22210,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/1153e57f-63ee-4d42-80db-480e561c9b45/86a39dda-f5dc-43de-927e-aa812158a375",
    "search_name": "Den Haag",
    "first_seen": "2026-09-29T08:24:24+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -22202,7 +22287,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/454aa214-8279-4abe-b49a-a1611bc26eed/f998ad9d-f7f1-407f-9988-99c39ba07e2f",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T13:00:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -22295,7 +22380,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/0845af42-a10c-4d19-892a-59d3a908a8f0/ae3c55de-bbc7-44df-905d-82d7798d1e9c",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -22364,7 +22449,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/9ee10af4-bd99-4b93-bf3b-7c49a1a6f88e/54791197-1d92-4084-9d61-328fc9636dc9",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -22445,7 +22530,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/dd8303d2-86c5-4e60-8eac-d937da958157/674e0e40-f5fd-50b9-ab15-47e3aceac5c8",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -22522,7 +22607,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/f54bb4bf-4f51-4012-a8fb-19ec8ab2ff87/e819cb90-0875-4fa7-a7f9-a4ddd72295f9",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -22603,7 +22688,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/39487bd0-b73e-4f5b-87fd-365087f00e44/79e9d1e8-0181-56b9-adc3-fa5909d9709d",
    "search_name": "Den Haag",
    "first_seen": "2026-09-29T16:30:31+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -22761,7 +22846,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/472bce8f-d554-4c3b-b081-dce60bd72ee6/d81846e1-04de-4086-ac30-2be34e4bbe97",
    "search_name": "Den Haag",
    "first_seen": "2026-10-01T09:00:42+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -22927,7 +23012,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/7227ae9e-78c0-4a86-abcb-3cfc6bfb65ad/ab928e31-86eb-475c-ad6a-1cb24a098dfa",
    "search_name": "Den Haag",
    "first_seen": "2026-10-01T15:00:47+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -23405,7 +23490,7 @@
    "photo_url": "https://cloud.funda.nl/valentina_media/214/251/309.jpg",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -23470,7 +23555,7 @@
    "photo_url": "https://cloud.funda.nl/valentina_media/217/781/546.jpg",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -23543,7 +23628,7 @@
    "photo_url": "https://cloud.funda.nl/valentina_media/221/475/758.jpg",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -23628,7 +23713,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/7e135745-14e7-4b6c-ad11-59f2d6b0ec70/7775db4d-623e-4d77-8b00-27eda2f228f0",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -23721,7 +23806,7 @@
    "photo_url": "https://cloud.funda.nl/valentina_media/225/865/853.jpg",
    "search_name": "Delft",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -23794,7 +23879,7 @@
    "photo_url": "https://cloud.funda.nl/valentina_media/225/954/360.jpg",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -23875,7 +23960,7 @@
    "photo_url": "https://cloud.funda.nl/valentina_media/226/075/054.jpg",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
@@ -23960,7 +24045,7 @@
    "photo_url": "https://cloud.funda.nl/tiara-media/5e19c242-c2c3-4641-8338-243a020126ea/2b42e32b-ebea-4ef0-a67a-cd8e07f23875",
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
-   "last_seen": "2026-10-05",
+   "last_seen": "2026-10-06",
    "active": true,
    "inactive_since": null,
    "price_history": [
