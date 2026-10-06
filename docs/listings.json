@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-06T11:30:30+00:00",
+ "generated": "2026-10-06T23:30:30+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -3901,8 +3901,8 @@
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-10-06",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-10-06",
    "price_history": [
     [
      "2026-09-28",
@@ -20116,8 +20116,8 @@
    "search_name": "Den Haag",
    "first_seen": "2026-09-28T19:49:44+00:00",
    "last_seen": "2026-10-06",
-   "active": true,
-   "inactive_since": null,
+   "active": false,
+   "inactive_since": "2026-10-06",
    "price_history": [
     [
      "2026-09-28",
@@ -20411,6 +20411,75 @@
      {
       "points": 3,
       "text": "€3,993/m² vs €4,157/m² typical"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "80962310",
+   "title": "Hendrik Ravesteijnplein 28",
+   "city": "Rijswijk (ZH)",
+   "wijk": "Wijk 02",
+   "neighbourhood": "Rembrandtkwartier",
+   "url": "https://www.funda.nl/detail/koop/rijswijk-zh/appartement-hendrik-ravesteijnplein-28/80962310/",
+   "price": 400000,
+   "living_area": 86,
+   "bedrooms": 3,
+   "energy_label": "C",
+   "published": "2026-09-15T17:44:34.919983+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/65183902-f662-4567-b44d-c3b2803d4d19/977eca15-a03a-409d-9e8f-5542eb85b199",
+   "search_name": "Rijswijk",
+   "first_seen": "2026-10-06T23:30:30+00:00",
+   "last_seen": "2026-10-06",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-06",
+     400000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1955,
+    "balcony": true,
+    "outdoor_m2": 3,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 200.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.048897,
+    "longitude": 4.3317003,
+    "distance_to_supermarket_m": 19.825781385492373
+   },
+   "score": {
+    "points": 52,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": -10,
+      "text": "€4,651/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 4,
+      "text": "balcony or terrace, 3 m²"
      }
     ]
    },
