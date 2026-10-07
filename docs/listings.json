@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07T15:00:45+00:00",
+ "generated": "2026-10-07T16:00:44+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -8888,6 +8888,91 @@
      {
       "points": 3,
       "text": "garden"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44537858",
+   "title": "Valkenboskade 156",
+   "city": "Den Haag",
+   "wijk": "Valkenboskwartier",
+   "neighbourhood": "Heesterbuurt",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-valkenboskade-156/44537858/",
+   "price": 400000,
+   "living_area": 84,
+   "bedrooms": 2,
+   "energy_label": "D",
+   "published": "2026-10-07T17:41:43.965127+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/a94d35ab-317d-4bb0-87a6-4e55257c8515/e9fd1dd5-2297-4730-bae4-1a90e1e98063",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-07T16:00:44+00:00",
+   "last_seen": "2026-10-07",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-07",
+     400000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1915,
+    "balcony": true,
+    "outdoor_m2": 46,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 175.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": true,
+    "latitude": 52.07017,
+    "longitude": 4.2735705,
+    "distance_to_supermarket_m": 283.02150505610035
+   },
+   "score": {
+    "points": 55,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 15,
+      "text": "balcony or terrace, 46 m²"
+     },
+     {
+      "points": -12,
+      "text": "€4,762/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1915)"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
+     },
+     {
+      "points": -2,
+      "text": "283 m to nearest supermarket"
      }
     ]
    },
@@ -23539,6 +23624,83 @@
      {
       "points": -2,
       "text": "261 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "80990851",
+   "title": "Buitenwatersloot 237",
+   "city": "Delft",
+   "wijk": "Hof van Delft",
+   "neighbourhood": "Krakeelpolder",
+   "url": "https://www.funda.nl/detail/koop/delft/appartement-buitenwatersloot-237/80990851/",
+   "price": 395000,
+   "living_area": 80,
+   "bedrooms": 2,
+   "energy_label": "A",
+   "published": "2026-10-07T18:00:03.208413+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/72bd0f80-cfac-46d8-80cf-56826ef1e23b/e111bc8e-db3a-447b-a93c-ecdb63066a52",
+   "search_name": "Delft",
+   "first_seen": "2026-10-07T16:00:44+00:00",
+   "last_seen": "2026-10-07",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-07",
+     395000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 0,
+    "floor_label": "Begane grond",
+    "year_built": 1993,
+    "balcony": false,
+    "outdoor_m2": null,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 170.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.005554,
+    "longitude": 4.3476853,
+    "distance_to_supermarket_m": 250.30787217749403
+   },
+   "score": {
+    "points": 43,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": -12,
+      "text": "€4,938/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": -2,
+      "text": "250 m to nearest supermarket"
      }
     ]
    },
