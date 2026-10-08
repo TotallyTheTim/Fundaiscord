@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-08T04:00:41+00:00",
+ "generated": "2026-10-08T07:30:30+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -8495,6 +8495,83 @@
      {
       "points": -2,
       "text": "251 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44524962",
+   "title": "Driebergenstraat 3",
+   "city": "Den Haag",
+   "wijk": "Leyenburg",
+   "neighbourhood": "Leyenburg",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-driebergenstraat-3/44524962/",
+   "price": 375000,
+   "living_area": 78,
+   "bedrooms": 2,
+   "energy_label": "A",
+   "published": "2026-10-06T11:23:26.554862+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/03c732c1-54bf-435e-bb4f-422418742817/c9c2f14c-d6b0-430d-b6ef-9d1f842bc9f8",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-08T07:30:30+00:00",
+   "last_seen": "2026-10-08",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-08",
+     375000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1936,
+    "balcony": true,
+    "outdoor_m2": 3,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 143.79,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.06112,
+    "longitude": 4.2733326,
+    "distance_to_supermarket_m": 246.43024182335628
+   },
+   "score": {
+    "points": 54,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": -12,
+      "text": "€4,808/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
+     {
+      "points": 4,
+      "text": "balcony or terrace, 3 m²"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1936)"
+     },
+     {
+      "points": -2,
+      "text": "246 m to nearest supermarket"
      }
     ]
    },
