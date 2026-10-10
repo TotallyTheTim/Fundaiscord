@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-08T07:30:30+00:00",
+ "generated": "2026-10-10T02:44:34+00:00",
  "listings": [
   {
    "id": "43132467",
@@ -8971,6 +8971,399 @@
    "details_failures": 0
   },
   {
+   "id": "44530062",
+   "title": "Arabislaan 49",
+   "city": "Den Haag",
+   "wijk": "Bohemen en Meer en Bos",
+   "neighbourhood": "Bohemen en Meer en Bos",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-arabislaan-49/44530062/",
+   "price": 349000,
+   "living_area": 80,
+   "bedrooms": 2,
+   "energy_label": "C",
+   "published": "2026-10-10T01:00:03.418458+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/f4fe6af6-4f77-46d4-8f36-27ae4b753417/83f8eaff-6b38-4738-983c-1c7dd0e9a8f8",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-10T02:44:34+00:00",
+   "last_seen": "2026-10-10",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-10",
+     349000
+    ]
+   ],
+   "details": {
+    "ownership": "Gemeentelijke erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": null,
+    "floor_label": null,
+    "year_built": 1952,
+    "balcony": true,
+    "outdoor_m2": 6,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 175.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.06886,
+    "longitude": 4.2375574,
+    "distance_to_supermarket_m": 41.83121980655814
+   },
+   "score": {
+    "points": 4,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 9,
+      "text": "balcony or terrace, 6 m²"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -4,
+      "text": "€4,362/m² vs €4,157/m² typical"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44530265",
+   "title": "Staverdenstraat 17",
+   "city": "Den Haag",
+   "wijk": "Rustenburg en Oostbroek",
+   "neighbourhood": "Oostbroek-Zuid",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-staverdenstraat-17/44530265/",
+   "price": 275000,
+   "living_area": 85,
+   "bedrooms": 2,
+   "energy_label": "B",
+   "published": "2026-10-09T15:16:59.716151+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/1f969d02-e9a4-4294-b4a7-ec96a650266b/442e7207-7a5a-494a-886d-9657d7318751",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-10T02:44:34+00:00",
+   "last_seen": "2026-10-10",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-10",
+     275000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1933,
+    "balcony": true,
+    "outdoor_m2": 6,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 100.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": true,
+    "move_in_ready": false,
+    "top_floor_hint": true,
+    "latitude": 52.062153,
+    "longitude": 4.2898936,
+    "distance_to_supermarket_m": 160.7853402292795
+   },
+   "score": {
+    "points": 62,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": -20,
+      "text": "needs work"
+     },
+     {
+      "points": 12,
+      "text": "€3,235/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 9,
+      "text": "balcony or terrace, 6 m²"
+     },
+     {
+      "points": 5,
+      "text": "energy label B"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1933)"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
+     },
+     {
+      "points": -1,
+      "text": "161 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44530805",
+   "title": "Hendrik Zwaardecroonstraat 12",
+   "city": "Den Haag",
+   "wijk": "Bezuidenhout",
+   "neighbourhood": "Bezuidenhout-Oost",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-hendrik-zwaardecroonstraat-12/44530805/",
+   "price": 375000,
+   "living_area": 80,
+   "bedrooms": 2,
+   "energy_label": "D",
+   "published": "2026-10-09T13:37:05.693485+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/c84bf098-346d-45af-abc6-6089bab2aa86/f8c43dfd-518a-4e0f-a4e6-22244b703d9f",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-10T02:44:34+00:00",
+   "last_seen": "2026-10-10",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-10",
+     375000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1922,
+    "balcony": true,
+    "outdoor_m2": 3,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 150.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.086678,
+    "longitude": 4.338976,
+    "distance_to_supermarket_m": 79.25015214533012
+   },
+   "score": {
+    "points": 35,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -11,
+      "text": "€4,688/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
+      "points": 4,
+      "text": "balcony or terrace, 3 m²"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1922)"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44537038",
+   "title": "Driebergenstraat 235",
+   "city": "Den Haag",
+   "wijk": "Leyenburg",
+   "neighbourhood": "Leyenburg",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-driebergenstraat-235/44537038/",
+   "price": 349500,
+   "living_area": 75,
+   "bedrooms": 2,
+   "energy_label": "C",
+   "published": "2026-10-09T00:00:18.073386+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/20df59a2-1363-4b26-b513-e872bd0f9d16/5661912e-26df-44c7-8293-b1fc64d587f1",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-10T02:44:34+00:00",
+   "last_seen": "2026-10-10",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-10",
+     349500
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 0,
+    "floor_label": "Begane grond",
+    "year_built": 1936,
+    "balcony": false,
+    "outdoor_m2": null,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 100.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": true,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.058353,
+    "longitude": 4.2739887,
+    "distance_to_supermarket_m": 338.7646706601313
+   },
+   "score": {
+    "points": 42,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": -10,
+      "text": "€4,660/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1936)"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": -3,
+      "text": "339 m to nearest supermarket"
+     },
+     {
+      "points": -2,
+      "text": "busy road"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44537154",
+   "title": "Daltonstraat 46",
+   "city": "Den Haag",
+   "wijk": "Valkenboskwartier",
+   "neighbourhood": "Valkenboskwartier",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-daltonstraat-46/44537154/",
+   "price": 375000,
+   "living_area": 107,
+   "bedrooms": 2,
+   "energy_label": "D",
+   "published": "2026-10-08T13:20:07.894147+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/abe7691a-7c37-4887-85c8-c1f2d83a1243/885f0b2e-7506-4ecb-9ec8-c6fc7f12b91c",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-10T02:44:34+00:00",
+   "last_seen": "2026-10-10",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-10",
+     375000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 0,
+    "floor_label": "Begane grond",
+    "year_built": 1912,
+    "balcony": false,
+    "outdoor_m2": null,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 125.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": false,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.070744,
+    "longitude": 4.2768087,
+    "distance_to_supermarket_m": 232.74636255212525
+   },
+   "score": {
+    "points": 55,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": 12,
+      "text": "€3,505/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "VvE has no maintenance plan"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1912)"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": -2,
+      "text": "233 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
    "id": "44537858",
    "title": "Valkenboskade 156",
    "city": "Den Haag",
@@ -9050,6 +9443,237 @@
      {
       "points": -2,
       "text": "283 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44538877",
+   "title": "Gerrit van der Veenlaan 203",
+   "city": "Den Haag",
+   "wijk": "Loosduinen",
+   "neighbourhood": "Houtwijk",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-gerrit-van-der-veenlaan-203/44538877/",
+   "price": 395000,
+   "living_area": 114,
+   "bedrooms": 4,
+   "energy_label": "C",
+   "published": "2026-10-08T15:33:40.963775+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/7e5762a6-95f4-4f93-b9f7-ed9adca95cbb/77dfef8d-7fad-4989-916e-36ea9477c5f0",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-10T02:44:34+00:00",
+   "last_seen": "2026-10-10",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-10",
+     395000
+    ]
+   ],
+   "details": {
+    "ownership": "Gemeentelijke erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1983,
+    "balcony": true,
+    "outdoor_m2": 13,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 145.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.055534,
+    "longitude": 4.247655,
+    "distance_to_supermarket_m": 209.20962316281134
+   },
+   "score": {
+    "points": 38,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 15,
+      "text": "balcony or terrace, 13 m²"
+     },
+     {
+      "points": 12,
+      "text": "€3,465/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 8,
+      "text": "4 bedrooms (room for an office)"
+     },
+     {
+      "points": -2,
+      "text": "209 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44539364",
+   "title": "Zwedenburg 118",
+   "city": "Den Haag",
+   "wijk": "Mariahoeve en Marlot",
+   "neighbourhood": "Burgen en Horsten",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-zwedenburg-118/44539364/",
+   "price": 325000,
+   "living_area": 83,
+   "bedrooms": 2,
+   "energy_label": "D",
+   "published": "2026-10-09T11:41:02.187985+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/ad2c4bd0-9015-440b-82f2-9da2a8342578/5e7293e5-5979-4ca1-a5df-492c5f33d8ea",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-10T02:44:34+00:00",
+   "last_seen": "2026-10-10",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-10",
+     325000
+    ]
+   ],
+   "details": {
+    "ownership": "Gemeentelijke erfpacht (einddatum erfpacht: 31-12-2035)",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1966,
+    "balcony": true,
+    "outdoor_m2": 4,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 170.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.09311,
+    "longitude": 4.3615108,
+    "distance_to_supermarket_m": 182.5736594431214
+   },
+   "score": {
+    "points": 9,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 6,
+      "text": "balcony or terrace, 4 m²"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
+      "points": 5,
+      "text": "€3,916/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -1,
+      "text": "183 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "44539967",
+   "title": "Nunspeetlaan 117",
+   "city": "Den Haag",
+   "wijk": "Rustenburg en Oostbroek",
+   "neighbourhood": "Oostbroek-Noord",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-nunspeetlaan-117/44539967/",
+   "price": 299500,
+   "living_area": 83,
+   "bedrooms": 3,
+   "energy_label": "E",
+   "published": "2026-10-09T09:49:25.324471+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/90ff72a8-854e-42ef-a54f-0e2904421883/282c0c1c-10ba-4463-9a03-f0b42c002d49",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-10T02:44:34+00:00",
+   "last_seen": "2026-10-10",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-10",
+     299500
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 3,
+    "floor_label": "3e woonlaag",
+    "year_built": 1928,
+    "balcony": true,
+    "outdoor_m2": 3,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 125.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.067364,
+    "longitude": 4.2840466,
+    "distance_to_supermarket_m": 60.41202523489135
+   },
+   "score": {
+    "points": 65,
+    "tier": "good",
+    "reasons": [
+     {
+      "points": -12,
+      "text": "energy label E"
+     },
+     {
+      "points": 11,
+      "text": "€3,608/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 4,
+      "text": "balcony or terrace, 3 m²"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1928)"
      }
     ]
    },
@@ -23847,6 +24471,330 @@
      {
       "points": 4,
       "text": "€3,977/m² vs €4,157/m² typical"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "80993868",
+   "title": "Escamplaan 74",
+   "city": "Den Haag",
+   "wijk": "Rustenburg en Oostbroek",
+   "neighbourhood": "Rustenburg",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-escamplaan-74/80993868/",
+   "price": 319500,
+   "living_area": 88,
+   "bedrooms": 3,
+   "energy_label": "C",
+   "published": "2026-10-09T20:00:02.144628+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/02733809-28ad-45e7-ad4d-68d2f00e57a1/eacf0bca-5ef4-4f70-8e94-ca641a6eb9a8",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-10T02:44:34+00:00",
+   "last_seen": "2026-10-10",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-10",
+     319500
+    ]
+   ],
+   "details": {
+    "ownership": "Gemeentelijke erfpacht",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 0,
+    "floor_label": "Begane grond",
+    "year_built": 1927,
+    "balcony": false,
+    "outdoor_m2": null,
+    "garden": true,
+    "lift": false,
+    "vve_monthly": 80.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": true,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.06468,
+    "longitude": 4.2777724,
+    "distance_to_supermarket_m": 158.33009730389648
+   },
+   "score": {
+    "points": 28,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 11,
+      "text": "€3,631/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1927)"
+     },
+     {
+      "points": 3,
+      "text": "garden"
+     },
+     {
+      "points": -2,
+      "text": "busy road"
+     },
+     {
+      "points": -1,
+      "text": "158 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "80994020",
+   "title": "Cornelie van Zantenstraat 14",
+   "city": "Den Haag",
+   "wijk": "Waldeck",
+   "neighbourhood": "Waldeck-Zuid",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-cornelie-van-zantenstraat-14/80994020/",
+   "price": 335000,
+   "living_area": 87,
+   "bedrooms": 2,
+   "energy_label": "D",
+   "published": "2026-10-09T17:00:10.544208+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/6cfc31f3-b523-47ce-b73c-d6fd6bfacdf2/768b3f76-0236-4c3f-8f64-6a55c4b6addd",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-10T02:44:34+00:00",
+   "last_seen": "2026-10-10",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-10",
+     335000
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 5,
+    "floor_label": "5e woonlaag",
+    "year_built": 1969,
+    "balcony": true,
+    "outdoor_m2": 3,
+    "garden": false,
+    "lift": true,
+    "vve_monthly": 198.04,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": false,
+    "latitude": 52.05737,
+    "longitude": 4.2332363,
+    "distance_to_supermarket_m": 276.4653267420642
+   },
+   "score": {
+    "points": 52,
+    "tier": "ok",
+    "reasons": [
+     {
+      "points": 6,
+      "text": "€3,851/m² vs €4,157/m² typical"
+     },
+     {
+      "points": -6,
+      "text": "energy label D"
+     },
+     {
+      "points": 4,
+      "text": "balcony or terrace, 3 m²"
+     },
+     {
+      "points": -2,
+      "text": "276 m to nearest supermarket"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "80994167",
+   "title": "Ursulaland 108",
+   "city": "Den Haag",
+   "wijk": "Mariahoeve en Marlot",
+   "neighbourhood": "Landen",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-ursulaland-108/80994167/",
+   "price": 399000,
+   "living_area": 95,
+   "bedrooms": 3,
+   "energy_label": "C",
+   "published": "2026-10-09T12:52:46.676895+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/3ace3ed8-e250-4afe-b46a-a87ce8539f41/0c4c251a-0cff-461e-968e-d3b999ddf477",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-10T02:44:34+00:00",
+   "last_seen": "2026-10-10",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-10",
+     399000
+    ]
+   ],
+   "details": {
+    "ownership": "Eigendom belast met erfpacht (einddatum erfpacht: 31-12-2035)",
+    "erfpacht": true,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1968,
+    "balcony": true,
+    "outdoor_m2": null,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": null,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": false,
+    "top_floor_hint": true,
+    "latitude": 52.097073,
+    "longitude": 4.362915,
+    "distance_to_supermarket_m": 24.242131122196746
+   },
+   "score": {
+    "points": 21,
+    "tier": "low",
+    "reasons": [
+     {
+      "points": -45,
+      "text": "erfpacht"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 6,
+      "text": "balcony or terrace"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
+     },
+     {
+      "points": -1,
+      "text": "€4,200/m² vs €4,157/m² typical"
+     }
+    ]
+   },
+   "details_failures": 0
+  },
+  {
+   "id": "80994421",
+   "title": "Hattemlaan 119",
+   "city": "Den Haag",
+   "wijk": "Rustenburg en Oostbroek",
+   "neighbourhood": "Oostbroek-Zuid",
+   "url": "https://www.funda.nl/detail/koop/den-haag/appartement-hattemlaan-119/80994421/",
+   "price": 299500,
+   "living_area": 76,
+   "bedrooms": 3,
+   "energy_label": "A",
+   "published": "2026-10-09T13:31:20.667034+02:00",
+   "photo_url": "https://cloud.funda.nl/tiara-media/63bd32fe-7c32-4cef-87fa-9e11fcab05b5/a9eeb9c5-d2cd-47ac-bb58-40b02fd065b0",
+   "search_name": "Den Haag",
+   "first_seen": "2026-10-10T02:44:34+00:00",
+   "last_seen": "2026-10-10",
+   "active": true,
+   "inactive_since": null,
+   "price_history": [
+    [
+     "2026-10-10",
+     299500
+    ]
+   ],
+   "details": {
+    "ownership": "Volle eigendom",
+    "erfpacht": false,
+    "erfpacht_perpetual": false,
+    "is_apartment": true,
+    "floor": 2,
+    "floor_label": "2e woonlaag",
+    "year_built": 1935,
+    "balcony": true,
+    "outdoor_m2": null,
+    "garden": false,
+    "lift": false,
+    "vve_monthly": 110.0,
+    "vve_reserve_fund": true,
+    "vve_maintenance_plan": true,
+    "vve_registered": true,
+    "busy_road": false,
+    "monument": false,
+    "needs_work": false,
+    "move_in_ready": true,
+    "top_floor_hint": true,
+    "latitude": 52.06066,
+    "longitude": 4.290249,
+    "distance_to_supermarket_m": 220.56730575693993
+   },
+   "score": {
+    "points": 91,
+    "tier": "top",
+    "reasons": [
+     {
+      "points": 10,
+      "text": "energy label A"
+     },
+     {
+      "points": 8,
+      "text": "3 bedrooms (room for an office)"
+     },
+     {
+      "points": 8,
+      "text": "move-in ready"
+     },
+     {
+      "points": 6,
+      "text": "balcony or terrace"
+     },
+     {
+      "points": 4,
+      "text": "pre-war character (1935)"
+     },
+     {
+      "points": 4,
+      "text": "€3,941/m² vs €4,157/m² typical"
+     },
+     {
+      "points": 3,
+      "text": "top floor"
+     },
+     {
+      "points": -2,
+      "text": "221 m to nearest supermarket"
      }
     ]
    },
