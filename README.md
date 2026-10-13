@@ -1,8 +1,8 @@
 # Funda Watch
 
-Polls Funda every 30 minutes via GitHub Actions and posts new matching listings to a Discord channel.
+Polls Funda every 6 hours via GitHub Actions and posts new matching listings to a Discord channel.
 
-- **Every 30 min:** reads the newest result pages, so new listings show up quickly.
+- **Every 6 h:** reads the newest result pages, so new listings show up quickly.
 - **Every 12 h:** one run reads all pages. A listing that was published long ago but only now matches (price drop, new energy label, ...) gets a red `ALERT - OLD LISTING ADDED SINCE LISTING CHANGED` message.
 - **First run:** records everything that matches today. Only listings from the last few days alert; older ones are stored silently.
 
@@ -54,7 +54,7 @@ The workflow keeps `docs/listings.json` up to date (every current match, with de
 GitHub's own `schedule` trigger is best-effort: on a new repo it can fire only a few times a day. The dependable way is an external cron service calling the `workflow_dispatch` API, which starts within seconds. The workflow's own cron stays as a backup; overlapping runs are harmless because the state file deduplicates alerts.
 
 1. GitHub → *Settings → Developer settings → Personal access tokens → Fine-grained tokens*: repository access **only this repo**, permission **Actions: Read and write**, and an expiry date (renew it then).
-2. On [cron-job.org](https://cron-job.org) create a job: URL `https://api.github.com/repos/TotallyTheTim/Fundaiscord/actions/workflows/funda-watch.yml/dispatches`, every 30 minutes, method **POST**, body `{"ref":"main"}`, headers `Authorization: Bearer <token>`, `Accept: application/vnd.github+json`, `Content-Type: application/json`. A success is HTTP 204.
+2. On [cron-job.org](https://cron-job.org) create a job: URL `https://api.github.com/repos/TotallyTheTim/Fundaiscord/actions/workflows/funda-watch.yml/dispatches`, every 6 hours, method **POST**, body `{"ref":"main"}`, headers `Authorization: Bearer <token>`, `Accept: application/vnd.github+json`, `Content-Type: application/json`. A success is HTTP 204.
 
 ## Configuration
 
